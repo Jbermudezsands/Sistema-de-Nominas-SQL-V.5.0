@@ -1,0 +1,4 @@
+Línea 328: la clase SmartButtonProject.SmartButton del control cmdSalir no era una clase de control cargada.
+Línea 347: la clase SmartButtonProject.SmartButton del control cmdGenerar no era una clase de control cargada.
+Línea 367: la clase SmartButtonProject.SmartButton del control cmdGuardar no era una clase de control cargada.
+Línea 387: la clase SmartButtonProject.SmartButton del control CmdImprimir no era una clase de control cargada.

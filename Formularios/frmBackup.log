@@ -1,0 +1,5 @@
+Línea 20: la clase Project1.xp_canvas del control xp_canvas1 no era una clase de control cargada.
+Línea 26: el nombre de la propiedad _ExtentX de xp_canvas1 no es válido.
+Línea 27: el nombre de la propiedad _ExtentY de xp_canvas1 no es válido.
+Línea 28: el nombre de la propiedad Caption de xp_canvas1 no es válido.
+Línea 29: el nombre de la propiedad Fixed_Single de xp_canvas1 no es válido.

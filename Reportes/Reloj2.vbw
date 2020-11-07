@@ -1,0 +1,11 @@
+frmOpciones = 44, 44, 696, 405, , 132, 132, 564, 582, C
+frmRepAsistencia = 66, 66, 718, 427, , 110, 110, 542, 560, C
+arepAsistencia = 0, 0, 0, 0, C, 154, 154, 1178, 922, C
+arepAsistenciaCargo = 0, 0, 0, 0, C, 176, 176, 1200, 944, C
+arepAsistenciaDepto = 0, 0, 0, 0, C, 198, 198, 1222, 966, C
+arepAsistenciaSexo = 0, 0, 0, 0, C, 220, 220, 1244, 988, C
+arepHLaboradas = 0, 0, 0, 0, C, 0, 0, 1036, 780, C
+arepExtraTurno = 0, 0, 0, 0, C, 22, 22, 1058, 802, C
+frmAsistManual = 0, 0, 0, 0, C, 66, 87, 865, 547, C
+frmExtraTurno = 0, 0, 0, 0, C, 110, 145, 909, 605, C
+frmPermisos = 0, 0, 0, 0, C, 0, 0, 0, 0, C

@@ -1,0 +1,93 @@
+VERSION 5.00
+Begin {82282820-C017-11D0-A87C-00A0C90F29FC} ARDenominaciones 
+   Caption         =   "ActiveReport1"
+   ClientHeight    =   11115
+   ClientLeft      =   165
+   ClientTop       =   555
+   ClientWidth     =   15240
+   StartUpPosition =   3  'Windows Default
+   _ExtentX        =   26882
+   _ExtentY        =   19606
+   SectionData     =   "ARDenominaciones.dsx":0000
+End
+Attribute VB_Name = "ARDenominaciones"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Private Sub ActiveReport_ReportStart()
+LblTitulo.Caption = Titulo
+LblSubtitulo.Caption = Subtitulo
+ImgLogo.Picture = LoadPicture(RutaLogo)
+
+'coloco los datos en las labels
+'Txt500.Caption = FrmMonedas.Txt500.Text
+Select Case Quien
+
+Case "Nomina13vo"
+    Txt100.Caption = FrmMonedas13vo.Txt100.Text
+    Txt50.Caption = FrmMonedas13vo.Txt50.Text
+    Txt20.Caption = FrmMonedas13vo.Txt20.Text
+    Txt10.Caption = FrmMonedas13vo.Txt10.Text
+    Txt5.Caption = FrmMonedas13vo.Txt5.Text
+    Txt1.Caption = FrmMonedas13vo.Txt1.Text
+
+    TxtD50.Caption = FrmMonedas13vo.TxtD50.Text
+    TxtD25.Caption = FrmMonedas13vo.TxtD25.Text
+    TxtD10.Caption = FrmMonedas13vo.TxtD10.Text
+    TxtD05.Caption = FrmMonedas13vo.TxtD05.Text
+    TxtD01.Caption = FrmMonedas13vo.TxtD01.Text
+
+'Txttot500.Caption = FrmMonedas13vo.Txttot500.Text
+    TxtTot100.Caption = FrmMonedas13vo.TxtTot100.Text
+    TxtTot50.Caption = FrmMonedas13vo.TxtTot50.Text
+    TxtTot20.Caption = FrmMonedas13vo.TxtTot20.Text
+    TxtTot10.Caption = FrmMonedas13vo.TxtTot10.Text
+    TxtTot5.Caption = FrmMonedas13vo.TxtTot5.Text
+    TxtTot1.Caption = FrmMonedas13vo.TxtTot1.Text
+
+    TxtTotD50.Caption = FrmMonedas13vo.TxtTotD50.Text
+    TxtTotD25.Caption = FrmMonedas13vo.TxtTotD25.Text
+    TxtTotD10.Caption = FrmMonedas13vo.TxtTotD10.Text
+    TxtTotD05.Caption = FrmMonedas13vo.TxtTotD05.Text
+    TxtTotD01.Caption = FrmMonedas13vo.TxtTotD01.Text
+
+    txtGranTotal.Caption = FrmMonedas13vo.txtGranTotal.Text
+    LblSubtitulo2.Caption = FrmMonedas13vo.Label1.Caption
+
+
+
+Case Else
+    Txt100.Caption = FrmMonedas.Txt100.Text
+    Txt50.Caption = FrmMonedas.Txt50.Text
+    Txt20.Caption = FrmMonedas.Txt20.Text
+    Txt10.Caption = FrmMonedas.Txt10.Text
+    Txt5.Caption = FrmMonedas.Txt5.Text
+    Txt1.Caption = FrmMonedas.Txt1.Text
+
+    TxtD50.Caption = FrmMonedas.TxtD50.Text
+    TxtD25.Caption = FrmMonedas.TxtD25.Text
+    TxtD10.Caption = FrmMonedas.TxtD10.Text
+    TxtD05.Caption = FrmMonedas.TxtD05.Text
+    TxtD01.Caption = FrmMonedas.TxtD01.Text
+
+'Txttot500.Caption = FrmMonedas.Txttot500.Text
+    TxtTot100.Caption = FrmMonedas.TxtTot100.Text
+    TxtTot50.Caption = FrmMonedas.TxtTot50.Text
+    TxtTot20.Caption = FrmMonedas.TxtTot20.Text
+    TxtTot10.Caption = FrmMonedas.TxtTot10.Text
+    TxtTot5.Caption = FrmMonedas.TxtTot5.Text
+    TxtTot1.Caption = FrmMonedas.TxtTot1.Text
+
+    TxtTotD50.Caption = FrmMonedas.TxtTotD50.Text
+    TxtTotD25.Caption = FrmMonedas.TxtTotD25.Text
+    TxtTotD10.Caption = FrmMonedas.TxtTotD10.Text
+    TxtTotD05.Caption = FrmMonedas.TxtTotD05.Text
+    TxtTotD01.Caption = FrmMonedas.TxtTotD01.Text
+
+    txtGranTotal.Caption = FrmMonedas.txtGranTotal.Text
+    LblSubtitulo2.Caption = FrmMonedas.Label1.Caption
+End Select
+End Sub
+

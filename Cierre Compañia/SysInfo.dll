@@ -1,0 +1,1 @@
+Provider=SQLOLEDB.1;Password=metro;Persist Security Info=True;User ID=metro;Initial Catalog=SistemaNominasMetro2;Data Source=NIEVRPYRLLXP

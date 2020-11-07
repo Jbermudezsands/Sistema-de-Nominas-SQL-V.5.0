@@ -1,0 +1,12 @@
+Línea 32: la clase MSAdodcLib.Adodc del control adoIncentivo no era una clase de control cargada.
+Línea 79: la clase MSAdodcLib.Adodc del control adoHorasExtras no era una clase de control cargada.
+Línea 126: la clase MSAdodcLib.Adodc del control adoConsulta no era una clase de control cargada.
+Línea 173: la clase MSAdodcLib.Adodc del control adoTurno no era una clase de control cargada.
+Línea 220: la clase MSAdodcLib.Adodc del control adoTipoNomina no era una clase de control cargada.
+Línea 267: la clase MSAdodcLib.Adodc del control adoPermisos no era una clase de control cargada.
+Línea 314: la clase MSAdodcLib.Adodc del control adoAsistencia no era una clase de control cargada.
+Línea 394: la clase Progress.osProgress del control ospHoras no era una clase de control cargada.
+Línea 412: la clase MSComCtl2.DTPicker del control dtpHHasta no era una clase de control cargada.
+Línea 424: la clase MSComCtl2.DTPicker del control dtpHDesde no era una clase de control cargada.
+Línea 584: la clase MSComCtl2.DTPicker del control dtpHasta no era una clase de control cargada.
+Línea 596: la clase MSComCtl2.DTPicker del control dtpDesde no era una clase de control cargada.

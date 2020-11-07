@@ -1,0 +1,32 @@
+[OPTIONS]
+Selected_Dept=PLASTICOS YANBER
+Selected_User=0
+Selected_FromDate=2014-06-02
+Selected_EndDate=2014-06-02
+
+[SYSCONTROL]
+DBConnection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Juan Bermudez\Sistemas\Sistema Reloj Neo\Att2003.mdb;Persist Security Info=False
+
+COM_RespTimeout=10
+NET_RespTimeout=20
+AutoDisconnect=0
+EnableTTS=0
+Language=Spanish
+AdminPwd=
+AutoDelRec=0
+DelayTime=300
+NETPort=5010
+
+[System]
+LastRunTime=2014-08-05 16:54:50
+
+//DeviceType:0(TC-D/TC-E);1(TC-E-N);2(TC-A-N);3(TC-B);4(TC-C);5(C2/C5);6(OA1000/OA3000);7(C100);8(T50);9(T5X);10(C3);11(C2C);12(FacePass)
+DeviceType=1
+
+Style=Blue
+
+Enable1N=0
+AutoDownload=0
+ntpServer=216.171.120.36
+FormWidth=1040
+FormHeight=744

@@ -1,0 +1,1 @@
+regsvr32 FaceSdk_V1.0.ocx

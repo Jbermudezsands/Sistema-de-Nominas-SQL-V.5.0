@@ -1,0 +1,654 @@
+ýVQHLPEDFILE_02.59ý
+
+[DICTIONARY]
+AF - Append Project FILES Section
+AM - Append Project MAP Section
+BI - Browse info
+AV - Audio/Video Project Options
+BN - Browse group names
+BR - Bitmap root
+CH - Character set
+CI - Citation
+CM - Context map
+CN - Context number
+CNI - Context Number Index
+CP - Compress
+CR - Copyright
+CS - Context string
+CSI - Context String Index
+CV - Compiler version
+DH - Defined help styles
+D2 - Defined help styles - ver 2.00
+FM - Font markers
+F2 - Font markers - ver 2.00
+HA - Help author
+HC - Help compiler dir
+HF - Help files
+HX - Help comments
+HT - Help topic section
+IC - Icon FileName
+IN - Index
+JM - Jump markers
+J2 - Jump markers - ver 2.00
+KW - Keywords
+LN - Language
+MD - Macro definitions
+MM - Multimedia markers
+MK - Multiple keywords
+MI - Macro info
+OK - Old key phrase
+OP - Optimize for  CDROM
+PJ - Project macro
+PM - Popup markers
+PR - Paragraph markers
+PT - Page title
+RC - RTF Compatibility
+TI - Title
+TM - Topic macro
+TP - Template
+TX - Help Text
+WA - Warning
+WD - Window definitions
+WM - Write map file
+WS - Windows specification source
+[END OF DICTIONARY]
+
+[HA]
+[EHA]
+
+[HX]
+[EHX]
+
+[AF]
+[EAF]
+
+[AM]
+[EAM]
+
+[HC]
+C:\HM20\HC.EXE
+[EHC]
+
+[CV]
+2
+[ECV]
+
+[WA]
+3
+[EWA]
+
+[CP]
+-1
+[ECP]
+
+[IN]
+1
+[EIN]
+
+[RC]
+6
+[ERC]
+
+[TI]
+Zeus.hlx
+[ETI]
+
+[LN]
+0
+[ELN]
+
+[OK]
+0
+[EOK]
+
+[OP]
+0
+[EOP]
+
+[PJ]
+2
+[EPJ]
+
+[WS]
+-1
+[EWS]
+
+[WM]
+0
+[EWM]
+
+[CH]
+0
+[ECH]
+
+[AV]
+0 0 0 0
+[EAV]
+
+[BR]
+C:\HM20
+[EBR]
+
+[HF]
+[EHF]
+
+[D2]
+0;10;0;0;0;0;0;MS Sans Serif;Default Help Text;
+0;12;0;-1;0;0;0;MS Sans Serif;Topic Heading;
+0;10;0;-1;0;0;0;MS Sans Serif;Emphasized Help Text;
+[ED2]
+
+[BN]
+1:Proyecto;
+[EBN]
+
+[MD]
+1:Movimiento;2:idSalir_Button;
+[EMD]
+
+[MI]
+000001BrowseButtons()
+000002CreateButton("idSalir","Salir","Exit()")
+[EMI]
+
+[WD]
+main="Zeus.hlx",(600,130,380,780),0,(255,255,128),(255,128,128),1
+[EWD]
+
+[HT]
+[PT]
+Control de Inventarios y Facturación
+[EPT]
+
+[F2]
+001002
+[EF2]
+
+[J2]
+009100040000009100050000009100060000009100230000009100170000009100070000009100080000009100090000009100110000
+[EJ2]
+
+[P2]
+009100030000
+[EP2]
+
+[PR]
+0311000000000000421100000800000005
+[EPR]
+
+[CN]
+ 1 
+[ECN]
+[CS]
+1
+[ECS]
+[TM]
+2
+[ETM]
+
+[TX]
+           Ayuda Zeus Nóminas
+
+
+d:\zeusno~1\dash.bmp ¿Nuevo Empleado?
+d:\zeusno~1\dash.bmp ¿Eliminar un registro?
+d:\zeusno~1\dash.bmp ¿Agregar un nuevo registro?
+d:\zeusno~1\dash.bmp  ¿Actualizar un registro?
+d:\zeusno~1\dash.bmp ¿Agregar Nueva Clave?
+d:\zeusno~1\dash.bmp ¿Buscar un registro?
+d:\zeusno~1\dash.bmp ¿Procesar un reporte?
+d:\zeusno~1\dash.bmp ¿Generar una Consulta?
+d:\zeusno~1\dash.bmp ¿Cambiar la Contraseña?
+d:\zeusno~1\dash.bmp ¿Como salir del programa?
+d:\zeusno~1\rabit.shg
+   Sistema de Nóminas
+
+
+
+
+
+
+
+[ETX]
+[EHT]
+
+[PT]
+windows
+[EPT]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+windows
+Esta es una ayuda proporcionada por el sistema de inventarios y Facturación "Zeus Facturación" para información del funcionamiento de este sofware haga click en las letras Verdes
+
+[ETX]
+[EHT]
+
+[PT]
+salir
+[EPT]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+salir
+    Para poder salir del programa es necesario que primero cierre todas las ventanas del programa como una forma de seguridad para la base de datos, luego ubiquese en el menu principal y haga click en salir, automaticamente abandonara el programa.
+
+[ETX]
+[EHT]
+
+[PT]
+¿Crear una nueva factura?
+[EPT]
+
+[BI]
+1:1;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+¿Como eliminar un registro?
+[EPT]
+
+[BI]
+1:2;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+¿Como agregar un nuevo registro?
+[EPT]
+
+[BI]
+1:3;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+¿Como buscar un registro especifico?
+[EPT]
+
+[BI]
+1:4;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+¿Como crear un reporte?
+[EPT]
+
+[BI]
+1:6;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+¿Como generar una consulta?
+[EPT]
+
+[BI]
+1:7;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+haga click
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+Cambiar Contraseña
+[EPT]
+
+[BI]
+1:8;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+menu Principal
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+clave vieja 
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+nueva clave 
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+confirmacion nueva clave
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+nivel de acceso
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+Agregar Clave
+[EPT]
+
+[BI]
+1:5;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+Revicion de Facturas
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[PT]
+Pantalla
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+
+
+[ETX]
+[EHT]
+
+[PT]
+Reportes Generales
+[EPT]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+Reportes Generales
+
+     En esta opción usted puede realizar los reportes, pero
+ no estan relacionados con reportes de productos, clientes 
+ y Facturación. Si no que estan en forma mas general(esta opción la
+ encuentra en el menú principal). 
+
+[ETX]
+[EHT]
+
+[PT]
+Contol de inventarios y facturación
+[EPT]
+
+[F2]
+001002
+[EF2]
+
+[J2]
+009100050000009100060000009100230000009100070000009100080000
+[EJ2]
+
+[PR]
+03110000000000005200000008000000050311000000000000420000000800000005
+[EPR]
+
+[CN]
+ 2 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+
+Contol de inventarios y facturación
+c:\rmc\rabit.shg
+c:\rmc\dash.bmp¿Como eliminar un registro?
+c:\rmc\dash.bmp¿Como agregar un registro?
+c:\rmc\dash.bmp ¿Como actualizar un nuevo registro?
+c:\rmc\dash.bmp¿Como buscar un registro?
+c:\rmc\dash.bmp¿Como Crear un reporte?
+
+  Trabajo de Visual Basic
+
+[ETX]
+[EHT]
+
+[PT]
+Control de inventarios y facturación
+[EPT]
+
+[F2]
+001002
+[EF2]
+
+[J2]
+009100070000009100230000009100040000009100080000
+[EJ2]
+
+[PR]
+03110000000000005200000008000000050311000000000000420000000800000005
+[EPR]
+
+[CN]
+ 3 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+
+Control de inventarios y facturación
+c:\rmc\rabit.shg
+c:\rmc\dash.bmp¿Como Buscar un registro?
+c:\rmc\dash.bmp ¿Como actualizar un nuevo registro?
+c:\rmc\dash.bmp Crear una factura Nueva
+c:\rmc\dash.bmp ¿Como Crear un reporte?
+
+ Trabajo de Visual Basic
+
+[ETX]
+[EHT]
+
+[PT]
+actualizar registro
+[EPT]
+
+[F2]
+001
+[EF2]
+
+[P2]
+009100130000009100160000
+[EP2]
+
+[PR]
+0311000000000000130000000800000005
+[EPR]
+
+[BI]
+1:9;
+[EBI]
+
+[CS]
+
+[ECS]
+[TX]
+
+Actualizar registro
+
+Este proceddimiento conta de los siguientes eventos:
+
+    1. Al presionar la tecla agregar se le presentara un
+        objeto que le solicitara su PassWord,Nivel de Acceso,
+        nombre del empledo.
+
+     2.El permiso para actualizar, sera otorgado a aquellas 
+        personas con Nivel de Acceso "1".
+
+     3.Después de logar permiso podra digitar el boton
+        actulizar, el cual desactivara los demas botones.
+
+      4. A continuación podrá actualizar los campos 
+           existentes.
+
+       5. Al actualizar el ultimo campo, tendra que dar enter,
+          para que el SoftWare diseñado entienda que esas,
+          son las actualizaciones que usted deseava, de lo 
+          contrario todos los botones permanecerán desactivados,
+          esperando que termine de modificar.  
+   
+       
+
+[ETX]
+[EHT]
+
+[PT]
+Temp Title 24
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+
+
+[ETX]
+[EHT]
+
+[EOF]

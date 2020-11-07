@@ -1,0 +1,30 @@
+VERSION 5.00
+Begin {82282820-C017-11D0-A87C-00A0C90F29FC} ARBaja 
+   Caption         =   "ActiveReport1"
+   ClientHeight    =   8595
+   ClientLeft      =   60
+   ClientTop       =   345
+   ClientWidth     =   11880
+   StartUpPosition =   3  'Windows Default
+   _ExtentX        =   20955
+   _ExtentY        =   15161
+   SectionData     =   "ARBaja.dsx":0000
+End
+Attribute VB_Name = "ARBaja"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub ActiveReport_ReportStart()
+Dim SqlReport As String
+
+DaoDtaBajas.DatabaseName = Ruta
+DaoDtaBajas.ConnectionString = Conexion
+SqlReport = "SELECT Bajas.CodEmpleado, Empleado.Nombre1, Empleado.Nombre2, Empleado.Apellido1, Empleado.Apellido2, Empleado.CodCargo, Cargo.Cargo, Empleado.CodDepartamento, Departamento.Departamento,  Bajas.AnnosTrabajados, Bajas.MesesTrabajados, Bajas.DiasTrabajados, Bajas.MontoNomPropor, Bajas.FechaBaja, Bajas.MontoVaca, Bajas.Monto13Mes, Bajas.MontoAnosTrab, Bajas.MontoCargoConfianza, Bajas.MontoAntiguedad, Bajas.MotivoBaja, Bajas.TipoBaja, Bajas.Otro, Bajas.MontoOtro, Bajas.Prestamo, Bajas.Deducciones, [Bajas].[MontoVaca]+[Bajas].[Monto13Mes]+[Bajas].[MontoAnosTrab]+[Bajas].[MontoCargoConfianza]+[Bajas].[MontoAntiguedad]+[Bajas].[MontoOtro]-[Bajas].[Prestamo]-[Bajas].[Deducciones] AS TotalaPagar FROM (Departamento INNER JOIN (Cargo INNER JOIN Empleado ON Cargo.CodCargo = Empleado.CodCargo) ON Departamento.CodDepartamento = Empleado.CodDepartamento) INNER JOIN Bajas ON Empleado.CodEmpleado = Bajas.CodEmpleado Where Bajas.CodEmpleado = '" & CodEmpleado & "'"
+DaoDtaBajas.RecordSource = SqlReport
+DaoDtaBajas.Refresh
+LblTitulo.Caption = Titulo
+LblSubtitulo.Caption = Subtitulo
+ImgLogo.Picture = LoadPicture(App.Path + "\fotos\Zw.bmp")
+End Sub
+

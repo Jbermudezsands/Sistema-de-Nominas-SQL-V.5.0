@@ -1,0 +1,15 @@
+Línea 37: la clase XtremeSuiteControls.GroupBox del control GroupBox2 no era una clase de control cargada.
+Línea 103: la clase XtremeSuiteControls.DateTimePicker del control DtpFechaSolicitud no era una clase de control cargada.
+Línea 140: la clase XtremeSuiteControls.GroupBox del control GroupBox3 no era una clase de control cargada.
+Línea 160: la clase XtremeSuiteControls.DateTimePicker del control DtpFechaInicio no era una clase de control cargada.
+Línea 181: la clase XtremeSuiteControls.DateTimePicker del control DtpFechaFin no era una clase de control cargada.
+Línea 211: la clase XtremeSuiteControls.PushButton del control PushButton1 no era una clase de control cargada.
+Línea 226: la clase XtremeSuiteControls.PushButton del control CmdSalir no era una clase de control cargada.
+Línea 242: la clase XtremeSuiteControls.PushButton del control CmdGrabar no era una clase de control cargada.
+Línea 258: la clase XtremeSuiteControls.PushButton del control CmdBorrar no era una clase de control cargada.
+Línea 366: la clase XtremeSuiteControls.GroupBox del control GroupBox1 no era una clase de control cargada.
+Línea 563: la clase XtremeSuiteControls.DateTimePicker del control DtpFechaIngreso no era una clase de control cargada.
+Línea 609: la clase XtremeSuiteControls.PushButton del control Command1 no era una clase de control cargada.
+Línea 625: la clase XtremeSuiteControls.ComboBox del control CmbTipoSolicitud no era una clase de control cargada.
+Línea 639: la clase XtremeSuiteControls.PushButton del control PushButton2 no era una clase de control cargada.
+Línea 793: la clase XtremeSuiteControls.ComboBox del control CmbClasificado no era una clase de control cargada.

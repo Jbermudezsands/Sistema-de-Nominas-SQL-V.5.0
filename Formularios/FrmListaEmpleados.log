@@ -1,0 +1,5 @@
+Línea 17: la clase XtremeSuiteControls.GroupBox del control GroupBox1 no era una clase de control cargada.
+Línea 29: la clase XtremeSuiteControls.PushButton del control CmdEditar no era una clase de control cargada.
+Línea 45: la clase XtremeSuiteControls.PushButton del control CmdSalir no era una clase de control cargada.
+Línea 61: la clase XtremeSuiteControls.PushButton del control PushButton1 no era una clase de control cargada.
+Línea 77: la clase XtremeSuiteControls.PushButton del control PushButton2 no era una clase de control cargada.

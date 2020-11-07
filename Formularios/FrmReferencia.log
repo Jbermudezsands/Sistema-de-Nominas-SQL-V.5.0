@@ -1,0 +1,67 @@
+Línea 21: la clase Project1.xp_canvas del control xp_canvas1 no era una clase de control cargada.
+Línea 30: la clase MSDataListLib.DataCombo del control DBCodigo no era una clase de control cargada.
+Línea 43: la clase Project1.xphelp del control xphelp1 no era una clase de control cargada.
+Línea 51: la clase Project1.xptopbuttons del control xptopbuttons1 no era una clase de control cargada.
+Línea 175: la clase MSAdodcLib.Adodc del control DtaDepartamento no era una clase de control cargada.
+Línea 12: la propiedad Icon de FrmDepartamentos tenía una referencia a archivo no válida.
+Línea 27: el nombre de la propiedad _ExtentX de xp_canvas1 no es válido.
+Línea 28: el nombre de la propiedad _ExtentY de xp_canvas1 no es válido.
+Línea 29: el nombre de la propiedad Caption de xp_canvas1 no es válido.
+Línea 31: el nombre de la propiedad Bindings de DBCodigo no es válido.
+Línea 37: el nombre de la propiedad _ExtentX de DBCodigo no es válido.
+Línea 38: el nombre de la propiedad _ExtentY de DBCodigo no es válido.
+Línea 39: el nombre de la propiedad _Version de DBCodigo no es válido.
+Línea 40: el nombre de la propiedad ListField de DBCodigo no es válido.
+Línea 41: el nombre de la propiedad Text de DBCodigo no es válido.
+Línea 48: el nombre de la propiedad _ExtentX de xphelp1 no es válido.
+Línea 49: el nombre de la propiedad _ExtentY de xphelp1 no es válido.
+Línea 56: el nombre de la propiedad _ExtentX de xptopbuttons1 no es válido.
+Línea 57: el nombre de la propiedad _ExtentY de xptopbuttons1 no es válido.
+Línea 60: la propiedad DownPicture de CmdSalir tenía una referencia a archivo no válida.
+Línea 63: la propiedad MouseIcon de CmdSalir tenía una referencia a archivo no válida.
+Línea 65: la propiedad Picture de CmdSalir tenía una referencia a archivo no válida.
+Línea 72: la propiedad DownPicture de CmdGrabar tenía una referencia a archivo no válida.
+Línea 75: la propiedad MouseIcon de CmdGrabar tenía una referencia a archivo no válida.
+Línea 77: la propiedad Picture de CmdGrabar tenía una referencia a archivo no válida.
+Línea 92: la propiedad DownPicture de CmdBorrar tenía una referencia a archivo no válida.
+Línea 95: la propiedad MouseIcon de CmdBorrar tenía una referencia a archivo no válida.
+Línea 97: la propiedad Picture de CmdBorrar tenía una referencia a archivo no válida.
+Línea 110: la propiedad DownPicture de CmdPrimero tenía una referencia a archivo no válida.
+Línea 113: la propiedad MouseIcon de CmdPrimero tenía una referencia a archivo no válida.
+Línea 115: la propiedad Picture de CmdPrimero tenía una referencia a archivo no válida.
+Línea 122: la propiedad DownPicture de CmdUltimo tenía una referencia a archivo no válida.
+Línea 125: la propiedad MouseIcon de CmdUltimo tenía una referencia a archivo no válida.
+Línea 127: la propiedad Picture de CmdUltimo tenía una referencia a archivo no válida.
+Línea 134: la propiedad DownPicture de CmdSiguiente tenía una referencia a archivo no válida.
+Línea 137: la propiedad MouseIcon de CmdSiguiente tenía una referencia a archivo no válida.
+Línea 139: la propiedad Picture de CmdSiguiente tenía una referencia a archivo no válida.
+Línea 146: la propiedad DownPicture de CmdAnterior tenía una referencia a archivo no válida.
+Línea 149: la propiedad MouseIcon de CmdAnterior tenía una referencia a archivo no válida.
+Línea 151: la propiedad Picture de CmdAnterior tenía una referencia a archivo no válida.
+Línea 180: el nombre de la propiedad _ExtentX de DtaDepartamento no es válido.
+Línea 181: el nombre de la propiedad _ExtentY de DtaDepartamento no es válido.
+Línea 182: el nombre de la propiedad ConnectMode de DtaDepartamento no es válido.
+Línea 183: el nombre de la propiedad CursorLocation de DtaDepartamento no es válido.
+Línea 184: el nombre de la propiedad IsolationLevel de DtaDepartamento no es válido.
+Línea 185: el nombre de la propiedad ConnectionTimeout de DtaDepartamento no es válido.
+Línea 186: el nombre de la propiedad CommandTimeout de DtaDepartamento no es válido.
+Línea 187: el nombre de la propiedad CursorType de DtaDepartamento no es válido.
+Línea 188: el nombre de la propiedad LockType de DtaDepartamento no es válido.
+Línea 189: el nombre de la propiedad CommandType de DtaDepartamento no es válido.
+Línea 190: el nombre de la propiedad CursorOptions de DtaDepartamento no es válido.
+Línea 191: el nombre de la propiedad CacheSize de DtaDepartamento no es válido.
+Línea 192: el nombre de la propiedad MaxRecords de DtaDepartamento no es válido.
+Línea 193: el nombre de la propiedad BOFAction de DtaDepartamento no es válido.
+Línea 194: el nombre de la propiedad EOFAction de DtaDepartamento no es válido.
+Línea 195: el nombre de la propiedad ConnectStringType de DtaDepartamento no es válido.
+Línea 199: el nombre de la propiedad Orientation de DtaDepartamento no es válido.
+Línea 201: el nombre de la propiedad Connect de DtaDepartamento no es válido.
+Línea 202: el nombre de la propiedad OLEDBString de DtaDepartamento no es válido.
+Línea 203: el nombre de la propiedad OLEDBFile de DtaDepartamento no es válido.
+Línea 204: el nombre de la propiedad DataSourceName de DtaDepartamento no es válido.
+Línea 205: el nombre de la propiedad OtherAttributes de DtaDepartamento no es válido.
+Línea 206: el nombre de la propiedad UserName de DtaDepartamento no es válido.
+Línea 207: el nombre de la propiedad Password de DtaDepartamento no es válido.
+Línea 208: el nombre de la propiedad RecordSource de DtaDepartamento no es válido.
+Línea 209: el nombre de la propiedad Caption de DtaDepartamento no es válido.
+Línea 219: el nombre de la propiedad _Version de DtaDepartamento no es válido.

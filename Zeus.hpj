@@ -1,0 +1,72 @@
+[OPTIONS]
+ROOT = C:\NOMINAS
+COMPRESS = FALSE
+WARNING = 2
+REPORT = 1
+CONTENTS = Contenido_Zeus_N_minas
+ERRORLOG = C:\NOMINAS\ZEUS.ERR
+ICON = LIBRARY.ICO
+TITLE = Sistema de Nominas
+MULTIKEY = M
+
+[BAGGAGE]
+
+
+[BITMAPS]
+c:\nominas\dash.bmp
+c:\Nominas\dash.bmp
+c:\nominas\botonx.bmp
+c:\zeusno~1\consulta.bmp
+c:\zeusno~1\flecha.bmp
+c:\zeusno~1\botonx.bmp
+c:\zeusno~1\dash.bmp
+
+[FILES]
+C:\NOMINAS\ZEUS.RTF
+
+[WINDOWS]
+main="Sistema de Nominas",(525,50,480,900),0,(230,233,165),(255,255,128),1
+
+[MAP]
+Contenido_Zeus_N_minas     1; Contenido Zeus Nóminas
+Compa_ias                  2; Compañias
+Tipos_de_Tablas            3; Tipos de Tablas
+Salir                      4; Salir
+Editar_Niveles             5; Editar Niveles
+Usuarios                   6; Usuarios
+Usuarios_del_Sistema       42; Usuarios del Sistema
+Rutina                     43; Rutina
+Niveles_de_Seguridad       44; Niveles de Seguridad
+Informa_Usuario            10; Informa Usuario
+Barra_de_Herramientas      11; Barra de Herramientas
+Registro_Empleado          12; Registro Empleado
+Registro                   45; Registro
+Generales                  14; Generales
+Historico                  15; Historico
+Boton_X                    46; Boton X
+Consulta                   47; Consulta
+Informacion                48; Informacion
+Destajo                    49; Destajo
+Salario_Fijo               50; Salario Fijo
+Comisiones                 51; Comisiones
+Salario_FijoOComisiones    52; Salario Fijo/Comisiones
+Anotaciones                23; Anotaciones
+Departamentos              24; Departamentos
+Cargo                      25; Cargo
+Incapacidades              26; Incapacidades
+Prestamos                  27; Prestamos
+Tipo_Nomina                28; Tipo Nomina
+Tabla_InssOIr              29; Tabla Inss/Ir
+Tipo_Incapacidad           30; Tipo Incapacidad
+Incapacidad                31; Incapacidad
+Nuevo_Registro             53; Nuevo Registro
+Tabla_Inss                 54; Tabla Inss
+Tabla_Ir                   55; Tabla Ir
+Configuracion              56; Configuracion
+Calculadora                57; Calculadora
+Registro_Mondeda           37; Registro Mondeda
+Consulta_Cambio_Moneda     38; Consulta Cambio Moneda
+CrearOAbrir_Respaldo       39; Crear/Abrir Respaldo
+Ruta                       40; Ruta
+Exportacion_de_Datos       41; Exportacion de Datos
+Tama_o_de_los_Campos       58; Tamaño de los Campos

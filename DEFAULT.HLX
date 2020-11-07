@@ -1,0 +1,167 @@
+ýVQHLPEDFILE_02.59ý
+
+[DICTIONARY]
+AF - Append Project FILES Section
+AM - Append Project MAP Section
+BI - Browse info
+AV - Audio/Video Project Options
+BN - Browse group names
+BR - Bitmap root
+CH - Character set
+CI - Citation
+CM - Context map
+CN - Context number
+CNI - Context Number Index
+CP - Compress
+CR - Copyright
+CS - Context string
+CSI - Context String Index
+CV - Compiler version
+DH - Defined help styles
+D2 - Defined help styles - ver 2.00
+FM - Font markers
+F2 - Font markers - ver 2.00
+HA - Help author
+HC - Help compiler dir
+HF - Help files
+HX - Help comments
+HT - Help topic section
+IC - Icon FileName
+IN - Index
+JM - Jump markers
+J2 - Jump markers - ver 2.00
+KW - Keywords
+LN - Language
+MD - Macro definitions
+MM - Multimedia markers
+MK - Multiple keywords
+MI - Macro info
+OK - Old key phrase
+OP - Optimize for  CDROM
+PJ - Project macro
+PM - Popup markers
+PR - Paragraph markers
+PT - Page title
+RC - RTF Compatibility
+TI - Title
+TM - Topic macro
+TP - Template
+TX - Help Text
+WA - Warning
+WD - Window definitions
+WM - Write map file
+WS - Windows specification source
+[END OF DICTIONARY]
+
+[HA]
+[EHA]
+
+[HX]
+[EHX]
+
+[AF]
+[EAF]
+
+[AM]
+[EAM]
+
+[HC]
+C:\HM20\HC.EXE
+[EHC]
+
+[CV]
+2
+[ECV]
+
+[WA]
+3
+[EWA]
+
+[CP]
+-1
+[ECP]
+
+[IN]
+1
+[EIN]
+
+[RC]
+6
+[ERC]
+
+[TI]
+default.hlx
+[ETI]
+
+[LN]
+0
+[ELN]
+
+[OK]
+0
+[EOK]
+
+[OP]
+0
+[EOP]
+
+[PJ]
+0
+[EPJ]
+
+[WS]
+0
+[EWS]
+
+[WM]
+0
+[EWM]
+
+[CH]
+0
+[ECH]
+
+[AV]
+0 0 0 0
+[EAV]
+
+[BR]
+[EBR]
+
+[HF]
+[EHF]
+
+[D2]
+0;10;0;0;0;0;0;MS Sans Serif;Default Help Text;
+0;12;0;-1;0;0;0;MS Sans Serif;Topic Heading;
+0;10;0;-1;0;0;0;MS Sans Serif;Emphasized Help Text;
+[ED2]
+
+[BN]
+[EBN]
+
+[MD]
+[EMD]
+
+[MI]
+[EMI]
+
+[WD]
+main="default.hlx",(15,15,1000,1000),0,(255,255,255),(255,255,255),0
+[EWD]
+
+[HT]
+[PT]
+Temp Title 1
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+fdsf
+
+[ETX]
+[EHT]
+
+[EOF]

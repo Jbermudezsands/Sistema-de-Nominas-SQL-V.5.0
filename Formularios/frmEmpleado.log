@@ -1,0 +1,44 @@
+Línea 11: no se pudo establecer la propiedad Icon de frmEmpleado.
+Línea 156: la propiedad TabPicture(0) de SSTab1 tenía una referencia a archivo no válida.
+Línea 162: la propiedad TabPicture(1) de SSTab1 tenía una referencia a archivo no válida.
+Línea 169: la propiedad TabPicture(2) de SSTab1 tenía una referencia a archivo no válida.
+Línea 174: la propiedad TabPicture(3) de SSTab1 tenía una referencia a archivo no válida.
+Línea 182: la propiedad TabPicture(4) de SSTab1 tenía una referencia a archivo no válida.
+Línea 191: la propiedad TabPicture(5) de SSTab1 tenía una referencia a archivo no válida.
+Línea 199: la propiedad TabPicture(6) de SSTab1 tenía una referencia a archivo no válida.
+Línea 216: la propiedad Picture de CmdAnular tenía una referencia a archivo no válida.
+Línea 216: la propiedad DownPicture de CmdAnular tenía una referencia a archivo no válida.
+Línea 234: la propiedad Picture de CmdAgregarSubsidio tenía una referencia a archivo no válida.
+Línea 234: la propiedad DownPicture de CmdAgregarSubsidio tenía una referencia a archivo no válida.
+Línea 257: no se pudo establecer la propiedad Bindings de DBCTipoSubsidio.
+Línea 335: la propiedad Picture de CmdAgregarDeduccion tenía una referencia a archivo no válida.
+Línea 335: la propiedad DownPicture de CmdAgregarDeduccion tenía una referencia a archivo no válida.
+Línea 336: no se pudo establecer la propiedad Bindings de DbcDeducciones.
+Línea 399: la propiedad Picture de CmdAgregarIncentivo tenía una referencia a archivo no válida.
+Línea 399: la propiedad DownPicture de CmdAgregarIncentivo tenía una referencia a archivo no válida.
+Línea 400: no se pudo establecer la propiedad Bindings de DbCTipoIncentivo.
+Línea 709: no se pudo establecer la propiedad OleObjectBlob de SkinLabel2.
+Línea 709: no se puede cargar el control SkinLabel2.
+Línea 717: no se pudo establecer la propiedad OleObjectBlob de SkinLabel1.
+Línea 717: no se puede cargar el control SkinLabel1.
+Línea 778: no se pudo establecer la propiedad List de CmbTipoPago.
+Línea 778: no se pudo establecer la propiedad ItemData de CmbTipoPago.
+Línea 808: no se pudo establecer la propiedad List de CmbSalarioMinimo.
+Línea 808: no se pudo establecer la propiedad ItemData de CmbSalarioMinimo.
+Línea 817: no se pudo establecer la propiedad List de CmbExentoInss.
+Línea 817: no se pudo establecer la propiedad ItemData de CmbExentoInss.
+Línea 826: no se pudo establecer la propiedad List de CmbPagoInssPatronal.
+Línea 826: no se pudo establecer la propiedad ItemData de CmbPagoInssPatronal.
+Línea 835: no se pudo establecer la propiedad List de CmbExentoIr.
+Línea 835: no se pudo establecer la propiedad ItemData de CmbExentoIr.
+Línea 844: no se pudo establecer la propiedad Bindings de DBCGrupo.
+Línea 857: no se pudo establecer la propiedad Bindings de DBCTipoNomina.
+Línea 1216: la propiedad MouseIcon de CmdIncapacidad tenía una referencia a archivo no válida.
+Línea 1216: la propiedad Picture de CmdIncapacidad tenía una referencia a archivo no válida.
+Línea 1277: no se pudo establecer la propiedad List de CmbIncapacidad.
+Línea 1277: no se pudo establecer la propiedad ItemData de CmbIncapacidad.
+Línea 1286: no se pudo establecer la propiedad Bindings de DBCargoInicial.
+Línea 1299: no se pudo establecer la propiedad Bindings de DBCargoAnterior.
+Línea 1364: no se pudo establecer la propiedad Bindings de DBCargoActual.
+Línea 1543: no se pudo establecer la propiedad List de DBCodigoEmpleado7.
+Línea 1543: no se pudo establecer la propiedad ItemData de DBCodigoEmpleado7.

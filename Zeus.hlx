@@ -1,0 +1,2871 @@
+ýVQHLPEDFILE_02.59ý
+
+[DICTIONARY]
+AF - Append Project FILES Section
+AM - Append Project MAP Section
+BI - Browse info
+AV - Audio/Video Project Options
+BN - Browse group names
+BR - Bitmap root
+CH - Character set
+CI - Citation
+CM - Context map
+CN - Context number
+CNI - Context Number Index
+CP - Compress
+CR - Copyright
+CS - Context string
+CSI - Context String Index
+CV - Compiler version
+DH - Defined help styles
+D2 - Defined help styles - ver 2.00
+FM - Font markers
+F2 - Font markers - ver 2.00
+HA - Help author
+HC - Help compiler dir
+HF - Help files
+HX - Help comments
+HT - Help topic section
+IC - Icon FileName
+IN - Index
+JM - Jump markers
+J2 - Jump markers - ver 2.00
+KW - Keywords
+LN - Language
+MD - Macro definitions
+MM - Multimedia markers
+MK - Multiple keywords
+MI - Macro info
+OK - Old key phrase
+OP - Optimize for  CDROM
+PJ - Project macro
+PM - Popup markers
+PR - Paragraph markers
+PT - Page title
+RC - RTF Compatibility
+TI - Title
+TM - Topic macro
+TP - Template
+TX - Help Text
+WA - Warning
+WD - Window definitions
+WM - Write map file
+WS - Windows specification source
+[END OF DICTIONARY]
+
+[HA]
+[EHA]
+
+[HX]
+[EHX]
+
+[AF]
+[EAF]
+
+[AM]
+[EAM]
+
+[HC]
+C:\HM20\HC.EXE
+[EHC]
+
+[CV]
+2
+[ECV]
+
+[WA]
+2
+[EWA]
+
+[CP]
+0
+[ECP]
+
+[IN]
+1
+[EIN]
+
+[RC]
+6
+[ERC]
+
+[TI]
+Sistema de Nominas
+[ETI]
+
+[IC]
+LIBRARY.ICO
+[EIC]
+
+[LN]
+0
+[ELN]
+
+[OK]
+0
+[EOK]
+
+[OP]
+0
+[EOP]
+
+[PJ]
+0
+[EPJ]
+
+[WS]
+-1
+[EWS]
+
+[WM]
+0
+[EWM]
+
+[CH]
+0
+[ECH]
+
+[AV]
+0 0 0 0
+[EAV]
+
+[BR]
+[EBR]
+
+[HF]
+[EHF]
+
+[D2]
+0;10;0;0;0;0;0;MS Sans Serif;Default Help Text;
+0;12;0;-1;0;0;0;MS Sans Serif;Topic Heading;
+0;10;0;-1;0;0;0;MS Sans Serif;Emphasized Help Text;
+800000;16;0;-1;0;0;0;Garamond;New Style 4;
+80;10;-1;0;0;0;0;Arial;New Style 5;
+FF;10;0;0;0;0;0;Arial Black;New Style 6;
+0;10;0;-1;0;0;0;Centaur;New Style 7;
+8080;10;-1;-1;0;0;0;Comic Sans MS;New Style 8;
+[ED2]
+
+[BN]
+[EBN]
+
+[MD]
+[EMD]
+
+[MI]
+[EMI]
+
+[WD]
+main="Sistema de Nominas",(525,50,480,900),0,(230,233,165),(255,255,128),1
+[EWD]
+
+[HT]
+[PT]
+Contenido Zeus Nóminas
+[EPT]
+
+[KW]
+Menu,
+[EKW]
+
+[MK]
+,11,
+[EMK]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100020000009100120000009100030000009100390000009100060000009100370000009100360000009100100000009100410000009100110000
+[EJ2]
+
+[P2]
+009100040000
+[EP2]
+
+[PR]
+0311000000000000520000002400000005
+[EPR]
+
+[CN]
+ 1 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Contenido Sistema de  Nóminas
+
+
+c:\nominas\dash.bmp Compañias
+c:\nominas\dash.bmp Registro Empleado
+c:\nominas\dash.bmp Tipos de Tablas
+c:\nominas\dash.bmp Crear/Abrir Respaldo
+c:\nominas\dash.bmp Registro Usuarios
+c:\nominas\dash.bmp Cambio Moneda
+c:\nominas\dash.bmp Calculadora
+c:\nominas\dash.bmp Informacion Usuarios
+c:\nominas\dash.bmp Exportacion de Datos
+ c:\nominas\dash.bmp Importacion de Datos
+c:\nominas\dash.bmp Barra de Herramientas
+c:\nominas\dash.bmp Salir del Programa
+
+[ETX]
+[EHT]
+
+[PT]
+Compañias
+[EPT]
+
+[KW]
+Compañias,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100050000
+[EJ2]
+
+[PR]
+0311000000000000520000002400000005
+[EPR]
+
+[CN]
+ 2 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Compañias
+
+- Para Crear Compañias en Zeus Nóminas Usted
+  Necesita   Seguir la Siguiente Ruta: Archivo y 
+  Luego seleccione con el Mouse Compañia en la
+  cual le Apareceran las Siguientes Opciones:
+       
+       c:\Nominas\dash.bmp Editar Niveles
+
+
+[ETX]
+[EHT]
+
+[PT]
+Tipos de Tablas
+[EPT]
+
+[KW]
+Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100230000009100240000009100250000009100260000009100270000009100280000009100290000
+[EJ2]
+
+[PR]
+0311000000000000520000002400000005
+[EPR]
+
+[CN]
+ 3 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Tipos de Tablas
+
+- Para poder accesar en las tipos de tablas
+  existentes en el sistema, necesitamos 
+  primeramente, hacer click en archivos y 
+  luego seleccionemos Tablas, donde nos
+  aparecera una serie de tablas como las 
+  siguientes:
+
+  c:\nominas\dash.bmp Anotaciones
+  c:\nominas\dash.bmp Departamentos
+  c:\nominas\dash.bmp Cargo
+  c:\nominas\dash.bmp Incapacidades
+  c:\nominas\dash.bmp Prestamos
+  c:\nominas\dash.bmp Tipo Nómina
+  c:\nominas\dash.bmp Tabla INSS/IR
+
+[ETX]
+[EHT]
+
+[PT]
+Salir
+[EPT]
+
+[KW]
+Salir,
+[EKW]
+
+[F2]
+001
+[EF2]
+
+[P2]
+009100160000
+[EP2]
+
+[CN]
+ 4 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Salir
+
+Para Salir del Programa Tiene dos opciones
+Puede hacerlo, por medio de archivo Salir o 
+simplemente haga click en la c:\nominas\botonx.bmp de la parte 
+superior del programa.Sial momento de salir
+realizo modificaciones,zeus nominas detectara
+cualquier modificacion que realice en el
+sistema y preguntara si desea guardarlo.
+
+[ETX]
+[EHT]
+
+[PT]
+Editar Niveles
+[EPT]
+
+[KW]
+Editar Niveles,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100020000009100060000
+[EJ2]
+
+[P2]
+009100090000009100070000009100080000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 5 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Editar Niveles
+
+-El acceso a Editar Niveles lo podemos optener
+ cuando hagamos click en  Archvios, Compañias,
+ Editar Niveles de seguridad.  Para poder editar 
+ niveles de  seguridad es necesario primero haver 
+ creado las cuentas a los usuarios por que  de lo
+ contrario, el sistema bloqueará esta  opcion, 
+ mientras  no se haga esta funcion.
+
+Editar Niveles le Permite Crear Acceso a los
+distintos  usuarios de una manera, rapida y
+sensilla. La ventana de Edita le muestra una 
+lista de los usuarios del Sistema que tienen  
+acceso al sistema (ubicado en la Parte
+izquierda de la  pantalla) y una lista de todas
+las rutinas en la cual usted  puede escoger.
+En la parte inferior de la Ventana tiene las 
+distintas opciones para negar el acceso de un 
+determinado usuario a siertas rutinas. para algunas 
+rutinas tendra apagada algunas opciones, esto es 
+por que en esa rutina nunca ejecutara esa opcion, 
+por lo tanto Zeus  lo bloqueara.
+ 
+Tambien encontrara en la parate inferior dos
+botones, Aceptar y Cancelar. Acepartar le sirve 
+para que el sistema entienda que usted ha 
+elegida determinadas opciones de acceso al 
+sistema, si  usted llegara a cambiar de Usuario 
+del sistema o Rutinas el sistema no modificara 
+ninguna opcion, Zeus entendera que todo queda
+por defecto como estaba anteriormente. 
+ 
+ 
+
+
+[ETX]
+[EHT]
+
+[PT]
+Usuarios
+[EPT]
+
+[KW]
+Crear Accesos,Registro de Usuarios,Usuarios,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[P2]
+009100070000009100100000009100040000009100080000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 6 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Usuarios
+
+Para Crear Usuarios o Cuentas de Usuarios
+en el sistema, lo encontrara en Opciones/
+Usuarios. en esta ventana usted tendrá la 
+opcion de crear un usuario del sistema.
+Le apareceran tres campos, en la cual es 
+obligatorio llenarlos. uno de los campos es
+Nombre del usuario, es aqui donde se llena
+en nombre de la persona a la que se le esta
+creando el permiso,este nombre puede ser 
+nemonico o alfanumerico (Letras Mescladas 
+con numeros), es un campo requerido por el
+sistema osea que no se puede dejar en blanco.
+
+el segundo campo que aparece en esta ventana
+es el  Nivel de Usuario, que se define solo 
+para que Zeus pueda identificar quien es el Jefe
+en el sistema o quien es el que tiene mayor 
+autoridad de Permisos . Es recomendable en 
+caso que usted quiera tener muchos niveles de
+acceso en Zeus que ponga el nivel maximo que
+en este caso es 100 desde aqui usted podra 
+delimitar una gran variedad de niveles para no 
+limitar al sistema con un rango pequeño. Esto es
+por que despues que le define el primer nivel en
+Zeus Nóminas este ubica dicho nivel como el 
+maximo en el sistema y no se prodra modificar
+luego. Para saber que Usuario esta actualmente
+en el sistema debe hacerle click en Opciones/
+Informa Usuario. Este campo es solo numerico
+por lo tanto no dejara que usted agrege un tipo
+diferente.
+
+El tercer campo en requerido en el sistema y es
+la clave de acceso, este campo es de tipo
+alfanumerico. Lo que le permite libertad para
+escribir la clave, de la forma en que usted
+decida.
+
+En la parte inferior del sistema usted tiene la
+opcion de Grabar, Borrar, Salir, cuando usted 
+hace click en grabar este ejecuta una serie de 
+acciones para saber si los datos estan correctos, 
+de lo contrario no graba el registro. si todo esta
+correcto le pedirá que repita la clave, esto es
+para saber si fue correctamente introducida en el
+sistema. De lo contrario le pedira que repita
+nuevamenta la clave. Cuando usted intenta Borrar
+a un usuario Zeus preguntara si realmente esta 
+seguro de borrarlo, cuando la respuesta sea si
+usted elimina el registro.
+Si intenta eliminar un registro, y este tiene nivel 
+superior zeus no permintira esta accion. de igual
+manera ocurre cuando selecciona un usuario de
+nivel superior.
+
+Cuando intenta salir de  Zeus o de la rutina
+usuarios y ejecutó algún cambio Zeus preguntara
+si desea guardar los cambios, como simpre Zeus
+está tratando de resguardar los registros.
+
+[ETX]
+[EHT]
+
+[PT]
+Usuarios del Sistema
+[EPT]
+
+[KW]
+Usuario del Sistema,
+[EKW]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+Usuarios del Sistema
+
+Son las personas autorizadas por el
+dueño o la persona a cargo del sistema,
+para ejecutar todas o algunas de las 
+opciones que posee Zeus Nóminas.
+
+[ETX]
+[EHT]
+
+[PT]
+Rutina
+[EPT]
+
+[KW]
+Rutina,
+[EKW]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+Rutina
+
+Son todas las Distintas, Ventanas o
+procedimiento que es capas de ejecutar
+Zeus Nóminas.
+
+[ETX]
+[EHT]
+
+[PT]
+Niveles de Seguridad
+[EPT]
+
+[F2]
+001
+[EF2]
+
+[P2]
+009100070000
+[EP2]
+
+[CS]
+
+[ECS]
+[TX]
+Niveles de Seguridad
+
+Es la manera en la Zeus Nóminas puede 
+saber, quien es el jefe de quien en la 
+empresa y de esta manera podra
+negar y dar permisos a los usuarios del sistema
+
+[ETX]
+[EHT]
+
+[PT]
+Informa Usuario
+[EPT]
+
+[KW]
+Informacion Usuario,Usuario Actual,
+[EKW]
+
+[F2]
+001
+[EF2]
+
+[P2]
+009100080000
+[EP2]
+
+[CN]
+ 10 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Informa Usuario
+
+esta ventana le permite saber que usurio 
+esta actualmente operando el sistema,
+este le brinda la informacion del nombre del
+usuario y el nivel de acceso, para saber la 
+clave de acceso o existe ninguna rutina que le
+permita investigarlo.
+
+[ETX]
+[EHT]
+
+[PT]
+Barra de Herramientas
+[EPT]
+
+[KW]
+Barra de Herramientas,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100030000009100060000009100040000
+[EJ2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 11 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Barra de Herramientas
+
+La barra de herramientas se encuentra, en la
+parte superior de Zeus, por defecto esta
+visible. A  menos que se le cambie la opcion.
+esto puede hacerse desde Opciones/
+barra de herramientas. si se encuentra
+marchado quiere decir que esta visible de lo
+contrario indica que no se mostrara la barra 
+de herramientas. en la barra de herramientas
+podemos encontrar todos lo acceso directos
+frecuentemente usados en Zeus, como los
+registros de empleados,Abrir o Crear 
+respaldos de Zeus, Los Tipos de  tablas ,
+Registro de Usuarios, Registro de Moneda
+y el Boton Salir
+
+
+[ETX]
+[EHT]
+
+[PT]
+Registro Empleado
+[EPT]
+
+[KW]
+Datos Empleados,Empleados,Registro Empleados,
+[EKW]
+
+[F2]
+003004004004004004
+[EF2]
+
+[J2]
+009100140000009100150000009100180000
+[EJ2]
+
+[P2]
+009100130000009100130000009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 12 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Registro Empleado
+
+Para poder accesar al Registro de Empleados
+la ruta correcta es archivo/empleados, cuando
+esta ubicado en el registro de empleados
+podrá observar que está dividido en tres 
+partes Principales que son:
+
+c:\nominas\dash.bmp Generales
+c:\nominas\dash.bmp Historico
+c:\nominas\dash.bmp Informacion
+
+en la parte inferior de la venta de Registro de
+empleados se encuentran ubicados el boton
+de:
+ 
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+empleados, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos, para grabar un registro nuevo
+existen campos totalmente necesarios en el
+sistema como son: Primer Nombre, Primer
+Apellido, Direccion,Nacionalidad, Sexo,
+Departamento al que pertenece el 
+empleado y el cargo que ocupa en dicho
+departamento.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Registro
+[EPT]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+Registro
+
+El registro es un campo o un datos que 
+se almacena en las base de datos de
+Zeus Nóminas, tambien puede ser un bloque
+de datos en las distintas ventanas del sistema.
+
+[ETX]
+[EHT]
+
+[PT]
+Generales
+[EPT]
+
+[KW]
+Datos Empleados,Empleados,Generales,Registro Empleados,
+[EKW]
+
+[F2]
+003004004004004004004004004004004004004004004005
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 14 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Generales
+
+En los Datos Generales del Empleado 
+tenemos todos los datos basicos, existen
+campos requeridos en el sistema como son:
+Primer Nombre, Primer Apellido, Direccion,
+Nacionalidad, Sexo, Departamento al que 
+pertenece el empleado y el cargo que ocupa
+en dicho departamento.
+
+Para moverse en los campos usted puede 
+utilizar en Enter o Entro. En los datos 
+generales se pueden agregar fotos,
+eliminar fotos si es su deseo, pero
+existen algunas condiciones para estos
+como por ejemplo:
+
+Exite un archivo predeterminado por el
+sistema que es el archivo Zw que bajo
+niguna razon intente modificarlo pues
+podria ocacionar daños en el sistema.
+tambien si intenta agregar una foto
+y no existe un empleado activo no podrá
+realizar ninguna funcion el sistema.
+De igual Manera sucede cuando intenta 
+eliminar la imagen predeterminada el
+sistema nunca dejara que esto suceda.
+
+Existen un Boton llamado Anotaciones que
+coincide con la tabla anotaciones, solo que
+al seleccionar un empleado especifico 
+anotaciones mostrará la informacion
+almacenada para este empleado en comun.
+
+Numero: es un campo de Tipo Alfanumerico
+es Requerido por el sistema, en base a este
+codigo se controla totalmente a los empleados
+
+Primer Nombre: como se indica es para llenar
+el primer nombre del empleado. Es requerido
+por el sistema.
+
+Segundo Nombre: es para introducir el segundo
+nombre en caso que tenga, por esta razon no es
+obligatorio introducirlo, no es requerido.
+
+Primer Apellido: es para introducir el primer
+apellido del empleado, es requerido por el 
+sistema.
+
+Segundo Apellido: es para llenar con el seguno
+apellido. no es requerido por el sistema.
+
+Direccion: es requerido por el sistema y se 
+introduce la direccion exacta del empleado.
+
+Nacionalidad: tambien es requerido por el 
+sistema, tiene la libertada de indicar el Pais
+de nacimiento del empleado.
+
+Cod. Postal: el codigo postal no es requerido.
+
+Sexo: es para indicar el sexo del empleado, es
+requerido por el sistema.
+
+Ruc#: Le indica al sistema si el empleado tiene
+algun numero Ruc para pagar los impuestos, 
+no es requerido por el sistema.
+
+Inss#: Le indica al sistema si el empleado tiene
+algun numero Inss. No es requerido por el
+Sistema.
+
+Departamento/Cargo: es para señalar el 
+departamento al que pertenece el empleado,
+como tambien el cargo que ocupa en dicho
+departamento. los dos campos son Requeridos
+por el sistema.
+
+Sindicalista: Es para diferenciar los empleados
+que son sindicalistas o no, solo se responde
+si o no.
+
+Importante: Siempre que agrege una foto
+a un empleado y este tenga activa una foto
+Zeus no preguntará si desea reescribirlo, 
+por que el entiende que la ruta fue 
+cuidadosamente seleccionada y no existe
+ninguna duda, por lo tanto Zeus reescribe 
+la foto vieja por la nueva.
+
+[ETX]
+[EHT]
+
+[PT]
+Historico
+[EPT]
+
+[KW]
+Datos Empleados,Empleados,Historico,Registro Empleados,
+[EKW]
+
+[F2]
+003004004004004004004004004004004004004004004004004
+[EF2]
+
+[P2]
+009100170000009100170000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 15 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Historico
+
+Los Datos historicos de los empleados es 
+un poco mas sencillo que los datos generales
+por que aqui la mayoria de campos pueden 
+quedar vacios, pero los Campos de Debito
+y Credito no pues esta informacion la utilizará
+Zeus para poder exporta los datos o tracciones
+a otros sistema ajenos a Zeus entre estos
+sistemas tenemos Pacioli.
+Por lo tanto usted es capas de elegir las
+las cuentas de Debito y Credito segun su 
+catalogo de cuentas para poder agregarlas
+a dicho catalogo sin ningun problema.
+
+Nacimiento: Este campo no es requerido y 
+su finalidad es indicar la fecha en que nacio
+el empleado, puede se llenado en cualquier
+momento, y es un campo de tipo fecha.
+
+Contrato: este campo no indica la fecha en
+que se inicia el contrato de la empresa,
+no es requerido por el sistema.
+
+Cargo Inicial: nos indica el cargo con que el
+empleado comenzo en la empresa. este 
+campo no es requerido por Zeus.
+
+Cargo Anterior: su finalidad es indicar el cargo
+que logro el empleado antes de su ultimo 
+cargo o el actual. No es requerido por el 
+sistema.
+
+Cargo Actual: es el cargo  en el que se 
+desempeña el empleado en estos momentos.
+No es requerido por el sistema.
+
+Sdo Inicial: Es el sueldo con la cual empezo el
+empleado, No es requerido por el sistema.
+
+Sdo Anterior: Es el sueldo que logro el
+empleado antes de tener el salario actual.
+No es requerido por el sistema.
+
+Sdo Actual: Es el sueldo que tiene
+actualmente el empleado, No es requerido
+por el sistema.
+
+Fecha Baja/Motivo Baja: esto es para llevar un
+historial de los empleados en la empresa
+aunque no se encuentre laborando, no es
+requerido por Zeus.
+
+Aumento/Motivo Aumento/Fecha Aumento: es
+para llevar un historico del ultimo aumento,
+la fecha de ese aumento y el motivo por la 
+cual se otorgó ese aumento. No es requerido
+por el sistema.
+
+Inicio Susp: este campo es de tipo fecha
+es para saber, cuando un empleado está
+suspendido y cuando se inicio dicha
+suspencion. No es requerido.
+
+Susp. Hasta: este se utiliza para saber 
+hasta cuando se suspende a un empleado
+y poder incorporarlo a la Nómina.
+
+Motivo Susp: Es para saber la razon de la
+suspencion y quienes la autorizaron en la 
+empresa.
+Tambien existen dos campos adicionales
+como son:
+
+Con Prestamos: esto indica con un si o no
+dependiendo si el empleado seleccionado tiene
+algun prestamo, este campo no esta directamente
+relacionado con los Historicos por lo tanto aunque
+usted cambie esta opcion Zeus no ejecutara esta
+orden por que es de solo consulta como lo indica
+el icono c:\zeusno~1\consulta.bmp
+
+Incapacidades: Al igual que prestamos esto es
+de solo consulta por lo tanto cumple con las
+mismas condiciones que prestamos, la finalidad
+de estos campos es para evitar que usted
+busque estos datos de los empleados, en lugar
+de esto lo haga Zeus lo hace. Tambien tiene un
+icono de conultal como: c:\zeusno~1\consulta.bmp
+
+[ETX]
+[EHT]
+
+[PT]
+Boton X
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+Este Boton se Encuentra ubicado en la
+parte superior de cualquier ventana e 
+incluso del mismo Zeus, haga click 
+en este lugar para Salir.
+
+[ETX]
+[EHT]
+
+[PT]
+Consulta
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+Este Boton unicamente se utiliza para realizar
+una consulta, donde encuentre este icono le
+indicara que podra consultar.
+
+[ETX]
+[EHT]
+
+[PT]
+Informacion
+[EPT]
+
+[KW]
+Datos Empleados,Empleados,Informacion,Registro Empleados,
+[EKW]
+
+[F2]
+003004004004004004004004004
+[EF2]
+
+[P2]
+009100190000009100200000009100210000009100220000009100070000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CS]
+
+[ECS]
+[TX]
+Informacion
+
+Esto es el corazon del registro de empleados
+por que es donde usted puede especificar el
+Tipo de Nomina que está utilizando(Menusal,
+Quincenal, Decenal, etc.)
+El tipo de pago es la manera en la cual se 
+va a realizar el calculo de la Nómina
+Destajo,    Salario Fijo,    Comisiones,
+Salario Fijo/Comision 
+
+Salario Periodo: este Campo es aplicable
+solo a los empleados que tengan Salario
+Fijo o Salario Fijo/Comisiones de lo 
+contrario lo bloqueara para los usuarios.
+Este campo es requerido por el sistema.
+
+Tarifa Horaria: este campo es aplicable
+solo cuando recibe un salario por destajo,
+esto indica cuanto se le paga a un empleado
+por cada hora trabajada. Este campo es 
+requerido por el sistema.
+
+Moneda Sueldo: Este campo solo sele puede
+aplicar cuando tiene un Salario del periodo,
+tiene dos opciones Córdobas y Dólares para
+definir el tipo de moneda del sueldo fijo.
+Este campo es requerido por el sistema.
+
+Mon Com/Tarif: este campo solo se aplica a
+empleados que tenga comisiones y destajo, 
+al igual que moneda sueldo sirve para indicar
+la moneda de la comision o la tarifa horaria.
+Este campo es requerido por el sistema.
+
+Pago Inss Patronal: es para saber si el
+empleador paga o no el Inss patronal y de 
+esta manera calcularlo.
+
+Salario Minimo: es informacion general y no es
+requerido por el sistema es para saber si 
+tiene el salario minimo.
+
+Exento Inss: Este campo es requerido, nos 
+indica si un empleado paga el Inss Laboral o
+no lo Paga.
+
+Exento Ir: Este campo es requerido, nos 
+indica si un empleado paga el IR  o no lo 
+Paga.
+
+[ETX]
+[EHT]
+
+[PT]
+Destajo
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+Es una de las manera de pago que se
+encuentra predeterminad en el sistema esto
+ocurre general mente a los empleados de 
+produccion o que se les paga en basa a una
+sierta cantidad de unidades o procesos 
+realizados de una manera satisfactoria 
+deacuerdo con sus normas internas de 
+control de calidad.
+
+[ETX]
+[EHT]
+
+[PT]
+Salario Fijo
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+Es una forma de pagar a los empleados,
+pero generalmente se utiliza para empleados
+de Planta o Administrativos o en el caso de
+aquellos vendedores que tengan un basico.
+este salario no varia con el tiempo, siempre
+permanece estatico.
+
+[ETX]
+[EHT]
+
+[PT]
+Comisiones
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+Las comisiones generalmente se les paga a
+los empleados que tienen un Porciento de lo
+vendido (en caso que sea un Vendedor) o lo
+recuperado(en caso que sea un Cobrador) es
+totalmente variable pues dependen de una 
+cantidad exigida por la empresa, pero se 
+diferencian con destajo en que no es
+aplicable a la produccion.
+
+[ETX]
+[EHT]
+
+[PT]
+Salario Fijo/Comisiones
+[EPT]
+
+[CS]
+
+[ECS]
+[TX]
+Este Tipo es la fucion entre Salario Fijo y 
+comisiones es cuando un empleado tiene
+un salario Fijo o Basico y ademas tiene una
+parte variable.
+
+[ETX]
+[EHT]
+
+[PT]
+Anotaciones
+[EPT]
+
+[KW]
+Anotaciones,Curriculum,Tabla Anotaciones,Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004004004004004004004004004004004004004004
+[EF2]
+
+[J2]
+009100120000
+[EJ2]
+
+[P2]
+009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 23 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Anotaciones
+
+La tabla anotaciones es como una especie
+de Curriculum del empleado donde se 
+registran los datos del empleado pero no 
+es requerido ningun campo, osea que usted
+puede o no llenar los campos.
+
+Codigo Empleado: Este codigo no se puede
+modificar, solo puede ser seleccionado. para
+agregar un codigo en este campo primero tiene
+que agregar un registro Empleado.
+
+Nombre Empleado: este se campo se llena 
+automaticamente, no se puede modificar ni 
+grabar, fuciona igual que el campo codigo 
+empleado.
+
+Faltas: Este campo se utiliza para especificar
+si el empleado tiene faltas si o no como 
+referencia general del sistema.
+
+Justificacion Falta: es el motivo del empleado
+por la cual se ausento del trabajo.
+
+Idioma que Domina: Son todos los idiomas que
+el empleado es capas de hablar o escribir,
+este campo puede ser texto, numerico, puede
+ser de cualquier tipo.
+
+Fecha de contratacion: este campo es la fecha
+en la que se inicia la contratacion, del empleado
+en la empresa que estuvo anteriormente.
+
+Fecha de Finalizacion: es el campo de fecha 
+que nos indica la fecha en la cual termino de 
+laborar en la empresa anterior.
+
+Telefonos en caso de emergencia: son para 
+indicarle al empleador el telefono, nombre y 
+direccion de las personas que se pueden 
+llamar o notificar en caso de una tragedia con
+el empleado.
+
+Conocimientos o Cursos: este campo es solo
+para que el empleador pueda saber el grado
+de conocimientos extraordinarios tiene el 
+empleado.
+
+Razon de Contratacion: es el Motivo por el cual
+se le contrató en la empresa.
+
+Trabajo Anteriores: es como un control historico
+de los trabajos y los cargos en la cual se ha 
+desempeñado el empleado.
+
+Recomendaciones: es para anotar, los nombres y
+telefonos que dieron fe de conocer al empleado
+o dicho de otra forma, las personas que
+recomiendan al empleado.
+
+Causa Salida: es la causa por la cual el 
+empleado dejo de trabajar el el ultimo trabajo.
+
+Existen una serie de botones que se encuentran
+en la parte inferior de esta ventana, estos nos
+indican lo siguiente:
+
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+Anotaciones, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntará si desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Departamentos
+[EPT]
+
+[KW]
+Departamentos,Tabla Departamentos,Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004004004
+[EF2]
+
+[P2]
+009100320000009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 24 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Departamentos
+
+La tabla Departamentos tiene como
+finalidad, ayudar a la flexibilidad de Zeus,
+ya que permite crear usted mismo sus
+departamentos deacuerdo a sus necesidades
+tiene dos campos:
+
+Codigo: Este campo tiene varias funciones,se
+puede utilizar para buscar el codigo de sierto
+departamento, cuando seleccione un codigo o
+ya sea que lo digite y exista Zeus entenderá 
+que desea ver ese registro. en caso que no 
+existiera el codigo este crea un nuevo registro
+automaticamente.
+
+Nombre: Este campo es simplemente para 
+escribir el nombre o Descripcion del
+departamento que se esta creando o modificando.
+
+como en todas las ventanas de Zeus tiene 
+unos botones en la parte inferior, que le 
+ayudan a realizar sus funciones con el formulario.
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+empleados, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Cargo
+[EPT]
+
+[KW]
+Cargo,Tabla Cargo,Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004004004004
+[EF2]
+
+[J2]
+009100120000
+[EJ2]
+
+[P2]
+009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 25 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Cargo
+La tabla cargo se utiliza para definir los 
+distintos cargo que existen en la empresa
+o en algun departamento especifico:
+
+Codigo Cargo: Este campo tiene varias
+funciones,se puede utilizar para buscar el 
+codigo de sierto departamento, cuando
+seleccione un codigo o ya sea que lo digite y 
+exista Zeus entenderá que desea ver ese
+registro. en caso que no existiera el codigo este
+crea un nuevo registro automaticamente.
+
+Cargo: Este campo es simplemente para 
+escribir el nombre o Descripcion del
+Cargo que se esta creando o modificando.
+
+Monto: Este campo le ayuda al sistema para
+saber, cuanto es que se estipula que puede
+ganar un empleado, cuando no se llena este
+datos en registro empleado, por defecto el 
+sistema toma este campo para calcular la 
+nomina.
+
+Como en todas las ventanas de Zeus tiene 
+unos botones en la parte inferior, que le 
+ayudan a realizar sus funciones con el formulario.
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+empleados, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Incapacidades
+[EPT]
+
+[KW]
+Incapacidades,Tabla Incapacidades,Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100300000009100310000
+[EJ2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 26 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Incapacidades
+
+Incapacidades debido a su compleja forma
+Zeus Nóminas, la tiene divida en dos partes.
+esta opcion solo se encuentra en el menu en
+la siguiente ruta: Archivos/Tablas/
+Incapacidades. no es ninguna ventana
+simplemete un acceso del Menú.
+
+c:\nominas\dash.bmp Tipo Incapacidad
+c:\nominas\dash.bmp Incapacidad
+
+[ETX]
+[EHT]
+
+[PT]
+Prestamos
+[EPT]
+
+[KW]
+Prestamos,Tabla Prestamos,Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004004004004004004004004004
+[EF2]
+
+[J2]
+009100120000
+[EJ2]
+
+[P2]
+009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 27 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Prestamos
+
+En la tabla prestamos usted podrá solamente
+registrar un prestamo,por cada empleado.
+como politica general de las empresas, es
+recomendable darle prestamos hasta que
+termine de pagar su ultimo prestamo.
+
+en la tabla prestamos tenemos:
+
+Codigo Empleado: Este codigo no podrá 
+modificarlo, por que es seleccionado del 
+registro empleados, para agregar un codigo
+primero tiene que agregarle un registro al
+empleado.
+
+Nombre Empleado: será ubicado segun el
+codigo del empleado usted no puede 
+modificar este campo.
+
+Monto del Prestamo: es la cantidad total que
+el empleado se compromete a pagar.
+
+Fecha Inicio: Es la fecha en que inicia el
+prestamo.
+
+Fecha cuota Final: es la Fecha en la cual se
+espera que el empleado page la deuda que
+tiene pendiente con la empresa.
+
+Cuota a Pagar: es la cantidad de dinero que 
+el empleado tiene que pagar al empleador,
+segun la frecuencia de la cuota.
+
+Frecuencia Cuota: Esto nos indica, cada 
+cuando el empleado tiene que hacer un
+abono, aunque se le descalfe a la quincena.
+
+Saldo Prestamos: Es el saldo que tiene 
+actulmente pendiente el empleado, para
+con la empresa. no puede ser modificado
+se modifica automaticamente.
+
+En la parte Inferior Tiene los Siguientes 
+Botones:
+
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+Prestamos, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Tipo Nomina
+[EPT]
+
+[KW]
+Tabla Tipo de Nomina,Tablas,Tipo de Nomina,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004004004004
+[EF2]
+
+[P2]
+009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 28 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Tipo Nomina
+
+Esta tabla es para que el usuario pueda,
+indicarle al sistema cada cuando quiere
+o le conviene que se haga la nomina.
+
+Codigo Tipo Nómina: Este campo puede ser
+de tipo numerico, alfanumerico. es un campo
+requerido por el sistema. este mismo codigo
+se utiliza para indicar que tipo de nomina se
+desea usar para el calculo.
+
+Descripcion: Este campo es para poner el 
+nombre, segun su frecuencia o estime 
+conveniente, es requerido por el sistema.
+este campo puede ser de tipo numerico o 
+alfanumerico (Numeros y Letras).
+
+Dias a Evaluar: Este campo la funcion es 
+indicarle a Zeus, cuantos dias es que abarca
+la Nómina. Para poder realizar el calculo
+en base a estos dias. Este campo es de tipo
+numerico unicamente.
+
+Los Botones de la Parte Inferior son:
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+empleados, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Tabla Inss/Ir
+[EPT]
+
+[KW]
+Tablas,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004
+[EF2]
+
+[J2]
+009100330000009100340000
+[EJ2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 29 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Tabla Inss/Ir
+
+La Tabla Inss/ Ir esta dividida de forma 
+parecida a la de empleados. Tenemos dos
+tipos de Tablas en uno.
+
+c:\nominas\dash.bmp Tabla Inss
+c:\nominas\dash.bmp Tabla Ir
+
+Los Botones de la Parte Inferior son:
+
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+empleados, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Tipo Incapacidad
+[EPT]
+
+[KW]
+Incapacidades,Tabla Incapacidades,Tipo Incapacidad,
+[EKW]
+
+[F2]
+003004004004004004004004
+[EF2]
+
+[P2]
+009100160000009100080000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 30 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Tipo Incapacidad
+
+La tabla Tipo incapacidad le permite al 
+usuario, poder ingresar todos los tipos 
+de incapacidades que padecen los empleados
+en la empresa, permitiendo con esto una
+mayor flexibilidad en Zeus Nóminas.
+
+la ruta de Acceso es: Archivo/Tablas/
+incapacidades/Tipo de Incapacidad.
+posee campos que describiremos a 
+continuacion.
+
+Codigo Incapacidad: este campo es requerido
+por el sistema, y pude ser alfanumerico o 
+numerico simplemente, se queda a gusto
+del usuario.
+
+Incapacidad: este campo se utiliza para
+poner la descripcion o el nombre de la 
+incapacidad que se esta agregando al 
+sistema.
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+empleados, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+
+como en las demas tablas este tiene 
+los botones de comando en la parte
+inferior de la ventana o rutina.
+
+
+
+[ETX]
+[EHT]
+
+[PT]
+Incapacidad
+[EPT]
+
+[KW]
+Incapacidad,Incapacidades,Tabla Incapacidades,
+[EKW]
+
+[F2]
+003004004004004005004004004004
+[EF2]
+
+[J2]
+009100120000009100300000009100300000
+[EJ2]
+
+[P2]
+009100080000009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 31 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Incapacidad
+
+Despues de haber creado los tipos de 
+incapacidades, se agregar a los empleados.
+Esta es la funcion de esta rutina, indicarle
+al sistema las incapacidades de cada 
+empleado en caso que este lo tenga de lo
+contrario le recomendamos que se salga de
+esta rutina.
+
+Esta ventana es muy diferente a las demas
+tablas del sistema, por que esta no 
+preguntara si desea guardar los cambios,
+ella se encarga de guardarlos
+automaticamente por que no se pueden
+modificar como en las otras tablas.
+
+Presenta los siguientes campos:
+
+Codigo Empleado: para poder seleccionar 
+un emplea este priemeramente se tiene que 
+crear en registro empleado, es un campo
+que no se puede modificar.
+
+Nombre Empleado: al momento que uste 
+selecciona el codigo del empleado 
+automaticamente, se llena este campo con
+el nombre del empleado seleccionado.
+este campo no permite que usted modifique 
+este nombre debe hacerlo en registro
+empleado.
+
+En la parte inferior se encuentra una tabla de
+consulta, la cual le indicara las incapacidades
+relacionadas con el empleado que esta 
+seleccionando, dicho empleado puede tener
+mas de una incapacidad. todo depende de
+cuantas introduscan al sistema.
+
+Tabla Consulta: Esta tabla le mostrara
+siempre dos campos, Fecha Incapacidad, y
+la descripcion o el nombre de la incapacidad
+que tiene que ser creada primeramente en la
+tabla Tipo Incapacidad.
+
+Fecha Incapacidad: este campo es de tipo
+fecha, se utiliza pora saber cuando fue que
+se incapacito el empleado o cuando le inicio
+la lesion que padese. este campo es
+requerido por el sistema y puede cambiarle la
+fecha con solo ubicarse y digitar la nueva.
+recuerde cuando digite la fecha que como es 
+formato fecha usted tiene que ditigar las "/"
+Ejemplo: 15/05/1999
+
+Descripcion Incapacidad: Este campo es solo
+de consulta para que pueda saber el nombre
+de la incapacidad, no se puede modificar,debe
+modificarse desde Tipo Incapacidad.
+
+Tiene los Siguientes botones:
+
+Borrar: Este boton a diferencia de los otros
+botones de borrar este no borra un registro
+completo si no solo una linia o una incapacidad
+del empleado. para borrar todo el registro usted
+tiene que borrar el registro empleado completo
+de la tabla registro empleado donde se creo.
+Simpre que intente borrar una incapacidad tiene
+que ubicarse en la linia o en la incapacidad ya
+sea con el mouse o las flechas direccionales,
+cuado este ubicado le aparecera una flecha 
+como esta c:\zeusno~1\flecha.bmp en la incapacidad
+seleccionada. Tambien Zeus preguntara si
+desea borrarle esta incapacidad al empleado.
+
+Agregar: Este se utiliza para agregar una 
+incapacidad al empleado seleccionado, 
+automaticamete le abrira una pantalla donde
+le indica el codigo de la incapacidad y el
+nombre o descripcion de las incapacidades
+creadas en la Tabla Tipo incapacidad.
+para pegar una incapacidad usted tiene que
+hacerle doble click a la incapacidad que
+desea agregarle al empleado.
+Cuando usted hace click en agregar tambien
+se carga un boton X en la parte superior de 
+esta. Es con el fin que usted pueda cerrar
+la ventana sin agregar ningun dato al
+empleado.
+
+En el momento que usted le hace doble click
+a la incapacidad seleccionada,
+automaticamente la agrega al registro
+empleado, es por esta razon que no pregunta
+si desea guardar cambios, por que el se
+encarga de guardarlos.
+
+Este evento le bloquea los botones siguientes,
+anterior, y el combo de seleccion de empleado,
+haci como el boton borrar por que mientras
+esta en esta accion no puede ejecutar ninguna
+de estas.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Salir: Tanto este Boton como el de la c:\zeusno~1\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+
+
+[ETX]
+[EHT]
+
+[PT]
+Nuevo Registro
+[EPT]
+
+[KW]
+Nuevo Registro,
+[EKW]
+
+[F2]
+001
+[EF2]
+
+[CS]
+
+[ECS]
+[TX]
+Nuevo Registro
+
+Para Crear un nuevo, registro lo unico que
+necesita es cambiar los codigo del 
+formulario y ventana pero que no existan
+para que Zeus, entienda que es nuevo,
+limpiando automaticamente todos los campos
+del formulario. Esto le permite Digitar los datos
+borrarlos y modificarlos segun sea su deseo.
+
+[ETX]
+[EHT]
+
+[PT]
+Tabla Inss
+[EPT]
+
+[KW]
+Inss,Tabla Inss,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CS]
+
+[ECS]
+[TX]
+Tabla Inss
+
+La tabla de Inss cuenta con los siguientes
+campos:
+
+Codigo Inss: este codigo esta abierto a el 
+gusto del usuario, por que puede tomar la 
+decision de utilizar el codigo del estado o
+bien utilizar sus propios codigos.este
+campo es requerido por el sistema.este 
+campo de alfanumerico.
+
+Desde: Este campo es para indicar desde
+donde comienza el rango estipulado para 
+esta categoria. este campo es requerido y
+es de tipo moneda, no se permiten letras.
+
+Hasta: Es para saber donde finaliza el rango
+estipulado para esta categoria. este campo
+al igual que el anterior es de tipo moneda,
+no se permiten letras.
+
+Monto Patronal: es la cantidad estipulada en 
+la tabla del Inss que debe ser la cuota de 
+pago patronal, tambien es de tipo moneda y 
+no se perminten letras. este campo es
+requerido por el sistema.
+
+Monto Laboral:es la cantidad estipulada en 
+la tabla del Inss que debe ser la cuota de 
+pago de los empleados, tambien es de tipo
+moneda y  no se perminten letras. este campo
+es requerido por el sistema.
+
+Categoria: es un codigo que nos indica la 
+categoria de la tabla, este campo es de tipo
+numerico y no es requerido por el sistema.
+
+
+[ETX]
+[EHT]
+
+[PT]
+Tabla Ir
+[EPT]
+
+[KW]
+Ir,Tabla Ir,Tipos de Tablas,
+[EKW]
+
+[F2]
+003004004004004004005004005004004004004004
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CS]
+
+[ECS]
+[TX]
+Tabla Ir
+
+Codigo Ir: este codigo esta abierto a el 
+gusto del usuario, por que puede tomar la 
+decision de utilizar el codigo del estado o
+bien utilizar sus propios codigos.este
+campo es requerido por el sistema.este 
+campo de alfanumerico.
+
+Desde: Este campo es para indicar desde
+donde comienza el rango estipulado para 
+esta categoria. este campo es requerido y
+es de tipo moneda, no se permiten letras.
+
+Hasta: Es para saber donde finaliza el rango
+estipulado para esta categoria. este campo
+al igual que el anterior es de tipo moneda,
+no se permiten letras.
+
+Impuesto Base: este es el Impuesto que se 
+utiliza para el calculo de la nomina. Este 
+impuesto se suma al Impuesto anual del 
+empleado, dando como resultado el 
+total que tiene que pagar dicho empleado.
+Este campo es de Tipo monetario y no
+admite letras, es requerido por el sistema.
+
+Porciento Aplicacion: es el porcentaje que 
+se le multiplica al ingreso total del empleado,
+dando como resultado el impuesto anual.
+Este campo es requerido por el sistema y no
+admite letras. Ejemplo: para introducir 
+un porciento de 12% se debe digitar 0.12 y 
+para un porciento de 7% se debe digitar
+0.07. Esto es porque Zeus Nominas multiplica
+la cantidad digitada por 100 para dar un
+formato de Porcentaje. este campo es numerico
+y es requerido por el sistema.
+
+Sobre Exceso: este campo es de tipo monetario
+y es requerido por el sistema. se utiliza para 
+poder calcular el impuesto anual en base al sobre
+exceso
+
+
+Ejemplo del calculo:
+
+Salario Base:   C$ 7,500.00  mensual
+                           *   12             meses del Año
+   resultado:    C$ 90,000     Ingreso Anual.
+                         - C$ 60,000    Sobre Exceso.
+   resultado:    C$ 30,000   
+                           *    20%        Porciento Aplicacion.
+   resultado:    C$ 6,000      Impuesto Anual. 
+                        + C$ 3,450      Impuesto Base.
+   resultado:    C$ 9,450      Impuesto Total Anual.
+                         /       12          meses del Año.
+   resultado     787.50         IR mensual.
+
+[ETX]
+[EHT]
+
+[PT]
+Configuracion
+[EPT]
+
+[KW]
+Configuracion,
+[EKW]
+
+[F2]
+003006006006006006006006006006006006006006006006006006006
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CS]
+
+[ECS]
+[TX]
+Configuracion
+
+Es muy importante para Zeus Nóminas que se
+cumplan con siertas, reglas de configuracion 
+de Windows para su optimo funcionamiento.
+
+para hacerlo tiene que seguir la siguiente ruta:
+Inicio (Star)/Configuracion(Setting)/Panel de 
+control (panel Control)/Configuracion Regional.
+
+en configuracion Regional debe seleccionar
+Español(Mexico).
+
+El formato de numero debe ser como este:
+Simbolo Decimal: Punto(.)
+Numero de Digitos Decimal: Dos(2)
+Simbolo Separador Miles: Coma(,)
+Numero de Ditos en Grupo: tres(3)
+Simbolo Signo Negativo  : Menos(-)
+Formato Numero Negativo: -1,1
+Mostrar Ceros a la Izquierda: 0,7
+Sistema de Medida: Metrico
+Separador de Listas: Coma(,)
+
+El formato de Moneda debe ser como este:
+
+Simbolo Moneda: C$
+Posicion Simbolo Moneda: C$1,1
+Formato Numero Negativo: -C$1,1
+Simbolo Decimal: Punto (.)
+Numero Digito Decimales: Dos (2)
+Simbolo Separador Miles: Coma (,)
+Numero Digitos Grupo: Tres (3)
+
+El formato Fecha  debe ser como este:
+
+Formato de Fecha Corta: dd/mm/aaaa
+Separador de Fecha:  /
+
+
+[ETX]
+[EHT]
+
+[PT]
+Calculadora
+[EPT]
+
+[KW]
+Calculadora,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CS]
+
+[ECS]
+[TX]
+Calculadora
+
+La calculadora se agregó como una herramienta
+en caso que quiera usarla, esta calculdora es
+la predeterminada por Windows y para usarla
+en Zeus Nominas, solamente la tiene que buscar
+en  la ruta Siguiente: Opciones/Calculadora.
+
+En caso que no exista en la computadora
+el sistema le dira que no la pudo encontrar
+y tendra que  agregarla a su maquina.
+Puede copiarla de otra maquina y arrastrarla
+por la red o con un disquette.
+
+para buscarla haga click en Inicio/Buscar/
+archivos o Carpetas/Nombre.
+en nombre tiene que Digitar Calc.exe y 
+busquela en C. cuando la encuentre copiela
+en un disquette o  por la red.
+
+la ruta donde debe copiarla es la siguiente:
+C:\Windows\Calc.exe. cuando usted la copie
+intente abrirla desde Zeus y listo lo ejecuta.
+
+[ETX]
+[EHT]
+
+[PT]
+Registro Mondeda
+[EPT]
+
+[KW]
+Cambio Dolar,Moneda,Registro Moneda,Tabla Cambio Dolar,Tablas,
+[EKW]
+
+[F2]
+003004004004004004004004
+[EF2]
+
+[J2]
+009100380000009100160000
+[EJ2]
+
+[P2]
+009100170000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 37 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Registro Moneda
+
+Esta tabla tiene como una funcion permitir
+al usuario introducir al sistema, la tabla de 
+cambio de dolar que emite el banco Central
+tiene dos campos:
+
+Fecha Cambio Dolar: Es un campo requerido
+y de tipo fecha, se introduce la fecha del 
+dia , para poder hacer el calculo en 
+base a esta fecha, esta tabla solo se va a 
+utilizar cuando se calcula la nomina.
+
+Monto Dia: Este campo tambien es requerido
+y es de tipo moneda, debe introducir la tasa 
+de cambio del dia que se esta introduciendo.
+este campo no es de tipo letras.
+
+Tiene un boton de Consulta como este: c:\zeusno~1\consulta.bmp
+que se puede utilizar para buscar o verificar que
+un registro haya sido bien introducido al sistema de
+Nominas.
+Cuando le haga Click a este boton se abre una 
+ventana donde le da fecha de cambio y monto del
+dia igual que en la tabla Principal.
+
+c:\zeusno~1\dash.bmp Ventana Consulta
+
+En la parte inferior encontrará botones como:
+
+
+Grabar: Este Boton se utiliza para grabar los 
+cambios ejecutados en la ventana de
+Registro Moneda, tambien se encarga de validar
+que todos los datos esten correctamente
+introducidos.
+
+Anterior y Siguiente: Este boton se utiliza 
+para moverse al registro anterior, en las base
+de Datos si  al momento de cambiar de
+registro, fueron modificados el sistema
+intentara guardar los cambios.
+
+Primero y Ultimo: Este Boton se Utiliza para
+moverse al Primer Registro o al ultimo, al igual
+que el boton anterior y Siguiente, cualquier 
+cambio efectuado Zeus intentara guardar los 
+cambios.
+
+Borrar: Este Boton se utiliza para eliminar un
+registro del sistema, pero Zeus siempre 
+va a preguntarle si realmente esta seguro
+de realizar esta accion. dependiendo a la 
+respuesta ya se si o no el sistema elimina o
+no el registro.
+
+Cerrar: Tanto este Boton como el de la c:\zeusno~1\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Consulta Cambio Moneda
+[EPT]
+
+[KW]
+Cambio Dolar,Consulta Cambio Dólar,Moneda,Registro Moneda,Tabla Cambio Dolar,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[J2]
+009100370000
+[EJ2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 38 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Consulta Cambio Moneda
+
+Esta ventana tiene unicamente dos campos
+Fecha de Cambio, Monto del dia, igual como
+en registro Moneda. 
+
+Tiene funciones especiales en este ventana de
+consulta.
+
+Por ejemplo:
+
+El "*" es de tipo comodin, cada ves que se
+digite en esta ventana, mostrará todos los
+archivos y restaurará los datos de esta ventana.
+
+Si usted digita un numero el va a buscar todos los
+numeros que se asemejen al digitado, mientras
+mas le digite la fecha que quiere encontrar, 
+mas pequeña será la lista que muestre.
+
+Una ves encontrada la fecha, puede pegarla a la
+ventana Registro Moneda, con el Boton Pegar o
+tambien puede pegarla con el efecto de Doble
+click o con el Enter (Entro)
+
+
+[ETX]
+[EHT]
+
+[PT]
+Crear/Abrir Respaldo
+[EPT]
+
+[KW]
+Crear/Abrir Respaldo,Respaldo,
+[EKW]
+
+[F2]
+003
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 39 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Crear/Abrir Respaldo
+
+Para Crear un Respaldo o Abrirlo tiene que ir
+a la siguiente Ruta:Archivo/Abrir/cerrar Backad
+esta ventana es para crear copias de 
+seguridad de las base de datos.
+Todos los archivos de respaldo de Zeus
+tiene la Extencion Zn(Zeus.Zn).
+
+tiene la opcion de abrir respaldo y puede
+seleccionar haciendo click en abrir respaldo
+inmediatamente puede indicarle la unidad de 
+disco, y la carpeta donde se encuentra el 
+archivo cuando lo encuentre lo mostrará en la
+parte derecha de la venta.
+
+Cuando le indique procesar, el extraera esa 
+base de datos y la remplazará por la que se 
+esta utilizando en el momento, por lo que le 
+recomendamos respaldarla antes de abrir un
+respaldo.
+
+Para Crear un respaldo es igual que cuando
+esta abriendolo solo que ahora le indicará la 
+ruta donde se debe guardar un respaldo, si el
+archivo existe en dicha ruta, Zeus preguntará si
+desea reescribirlo en caso contrario lo escribe
+simplemente.
+
+
+[ETX]
+[EHT]
+
+[PT]
+Ruta
+[EPT]
+
+[KW]
+Exportacion,Ruta,
+[EKW]
+
+[F2]
+003004004
+[EF2]
+
+[P2]
+009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 40 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Ruta
+
+Esta ventana le aparecerá despues de hacer
+click sobre el boton de consulta. tiene en la 
+parte superior donde le indicara la unidad que
+usted utilizará para exportar los datos.
+
+Acontinuacion le aparecera, un campo le le 
+indica, la carpeta de esa unidad donde enviara
+el archivo.
+
+Por ultimo tiene dos botones:
+
+Pegar: Su unica funcion es pegar la ruta que 
+usted le indico a Zeus en el campo de ruta de 
+exportacion. desde este campo usted puede
+modificar el nombre unicamete, no intente 
+cambiar las extenciones (.txt o .cns) por que
+Paciol no entenderá lo que le envie Zeus.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Exportacion de Datos
+[EPT]
+
+[KW]
+Exportacion ,Ruta,
+[EKW]
+
+[F2]
+003004004004004
+[EF2]
+
+[J2]
+009100120000
+[EJ2]
+
+[P2]
+009100160000
+[EP2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CN]
+ 41 
+[ECN]
+[CS]
+
+[ECS]
+[TX]
+Exportacion de Datos
+
+La idea de la exportacion de datos es que el
+sistema no quede como una isla trabajado solo
+sino mas bien que le ayude a otros sistemas,
+a actualizarce, entre estos sistemas esta
+Pacioli.
+
+Tiene Opciones de Exportacion como:
+
+Cuentas y Contactos: Este metodo de
+Exportacion cumple con el formato que requiere
+pacioli para crear cuentas, los datos que
+Zeus le envia a Pacioli son los nombres de
+lo empleados con las cuentas de Debito que se
+crearon en la tabla de Registro Empleado.
+Pacioli lo Acepta sin nigun problema.
+
+Transacciones de Nómina: Este metodo de
+exportacion paracido al anterior, se diferencia en
+que envia los movimientos generados por la nomina
+segun los registros de los empleados
+introducidos en registros Empleados, en 
+cuanto a la cuenta de Debito y Credito del 
+sistema.
+
+Luego de seleccionar el tipo de exportacion que 
+utilizará, tiene que indicarle la ruta donde, el 
+sistema tiene que enviar el archivo, para que 
+el otro sistema  pueda utilizarlo. Haga Click 
+en el boton c:\zeusno~1\consulta.bmp para que muestre una 
+venta de ruta, la unica funcion de esta venta es 
+ayudarle a indicar la ruta correcta.
+
+Cuando la ruta este correctamente indicada, haga
+click en el boton Pegar,Zeus la inserta en el campo
+de texto.
+Por defecto la insertara con el nombre de Zeus.txt o
+Zeus.cns Puede cambiarle en nombre, pero no 
+intente cambiar la extencion (.Txt o .Cns) por que 
+esto hace que Pacioli no pueda enter lo que Zeus le esta 
+enviando.
+
+En la parte Inferior encontrara dos Botones uno que 
+indica procesar y el otro Cerrar.
+
+Procesar: Este boton se utiliza para ejecutar la
+orden de exportacion, si la ruta o la unidad es 
+incorrecta Zeus le indicará el error cometido, en
+caso contrario lo hara todo sin ningun error.
+
+Cerrar: Tanto este Boton como el de la c:\nominas\botonx.bmp
+que se encuentra en la parte superior del
+la ventana su unica funcion es Salir de la
+ventana o del Sistema. Pero si se ejecutaron
+cambios el sistema preguntarási desea guardar
+los cambios.
+
+[ETX]
+[EHT]
+
+[PT]
+Tamaño de los Campos
+[EPT]
+
+[KW]
+Configuracion,Tamaño Campos,
+[EKW]
+
+[F2]
+003005006007007006007006007006007007006007006007006007006007006007006007006007006007
+[EF2]
+
+[PR]
+0310000000000000520000000800000005
+[EPR]
+
+[CS]
+
+[ECS]
+[TX]
+Tamaño de los Campos
+
+En esta parte se Espesificaran el tamaño maximo
+que Zeus Nóminas permite al usuario introducir
+en las base de datos, esto es con el fin de que
+no se almecenen demasiados espacios, y sea
+un programa muy grande.
+
+Importante: Los campos que no aparescan, no
+es que no existan en las base de datos si no
+que son de tipo fecha o Monetario.
+
+Tabla Cargo
+
+Descripcion          Tamaño(Caracter)
+
+Código Cargo                                      5
+Descripcion Cargo                             35    
+
+Tabla Anotaciones
+
+Descripcion            Tamaño(Caracter)
+
+Causa Salida                                     150
+Faltas                                                  2
+Justificacion Falta                             150
+Datos Record                                    150
+Idiomas que Domina                        150
+Telefono Caso Emergencia             150
+Cursos estudiados                            200
+Razones Contratacion                       200
+Trab. Anteriores                                100
+Recomendaciones                            200
+
+Tabla Departamento
+
+Descripcion               Tamaño(Caracter)
+
+Código Departamento                       5
+Descripcion Dep.                               35
+
+
+Tabla Incapacidad
+
+Descripcion                Tamaño(Caracter)
+Código Empleado                               20
+Código Incapacidad                            5
+
+Tabla Empleado
+
+Descripcion                 Tamaño(Caracter)
+
+Código Empleado                              20
+Priemer Nombre                                 20
+Segundo Nombre                               20
+Primer APellido                                  20
+Segundo Apellido                              20
+Direccion                                            200
+Nacionalidad                                     12
+Código Postal                                    10
+Código Ir                                             10
+Código Inss                                        10
+Sexo                                                    15
+Sindicalista                                         2       
+Numero Inss                                       20
+Numero Ir                                            20
+
+Historico
+
+Descripcion               Tamaño(Caracter)
+
+Motivo Baja                                        150
+Motivo Aumento                                 150
+Motivo Suspencion                            150
+Cargo Inicial                                       35
+Cargo Final                                         35
+Cargo Actual                                       35
+Cuenta Debito                                     20
+Cuenta Credito                                    20
+
+Informacion Nomina
+
+Descripcion                Tamaño(Caracter)
+
+Tipo de pago                                     30
+Exento Inss                                         2
+Exento Ir                                              2
+Moneda Comision                              8
+Moneda Sueldo                                  8
+Pago Inss Patronal                             2
+Salario Minimo                                    2
+
+
+Tabla Inss
+
+Descripcion                 Tamaño(Caracter)
+
+Codigo Inss                                      10
+Categoria                                          50
+
+
+Tabla Ir
+
+Descripcion                   Tamaño(Caracter)
+
+Codigo Ir                                            10
+
+
+Tabla Contraseña
+
+Descripcion                 Tamaño(Caracter)
+
+Nombre Empleado                         25
+Pasword                                          10
+
+Tabla Prestamos
+
+Descripcion                 Tamaño(Caracter)
+
+Código Empleado                            12
+Monto prestamos                              50
+
+
+Tipo Incapacidad
+
+Descripcion                Tamaño(Caracter)
+
+Código Incapacidad                          5
+Descripcion Incapacidad                  100
+
+
+Tabla Tipo Nómina
+
+Descripcion                  Tamaño(Caracter)
+
+Código Tipo Nomina                          5
+Descripcion Nómina                           25
+
+[ETX]
+[EHT]
+
+[EOF]

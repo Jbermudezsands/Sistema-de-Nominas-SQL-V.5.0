@@ -1,0 +1,11 @@
+Línea 160: la clase Project1.xp_canvas del control xp_canvas1 no era una clase de control cargada.
+Línea 182: la clase Project1.xphelp del control xphelp1 no era una clase de control cargada.
+Línea 190: la clase Project1.xptopbuttons del control xptopbuttons1 no era una clase de control cargada.
+Línea 166: el nombre de la propiedad _ExtentX de xp_canvas1 no es válido.
+Línea 167: el nombre de la propiedad _ExtentY de xp_canvas1 no es válido.
+Línea 168: el nombre de la propiedad Caption de xp_canvas1 no es válido.
+Línea 169: el nombre de la propiedad Fixed_Single de xp_canvas1 no es válido.
+Línea 187: el nombre de la propiedad _ExtentX de xphelp1 no es válido.
+Línea 188: el nombre de la propiedad _ExtentY de xphelp1 no es válido.
+Línea 195: el nombre de la propiedad _ExtentX de xptopbuttons1 no es válido.
+Línea 196: el nombre de la propiedad _ExtentY de xptopbuttons1 no es válido.

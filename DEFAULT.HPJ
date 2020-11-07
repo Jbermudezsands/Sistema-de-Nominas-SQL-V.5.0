@@ -1,0 +1,24 @@
+[OPTIONS]
+ROOT = C:\ZEUSNO~1
+COMPRESS = TRUE
+WARNING = 3
+REPORT = 1
+CONTENTS = Temp_Title_1
+ERRORLOG = C:\ZEUSNO~1\DEFAULT.ERR
+TITLE = default.hlx
+MULTIKEY = M
+
+[BAGGAGE]
+
+
+[BITMAPS]
+
+[FILES]
+C:\ZEUSNO~1\DEFAULT.RTF
+
+[WINDOWS]
+
+[MAP]
+Temp_Title_1    1; Temp Title 1
+
+; WARNING! Some context numbers have been generated internally.

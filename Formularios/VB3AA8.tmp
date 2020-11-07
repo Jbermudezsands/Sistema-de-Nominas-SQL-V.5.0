@@ -1,0 +1,1431 @@
+VERSION 5.00
+Object = "{74848F95-A02A-4286-AF0C-A3C755E4A5B3}#1.0#0"; "actskn43.ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "Comdlg32.ocx"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{080026CA-5CAE-11D6-82C2-000021B74250}#16.0#0"; "vbskfree.ocx"
+Object = "{60CCE6A8-5C61-4F30-8513-F57EED62E86A}#8.0#0"; "todl8.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#12.0#0"; "Codejock.Controls.v12.0.0.Demo.ocx"
+Begin VB.Form FrmControles 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Controles Personalizados"
+   ClientHeight    =   7470
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   8475
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   7470
+   ScaleWidth      =   8475
+   StartUpPosition =   2  'CenterScreen
+   Begin MSAdodcLib.Adodc AdoEmpleados 
+      Height          =   375
+      Left            =   3840
+      Top             =   8400
+      Width           =   2415
+      _ExtentX        =   4260
+      _ExtentY        =   661
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "AdoEmpleados"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin MSAdodcLib.Adodc AdoDetalleNominas 
+      Height          =   375
+      Left            =   840
+      Top             =   9240
+      Width           =   3015
+      _ExtentX        =   5318
+      _ExtentY        =   661
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "AdoDetalleNominas"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin VB.CommandButton CmdAceptar 
+      Caption         =   "Aceptar"
+      DownPicture     =   "FrmControles.frx":0000
+      Height          =   735
+      Left            =   6360
+      MouseIcon       =   "FrmControles.frx":1AE2
+      MousePointer    =   99  'Custom
+      Picture         =   "FrmControles.frx":1F24
+      Style           =   1  'Graphical
+      TabIndex        =   47
+      Top             =   6600
+      Width           =   975
+   End
+   Begin VB.CommandButton CmdCancelar 
+      Caption         =   "Cancelar"
+      DownPicture     =   "FrmControles.frx":2856
+      Height          =   735
+      Left            =   7440
+      MouseIcon       =   "FrmControles.frx":4338
+      MousePointer    =   99  'Custom
+      Picture         =   "FrmControles.frx":477A
+      Style           =   1  'Graphical
+      TabIndex        =   46
+      Top             =   6600
+      Width           =   975
+   End
+   Begin VB.PictureBox Picture1 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00FFFFFF&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   1095
+      Left            =   -120
+      ScaleHeight     =   1095
+      ScaleWidth      =   8415
+      TabIndex        =   41
+      Top             =   0
+      Width           =   8415
+      Begin VB.Image Image2 
+         Height          =   1020
+         Left            =   0
+         Picture         =   "FrmControles.frx":53BC
+         Stretch         =   -1  'True
+         Top             =   0
+         Width           =   1290
+      End
+      Begin VB.Line Line1 
+         BorderColor     =   &H00800000&
+         BorderWidth     =   2
+         X1              =   0
+         X2              =   8400
+         Y1              =   1080
+         Y2              =   1080
+      End
+      Begin VB.Label lbltitulo 
+         BackStyle       =   0  'Transparent
+         Caption         =   "CONTROLES PERSONALIZADOS"
+         BeginProperty Font 
+            Name            =   "Times New Roman"
+            Size            =   11.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   375
+         Left            =   1920
+         TabIndex        =   42
+         Top             =   360
+         Width           =   3840
+      End
+   End
+   Begin MSAdodcLib.Adodc AdoDatosEmpresa 
+      Height          =   375
+      Left            =   720
+      Top             =   8880
+      Width           =   3375
+      _ExtentX        =   5953
+      _ExtentY        =   661
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "AdoDatosEmpresa"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin MSAdodcLib.Adodc DtaControles 
+      Height          =   375
+      Left            =   840
+      Top             =   8400
+      Width           =   2535
+      _ExtentX        =   4471
+      _ExtentY        =   661
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "DtaControles"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin vbskfree.Skinner Skinner1 
+      Left            =   0
+      Top             =   7080
+      _ExtentX        =   1270
+      _ExtentY        =   1270
+      CloseButtonToolTipText=   "Cerrar"
+      MinButtonToolTipText=   "Minimizar"
+      MaxButtonToolTipText=   "Maximizar"
+      RestoreButtonToolTipText=   "Restaurar"
+   End
+   Begin TabDlg.SSTab SSTab1 
+      Height          =   5295
+      Left            =   120
+      TabIndex        =   0
+      Top             =   1200
+      Width           =   8175
+      _ExtentX        =   14420
+      _ExtentY        =   9340
+      _Version        =   393216
+      Tabs            =   6
+      TabsPerRow      =   2
+      TabHeight       =   520
+      TabCaption(0)   =   "Datos Generales de la Empesa"
+      TabPicture(0)   =   "FrmControles.frx":5D99
+      Tab(0).ControlEnabled=   -1  'True
+      Tab(0).Control(0)=   "Frame5"
+      Tab(0).Control(0).Enabled=   0   'False
+      Tab(0).ControlCount=   1
+      TabCaption(1)   =   "Configuracion del Sistema"
+      TabPicture(1)   =   "FrmControles.frx":5DB5
+      Tab(1).ControlEnabled=   0   'False
+      Tab(1).Control(0)=   "TxtValorHorasExtra"
+      Tab(1).Control(1)=   "ckRedondeo"
+      Tab(1).Control(2)=   "Frame14"
+      Tab(1).Control(3)=   "Frame10"
+      Tab(1).Control(4)=   "Frame8"
+      Tab(1).Control(5)=   "Frame3"
+      Tab(1).Control(6)=   "ChkTasa"
+      Tab(1).Control(7)=   "Frame2"
+      Tab(1).Control(8)=   "Frame1"
+      Tab(1).Control(9)=   "Label4"
+      Tab(1).ControlCount=   10
+      TabCaption(2)   =   "Ajustes"
+      TabPicture(2)   =   "FrmControles.frx":5DD1
+      Tab(2).ControlEnabled=   0   'False
+      Tab(2).Control(0)=   "Frame16"
+      Tab(2).Control(1)=   "Frame15"
+      Tab(2).Control(2)=   "Frame7"
+      Tab(2).ControlCount=   3
+      TabCaption(3)   =   "Conexiones"
+      TabPicture(3)   =   "FrmControles.frx":5DED
+      Tab(3).ControlEnabled=   0   'False
+      Tab(3).Control(0)=   "Skin1"
+      Tab(3).Control(1)=   "Frame9"
+      Tab(3).ControlCount=   2
+      TabCaption(4)   =   "Salario Mínimo y Valor de Puntos"
+      TabPicture(4)   =   "FrmControles.frx":5E09
+      Tab(4).ControlEnabled=   0   'False
+      Tab(4).Control(0)=   "Frame11"
+      Tab(4).ControlCount=   1
+      TabCaption(5)   =   "Procesar"
+      TabPicture(5)   =   "FrmControles.frx":5E25
+      Tab(5).ControlEnabled=   0   'False
+      Tab(5).Control(0)=   "Frame17"
+      Tab(5).ControlCount=   1
+      Begin VB.TextBox TxtValorHorasExtra 
+         Height          =   285
+         Left            =   -71760
+         TabIndex        =   115
+         Top             =   2040
+         Width           =   735
+      End
+      Begin VB.Frame Frame17 
+         Caption         =   "Agregar User "
+         Height          =   975
+         Left            =   -74760
+         TabIndex        =   111
+         Top             =   1080
+         Width           =   7215
+         Begin VB.CommandButton Command6 
+            Caption         =   "Procesar"
+            Height          =   615
+            Left            =   5880
+            Picture         =   "FrmControles.frx":5E41
+            Style           =   1  'Graphical
+            TabIndex        =   112
+            Top             =   240
+            Width           =   1095
+         End
+         Begin XtremeSuiteControls.ProgressBar ProgressBar2 
+            Height          =   375
+            Left            =   120
+            TabIndex        =   113
+            Top             =   360
+            Width           =   5055
+            _Version        =   786432
+            _ExtentX        =   8916
+            _ExtentY        =   661
+            _StockProps     =   93
+            BackColor       =   14737632
+            Scrolling       =   1
+            Appearance      =   6
+         End
+      End
+      Begin VB.Frame Frame16 
+         Caption         =   "Asignacion Horarios"
+         Height          =   975
+         Left            =   -74760
+         TabIndex        =   108
+         Top             =   4080
+         Width           =   7215
+         Begin VB.CommandButton Command5 
+            Caption         =   "Procesar"
+            Height          =   615
+            Left            =   5880
+            Picture         =   "FrmControles.frx":63CB
+            Style           =   1  'Graphical
+            TabIndex        =   110
+            Top             =   240
+            Width           =   1095
+         End
+         Begin XtremeSuiteControls.ProgressBar ProgressBar1 
+            Height          =   375
+            Left            =   120
+            TabIndex        =   109
+            Top             =   360
+            Width           =   5055
+            _Version        =   786432
+            _ExtentX        =   8916
+            _ExtentY        =   661
+            _StockProps     =   93
+            BackColor       =   14737632
+            Scrolling       =   1
+            Appearance      =   6
+         End
+      End
+      Begin VB.CheckBox ckRedondeo 
+         Caption         =   "Calcular Redondeado"
+         Height          =   255
+         Left            =   -70200
+         TabIndex        =   107
+         Top             =   960
+         Width           =   2055
+      End
+      Begin VB.Frame Frame15 
+         Caption         =   "Ajustar de Salarios"
+         Height          =   1575
+         Left            =   -74760
+         TabIndex        =   96
+         Top             =   2520
+         Width           =   7215
+         Begin VB.TextBox TxtPorciento 
+            Height          =   315
+            Left            =   4920
+            TabIndex        =   106
+            Top             =   360
+            Width           =   615
+         End
+         Begin VB.CommandButton Command4 
+            Caption         =   "Procesar"
+            Height          =   735
+            Left            =   5880
+            Picture         =   "FrmControles.frx":6955
+            Style           =   1  'Graphical
+            TabIndex        =   101
+            Top             =   480
+            Width           =   1095
+         End
+         Begin VB.TextBox TxtHasta 
+            Height          =   315
+            Left            =   2520
+            TabIndex        =   100
+            Top             =   310
+            Width           =   1095
+         End
+         Begin VB.TextBox TxtDesde 
+            Height          =   315
+            Left            =   840
+            TabIndex        =   99
+            Top             =   310
+            Width           =   1095
+         End
+         Begin VB.OptionButton Option4 
+            Caption         =   "Ajustar Salario Basico"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   97
+            Top             =   1200
+            Value           =   -1  'True
+            Width           =   1935
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel14 
+            Height          =   255
+            Left            =   240
+            OleObjectBlob   =   "FrmControles.frx":6EDF
+            TabIndex        =   98
+            Top             =   1200
+            Width           =   4935
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel15 
+            Height          =   255
+            Left            =   240
+            OleObjectBlob   =   "FrmControles.frx":6F3D
+            TabIndex        =   102
+            Top             =   360
+            Width           =   855
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel16 
+            Height          =   255
+            Left            =   2040
+            OleObjectBlob   =   "FrmControles.frx":6FA5
+            TabIndex        =   103
+            Top             =   360
+            Width           =   855
+         End
+         Begin XtremeSuiteControls.ProgressBar ProgressBar 
+            Height          =   375
+            Left            =   120
+            TabIndex        =   104
+            Top             =   720
+            Width           =   5055
+            _Version        =   786432
+            _ExtentX        =   8916
+            _ExtentY        =   661
+            _StockProps     =   93
+            BackColor       =   14737632
+            Scrolling       =   1
+            Appearance      =   6
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel17 
+            Height          =   255
+            Left            =   3840
+            OleObjectBlob   =   "FrmControles.frx":700D
+            TabIndex        =   105
+            Top             =   360
+            Width           =   1095
+         End
+      End
+      Begin VB.Frame Frame14 
+         Caption         =   "Configurar Liquidacion"
+         Height          =   1455
+         Left            =   -70320
+         TabIndex        =   92
+         Top             =   3720
+         Width           =   2895
+         Begin VB.CheckBox ChkAntiguedadMenor 
+            Caption         =   "Pag Antiguedad Menor 1año"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   95
+            Top             =   1080
+            Width           =   2415
+         End
+         Begin VB.OptionButton OptSalarioPromedioPeriodo 
+            Caption         =   "Salario Promedio Entre Periodo"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   94
+            Top             =   720
+            Width           =   2535
+         End
+         Begin VB.OptionButton OptSalarioPromedioReal 
+            Caption         =   "Salario Promedio Dif Dias"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   93
+            Top             =   360
+            Value           =   -1  'True
+            Width           =   2535
+         End
+      End
+      Begin VB.Frame Frame11 
+         Height          =   3615
+         Left            =   -74760
+         TabIndex        =   75
+         Top             =   1080
+         Width           =   7455
+         Begin VB.Frame Frame13 
+            Caption         =   "Valor de Puntos"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   975
+            Left            =   3720
+            TabIndex        =   84
+            Top             =   960
+            Width           =   3495
+            Begin VB.TextBox txtPtsAnt 
+               Height          =   285
+               Left            =   120
+               Locked          =   -1  'True
+               TabIndex        =   86
+               Top             =   600
+               Width           =   1575
+            End
+            Begin VB.TextBox txtPtsAct 
+               Height          =   285
+               Left            =   1800
+               TabIndex        =   85
+               Top             =   600
+               Width           =   1575
+            End
+            Begin ACTIVESKINLibCtl.SkinLabel SkinLabel12 
+               Height          =   255
+               Left            =   120
+               OleObjectBlob   =   "FrmControles.frx":7083
+               TabIndex        =   87
+               Top             =   360
+               Width           =   1215
+            End
+            Begin ACTIVESKINLibCtl.SkinLabel SkinLabel13 
+               Height          =   255
+               Left            =   1800
+               OleObjectBlob   =   "FrmControles.frx":70F1
+               TabIndex        =   88
+               Top             =   360
+               Width           =   1215
+            End
+         End
+         Begin VB.Frame Frame12 
+            Caption         =   "Salario Mínimo"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   975
+            Left            =   120
+            TabIndex        =   79
+            Top             =   960
+            Width           =   3495
+            Begin VB.TextBox txtSalAnt 
+               Height          =   285
+               Left            =   120
+               Locked          =   -1  'True
+               TabIndex        =   81
+               Top             =   600
+               Width           =   1575
+            End
+            Begin VB.TextBox txtSalAct 
+               Height          =   285
+               Left            =   1800
+               TabIndex        =   80
+               Top             =   600
+               Width           =   1575
+            End
+            Begin ACTIVESKINLibCtl.SkinLabel SkinLabel9 
+               Height          =   255
+               Left            =   120
+               OleObjectBlob   =   "FrmControles.frx":715B
+               TabIndex        =   82
+               Top             =   360
+               Width           =   1215
+            End
+            Begin ACTIVESKINLibCtl.SkinLabel SkinLabel11 
+               Height          =   255
+               Left            =   1800
+               OleObjectBlob   =   "FrmControles.frx":71C9
+               TabIndex        =   83
+               Top             =   360
+               Width           =   1215
+            End
+         End
+         Begin VB.CommandButton cmdSalPts 
+            Caption         =   "Procesar"
+            Height          =   735
+            Left            =   120
+            Picture         =   "FrmControles.frx":7233
+            Style           =   1  'Graphical
+            TabIndex        =   76
+            Top             =   2640
+            Width           =   1095
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel8 
+            Height          =   255
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":77BD
+            TabIndex        =   77
+            Top             =   240
+            Width           =   1215
+         End
+         Begin TrueOleDBList80.TDBCombo tdbcNomina 
+            Height          =   315
+            Left            =   120
+            TabIndex        =   78
+            Top             =   480
+            Width           =   7095
+            _ExtentX        =   12515
+            _ExtentY        =   556
+            _LayoutType     =   0
+            _RowHeight      =   -2147483647
+            _WasPersistedAsPixels=   0
+            _DropdownWidth  =   0
+            _EDITHEIGHT     =   556
+            _GAPHEIGHT      =   53
+            Columns(0)._VlistStyle=   0
+            Columns(0)._MaxComboItems=   5
+            Columns(0).DataField=   ""
+            Columns(0)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+            Columns(1)._VlistStyle=   0
+            Columns(1)._MaxComboItems=   5
+            Columns(1).DataField=   ""
+            Columns(1)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+            Columns.Count   =   2
+            Splits(0)._UserFlags=   0
+            Splits(0).ExtendRightColumn=   -1  'True
+            Splits(0).AllowRowSizing=   0   'False
+            Splits(0)._PropDict=   "_ColumnProps,515,0;_UserFlags,518,3"
+            Splits(0)._ColumnProps(0)=   "Columns.Count=2"
+            Splits(0)._ColumnProps(1)=   "Column(0).Width=2725"
+            Splits(0)._ColumnProps(2)=   "Column(0).DividerColor=0"
+            Splits(0)._ColumnProps(3)=   "Column(0)._WidthInPix=2646"
+            Splits(0)._ColumnProps(4)=   "Column(0)._EditAlways=0"
+            Splits(0)._ColumnProps(5)=   "Column(0).Order=1"
+            Splits(0)._ColumnProps(6)=   "Column(1).Width=2725"
+            Splits(0)._ColumnProps(7)=   "Column(1).DividerColor=0"
+            Splits(0)._ColumnProps(8)=   "Column(1)._WidthInPix=2646"
+            Splits(0)._ColumnProps(9)=   "Column(1)._EditAlways=0"
+            Splits(0)._ColumnProps(10)=   "Column(1).Order=2"
+            Splits.Count    =   1
+            Appearance      =   1
+            BorderStyle     =   1
+            ComboStyle      =   0
+            AutoCompletion  =   -1  'True
+            LimitToList     =   0   'False
+            ColumnHeaders   =   0   'False
+            ColumnFooters   =   0   'False
+            DataMode        =   0
+            DefColWidth     =   0
+            Enabled         =   -1  'True
+            HeadLines       =   1
+            FootLines       =   1
+            RowDividerStyle =   0
+            Caption         =   ""
+            EditFont        =   "Size=8.25,Charset=0,Weight=400,Underline=0,Italic=0,Strikethrough=0,Name=MS Sans Serif"
+            LayoutName      =   ""
+            LayoutFileName  =   ""
+            MultipleLines   =   0
+            EmptyRows       =   -1  'True
+            CellTips        =   0
+            AutoSize        =   -1  'True
+            ListField       =   ""
+            BoundColumn     =   ""
+            IntegralHeight  =   0   'False
+            CellTipsWidth   =   0
+            CellTipsDelay   =   1000
+            AutoDropdown    =   0   'False
+            RowTracking     =   -1  'True
+            RightToLeft     =   0   'False
+            RowMember       =   ""
+            MouseIcon       =   0
+            MouseIcon.vt    =   3
+            MousePointer    =   0
+            MatchEntryTimeout=   2000
+            OLEDragMode     =   0
+            OLEDropMode     =   0
+            AnimateWindow   =   0
+            AnimateWindowDirection=   0
+            AnimateWindowTime=   200
+            AnimateWindowClose=   0
+            DropdownPosition=   0
+            Locked          =   0   'False
+            ScrollTrack     =   0   'False
+            RowDividerColor =   14215660
+            RowSubDividerColor=   14215660
+            AddItemSeparator=   ";"
+            _PropDict       =   $"FrmControles.frx":7829
+            _StyleDefs(0)   =   "_StyleRoot:id=0,.parent=-1,.alignment=3,.valignment=0,.bgcolor=&H80000005&"
+            _StyleDefs(1)   =   ":id=0,.fgcolor=&H80000008&,.wraptext=0,.locked=0,.transparentBmp=0"
+            _StyleDefs(2)   =   ":id=0,.fgpicPosition=0,.bgpicMode=0,.appearance=0,.borderSize=0,.ellipsis=0"
+            _StyleDefs(3)   =   ":id=0,.borderColor=&H80000005&,.borderType=0,.bold=0,.fontsize=825,.italic=0"
+            _StyleDefs(4)   =   ":id=0,.underline=0,.strikethrough=0,.charset=0"
+            _StyleDefs(5)   =   ":id=0,.fontname=MS Sans Serif"
+            _StyleDefs(6)   =   "Style:id=1,.parent=0,.namedParent=33"
+            _StyleDefs(7)   =   "CaptionStyle:id=4,.parent=2,.namedParent=37"
+            _StyleDefs(8)   =   "HeadingStyle:id=2,.parent=1,.namedParent=34"
+            _StyleDefs(9)   =   "FooterStyle:id=3,.parent=1,.namedParent=35"
+            _StyleDefs(10)  =   "InactiveStyle:id=5,.parent=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
+            _StyleDefs(11)  =   "SelectedStyle:id=6,.parent=1,.namedParent=36"
+            _StyleDefs(12)  =   "EditorStyle:id=7,.parent=1"
+            _StyleDefs(13)  =   "HighlightRowStyle:id=8,.parent=1,.namedParent=38"
+            _StyleDefs(14)  =   "EvenRowStyle:id=9,.parent=1,.namedParent=39"
+            _StyleDefs(15)  =   "OddRowStyle:id=10,.parent=1,.namedParent=40"
+            _StyleDefs(16)  =   "RecordSelectorStyle:id=11,.parent=2,.namedParent=41"
+            _StyleDefs(17)  =   "FilterBarStyle:id=12,.parent=1,.namedParent=42"
+            _StyleDefs(18)  =   "Splits(0).Style:id=13,.parent=1"
+            _StyleDefs(19)  =   "Splits(0).CaptionStyle:id=22,.parent=4"
+            _StyleDefs(20)  =   "Splits(0).HeadingStyle:id=14,.parent=2"
+            _StyleDefs(21)  =   "Splits(0).FooterStyle:id=15,.parent=3"
+            _StyleDefs(22)  =   "Splits(0).InactiveStyle:id=16,.parent=5"
+            _StyleDefs(23)  =   "Splits(0).SelectedStyle:id=18,.parent=6"
+            _StyleDefs(24)  =   "Splits(0).EditorStyle:id=17,.parent=7"
+            _StyleDefs(25)  =   "Splits(0).HighlightRowStyle:id=19,.parent=8"
+            _StyleDefs(26)  =   "Splits(0).EvenRowStyle:id=20,.parent=9"
+            _StyleDefs(27)  =   "Splits(0).OddRowStyle:id=21,.parent=10"
+            _StyleDefs(28)  =   "Splits(0).RecordSelectorStyle:id=23,.parent=11"
+            _StyleDefs(29)  =   "Splits(0).FilterBarStyle:id=24,.parent=12"
+            _StyleDefs(30)  =   "Splits(0).Columns(0).Style:id=28,.parent=13"
+            _StyleDefs(31)  =   "Splits(0).Columns(0).HeadingStyle:id=25,.parent=14"
+            _StyleDefs(32)  =   "Splits(0).Columns(0).FooterStyle:id=26,.parent=15"
+            _StyleDefs(33)  =   "Splits(0).Columns(0).EditorStyle:id=27,.parent=17"
+            _StyleDefs(34)  =   "Splits(0).Columns(1).Style:id=32,.parent=13"
+            _StyleDefs(35)  =   "Splits(0).Columns(1).HeadingStyle:id=29,.parent=14"
+            _StyleDefs(36)  =   "Splits(0).Columns(1).FooterStyle:id=30,.parent=15"
+            _StyleDefs(37)  =   "Splits(0).Columns(1).EditorStyle:id=31,.parent=17"
+            _StyleDefs(38)  =   "Named:id=33:Normal"
+            _StyleDefs(39)  =   ":id=33,.parent=0"
+            _StyleDefs(40)  =   "Named:id=34:Heading"
+            _StyleDefs(41)  =   ":id=34,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
+            _StyleDefs(42)  =   ":id=34,.wraptext=-1"
+            _StyleDefs(43)  =   "Named:id=35:Footing"
+            _StyleDefs(44)  =   ":id=35,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
+            _StyleDefs(45)  =   "Named:id=36:Selected"
+            _StyleDefs(46)  =   ":id=36,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
+            _StyleDefs(47)  =   "Named:id=37:Caption"
+            _StyleDefs(48)  =   ":id=37,.parent=34,.alignment=2"
+            _StyleDefs(49)  =   "Named:id=38:HighlightRow"
+            _StyleDefs(50)  =   ":id=38,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
+            _StyleDefs(51)  =   "Named:id=39:EvenRow"
+            _StyleDefs(52)  =   ":id=39,.parent=33,.bgcolor=&HFFFF00&"
+            _StyleDefs(53)  =   "Named:id=40:OddRow"
+            _StyleDefs(54)  =   ":id=40,.parent=33"
+            _StyleDefs(55)  =   "Named:id=41:RecordSelector"
+            _StyleDefs(56)  =   ":id=41,.parent=34"
+            _StyleDefs(57)  =   "Named:id=42:FilterBar"
+            _StyleDefs(58)  =   ":id=42,.parent=33"
+         End
+         Begin XtremeSuiteControls.ProgressBar ospSalPts 
+            Height          =   375
+            Left            =   120
+            TabIndex        =   89
+            Top             =   2040
+            Width           =   7095
+            _Version        =   786432
+            _ExtentX        =   12515
+            _ExtentY        =   661
+            _StockProps     =   93
+            BackColor       =   14737632
+            Scrolling       =   1
+            Appearance      =   6
+         End
+      End
+      Begin VB.Frame Frame10 
+         Caption         =   "Configuracion del IR"
+         Height          =   1095
+         Left            =   -70320
+         TabIndex        =   67
+         Top             =   2640
+         Width           =   2295
+         Begin VB.OptionButton Option1 
+            Caption         =   "Calcular Ajustando IR"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   69
+            Top             =   360
+            Value           =   -1  'True
+            Width           =   1935
+         End
+         Begin VB.OptionButton Option2 
+            Caption         =   "Calcular IR x 12"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   68
+            Top             =   720
+            Width           =   1815
+         End
+      End
+      Begin VB.Frame Frame9 
+         Caption         =   "CONEXION SISTEMA CONTABLE"
+         Height          =   2055
+         Left            =   -74880
+         TabIndex        =   63
+         Top             =   1020
+         Width           =   6855
+         Begin VB.CommandButton Command3 
+            Height          =   375
+            Left            =   5880
+            Picture         =   "FrmControles.frx":78D3
+            Style           =   1  'Graphical
+            TabIndex        =   66
+            Top             =   360
+            Width           =   375
+         End
+         Begin VB.TextBox TxtConexionString 
+            Height          =   1515
+            Left            =   1920
+            MaxLength       =   255
+            MultiLine       =   -1  'True
+            TabIndex        =   64
+            Top             =   360
+            Width           =   3855
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel10 
+            Height          =   375
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":7D89
+            TabIndex        =   65
+            Top             =   360
+            Width           =   1695
+         End
+      End
+      Begin VB.Frame Frame8 
+         Caption         =   "Configuracion Vacaciones"
+         Height          =   1095
+         Left            =   -70320
+         TabIndex        =   60
+         Top             =   1560
+         Width           =   2415
+         Begin VB.OptionButton OptVacacionesMensuales 
+            Caption         =   "Vacaciones Mensuales"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   62
+            Top             =   720
+            Width           =   2175
+         End
+         Begin VB.OptionButton OptVacacionesSemestrales 
+            Caption         =   "Vacaciones Semestrales"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   61
+            Top             =   360
+            Value           =   -1  'True
+            Width           =   2175
+         End
+      End
+      Begin VB.Frame Frame7 
+         Caption         =   "Ajustar de Salarios"
+         Height          =   1575
+         Left            =   -74760
+         TabIndex        =   53
+         Top             =   960
+         Width           =   6615
+         Begin VB.ComboBox CmbSimbolo 
+            Height          =   315
+            ItemData        =   "FrmControles.frx":7E05
+            Left            =   960
+            List            =   "FrmControles.frx":7E18
+            TabIndex        =   73
+            Text            =   "="
+            Top             =   310
+            Width           =   735
+         End
+         Begin VB.OptionButton OptTarifa 
+            Caption         =   "Ajustar Tarifa Horaria"
+            Height          =   255
+            Left            =   2520
+            TabIndex        =   72
+            Top             =   1200
+            Value           =   -1  'True
+            Width           =   1935
+         End
+         Begin VB.OptionButton OptSalario 
+            Caption         =   "Ajustar Salario Basico"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   71
+            Top             =   1200
+            Width           =   1935
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel LblProgreso 
+            Height          =   255
+            Left            =   240
+            OleObjectBlob   =   "FrmControles.frx":7E2D
+            TabIndex        =   59
+            Top             =   1200
+            Width           =   4935
+         End
+         Begin VB.TextBox TxtSalarioAjuste 
+            Height          =   315
+            Left            =   3960
+            TabIndex        =   58
+            Top             =   310
+            Width           =   1095
+         End
+         Begin VB.TextBox TxtSalario 
+            Height          =   315
+            Left            =   1800
+            TabIndex        =   56
+            Top             =   310
+            Width           =   1095
+         End
+         Begin VB.CommandButton CmdProcesarSalario 
+            Caption         =   "Procesar"
+            Height          =   735
+            Left            =   5280
+            Picture         =   "FrmControles.frx":7E8B
+            Style           =   1  'Graphical
+            TabIndex        =   55
+            Top             =   240
+            Width           =   1095
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel LblNombre1 
+            Height          =   255
+            Left            =   240
+            OleObjectBlob   =   "FrmControles.frx":8415
+            TabIndex        =   54
+            Top             =   360
+            Width           =   855
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel LblNombre2 
+            Height          =   255
+            Left            =   3000
+            OleObjectBlob   =   "FrmControles.frx":8483
+            TabIndex        =   57
+            Top             =   360
+            Width           =   855
+         End
+         Begin XtremeSuiteControls.ProgressBar BarraEmpleados 
+            Height          =   375
+            Left            =   120
+            TabIndex        =   91
+            Top             =   720
+            Width           =   5055
+            _Version        =   786432
+            _ExtentX        =   8916
+            _ExtentY        =   661
+            _StockProps     =   93
+            BackColor       =   14737632
+            Scrolling       =   1
+            Appearance      =   6
+         End
+      End
+      Begin VB.Frame Frame3 
+         Caption         =   "Configuracion de Reportes"
+         Height          =   2775
+         Left            =   -74880
+         TabIndex        =   36
+         Top             =   2340
+         Width           =   4455
+         Begin VB.Frame Frame6 
+            Height          =   1455
+            Left            =   120
+            TabIndex        =   48
+            Top             =   1200
+            Width           =   4095
+            Begin VB.CheckBox Chk7mo 
+               Caption         =   "No Calc 7mo conforme Produccion"
+               Height          =   375
+               Left            =   1080
+               TabIndex        =   74
+               Top             =   960
+               Width           =   2895
+            End
+            Begin MSComCtl2.DTPicker DTFecha 
+               Height          =   285
+               Left            =   2160
+               TabIndex        =   51
+               Top             =   240
+               Width           =   1815
+               _ExtentX        =   3201
+               _ExtentY        =   503
+               _Version        =   393216
+               Format          =   17104897
+               CurrentDate     =   39737
+            End
+            Begin VB.CommandButton Command2 
+               Caption         =   "Procesar"
+               Height          =   735
+               Left            =   120
+               Picture         =   "FrmControles.frx":84F7
+               Style           =   1  'Graphical
+               TabIndex        =   49
+               Top             =   120
+               Width           =   1215
+            End
+            Begin XtremeSuiteControls.ProgressBar Barra 
+               Height          =   255
+               Left            =   1560
+               TabIndex        =   90
+               Top             =   600
+               Visible         =   0   'False
+               Width           =   2415
+               _Version        =   786432
+               _ExtentX        =   4260
+               _ExtentY        =   450
+               _StockProps     =   93
+               BackColor       =   14737632
+               Scrolling       =   1
+               Appearance      =   6
+            End
+            Begin VB.Label Label3 
+               Caption         =   "Hasta"
+               Height          =   255
+               Left            =   1560
+               TabIndex        =   50
+               Top             =   240
+               Width           =   495
+            End
+         End
+         Begin VB.ComboBox CmbNominas 
+            Height          =   315
+            ItemData        =   "FrmControles.frx":8A81
+            Left            =   1560
+            List            =   "FrmControles.frx":8A9A
+            TabIndex        =   40
+            Text            =   "Predeterminado"
+            Top             =   840
+            Width           =   2775
+         End
+         Begin VB.ComboBox CmbColillas 
+            Height          =   315
+            ItemData        =   "FrmControles.frx":8B33
+            Left            =   1560
+            List            =   "FrmControles.frx":8B4F
+            TabIndex        =   38
+            Text            =   "Predeterminado"
+            Top             =   360
+            Width           =   2775
+         End
+         Begin VB.Label LblProcesos 
+            Height          =   255
+            Left            =   1680
+            TabIndex        =   52
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   2415
+         End
+         Begin VB.Label Label2 
+            Caption         =   "Formatos Nominas"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   39
+            Top             =   840
+            Width           =   1455
+         End
+         Begin VB.Label Label1 
+            Caption         =   "Formatos Colillas"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   37
+            Top             =   360
+            Width           =   1455
+         End
+      End
+      Begin VB.CheckBox ChkTasa 
+         Caption         =   "Verificar Tasa al Entrar"
+         Height          =   375
+         Left            =   -70200
+         TabIndex        =   35
+         ToolTipText     =   "Verifica si la tasa del día ya ha sido Grabada"
+         Top             =   1200
+         Value           =   1  'Checked
+         Width           =   1935
+      End
+      Begin VB.Frame Frame2 
+         Caption         =   "Dias a la Semana"
+         Height          =   975
+         Left            =   -72960
+         TabIndex        =   32
+         Top             =   960
+         Width           =   1695
+         Begin VB.OptionButton OPT6 
+            Caption         =   "Seis Dias"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   34
+            Top             =   600
+            Width           =   1095
+         End
+         Begin VB.OptionButton Opt7 
+            Caption         =   "Siete Dias"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   33
+            Top             =   240
+            Value           =   -1  'True
+            Width           =   1095
+         End
+      End
+      Begin VB.Frame Frame1 
+         Caption         =   "Dias al Mes"
+         Height          =   1335
+         Left            =   -74880
+         TabIndex        =   29
+         Top             =   960
+         Width           =   1575
+         Begin VB.OptionButton Opt25 
+            Caption         =   "25 Días"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   70
+            Top             =   960
+            Width           =   1215
+         End
+         Begin VB.OptionButton OptExacto 
+            Caption         =   "(365/12) Días"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   31
+            Top             =   240
+            Value           =   -1  'True
+            Width           =   1335
+         End
+         Begin VB.OptionButton Opt30 
+            Caption         =   "30 Días"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   30
+            Top             =   600
+            Width           =   1215
+         End
+      End
+      Begin VB.Frame Frame5 
+         Height          =   3375
+         Left            =   120
+         TabIndex        =   12
+         Top             =   960
+         Width           =   6855
+         Begin VB.TextBox TxtRutaFoto 
+            Height          =   375
+            Left            =   2880
+            TabIndex        =   44
+            Top             =   2760
+            Width           =   3495
+         End
+         Begin VB.CommandButton Command1 
+            Height          =   375
+            Left            =   6360
+            Picture         =   "FrmControles.frx":8C01
+            Style           =   1  'Graphical
+            TabIndex        =   43
+            Top             =   2760
+            Width           =   375
+         End
+         Begin VB.TextBox TxtNombreEmpresa 
+            Height          =   285
+            Left            =   4080
+            MaxLength       =   50
+            TabIndex        =   21
+            Top             =   120
+            Width           =   2655
+         End
+         Begin VB.CommandButton CmdBuscarLogo 
+            Height          =   375
+            Left            =   6360
+            Picture         =   "FrmControles.frx":90B7
+            Style           =   1  'Graphical
+            TabIndex        =   20
+            Top             =   2280
+            Width           =   375
+         End
+         Begin VB.PictureBox ImgLogo2 
+            AutoSize        =   -1  'True
+            Height          =   2055
+            Left            =   120
+            ScaleHeight     =   1995
+            ScaleWidth      =   2235
+            TabIndex        =   19
+            Top             =   240
+            Width           =   2295
+            Begin VB.Image ImgLogo 
+               Height          =   2055
+               Left            =   0
+               Stretch         =   -1  'True
+               Top             =   0
+               Width           =   2295
+            End
+         End
+         Begin VB.TextBox TxtRutaLogo 
+            Height          =   375
+            Left            =   2880
+            TabIndex        =   18
+            Top             =   2280
+            Width           =   3495
+         End
+         Begin VB.TextBox TxtFax 
+            Height          =   285
+            Left            =   4080
+            MaxLength       =   50
+            TabIndex        =   17
+            Top             =   1560
+            Width           =   2655
+         End
+         Begin VB.TextBox TxtEmail 
+            Height          =   285
+            Left            =   4080
+            MaxLength       =   50
+            TabIndex        =   16
+            Top             =   1800
+            Width           =   2655
+         End
+         Begin VB.TextBox TxtDireccionEmpresa 
+            Height          =   765
+            Left            =   4080
+            MaxLength       =   50
+            MultiLine       =   -1  'True
+            ScrollBars      =   2  'Vertical
+            TabIndex        =   15
+            Top             =   360
+            Width           =   2655
+         End
+         Begin VB.TextBox TxtRucEmpresa 
+            Height          =   285
+            Left            =   4080
+            MaxLength       =   50
+            TabIndex        =   14
+            Top             =   1080
+            Width           =   2655
+         End
+         Begin VB.TextBox TxtTelefono 
+            Height          =   285
+            Left            =   4080
+            MaxLength       =   50
+            TabIndex        =   13
+            Top             =   1320
+            Width           =   2655
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel25 
+            Height          =   255
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":956D
+            TabIndex        =   22
+            Top             =   2400
+            Width           =   2535
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel18 
+            Height          =   255
+            Left            =   2640
+            OleObjectBlob   =   "FrmControles.frx":9609
+            TabIndex        =   23
+            Top             =   120
+            Width           =   1335
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel2 
+            Height          =   255
+            Left            =   3480
+            OleObjectBlob   =   "FrmControles.frx":9683
+            TabIndex        =   24
+            Top             =   1560
+            Width           =   375
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel19 
+            Height          =   255
+            Left            =   3360
+            OleObjectBlob   =   "FrmControles.frx":96E7
+            TabIndex        =   25
+            Top             =   1800
+            Width           =   495
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel20 
+            Height          =   255
+            Left            =   3120
+            OleObjectBlob   =   "FrmControles.frx":9753
+            TabIndex        =   26
+            Top             =   360
+            Width           =   735
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel21 
+            Height          =   255
+            Left            =   2880
+            OleObjectBlob   =   "FrmControles.frx":97C3
+            TabIndex        =   27
+            Top             =   1080
+            Width           =   975
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel24 
+            Height          =   255
+            Left            =   3120
+            OleObjectBlob   =   "FrmControles.frx":9835
+            TabIndex        =   28
+            Top             =   1320
+            Width           =   735
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel7 
+            Height          =   255
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":98A5
+            TabIndex        =   45
+            Top             =   2880
+            Width           =   2775
+         End
+      End
+      Begin VB.Frame Frame4 
+         Height          =   2775
+         Left            =   -74880
+         TabIndex        =   1
+         Top             =   360
+         Width           =   6855
+         Begin VB.TextBox TxtIO 
+            Height          =   405
+            Left            =   3600
+            MaxLength       =   50
+            TabIndex        =   6
+            Top             =   240
+            Width           =   3135
+         End
+         Begin VB.TextBox TxtCO 
+            Height          =   405
+            Left            =   3600
+            MaxLength       =   50
+            TabIndex        =   5
+            Top             =   720
+            Width           =   3135
+         End
+         Begin VB.TextBox TxtOI 
+            Height          =   405
+            Left            =   3600
+            MaxLength       =   50
+            TabIndex        =   4
+            Top             =   1200
+            Width           =   3135
+         End
+         Begin VB.TextBox TxtC 
+            Height          =   285
+            Left            =   3600
+            MaxLength       =   50
+            TabIndex        =   3
+            Top             =   2280
+            Width           =   3135
+         End
+         Begin VB.TextBox TxtI 
+            Height          =   285
+            Left            =   3600
+            MaxLength       =   50
+            TabIndex        =   2
+            Top             =   1800
+            Width           =   3135
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel1 
+            Height          =   255
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":9949
+            TabIndex        =   7
+            Top             =   240
+            Width           =   3375
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel3 
+            Height          =   255
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":99F5
+            TabIndex        =   8
+            Top             =   720
+            Width           =   3495
+         End
+         Begin ACTIVESKINLibCtl.SkinLabel SkinLabel4 
+            Height          =   255
+            Left            =   120
+            OleObjectBlob   =   "FrmControles.frx":9A9D
+            TabIndex        =   9
+            Top             =   1200

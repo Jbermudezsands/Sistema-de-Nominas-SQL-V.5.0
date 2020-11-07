@@ -1,0 +1,4 @@
+Línea 22: la clase XtremeTaskPanel.TaskPanel del control TaskPanel1 no era una clase de control cargada.
+Línea 239: la clase XtremeSuiteControls.GroupBox del control GroupBox2 no era una clase de control cargada.
+Línea 433: la clase XtremeSuiteControls.GroupBox del control GroupBox1 no era una clase de control cargada.
+Línea 507: la clase XtremeCalendarControl.DatePicker del control wndDatePicker no era una clase de control cargada.

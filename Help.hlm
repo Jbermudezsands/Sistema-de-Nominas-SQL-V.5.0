@@ -1,0 +1,15 @@
+þVQMACROFILE_02.59þ
+
+[DICTIONARY]
+MD, EMD = START, END OF MACRO DEFINITIONS
+MI, EMI = START, END OF MACRO INFORMATION
+[END DICTIONARY]
+[MD]
+1:Movimiento;2:idSalir_Button;
+[EMD]
+
+[MI]
+000001BrowseButtons()
+000002CreateButton("idSalir","Salir","Exit()")
+[EMI]
+

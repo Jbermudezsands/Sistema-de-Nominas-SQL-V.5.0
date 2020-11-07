@@ -1,0 +1,56 @@
+[OPTIONS]
+ROOT = C:\NOMINAS
+COMPRESS = TRUE
+WARNING = 3
+REPORT = 1
+CONTENTS = 1
+ERRORLOG = C:\NOMINAS\HELP.ERR
+BMROOT = C:\HM20
+TITLE = Zeus.hlx
+MULTIKEY = M
+
+[CONFIG]
+CreateButton("idSalir","Salir","Exit()")
+BrowseButtons()
+
+
+[BAGGAGE]
+
+
+[BITMAPS]
+d:\zeusno~1\dash.bmp
+d:\zeusno~1\rabit.shg
+c:\rmc\rabit.shg
+c:\rmc\dash.bmp
+
+[FILES]
+C:\NOMINAS\HELP.RTF
+
+[WINDOWS]
+main="Zeus.hlx",(600,130,380,780),0,(255,255,128),(255,128,128),1
+
+[MAP]
+1                                       1; Control de Inventarios y Facturación
+windows                                 4; windows
+salir                                   5; salir
+_Crear_una_nueva_facturaU               6; ¿Crear una nueva factura?
+_Como_eliminar_un_registroU             7; ¿Como eliminar un registro?
+_Como_agregar_un_nuevo_registroU        8; ¿Como agregar un nuevo registro?
+_Como_buscar_un_registro_especificoU    9; ¿Como buscar un registro especifico?
+_Como_crear_un_reporteU                 10; ¿Como crear un reporte?
+_Como_generar_una_consultaU             11; ¿Como generar una consulta?
+haga_click                              12; haga click
+Cambiar_Contrase_a                      13; Cambiar Contraseña
+menu_Principal                          14; menu Principal
+clave_vieja_                            15; clave vieja 
+nueva_clave_                            16; nueva clave 
+confirmacion_nueva_clave                17; confirmacion nueva clave
+nivel_de_acceso                         18; nivel de acceso
+Agregar_Clave                           19; Agregar Clave
+Revicion_de_Facturas                    20; Revicion de Facturas
+Pantalla                                21; Pantalla
+Reportes_Generales                      22; Reportes Generales
+Contol_de_inventarios_y_facturaci_n     2; Contol de inventarios y facturación
+Control_de_inventarios_y_facturaci_n    3; Control de inventarios y facturación
+actualizar_registro                     23; actualizar registro
+Temp_Title_24                           24; Temp Title 24

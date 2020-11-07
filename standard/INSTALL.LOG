@@ -1,0 +1,103 @@
+***  Installation Started 02/27/2013 11:55  ***
+Title: Facial Recognition System Installation
+Source: D:\新建文件夹 (5)\FacePass光盘\Setup.EXE | 01-31-2013 | 11:18:32 | 9531958
+Made Dir: C:\Att new
+File Copy: C:\Att new\UNWISE.EXE | 08-08-2002 | 23:40:48 | | 153088 | 833b8ad1
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Facial Recognition System
+RegDB Val: Facial Recognition System
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Old: Facial Recognition System
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Facial Recognition System
+RegDB Val: C:\ATTNEW~1\UNWISE.EXE C:\ATTNEW~1\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+RegDB Old: C:\ATTFAC~1\UNWISE.EXE C:\ATTFAC~1\INSTALL.LOG
+Made Dir: C:\Att new\Spm
+File Copy: C:\Att new\Spm\SPM_1.bin | 07-08-2010 | 09:02:44 | | 45404 | de46500
+Made Dir: C:\Att new\pngbmp
+File Copy: C:\Att new\pngbmp\PNG_User2.png | 02-17-2009 | 13:00:34 | | 9537 | 3501577e
+File Copy: C:\Att new\pngbmp\PNG_User1.png | 02-05-2009 | 15:13:12 | | 9195 | 5179527
+File Copy: C:\Att new\pngbmp\PNG_UClass3.png | 02-04-2009 | 16:28:40 | | 9253 | 1bf823f9
+File Copy: C:\Att new\pngbmp\PNG_UClass2.png | 02-17-2009 | 13:03:06 | | 10196 | 43ac4fc5
+File Copy: C:\Att new\pngbmp\PNG_UClass1.png | 02-04-2009 | 16:27:16 | | 9604 | 4cd5922f
+File Copy: C:\Att new\pngbmp\PNG_ShrinkData3.png | 02-04-2009 | 16:52:24 | | 10408 | 2ac385e8
+File Copy: C:\Att new\pngbmp\PNG_ShrinkData2.png | 02-17-2009 | 13:01:04 | | 10537 | 39517e6c
+File Copy: C:\Att new\pngbmp\PNG_ShrinkData1.png | 02-04-2009 | 16:52:14 | | 10944 | 34f37f3d
+File Copy: C:\Att new\pngbmp\PNG_Report3.png | 02-06-2009 | 11:34:30 | | 7814 | e631f6f3
+File Copy: C:\Att new\pngbmp\PNG_Report2.png | 02-17-2009 | 13:02:00 | | 8657 | 8549b130
+File Copy: C:\Att new\pngbmp\PNG_Report1.png | 02-06-2009 | 11:33:20 | | 8404 | db5d89f
+File Copy: C:\Att new\pngbmp\PNG_Record3.png | 02-09-2009 | 13:47:28 | | 9530 | 7a1ce847
+File Copy: C:\Att new\pngbmp\PNG_Record2.png | 02-17-2009 | 13:02:18 | | 10027 | 4f484e28
+File Copy: C:\Att new\pngbmp\PNG_Record1.png | 02-09-2009 | 13:46:56 | | 9835 | 1481b876
+File Copy: C:\Att new\pngbmp\PNG_NoIn3.png | 02-09-2009 | 14:20:50 | | 10540 | 97fd3c07
+File Copy: C:\Att new\pngbmp\PNG_NoIn2.png | 02-17-2009 | 13:02:34 | | 10597 | 4f4f75d6
+File Copy: C:\Att new\pngbmp\PNG_NoIn1.png | 02-09-2009 | 14:20:36 | | 10916 | 15192c95
+File Copy: C:\Att new\pngbmp\PNG_Free3.png | 02-10-2009 | 10:14:56 | | 9624 | fe4570f3
+File Copy: C:\Att new\pngbmp\PNG_Free2.png | 02-17-2009 | 13:02:50 | | 10282 | 4b05d3f7
+File Copy: C:\Att new\pngbmp\PNG_Free1.png | 02-10-2009 | 10:13:16 | | 10185 | d39f9055
+File Copy: C:\Att new\pngbmp\PNG_Close3.png | 02-04-2009 | 17:32:54 | | 6277 | cacf3a96
+File Copy: C:\Att new\pngbmp\PNG_Close2.png | 02-17-2009 | 13:01:24 | | 6791 | 86a1e610
+File Copy: C:\Att new\pngbmp\PNG_Close1.png | 02-04-2009 | 17:32:44 | | 6454 | f35fa441
+File Copy: C:\Att new\pngbmp\PNG_ClearData3.png | 02-04-2009 | 16:49:40 | | 6107 | 5e7bc2c2
+File Copy: C:\Att new\pngbmp\PNG_User3.png | 02-04-2009 | 13:47:28 | | 9258 | 6d39ce8d
+Made Dir: C:\Att new\plugin
+File Copy: C:\Att new\plugin\AlgoDvc.dll | 02-01-2012 | 15:49:06 | 4.10.0.23 | 151552 | 85e69f1e
+File Copy: C:\Att new\plugin\IEngine_Plus.dll | 02-01-2012 | 15:56:42 | 4.10.0.23 | 106496 | 3e21ab4b
+File Copy: C:\Att new\plugin\MercuryDvc.dll | 02-01-2012 | 15:53:04 | 4.10.0.23 | 180224 | 271c1a7c
+File Copy: C:\Att new\plugin\PreProcV21_INT16.dll | 02-01-2012 | 15:56:08 | 4.10.0.23 | 266240 | 5e9ffed8
+File Copy: C:\Att new\plugin\SDvc.dll | 02-01-2012 | 15:53:52 | 3.10.0.15 | 217088 | e277d370
+File Copy: C:\Att new\plugin\VenusDvc.dll | 02-01-2012 | 15:50:30 | 4.10.0.23 | 188416 | 14f6dca1
+File Copy: C:\Att new\pngbmp\about.jpg | 04-13-2009 | 11:57:30 | | 65554 | 6d899e90
+File Copy: C:\Att new\pngbmp\back.png | 02-04-2009 | 14:06:22 | | 279902 | 52f2ed26
+File Copy: C:\Att new\pngbmp\backleft.png | 02-04-2009 | 14:07:34 | | 17213 | 7d690cc6
+File Copy: C:\Att new\pngbmp\backright.png | 02-04-2009 | 14:07:06 | | 20330 | 336ea095
+File Copy: C:\Att new\pngbmp\login.png | 02-17-2009 | 14:15:06 | | 63341 | c9baec33
+File Copy: C:\Att new\pngbmp\PNG_Class1.png | 02-06-2009 | 11:28:26 | | 9474 | fc99b85d
+File Copy: C:\Att new\pngbmp\PNG_Class2.png | 02-17-2009 | 13:01:44 | | 9579 | 91a03a5b
+File Copy: C:\Att new\pngbmp\PNG_Class3.png | 02-06-2009 | 11:28:36 | | 9030 | 852d850c
+File Copy: C:\Att new\pngbmp\PNG_ClearData1.png | 02-04-2009 | 16:49:26 | | 6320 | e5589a1f
+File Copy: C:\Att new\pngbmp\PNG_ClearData2.png | 02-17-2009 | 13:00:50 | | 6760 | 7c1b5d7
+File Copy: C:\Att new\Unwise32.exe | 07-27-2002 | 09:02:06 | | 153088 | 5be5019b
+File Overwrite: C:\Att new\Unwise.exe | 07-26-2002 | 17:02:06 | | 153088 | 5be5019b
+File Copy: C:\Att new\reg.bat | 12-30-2011 | 11:32:12 | | 25 | f45e19ad
+File Copy: C:\Att new\PrjComm.exe | 12-19-2012 | 14:02:16 | 4.0.2.10 | 8598016 | 4ee3f174
+File Copy: C:\Att new\Pcomm.dll | 09-09-2009 | 11:05:24 | 2.6.0.0 | 86016 | 34e07198
+File Copy: C:\Att new\NoPhoto.bmp | 01-18-2008 | 15:16:34 | | 36056 | ba6d1582
+File Copy: C:\Att new\msvcrtd.dll | 10-24-2007 | 15:32:04 | 6.0.8337.0 | 401484 | aedc1ad5
+File Copy: C:\Att new\MGCWork.exe | 01-25-2013 | 14:42:08 | 4.6.5.4 | 3810816 | dcc61d49
+File Copy: C:\Att new\MGCheck.dat | 11-06-2012 | 16:39:06 | | 561 | d34d8b41
+File Copy: C:\Att new\MachineInfo.dat | 01-26-2011 | 20:25:54 | | 1494 | 95c51600
+File Copy: C:\Att new\LumiInOpAPI.dll | 02-01-2012 | 15:51:12 | 4.10.0.23 | 397312 | c629c105
+File Copy: C:\Att new\LumiCore.dll | 02-01-2012 | 15:52:00 | 4.10.0.23 | 98304 | 13877800
+File Copy: C:\Att new\LumiAPI.dll | 02-01-2012 | 15:50:12 | 4.10.0.23 | 28160 | d23ca954
+File Copy: C:\Att new\gdiplus.dll | 04-03-2009 | 14:23:34 | 5.1.3102.3352 | 1724416 | fcb055d1
+File Copy: C:\Att new\FaceSdk_V1.0.ocx | 09-14-2012 | 10:55:02 | 1.0.2.6 | 580096 | f11513d9
+File Copy: C:\Att new\English.sta | 06-06-2012 | 12:14:36 | | 35208 | d3911f31
+File Copy: C:\Att new\English.ini | 01-31-2013 | 10:47:50 | | 61412 | 269f8f7c
+File Copy: C:\Att new\Chinese.sta | 06-06-2012 | 10:08:12 | | 30278 | b7ce64ec
+File Copy: C:\Att new\Chinese.ini | 01-31-2013 | 10:45:18 | | 41120 | 987baec4
+File Copy: C:\Att new\AvzScanner_OA99+.dll | 12-26-2011 | 14:41:42 | 3.0.0.0 | 217088 | 5bcd8d98
+File Copy: C:\Att new\AvzScanner.lib | 10-29-2012 | 16:00:50 | | 6504 | f9b7ff8b
+File Copy: C:\Att new\AvzScanner.dll | 10-29-2012 | 16:00:50 | | 176128 | eec6cef9
+File Copy: C:\Att new\Att2003.sql | 01-15-2013 | 15:18:22 | | 53244 | b1d6fc40
+File Copy: C:\Att new\Att2003.mdb | 11-08-2012 | 15:51:34 | | 684032 | 79aa66a3
+File Copy: C:\Att new\Att2003.bak | 11-08-2012 | 15:51:34 | | 684032 | 79aa66a3
+Made Dir: C:\Att new\AttPic
+Shell Link: C:\Documents and Settings\All Users\「开始」菜单\程序\Facial Recognition System\Facial Recognition System.lnk
+Link Info: C:\Att new\Unwise.exe | C:\ATTNEW~1 | C:\ATTNEW~1\MGCWork.exe | 0 | 1 | 0 | /W1 "C:\Att new\INSTALL.LOG"
+Shell Link: C:\Documents and Settings\All Users\桌面\Facial Recognition System.lnk
+Link Info: C:\Att new\Unwise.exe | C:\ATTNEW~1 | C:\ATTNEW~1\MGCWork.exe | 0 | 1 | 0 | /W2 "C:\Att new\INSTALL.LOG"
+Shell Link: C:\Documents and Settings\All Users\「开始」菜单\程序\Facial Recognition System\Communication Management Software.lnk
+Link Info: C:\Att new\Unwise.exe | C:\ATTNEW~1 | C:\ATTNEW~1\Prjcomm.exe | 0 | 1 | 0 | /W3 "C:\Att new\INSTALL.LOG"
+Shell Link: C:\Documents and Settings\All Users\「开始」菜单\程序\Facial Recognition System\Uninstall Facial Recognition System.lnk
+Link Info: C:\Att new\Unwise.exe | C:\ATTNEW~1 | C:\ATTNEW~1\Unwise.exe | 0 | 1 | 0 | /W4 "C:\Att new\INSTALL.LOG"
+Could not Self-Register: C:\Att new\plugin\AlgoDvc.dll
+Could not Self-Register: C:\Att new\plugin\IEngine_Plus.dll
+Could not Self-Register: C:\Att new\plugin\PreProcV21_INT16.dll
+Could not Self-Register: C:\Att new\plugin\SDvc.dll
+Could not Self-Register: C:\Att new\LumiInOpAPI.dll
+Could not Self-Register: C:\Att new\LumiCore.dll
+Could not Self-Register: C:\Att new\LumiAPI.dll
+Self-Register: C:\Att new\FaceSdk_V1.0.ocx
+User Rights: Admin

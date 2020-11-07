@@ -1,0 +1,1265 @@
+[LanguageOptions]
+FontName=MS Sans Serif
+FontSize=9
+FontCharSet=1
+PageCode=0
+
+[System]
+VisibleFingerPrinter=1
+Application.Title=Anviz Intelligent Management System
+DataComm.Title=Anviz Intelligent Management System
+
+[FrmMain]
+LoginType=1
+
+Frmmain.Caption=Anviz Intelligent Management
+
+S_User.Caption=Employee
+S_Class.Caption=Timetable
+S_UClass.Caption=Schedule
+S_Record.Caption=Record
+S_Report.Caption=Report
+S_NoIn.Caption=Append Rec.
+S_Free.Caption=Leave
+S_ClearData.Caption=Clear Data
+S_ShrinkData.Caption=Compress DB
+S_Close.Caption=Exit System
+
+S1.Caption=&System
+C1.Caption=Parameter Settings
+G1.Caption=Administrators
+B1.Caption=Administrator's Password Setting
+L2.Caption=Modified Record Log
+N11.Caption=Managing Log
+L1.Caption=DataBase Linking
+X1.Caption=Exit System
+
+R3.Caption=&HR Management
+M1.Caption=&Department Management
+G2.Caption=&Employee Maintenance
+
+C2.Caption=&T&A management
+R1.Caption=Holiday List
+B2.Caption=Time Table and Shift
+P1.Caption=Employee Scheduling
+R2.Caption=Attendance Record
+K1.Caption=Attendance Calculating and Report
+
+N3.Caption=&Exception
+Q1.Caption=Away On Business/Leave
+W1.Caption=Append Record
+T1.Caption=Append Record Collectively
+J1.Caption=Dealing With Collectively Late/Early
+
+D1.Caption=Access Control
+C4.Caption=Access Permission Management
+L3.Caption=Search Door Opening Record
+
+W2.Caption=&Data Maintenance
+M2.Caption=Import Employee List
+I1.Caption=Import Attendance Record
+C3.Caption=Clear Obsolete Data
+Y1.Caption=Compress Database
+B3.Caption=Backup DataBase
+X2.Caption=Initialize System
+
+O1.Caption=Device Management
+S2.Caption=External Program Management
+L4.Caption=Connect To Time Attendance Device
+
+N5.Caption=Help
+Z1.Caption=Register
+H1.Caption=Help Contents
+A1.Caption=About...
+
+SB_.Panels[2].Text=Anviz Intelligent Management System
+SB_.Panels[3].Text=Be True & Safe
+
+[FrmLogin]
+FrmLogin.Caption=System Logining...
+
+M_Name.Caption=Administrator:
+M_Password.Caption=Password:
+Sp_OK.Caption=&OK
+SP_Exit.Caption=&Cancel
+
+[FrmAbout]
+FrmAbout.Caption=About...
+
+[FrmDept]
+FrmDept.Caption=Department Management
+
+L_DeptList.Caption=Departments List
+L_SelDept.Caption=Being Selected Dept
+L_NewDept.Caption=Input the new department name
+L_Hint.Caption=When adding a new department ,\r\nYou can't use any same department \r\nname.\r\nWhen deleting a department,\r\nEmployees of the department will be\r\nmove to head office automatically!
+
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+
+[FrmUser]
+FrmUser.Caption=Employee Maintenance
+
+L_Search.Caption=Search Employee
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+T_Move.Caption=&Transfer
+T_In.Caption=&Import
+
+U_Sel.Hint=Input Employee No./Name/Telephone/Duty here for Searching
+T_Sel.Hint=Search
+DB_UserColumn1.Caption=Employee No.
+DB_UserColumn2.Caption=Name
+DB_UserColumn3.Caption=Department
+DB_UserColumn4.Caption=Position
+DB_UserColumn5.Caption=Employ Date
+DB_UserColumn6.Caption=Telephone
+DB_UserColumn7.Caption=Address
+DB_UserColumn8.Caption=Gender
+DB_UserColumn9.Caption=Language
+DB_UserColumn10.Caption=Comment
+DB_UserColumn11.Caption=Card No.
+DB_UserColumn12.Caption=Mobile
+
+Label1.Caption=Employee No.
+Label2.Caption=Name
+Label3.Caption=ID No.
+Label4.Caption=Gender
+Label5.Caption=Language
+Label6.Caption=Birthday
+Label7.Caption=Education
+Label8.Caption=Specialty
+Label9.Caption=Position
+Label10.Caption=Telephone
+Label11.Caption=Mobile
+Label12.Caption=Employ Date
+Label13.Caption=Comment
+Label14.Caption=Marital Status
+Label15.Caption=Address
+lbl_kh.Caption=Card No.
+lbl_yhlx.Caption=User Type
+lbl_zh.Caption=Group No.
+
+L_xb.Items.Text=Male\r\nFemale
+L_zzmm.Items.Text=Community Member\r\nParty Member
+L_yhlx.Items.Text=Normal User\r\nAdministrator
+
+Tabsheet1.Caption=Employees Information
+Tabsheet2.Caption=Enroll Fingers
+G_AttSet.Caption=Attendance Settings
+L_kq.Caption=Calculate Attendance
+L_jb.Caption=Calculate Overtime
+L_jjr.Caption=Rest On Holiday
+
+Sb_.Panels[0].Text=Search Record Count:
+
+N1.Caption=Export Data
+N2.Caption=Show all columns
+N3.Caption=Columns
+N4.Caption=Employee No.
+N5.Caption=Name
+N6.Caption=Department
+N7.Caption=Position
+N8.Caption=Employ Date
+N9.Caption=Telephone
+N10.Caption=Address
+N11.Caption=Gender
+N12.Caption=Language
+N13.Caption=Comment
+
+N14.Caption=Select All
+N15.Caption=Cancel All
+
+Info1.Caption=Fingerprint sensor connected correctly!
+Info2.Caption=Fingerprint sensor not connected!
+Info3.Caption=Please press finger...
+Sp_Enroll.Caption=&Enroll
+Sp_Compare.Caption=&Verify
+Rb_1.Caption=1st finger
+Rb_2.Caption=2nd finger
+
+Msg1=Enroll Succeed!
+Msg2=Enroll Fail!
+Msg3=Failed when reading characteristic data!
+Msg4=Verify Succeed!
+Msg5=Verify Fail!
+Msg6=Do not detected finger!
+
+InsertError1=The first number can not be "0"£¡
+InsertError2=Card No. can not be repeated!
+
+[FrmHoliday]
+FrmHoliday.Caption=Holiday List
+
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+
+Label1.Caption=Name
+Label2.Caption=Start Date
+Label3.Caption=Days
+
+DB_HolidayColumn1.Caption=Holiday Name
+DB_HolidayColumn2.Caption=Start Date
+DB_HolidayColumn3.Caption=Days
+
+[FrmClass]
+FrmClass.Caption=TimeTable and Schedule Maintenance
+
+Tabsheet1.Caption=TimeTable Maintenance
+Tabsheet2.Caption=Shift Maintenance
+
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+
+DB_TimeColumn1.Caption=Timetable Name
+DB_TimeColumn2.Caption=On Duty Time
+DB_TimeColumn3.Caption=Off Duty Time
+
+Label1.Caption=Timetable Name
+Label2.Caption=On Duty Time
+Label3.Caption=Off Duty Time
+Label4.Caption=Begin Clock-In Time
+Label5.Caption=End Clock-In Time
+Label6.Caption=Begin Clock-Out Time
+Label7.Caption=End Clock-Out Time
+Label8.Caption=Late error allowance
+Label9.Caption=Minutes
+Label10.Caption=Early error allowance
+Label11.Caption=Minutes
+Label12.Caption=Count As Workday
+Label13.Caption=Count As WorkTime
+Label14.Caption=Minutes
+
+B_qd.Caption=Must C-In
+B_qt.Caption=Must C-Out
+B_fd.Caption=Free Time
+B_jb.Caption=OT Time
+
+T_Insert2.Caption=&Append
+T_Del2.Caption=&Delete
+T_Edit2.Caption=&Modify
+T_Save2.Caption=&Save
+T_Cancel2.Caption=&Cancel
+
+DB_ClassColumn1.Caption=Shift Name
+
+Label15.Caption=Shift Name
+Label16.Caption=Cycles
+Label17.Caption=Cycle Unit
+B_dw.Items.Text=Day\r\nWeek\r\nMonth
+
+B_Add.Caption=&Add
+B_Del.Caption=&Delete
+B_Clear.Caption=&Clear
+cbAutoClass.Caption=&Auto Class
+
+[FrmClassTime]
+FrmClassTime.Caption=Add Shift Timetable
+
+Label1.Caption=Choice a timetable:
+Label2.Caption=Choice the date:
+
+DB_TimeColumn1.Caption=Timetable Name
+DB_TimeColumn2.Caption=On Duty Time
+DB_TimeColumn3.Caption=Off Duty Time
+DB_TimeColumn4.Caption=Work Time
+
+C_SelAll.Caption=All
+
+S_Ok.Caption=&OK
+S_Exit.Caption=&Cancel
+
+[FrmUclass]
+FrmUclass.Caption=Employee Scheduling
+
+Label1.Caption=Search Employee
+Label2.Caption=From
+Label3.Caption=To
+GroupBox1.Caption=Time Range
+
+DB_UserColumn1.Caption=Employee No.
+DB_UserColumn2.Caption=Name
+DB_UserColumn3.Caption=Department
+DB_UserColumn4.Caption=Shift
+
+T_All.Caption=&Select All
+T_None.Caption=&Select None
+T_Arrange.Caption=&Arrange
+T_Shift.Caption=&Shift
+
+T_Delete.Caption=Del. Temporary
+T_Set.Caption=Add Temporary
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+T_Add.Caption=&Add
+T_Del.Caption=&Delete
+T_Clear.Caption=&Clear
+U_Sel.Hint=Input Employee No./Name/Telephone/Duty here for Searching
+T_Sel.Hint=Search
+T_Delete.Hint=Delete Temporary Shifts During This Period
+T_Set.Hint=Employee's Temporary Shifts
+T_Save.Hint=Save Employee's Temporary Shifts
+T_Cancel.Hint=Cancel Temporary Shifts Operation
+T_Add.Hint=Add Time Period
+T_Del.Hint=Delete Selected Period
+T_Clear.Hint=Clear All Periods
+
+[FrmRecord]
+FrmRecord.Caption=Search Employee's Attendance Record
+
+Label1.Caption=Department
+Label2.Caption=Employee No.
+Label3.Caption=From
+Label4.Caption=To
+GroupBox1.Caption=Time Range
+
+S_Search.Caption=&Search
+S_Report.Caption=&Report
+S_Export.Caption=&Export
+S_Log.Caption=&Modify Log
+
+DB_RecordColumn1.Caption=Department
+DB_RecordColumn2.Caption=Employee No.
+DB_RecordColumn3.Caption=Name
+DB_RecordColumn4.Caption=Date Time
+DB_RecordColumn5.Caption=Status
+DB_RecordColumn6.Caption=Terminal No.
+DB_RecordColumn7.Caption=Work Code
+
+N7.Caption=Show all Columns
+N1.Caption=Columns
+N2.Caption=Department
+N3.Caption=Employee No.
+N4.Caption=Name
+N5.Caption=Date Time
+N6.Caption=Status
+N10.Caption=Device No.
+
+SB_.Panels[0].Text=Record Count:
+
+[FrmCheck]
+FrmCheck.Caption=Attendance Calculating and Report
+
+Label1.Caption=Department
+Label2.Caption=Employee
+Label3.Caption=From
+Label4.Caption=To
+GroupBox1.Caption=Time Range
+
+S_Count.Caption=&Calculate
+S_Report.Caption=&Report
+S_Export.Caption=&Export
+S_Exception.Caption=&Exception
+
+TabSheet1.Caption=Attendance Exceptions
+TabSheet2.Caption=Shift Exceptions
+TabSheet3.Caption=Other Exceptions
+TabSheet4.Caption=Calculated Items
+
+DB_RecColumn1.Caption=Department
+DB_RecColumn2.Caption=Employee No.
+DB_RecColumn3.Caption=Name
+DB_RecColumn4.Caption=Date Time
+DB_RecColumn5.Caption=State
+DB_RecColumn6.Caption=Operation
+DB_RecColumn7.Caption=Exception Description
+DB_RecColumn8.Caption=Timetable
+DB_RecColumn9.Caption=Check
+DB_RecColumn10.Caption=Work Code
+
+DB_ClassColumn1.Caption=Department
+DB_ClassColumn2.Caption=Name
+DB_ClassColumn3.Caption=Employee No.
+DB_ClassColumn4.Caption=Date
+DB_ClassColumn5.Caption=Timetable
+DB_ClassColumn6.Caption=On Duty
+DB_ClassColumn7.Caption=Off Duty
+DB_ClassColumn8.Caption=Clock In
+DB_ClassColumn9.Caption=Clock Out
+DB_ClassColumn10.Caption=Late
+DB_ClassColumn11.Caption=Early
+DB_ClassColumn12.Caption=OverTime
+DB_ClassColumn14.Caption=No C-In
+DB_ClassColumn15.Caption=No C-Out
+DB_ClassColumn16.Caption=Absent
+DB_ClassColumn17.Caption=Exception Description
+DB_ClassColumn18.Caption=Must In
+DB_ClassColumn19.Caption=Must Out
+DB_ClassColumn20.Caption=Workday
+DB_ClassColumn21.Caption=Work Long
+DB_ClassColumn22.Caption=Free Time
+DB_ClassColumn23.Caption=OT Time
+
+DB_abnorColumn1.Caption=Department
+DB_abnorColumn2.Caption=Name
+DB_abnorColumn3.Caption=Employee No.
+DB_abnorColumn4.Caption=Begin Time
+DB_abnorColumn5.Caption=End Time
+DB_abnorColumn6.Caption=Exception Description
+DB_abnorColumn7.Caption=Total Worktime
+DB_abnorColumn8.Caption=Workday
+
+DB_CountColumn1.Caption=Department
+DB_CountColumn2.Caption=Employee No.
+DB_CountColumn3.Caption=Name
+DB_CountColumn4.Caption=Normal
+DB_CountColumn5.Caption=Actual
+DB_CountColumn6.Caption=Late
+DB_CountColumn7.Caption=Early
+DB_CountColumn8.Caption=Absent
+DB_CountColumn9.Caption=Overtime
+DB_CountColumn10.Caption=Normal overtime
+DB_CountColumn11.Caption=Weekend overtime
+DB_CountColumn12.Caption=Festival overtime 
+DB_CountColumn13.Caption=Free OT
+DB_CountColumn14.Caption=No C-In
+DB_CountColumn15.Caption=No C-Out
+DB_CountColumn16.Caption=Leave
+DB_CountColumn17.Caption=Business Leave
+DB_CountColumn18.Caption=Away
+DB_CountColumn19.Caption=Work Time
+DB_CountColumn20.Caption=Att. Rate
+
+
+\\PopupMenu1
+N31.Caption=Export Data
+N30.Caption=Create report for current grid
+N26.Caption=Change state...
+N11.Caption=Clock in
+N18.Caption=Clock out
+N19.Caption=Overtime in
+N20.Caption=Overtime out
+N21.Caption=Out
+N22.Caption=Out back
+N23.Caption=Delete selected 
+N25.Caption=Cancel operation for selected
+N29.Caption=Modify and save Exception
+N13.Caption=Change filter...
+N14.Caption=Normal
+N15.Caption=Repeat
+N16.Caption=Invalid
+N17.Caption=Wrong state
+N27.Caption=Man-made
+N1.Caption=Columns
+N2.Caption=Department
+N3.Caption=Employee No.
+N4.Caption=Name
+N5.Caption=Date Time
+N6.Caption=State
+N9.Caption=Operation
+N10.Caption=Exception Description
+N8.Caption=Timetable
+N28.Caption=Show all columns
+
+\\PopupMenu2
+N7.Caption=Export Data
+N32.Caption=Create report for current grid
+
+N34.Caption=Filtering Record
+N93.Caption=Normal
+N94.Caption=Late
+N95.Caption=Early
+N96.Caption=Absent
+N97.Caption=N/In
+N98.Caption=N/Out
+
+
+N35.Caption=Columns
+N36.Caption=Show all Columns
+N41.Caption=Department
+N42.Caption=Name
+N43.Caption=Employee No.
+N44.Caption=Date
+N49.Caption=Timetable
+N55.Caption=On Duty
+N56.Caption=Off Duty
+N57.Caption=Clock In
+N58.Caption=Clock Out
+N59.Caption=Late
+N60.Caption=Early
+N61.Caption=OverTime
+N62.Caption=No In
+N63.Caption=No Out
+N64.Caption=Absent
+N65.Caption=Exception Description
+N66.Caption=Must In
+N67.Caption=Must Out
+N68.Caption=Workday
+N69.Caption=Work Long
+N108.Caption=Free Time
+N109.Caption=OT Time
+N110.Caption=Checked
+
+\\PopupMenu3
+N45.Caption=Export Data
+N46.Caption=Create report for current grid
+N48.Caption=Columns
+M1.Caption=Show all Columns
+N70.Caption=Department
+N71.Caption=Name
+N72.Caption=Employee No.
+N73.Caption=Begin Time
+N74.Caption=End Time
+N75.Caption=Exception Description
+N76.Caption=Total Worktime
+N77.Caption=Workday in Shift
+
+
+
+\\PopupMenu4
+N50.Caption=Export Data
+N51.Caption=Create report for current grid
+N53.Caption=Columns
+N54.Caption=Show all columns
+N78.Caption=Department
+N79.Caption=Name
+
+N80.Caption=Employee No.
+N81.Caption=Normal
+N82.Caption=Actual
+N83.Caption=Late
+N84.Caption=Early
+N85.Caption=Absent
+N86.Caption=Overtime
+N106.Caption=Free OT
+N87.Caption=No In
+N88.Caption=No Out
+N89.Caption=Away
+N90.Caption=Business Leave
+N91.Caption=Leave
+N92.Caption=Work Time
+
+\\PopupMenu5
+N37.Caption=Attendance Report
+N107.Caption=Daily Report
+N38.Caption=General Report
+N39.Caption=Exceptions Report
+N40.Caption=Create a Report For Current Grid
+
+\\PopupMenu6
+N102.Caption=Append Record
+N103.Caption=Late/Early Collectively
+N52.Caption=Business Leave/Leave
+N105.Caption=Modified Record Log
+
+[FrmFree]
+FrmFree.Caption=Employee Be away on Business & Asking for Leave 
+
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+T_Search.Caption=&Search
+T_Report.Caption=&Report
+
+GroupBox1.Caption=Time Range
+Label1.Caption=Department
+Label2.Caption=Employee No.
+Label3.Caption=Leave Type
+Label4.Caption=Reason
+Label5.Caption=Beginning Time
+Label6.Caption=Ending Time
+
+DB_FreeColumn1.Caption=Department
+DB_FreeColumn2.Caption=Employee No.
+DB_FreeColumn3.Caption=Name
+DB_FreeColumn4.Caption=Beginning Time
+DB_FreeColumn5.Caption=Ending Time
+DB_FreeColumn6.Caption=Leave Type
+DB_FreeColumn7.Caption=Reason
+
+[FrmFInout]
+FrmFInout.Caption=Append record
+
+Label1.Caption=Department
+Label2.Caption=Employee No.
+Label3.Caption=State
+Label4.Caption=Record Time
+
+S_Ok.Caption=&Append
+S_Exit.Caption=&Close
+
+[FrmCInOut]
+FrmCInOut.Caption=Append record collectively
+
+Label1.Caption=Departments list:
+Label2.Caption=Employees list:
+Label3.Caption=State:
+Label4.Caption=Record Time:
+L_Hint.Caption=When Employees can not clock-in or \r\nclock-out for some reasons,You can \r\nadd the massive clock-in or \r\nclock-out record here.\r\n\r\nYou can use the Ctrl key when \r\nselecting many Employees£»\r\n\r\nThe added record can be found in \r\nthe record modification log. 
+C_Selall.Caption=All
+dxDBGridColumn1.Caption=Employee No.
+dxDBGridColumn2.Caption=Name
+
+S_Ok.Caption=&OK
+S_Exit.Caption=&Cancel 
+
+[FrmGroup]
+FrmGroup.Caption=Dealing with collectively Late/Early 
+Label1.Caption=From 
+Label2.Caption=To 
+Label3.Caption=Employee list 
+
+GroupBox1.Caption=Deal with
+GroupBox2.Caption=Ignore clock in record 
+GroupBox3.Caption=The modified clock in time 
+GroupBox4.Caption=Search Employees
+
+RB1.Caption=Coming Late Collectively
+RB2.Caption=Leaving Early Collectively
+RB3.Caption=Department 
+RB4.Caption=Shift 
+C_Selall.Caption=All 
+
+dxDBGridColumn1.Caption=Employee No.
+dxDBGridColumn2.Caption=Name 
+
+S_Ok.Caption=&OK
+S_Exit.Caption=&Cancel 
+
+[FrmInUser]
+FrmInUser.Caption=Import Employee List
+
+Label1.Caption=File:
+Label2.Caption=Failures in importing:
+GroupBox1.Caption=Select a file to import
+S_Ok.Caption=&Ok
+S_Exit.Caption=&Close
+
+Line1=Wrong record: 
+Line2=Wrong updated:
+Line3=Beginning to import data ... 
+Line4=Import completed !
+Line5=Total Employees:%d ,Imported successfully:%d .
+Line6=File format Error!
+Line7=Error,Employee Existed:
+
+[FrmInRecord]
+FrmInRecord.Caption=Import Attendance Record
+
+Label1.Caption=File:
+Label2.Caption=Failures in importing:
+GroupBox1.Caption=Select a file to import
+S_Ok.Caption=&Ok
+S_Exit.Caption=&Close
+
+Line1=The Employee number of this record not exist : 
+Line2=Repeated record : 
+Line3=Beginning to import data ... 
+Line4=Importing completed!
+Line5=Total Attendance records:%d ,Imported successfully:%d .
+
+[FrmClearData]
+FrmClearData.Caption=Clear The Obsolete Data
+
+Label1.Caption=Before:
+GroupBox1.Caption=Select the end date
+S_Clear.Caption=&Clear
+S_Close.Caption=&Close
+
+[FrmSet]
+FrmSet.Caption=System parameters setting
+
+S_OK.Caption=&OK
+S_Exit.Caption=&Cancel
+TabSheet1.Caption=Basic parameters
+TabSheet2.Caption=Stat. Rules
+TabSheet3.Caption=Leave class
+TabSheet4.Caption=Field definition
+
+GroupBox1.Caption=Basic info
+GroupBox2.Caption=Stat. Rule
+GroupBox3.Caption=Round-off control
+GroupBox4.Caption=Unit set
+GroupBox5.Caption=Common Rule
+GroupBox6.Caption=shift expands two days
+GroupBox7.Caption=Overtime Calculation
+Label13.Caption=Festival
+Label14.Caption=Weekend 
+Label15.Caption=Woking Day
+Label16.Caption=Indicating Symbol:
+
+B_day1.Caption=Counted as the 1st day
+B_day2.Caption=Counted as the 2nd day
+Label1.Caption=Unit Name: 
+Label2.Caption=Minute 
+Label3.Caption=Minute 
+Label4.Caption=Minute 
+C_Workday.Caption=Counted as a working day
+C_Noin.Caption=Not clock in counted as late 
+C_Noout.Caption=Not clock out counted as early 
+C_AutoAdd.Caption=off duty 
+Label5.Caption=minutes later clock-out counted as overtime
+
+C_AutoAddIn.Caption=On duty
+Label17.Caption=minutes earlier clock-in counted as overtime
+C_DeductIn.Caption=deduct the 'On duty X minutes earlier'
+C_DeductOut.Caption=deduct the 'Off duty X minutes later'
+
+Label6.Caption=Stat. Items:
+Label7.Caption=Unit: 
+Label8.Caption=Minimum: 
+T_sr1.Caption=Round down 
+T_sr2.Caption=Round up 
+T_sr3.Caption=Round off 
+T_lj.Caption=Round at total
+T_ac.Caption=Accumulate by times 
+T_name.Items.Text=Minute\r\nHour\r\nDay
+
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+DB_leaveColumn1.Caption=Name 
+DB_leaveColumn2.Caption=Color 
+Label9.Caption=Leave Class:
+Label10.Caption=Color: 
+
+Label11.Caption=Field Name :
+Label12.Caption=Input new field value: 
+Z_Add.Caption=&Append
+Z_Del.Caption=&Delete 
+
+Z_type.Items.Text=Position\r\nEducation\r\nSpecialty\r\nLanguage\r\nMarital Status
+T_xm.Items.Text=Normal\r\nLate\r\nEarly\r\nBusiness Leave\r\nLeave\r\nAbsence\r\nStay away\r\nOvertime\r\nFree Overtime
+
+[Frmop]
+Frmop.Caption=Administrator settings
+ 
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+
+DB_opColumn1.Caption=Name 
+
+Label1.Caption=Items operable:
+Label2.Caption=Administrator:
+Label3.Caption=The new administrator has a default password: 888888.
+C_limit.Items.Text=Admin. settings/operatings log\r\nSystem parameters settings\r\nDepartments management\r\nEmployee maintaince\r\nShifts settings\r\nShift scheduling\r\nRecord Demand/Modified Record log\r\nCalculating and Report\r\nFestival and holidays set\r\nBusiness leave/Leave\r\nAppand clock-in/out\r\nMassive late/early\r\nImport the Employee list\r\nImport records\r\nClear the old data\r\nInitialize the system
+
+Label4.Caption=Dept operable:
+[FrmPass]
+FrmPass.Caption=Administrator modify password
+
+Label1.Caption=Old Pwd:
+Label2.Caption=New Pwd:
+Label3.Caption=Confirm Pwd:
+S_Ok.Caption=&OK
+S_Exit.Caption=&Cancel 
+
+[FrmRlog]
+FrmRlog.Caption=Attendance record modification log 
+
+DB_RecordColumn1.Caption=Department 
+DB_RecordColumn2.Caption=Employee No.
+DB_RecordColumn3.Caption=Name
+DB_RecordColumn4.Caption=Clocking Time
+DB_RecordColumn5.Caption=State
+DB_RecordColumn6.Caption=Modify type
+DB_RecordColumn7.Caption=Reasons
+DB_RecordColumn8.Caption=Administrator
+DB_RecordColumn9.Caption=Date
+ 
+Label1.Caption=Department
+Label2.Caption=Employee No.
+Label3.Caption=From
+Label4.Caption=To
+
+GroupBox1.Caption=Time Range
+
+S_Search.Caption=&Search
+S_Restore.Caption=&Restore
+S_Close.Caption=&Close
+SB_.Panels[0].text=RecordCount: 
+
+[FrmOplog]
+FrmOplog.Caption=Administrator operation log
+
+DB_OplogColumn1.Caption=ID
+DB_OplogColumn2.Caption=Name
+DB_OplogColumn3.Caption=Managing Time
+DB_OplogColumn4.Caption=Remark 
+
+GroupBox1.Caption=Time Range
+
+Label1.Caption=Administrator 
+Label2.Caption=From 
+Label3.Caption=To 
+
+S_Search.Caption=&Search 
+S_Close.Caption=&Close 
+
+[FrmProg]
+FrmProg.Caption=External program management 
+ 
+T_Insert.Caption=&Append
+T_Del.Caption=&Delete
+T_Edit.Caption=&Modify
+T_Save.Caption=&Save
+T_Cancel.Caption=&Cancel
+
+Label1.Caption=Program Name:
+Label2.Caption=Executable File:
+Label3.Caption=External program list:
+
+DB_ProgColumn1.Caption=Program Name
+DB_ProgColumn2.Caption=Executable File
+
+[FrmReg]
+FrmReg.Caption=Welcome to use Fingerprint T&A System 
+
+Label1.Caption=Announcement:Before registration of this product, the report will be printed with \r\n"Fingerprint T&&A management system";\r\n\r\nPlease fill the client info and send fax to us to get the register code!
+Label2.Caption=Character:
+Label3.Caption=Register:
+
+S_Guide.Caption=Register &Guide 
+S_Reg.Caption=&Register
+S_Exit.Caption=&Cancel 
+
+
+[FrmCUser]
+FrmCuser.Caption=Software Registration
+
+GroupBox1.Caption=Accounts information 
+GroupBox2.Caption=Dealers information 
+S_Print.Caption=&Print 
+S_Exit.Caption=&Cancel 
+
+Label1.Caption=Company full name
+Label2.Caption=Phone
+Label3.Caption=Linkman
+Label4.Caption=Fax
+Label5.Caption=E-mail
+Label6.Caption=Employees quantity 
+Label7.Caption=Machine Type
+Label8.Caption=Quantity 
+Label9.Caption=Character
+Label10.Caption=Register
+Label11.Caption=Terminal ID
+Label12.Caption=Notice:Please separate the Mach. No. with ':' when there are multi-machines.
+Label13.Caption=Unit full name 
+Label14.Caption=Affair linkman 
+Label15.Caption=Phone
+Label16.Caption=Service linkman 
+Label17.Caption=Phone
+
+[FrmSdept]
+FrmSdept.Caption=Employee Transfer
+
+Label1.Caption=Select the department to transfer:
+S_OK.Caption=&OK
+S_Exit.Caption=&Cancel
+
+[FrmAppAdd]
+FrmAppadd.Caption=Add a temporary timetable  
+
+Label1.Caption=Select the timetable to add
+Label2.Caption=Select the dates
+C_Selall.Caption=All 
+C_OT.Caption=Count as overtime 
+S_OK.Caption=&OK
+S_Exit.Caption=&Cancel
+
+DB_TimeColumn1.Caption=Timetable name 
+DB_TimeColumn2.Caption=On-duty time 
+DB_TimeColumn3.Caption=Off-duty time 
+DB_TimeColumn4.Caption=Work long
+
+[FrmSelclass]
+FrmSelclass.Caption=Employee shift maintenance 
+
+Label1.Caption=Shift List:
+Label2.Caption=Shift Timetable:
+Label3.Caption=Beginning
+Label4.Caption=Ending
+Label5.Caption=The current shift schedule:
+GroupBox1.Caption=Time Range
+
+S_Add.Caption=&Add 
+S_Del.Caption=&Del.
+S_OK.Caption=&OK
+S_Exit.Caption=&Cancel 
+
+DB_ClassColumn1.Caption=Shift Name 
+DB_ClassColumn2.Caption=Cycle quantity 
+DB_ClassColumn3.Caption=Unit 
+
+DB_BClassColumn1.Caption=Shift name
+DB_BClassColumn2.Caption=Beginning date
+DB_BClassColumn3.Caption=Ending date
+
+[FrmCDoor]
+FrmCDoor.Caption=Employee access permission management
+
+DB_UserColumn1.Caption=Employee No.
+DB_UserColumn2.Caption=Name
+DB_UserColumn3.Caption=Dept
+DB_UserColumn4.Caption=Permission
+
+N1.Caption=All Employees access permitted
+N2.Caption=All Employees access not permitted
+N4.Caption=Show all Employees
+N5.Caption=Only show access permitted Employees
+
+S_OK.Caption=&OK
+S_Exit.Caption=&Cancel
+
+[FrmOpenDoor]
+FrmOpenDoor.Caption=Door Opening Record
+
+Label1.Caption=Department
+Label2.Caption=Employee No.
+Label3.Caption=From
+Label4.Caption=To
+GroupBox1.Caption=Time Range
+
+S_Search.Caption=&Search
+S_Report.Caption=&Report
+S_Export.Caption=&Export
+S_Close.Caption=&Close
+
+DB_RecordColumn1.Caption=Department
+DB_RecordColumn2.Caption=Employee No.
+DB_RecordColumn3.Caption=Name
+DB_RecordColumn4.Caption=Opening Time
+DB_RecordColumn5.Caption=Terminal No.
+
+SB_.Panels[0].Text=RecordCount:
+
+[FrmRegHW]
+FrmRegHW.Caption=Welcome to use Fingerprint T&A System 
+
+Label1.Caption=Com Port:
+Label2.Caption=IP Address:
+
+RB1.Caption=Using Com
+RB2.Caption=Using TCP/IP
+
+S_Reg.Caption=&Register
+S_Exit.Caption=&Cancel 
+
+[Resource]
+
+Unit1=Day
+Unit2=Week
+Unit3=Month
+
+MsgCaption1=Prompt information
+MsgCaption2=Please make sure ...
+
+Company=head office
+
+Hour=Hour 
+Minute=Minute 
+Day=Day
+Times=Times
+
+SelAll=All 
+Beaway=Business leave
+
+TimeTable1=Timetable 1
+TimeTable2=Timetable 2
+TimeTable3=TimeTable 3
+TimeTable4=TimeTable 4
+
+TimeTable=TimeTable:
+InTime=InTime:
+OffTime=OffTime:
+LateTime=LateTime:
+EarlyTime=EarlyTime:
+Workday=Workday:
+Worklong=Worklong:
+
+Date=Date 
+ViewDate1=Day %d
+ViewDate2=Day 
+ViewDate3=Sunday 
+ViewDate4=Monday 
+ViewDate5=Tuesday 
+ViewDate6=Wednesday 
+ViewDate7=Thursday  
+ViewDate8=Friday 
+ViewDate9=Saturday 
+
+UType=Clock in\r\nClock out\r\nOvertime in\r\nOvertime out\r\nOut\r\nOut back
+CheckType1=Clock In
+CheckType2=Clock Out
+CheckType3=Overtime In
+CheckType4=Overtime Out
+CheckType5=Out
+CheckType6=Out Back
+
+DisposeRecord=Delete
+
+RecordEditType1=Add
+RecordEditType2=Modify
+RecordEditType3=Delete
+
+RecordEditWhys1=Forgetting clock in/out 
+RecordEditWhys2=Coming late/Leaving early Collectively
+RecordEditWhys3=Auto checking record
+RecordEditWhys4=Clock in/out Collectively
+
+RecordErrorType1=Normal record 
+RecordErrorType2=Repeated record 
+RecordErrorType3=Invalid record 
+RecordErrorType4=Wrong state 
+RecordErrorType5=Manual dealing 
+
+RecordAbnor1=Free overtime 
+RecordAbnor2=Going out 
+RecordAbnor3=Overtime
+
+WriteOPLog1=Link the database to 
+WriteOPLog2=Initialize the system 
+WriteOPLog3=Delete administrator
+WriteOPLog4=Add administrator 
+WriteOPLog5=Delete Department 
+WriteOPLog6=Operating Employee maintenance, delete Employee 
+WriteOPLog7=Operating system parameter settings 
+WriteOPLog8=Operating festival/holiday settings 
+WriteOPLog9=Import attendance record from files " %s "
+WriteOPLog10=Import Employee name list from file " %s "
+WriteOPLog11=Operating business leave/leave 
+WriteOPLog12=Clear the data before " %s "
+
+DelOpSelf=Administrator can't delete oneself
+LinkDBError=Database connecting failed, Please collocate the database again 
+
+NoFileHint=Can't find the appointed file: %s
+RunFileFail=%s running error! 
+FileExist=This folder has a " %s " file, Do you want to replace it?
+OutFile=The record has been exported to file:" %s "!
+
+NoRight=You have no right for this function, Please contact to administrator !
+ExitSystem=Are you sure to exit? 
+InitSystem=System initialization will delete all data, \r\nAre you sure to continue? 
+InitSystemError=Not found system file, can't initialize... \r\n please contact to the system administrator. 
+InitSystemCaption=System course: initialize the system  
+InitSystemProcess1=Initializing ...
+InitSystemProcess2=System initialization completed!
+
+CompactDBCaption=System course: compress database
+CompactDBProcess1=Compressing database, please wait... 
+CompactDBProcess2=Compressing database... Completed!
+CompactDBProcess3=Database compressing failed, Maybe the database  being used!
+
+BackupDBCaption=System course:copy database
+BackupDBProcess1=Copying database ... 
+BackupDBProcess2=Copied the database to 
+BackupDBProcess3=Copy database failed!
+
+ClearRecCaption=System course: clear the overdue data
+ClearRecProcess1=Clearing the obsolete attendance record ...
+ClearRecProcess2=Clearing the obsolete attendance record modification log...
+ClearRecProcess3=Clearing the obsolete Employee shift schedule... 
+ClearRecProcess4=Clearing the obsolete administrator operating log 
+ClearRecProcess5=The obsolete data clearing completed.
+
+CheckRecordCaption=System course:attendance data auditing
+CheckRecordProcess1=Attendance data auditing, wait...
+CheckRecordProcess2=Auditing %s of data...
+CheckRecordProcess3=Check attendance record completed!
+
+SaveUserShiftCaption=System course: Employee Schedule
+SaveUserShiftProcess1=Saving Employee's schedule records,please wait... 
+SaveUserShiftProcess2=Saving Employee %s schedule records...
+SaveUserShiftProcess3=Saving Employee's schedule records completed.
+
+AutoExitSystem=Wrong administrator password , the system is stopped !
+ErrorPwd=Wrong administrator's password, you can input  %d times more, please input your password once more 
+
+DeleteOP=Are you sure to delete the administrator?
+
+OldPwdError=The old password is wrong, Please input once more .
+NosamePwd=The password don't match, please input once more !
+EditPwdOK=The administrator password modification succeed!
+
+DeleteDept1=The selected department " %s "have subordinate sections,you can't delete it before the subordinate sections are deleted.
+DeleteDept2=Are you sure to delete this department?
+SameDept=The department has existed !
+ErrorDeptlist=Error accrues when reading the department list, please manage the department again! 
+
+DeleteUser=Are you sure to delete the Employees selected ?
+ErrorTimeTable=Wrong timetable settings, please check it !
+DeleteTimeTable=Are you sure to delete the timetable selected ?
+DeleteSchedule=Are you sure to delete the shift selected ?
+MondifyData=The data has been changed, save it ?
+SameValue=The field value has existed, please re-input it !
+DeleteValue=Are you sure to delete the field value ?
+DeleteHDtype= Are you sure to delete the leave class selected?
+DeleteHoliday=Are you sure to delete the festival settings?
+NOExcel=You have not installed the Microsoft Excel!
+ErrorExcel=Can't operat the Excel file, maybe the file being used by other program or system error.
+NoRecord=Have no attendance record during the selected range of time ! 
+SelectUser=Please select the Employees to treat with forgetting clock in /out !
+AddError=Adding record failed, maybe the record has existed!
+DeleteLeave=Are you sure to delete the Employee's leave record?
+LeaveError=The selected range of leave time and the leave record overlapped! 
+
+NoSelectUser1=Please select the Employees first before shift scheduling.
+NoSelectUser2=Please select the Employees first for temporary shift schedule.
+
+TempSchedule=Are you sure to make temporary shift schedule to the selected Employees from %s to %s?
+DeleteTempSchedule=Are you sure to cancel the temporary shift schedule to the selected Employees from %s to %s?
+DoLate=Are you sure to treat with massive late for the selected Employee?
+DoEarly=Are you sure to treat with massive early for the selected Employee?
+NoUser=The department selected has no Employees, please select it again.
+RecordOK=Save completed!
+ClearData=Only clear the data before one month, please re-select the ending time.
+ClearHint=Are you sure to continue?
+ClearOK=The obsolete data clearing completed, want to compress the database now?
+
+InsertTimeErr1=The following timetable has not been added:
+InsertTimeErr2=Maybe the timetable has exist
+RegHint1=Registration failed !
+RegHint2=Wrong register code, please re-input it!
+RegHint3=Congratulations! Register successfully, thank you for your support!
+RegHint4=Choice the mode of registration : Click "Yes" to register by T&A Machine;\r\n\r\nClick "No" to register by registered code.
+RegHint5=Can't Find the T&A Machine, register failed!
+
+Reginfo1=The full unit name can't be blank, please fill it.
+Reginfo2=The link phone can't be blank, please fill it.
+Reginfo3=The linkman can't be blank, please fill it.
+Reginfo4=The company fax number can't be blank, please fill it.
+Reginfo5=The dealer full name can't be blank, please fill it.
+
+OutProg1=Please input the external program name!
+OutProg2=Please select a executable program!
+OutProg3=Are you sure to delete the program selected?
+
+AddRecord=Are you sure to replenish the attendance record for the selected Employees?
+RestoreRecord=Are you sure to Restore the Employee's leave record?
+
+OpenDialogOutProgFilter=Executable Program (*.exe)|*.exe 
+OpenDialogInRecordFilter=Text File (*.txt)|*.txt
+OpenDialogInuserFilter=Text File (*.txt)|*.txt|Microsoft Excel File (*.xls)|*.xls
+SaveDialogFilter=Microsoft Access (*.mdb)|*.mdb
+SaveDialogOutFilter=Text File (*.txt)|*.txt|Microsoft Excel File (*.xls)|*.xls
+SaveDialogRecFilter=Text File (*.txt)|*.txt|Microsoft Excel File (*.xls)|*.xls|Format Record (*.txt)|*.txt
+
+ErrorSystemUser=Administrator name error!
+SaveRecord=Are you sure to deal with the selected record?
+
+[ReportSource]
+
+Report_Date=To 
+Report_OP=Tabling:
+Report_NoReg=Fingerprint T&A management system
+RecordTitle=Employee attendance record
+ARecordTitle=exceptions of attendance record report
+ASchedule=exceptions of shifts report
+AOther=other exceptions report
+ACount=attendance stat. report
+
+[Report_Reg]
+
+Cell100=Software Register, Account Info Register  
+Cell101=Full unit name 
+Cell102=Link phone 
+Cell103=Linkman 
+Cell104=Company fax
+Cell105=E-mail
+Cell106=Employees Qua.
+Cell107=Machine type
+Cell108=Quantity 
+Cell109=Character
+Cell110=Device ID
+Cell111=Full unit name
+Cell112=Affair linkman 
+Cell113=Link phone 
+Cell114=Service linkman 
+Cell115=Link phone 
+Cell116=Accounts Service Department
+Cell117=Register
+Cell118=Thanks!
+
+Cell119=Account info
+Cell120=Dealer info 
+
+[Report_Rec]
+
+Cell100=attendance record report 
+Cell101=Count:
+
+[Report_Day]
+Cell100=Employee daily report
+Cell101=Name
+Cell102=No.
+Cell103=Remark:/:Normal    >:Late    <:Early    -:Absent    [:No C-In    ]:No C-Out    :Rest    +:Overtime    BL:Business Leave    L:Leave
+
+[Report_Stat]
+
+Cell100=attendance stat. total report
+Cell101=Name
+Cell102=Employee No.
+Cell103=Duty
+Cell104=Actual
+Cell105=Absent
+Cell106=Late
+Cell107=Early
+Cell108=OT
+Cell109=Free OT
+Cell110=Out
+Cell111=BL
+Cell112=Leave
+Cell113=N/In
+Cell114=N/Out
+Cell115=WTime
+Cell116=AttRate
+Cell117=Times
+Cell118=Times
+Cell119=Hour
+
+Cell120=Subtotal:
+Cell121=Total:
+
+[Report_Abnormal]
+
+Cell100=attendance exceptions report
+Cell101=Name
+Cell102=No.
+Cell103=Date & Time 
+Cell104=Exception type
+Cell105=Work long
+Cell106=Remark 
+
+[Report_Opendoor]
+
+Cell100=Employees Opendoor Report
+Cell101=Name
+Cell102=Employee No.
+Cell103=Datetime
+Cell104=Terminal No.
+
+[Report_Leave]
+
+Cell100=Employee Leave Detail
+Cell101=Name
+Cell102=Employee No.
+Cell103=Time Range 
+Cell104=Leave Type
+Cell105=Reason
+
+[SetAddTimeForm]
+SetAddTimeForm.Caption=Set Overtime
+Button1.Caption=OK:
+Button2.Caption=Cancel:
+Label1.Caption=Input overtime:
+
