@@ -2478,22 +2478,22 @@ Public Function AgregarDiasAdicionales(Dias As Double, MontoHora As Double, DiaM
                         DtaConsecutivos.Recordset("Incentivos") = DtaConsecutivos.Recordset("Incentivos") + 1
                         DtaConsecutivos.Recordset.Update
                         
-                        Me.adoIncentivo.RecordSource = "SELECT * From Incentivo ORDER BY NumIncentivo"
-                        Me.adoIncentivo.Refresh
-                        If Me.adoIncentivo.Recordset.EOF Then
+                        Me.AdoIncentivo.RecordSource = "SELECT * From Incentivo ORDER BY NumIncentivo"
+                        Me.AdoIncentivo.Refresh
+                        If Me.AdoIncentivo.Recordset.EOF Then
                             NumeroIncentivo = 1
                         Else
-                            Me.adoIncentivo.Recordset.MoveLast
-                            NumeroIncentivo = Me.adoIncentivo.Recordset("NumIncentivo") + 1
+                            Me.AdoIncentivo.Recordset.MoveLast
+                            NumeroIncentivo = Me.AdoIncentivo.Recordset("NumIncentivo") + 1
                         End If
                     
-                        Me.adoIncentivo.Recordset.AddNew
-                        adoIncentivo.Recordset("NumIncentivo") = NumeroIncentivo
-                        adoIncentivo.Recordset("CodEmpleado") = DtaEmpleados.Recordset("CodEmpleado")
-                        adoIncentivo.Recordset("CodTipoIncentivo") = "01"
-                        adoIncentivo.Recordset("NumVeces") = "1"
-                        adoIncentivo.Recordset("Pagado") = 0
-                        adoIncentivo.Recordset.Update
+                        Me.AdoIncentivo.Recordset.AddNew
+                        AdoIncentivo.Recordset("NumIncentivo") = NumeroIncentivo
+                        AdoIncentivo.Recordset("CodEmpleado") = DtaEmpleados.Recordset("CodEmpleado")
+                        AdoIncentivo.Recordset("CodTipoIncentivo") = "01"
+                        AdoIncentivo.Recordset("NumVeces") = "1"
+                        AdoIncentivo.Recordset("Pagado") = 0
+                        AdoIncentivo.Recordset.Update
                     
                         '////////////////////////////////////////////////////////////////////
                         '//GRABO EL DETALLE DE LA DEDUCCION POR FALTAS//////////////////////
@@ -2907,18 +2907,18 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
                 End If
         
         
-                DtaIr.Refresh
-                DtaIr.Recordset.MoveNext
-                MinIR = DtaIr.Recordset("desde")
+                DtaIR.Refresh
+                DtaIR.Recordset.MoveNext
+                MinIR = DtaIR.Recordset("desde")
                 MinIR = MinIR - 1
                 MinIR = (MinIR / 12)
-                Do While Not DtaIr.Recordset.EOF
+                Do While Not DtaIR.Recordset.EOF
         
                    'ubicar la linea
                  If DtaTipoNomina.Recordset("Periodo") = "Semanal Viernes" Then
                     If (MontoBrutoMensual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIr.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
-                       MontoIr = ((MontoBrutoMensual * 12) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                    If DtaIR.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIR.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
+                       MontoIr = ((MontoBrutoMensual * 12) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
                        MontoIr = Format(MontoIr / 12, "###,##0.00")  'MontoIr = Format(MontoIr / CantSabados / 12, "###,##0.00")
                        MontoIRPatronal = MontoIr
                        Exit Do
@@ -2927,8 +2927,8 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
         
                  ElseIf DtaTipoNomina.Recordset("Periodo") = "Semanal Sabado" Then
                     If (MontoBrutoMensual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIr.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
-                       MontoIr = ((MontoBrutoMensual * 12) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                    If DtaIR.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIR.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
+                       MontoIr = ((MontoBrutoMensual * 12) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
                        MontoIr = Format(MontoIr / 12, "###,##0.00")
                        MontoIRPatronal = MontoIr
                        Exit Do
@@ -2938,8 +2938,8 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
         
                 ElseIf DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Viernes" Then
                     If (MontoBrutoMensual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIr.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
-                       MontoIr = ((MontoBrutoMensual * 12) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                    If DtaIR.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIR.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
+                       MontoIr = ((MontoBrutoMensual * 12) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
           '///////Verfico si el la Ultima Quincena para hacer ajustes////////////
                        If DiaFin < 28 Then
                         MontoIr = Format(MontoIr / 2 / 12, "###,##0.00")
@@ -2958,8 +2958,8 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
                     End If
                  ElseIf DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
                     If (MontoBrutoMensual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIr.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
-                       MontoIr = ((MontoBrutoMensual * 12) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                    If DtaIR.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIR.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
+                       MontoIr = ((MontoBrutoMensual * 12) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
           '///////Verfico si el la Ultima Quincena para hacer ajustes////////////
                        If DiaFin < 20 Then
                             If IrUltimaSemana = False Then
@@ -2987,8 +2987,8 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
         
         
                  ElseIf DtaTipoNomina.Recordset("Periodo") = "Quincenal" Then
-                     If DtaIr.Recordset("desde") <= (MontoBrutoAnual) And DtaIr.Recordset("Hasta") >= (MontoBrutoAnual) Then
-                       MontoIr = ((MontoBrutoAnual) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                     If DtaIR.Recordset("desde") <= (MontoBrutoAnual) And DtaIR.Recordset("Hasta") >= (MontoBrutoAnual) Then
+                       MontoIr = ((MontoBrutoAnual) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
         '///////Verfico si el la Ultima Quincena para hacer ajustes////////////
         
                         If TipoCalculoIr = "Calcular IR x 12" Then
@@ -3032,9 +3032,9 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
         
                  ElseIf DtaTipoNomina.Recordset("Periodo") = "Mensual" Then
         '           If (MontoBrutoAnual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoAnual) And DtaIr.Recordset("Hasta") >= (MontoBrutoAnual) Then
+                    If DtaIR.Recordset("desde") <= (MontoBrutoAnual) And DtaIR.Recordset("Hasta") >= (MontoBrutoAnual) Then
         
-                       MontoIr = ((MontoBrutoAnual) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                       MontoIr = ((MontoBrutoAnual) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
         
                         MontoIr = (MontoIr - MontoIrAcumulado) / 12
                         MontoIRPatronal = MontoIr - MontoIrPatronalAnterior
@@ -3045,8 +3045,8 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
         '         End If
                  ElseIf DtaTipoNomina.Recordset("Periodo") = "Trimestral" Then
                    If (MontoBrutoMensual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIr.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
-                       MontoIr = ((MontoBrutoMensual * 12) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                    If DtaIR.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIR.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
+                       MontoIr = ((MontoBrutoMensual * 12) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
                        MontoIr = Format(MontoIr / 4, "###,##0.00")
                        MontoIRPatronal = MontoIr
                        Exit Do
@@ -3054,15 +3054,15 @@ Mes = (Me.DtaNomina.Recordset("Mes"))
                    End If
                  ElseIf DtaTipoNomina.Recordset("Periodo") = "Semestral" Then
                      If (MontoBrutoMensual) >= MinIR Then
-                    If DtaIr.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIr.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
-                       MontoIr = ((MontoBrutoMensual * 12) - DtaIr.Recordset("SobreExceso")) * (DtaIr.Recordset("PorcientoImpuesto") / 100) + DtaIr.Recordset("ImpuestoBase")
+                    If DtaIR.Recordset("desde") <= (MontoBrutoMensual * 12) And DtaIR.Recordset("Hasta") >= (MontoBrutoMensual * 12) Then
+                       MontoIr = ((MontoBrutoMensual * 12) - DtaIR.Recordset("SobreExceso")) * (DtaIR.Recordset("PorcientoImpuesto") / 100) + DtaIR.Recordset("ImpuestoBase")
                        MontoIr = Format(MontoIr / 2, "###,##0.00")
                        MontoIRPatronal = MontoIr
                        Exit Do
                     End If
                     End If
                  End If
-          DtaIr.Recordset.MoveNext
+          DtaIR.Recordset.MoveNext
           Loop
         
             If Moneda = "US" Then
@@ -3577,7 +3577,7 @@ Dim DiasVacaciones As Double, ValorViaticoxDia As Double, Reembolso As Double, D
  
 
 Me.CmdExportar.Enabled = True
-Me.CmdExportaCSV.Enabled = True
+Me.CmdExportaCsv.Enabled = True
 '///////////////Busco la Configuracion de Incentivo de Puntualidad / Spetimo Dia / Basico
  If Not Me.AdoConfiguracion.Recordset.EOF Then
    If Not IsNull(Me.AdoConfiguracion.Recordset("HorasPuntualidad")) Then
@@ -3704,7 +3704,7 @@ ActualizaTipoNomina
 
 '/////////// Sql Tipo de Nomina////////////////////////////
 'SQLNominaEmpleado = "SELECT Empleado.CodEmpleado, Empleado.Nombre1, Empleado.Nombre2, Empleado.Apellido1, Empleado.Apellido2, Empleado.NumHijos, Empleado.Direccion, Empleado.Nacionalidad, Empleado.CodigoPostal, Empleado.Sexo, Empleado.CodInss, Empleado.CodIr, Empleado.Sindicalista, Empleado.CodDepartamento, Empleado.CodCargo, Empleado.NumeroInss, Empleado.NumeroRuc, Empleado.CodTipoNomina, Empleado.DiasDescuento, Empleado.SueldoPeriodo, Empleado.TarifaHoraria, Empleado.PorcentajeComision, Empleado.ExentoInss, Empleado.ExentoIr, Empleado.OtrosIngresos,  Empleado.DescripOtrIngre, Empleado.PagoInssPatronal, Empleado.SalarioMinimo, Empleado.Activo, Empleado.Ausente, PorcientoIncentivo From Empleado WHERE Empleado.CodTipoNomina= '" & CodTipoNomina & "' AND Empleado.Activo= 1 AND Empleado.Ausente=0"
-SQLNominaEmpleado = "SELECT Empleado.CodEmpleado1,Empleado.CodEmpleado, Empleado.Nombre1, Empleado.Nombre2, Empleado.Apellido1, Empleado.Apellido2, Empleado.NumHijos, Empleado.Direccion, Empleado.Nacionalidad, Empleado.CodigoPostal, Empleado.Sexo, Empleado.CodInss, Empleado.CodIr, Empleado.Sindicalista, Empleado.CodDepartamento, Empleado.CodCargo, Empleado.NumeroInss, Empleado.NumeroRuc, Empleado.CodTipoNomina, Empleado.DiasDescuento, Empleado.SueldoPeriodo, Empleado.TarifaHoraria, Empleado.PorcentajeComision, Empleado.ExentoInss, Empleado.ExentoIr, Empleado.OtrosIngresos,  Empleado.DescripOtrIngre, Empleado.PagoInssPatronal, Empleado.SalarioMinimo, Empleado.Activo, Empleado.Ausente, PorcientoIncentivo,Empleado.Dolarizado,HorasTurno,CantPts,DiasBasico, AumentoBasico, ViaticoxDia, Reembolso From Empleado WHERE Empleado.CodTipoNomina= '" & CodTipoNomina & "' AND Empleado.Activo= 1 ORDER BY CodEmpleado1"
+SQLNominaEmpleado = "SELECT Empleado.MontoViatico, Empleado.CodEmpleado1,Empleado.CodEmpleado, Empleado.Nombre1, Empleado.Nombre2, Empleado.Apellido1, Empleado.Apellido2, Empleado.NumHijos, Empleado.Direccion, Empleado.Nacionalidad, Empleado.CodigoPostal, Empleado.Sexo, Empleado.CodInss, Empleado.CodIr, Empleado.Sindicalista, Empleado.CodDepartamento, Empleado.CodCargo, Empleado.NumeroInss, Empleado.NumeroRuc, Empleado.CodTipoNomina, Empleado.DiasDescuento, Empleado.SueldoPeriodo, Empleado.TarifaHoraria, Empleado.PorcentajeComision, Empleado.ExentoInss, Empleado.ExentoIr, Empleado.OtrosIngresos,  Empleado.DescripOtrIngre, Empleado.PagoInssPatronal, Empleado.SalarioMinimo, Empleado.Activo, Empleado.Ausente, PorcientoIncentivo,Empleado.Dolarizado,HorasTurno,CantPts,DiasBasico, AumentoBasico, ViaticoxDia, Reembolso From Empleado WHERE Empleado.CodTipoNomina= '" & CodTipoNomina & "' AND Empleado.Activo= 1 ORDER BY CodEmpleado1"
 DtaEmpleados.RecordSource = SQLNominaEmpleado
 DtaEmpleados.Refresh
 If Me.DtaEmpleados.Recordset.EOF Then
@@ -3908,8 +3908,8 @@ DiasBasico = 0
         
         '///////////////Prestamos//////////////////////////
         SQlPrestamo = "SELECT MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.CuotaIgual, MovPrestamo.Cancelado, MovPrestamo.NumNomina, Prestamo.CodEmpleado, Prestamo.Moneda FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo WHERE MovPrestamo.Cancelado=0 AND Prestamo.CodEmpleado='" & CodEmpleado & "'"
-        DtaPrestamo.RecordSource = SQlPrestamo
-        DtaPrestamo.Refresh
+        Dtaprestamo.RecordSource = SQlPrestamo
+        Dtaprestamo.Refresh
         
      
                
@@ -4433,26 +4433,26 @@ DiasBasico = 0
         '/////////////////////////////////////////////////////////////////
 
         
-        If Not DtaPrestamo.Recordset.EOF Then
-            If DtaPrestamo.Recordset("Moneda") = "CS" Then
+        If Not Dtaprestamo.Recordset.EOF Then
+            If Dtaprestamo.Recordset("Moneda") = "CS" Then
               If Me.DtaTipoNomina.Recordset("Moneda") = "CS" Then
-                 MontoPrestamo = DtaPrestamo.Recordset("CuotaIgual")
+                 MontoPrestamo = Dtaprestamo.Recordset("CuotaIgual")
               Else
                   TasaCambio = BuscaTasaCambio(FechaNomina)
-                  MontoPrestamo = DtaPrestamo.Recordset("CuotaIgual") / TasaCambio
+                  MontoPrestamo = Dtaprestamo.Recordset("CuotaIgual") / TasaCambio
               End If
               
             Else  '////////////SI EL PRESTAMO ES EN DOLARES //////////////////////////
                 If Me.DtaTipoNomina.Recordset("Moneda") = "CS" Then
                   TasaCambio = BuscaTasaCambio(FechaNomina)
-                  MontoPrestamo = DtaPrestamo.Recordset("CuotaIgual") * TasaCambio
+                  MontoPrestamo = Dtaprestamo.Recordset("CuotaIgual") * TasaCambio
                 Else
-                   MontoPrestamo = DtaPrestamo.Recordset("CuotaIgual")
+                   MontoPrestamo = Dtaprestamo.Recordset("CuotaIgual")
                 End If
             End If
                 'DtaPrestamo.Recordset.Edit
-                DtaPrestamo.Recordset("NumNomina") = NumNomina
-                DtaPrestamo.Recordset.Update
+                Dtaprestamo.Recordset("NumNomina") = NumNomina
+                Dtaprestamo.Recordset.Update
         End If
         
  
@@ -4622,7 +4622,7 @@ DiasBasico = 0
        End If
        
        '////////////////////////SUMO LOS VIATICOS ////////////////
-       MontoViaticos = MontoViaticos + MontoViaticoEmpleado
+'       MontoViaticos = MontoViaticos + MontoViaticoEmpleado
 
 
        '////////////////////////////////////////////////////////////////////////////////////
@@ -5821,7 +5821,7 @@ MontoIr = CalcularMontoIr(CodTipoNomina, TotalDevengado + AumentoBasico + MontoS
         DtaDetalleNomina.Recordset("destajo") = MontoDestajos * Factor
         DtaDetalleNomina.Recordset("HE") = HE
         DtaDetalleNomina.Recordset("HorasExtras") = Redondear(MontoHRSExtras) * Factor
-        DtaDetalleNomina.Recordset("Comisiones") = MontoComisiones + TotalPuntualidad * Factor
+        DtaDetalleNomina.Recordset("Comisiones") = MontoComisiones + TotalPuntualidad + MontoViaticoEmpleado * Factor
         DtaDetalleNomina.Recordset("incentivos") = (MontoIncentivos + MontoIncentivoExcento) * Factor
         DtaDetalleNomina.Recordset("OtrosIngresos") = MontoOtrosIngresos * Factor
         DtaDetalleNomina.Recordset("DescripOtrIngre") = DescripOtrIngre
@@ -5835,6 +5835,7 @@ MontoIr = CalcularMontoIr(CodTipoNomina, TotalDevengado + AumentoBasico + MontoS
         DtaDetalleNomina.Recordset("IRPatronal") = MontoIRPatronal * Factor
         DtaDetalleNomina.Recordset("INATEC") = INATEC * Factor
         DtaDetalleNomina.Recordset("VacacionesPagadas") = MontoTipoVacaciones * Factor
+        DtaDetalleNomina.Recordset("Viaticos") = MontoViaticos * Factor
         'DtaDetalleNomina.Recordset.AdelantoVacaciones = MontoAdelantoVaca * Factor
         'DtaDetalleNomina.Recordset.Adelanto13voMes = MontoAdelanto13 * Factor
         DtaDetalleNomina.Recordset("DD") = ConDiasDescuento * Factor
@@ -5886,6 +5887,7 @@ MontoIr = CalcularMontoIr(CodTipoNomina, TotalDevengado + AumentoBasico + MontoS
         DtaDetalleNomina.Recordset("ValorDiasAdicionales") = 0
         DtaDetalleNomina.Recordset("DiasAdicionales") = 0
         DtaDetalleNomina.Recordset("Reembolso") = 0
+        DtaDetalleNomina.Recordset("Viaticos") = 0
         DtaDetalleNomina.Recordset.Update
        End If
      Else
@@ -5914,7 +5916,7 @@ MontoIr = CalcularMontoIr(CodTipoNomina, TotalDevengado + AumentoBasico + MontoS
         DtaDetalleNomina.Recordset("destajo") = Redondear(MontoDestajos) * Factor
         DtaDetalleNomina.Recordset("HE") = HE
         DtaDetalleNomina.Recordset("HorasExtras") = MontoHRSExtras * Factor
-        DtaDetalleNomina.Recordset("Comisiones") = MontoComisiones + TotalPuntualidad * Factor
+        DtaDetalleNomina.Recordset("Comisiones") = MontoComisiones + TotalPuntualidad + MontoViaticoEmpleado * Factor
         DtaDetalleNomina.Recordset("incentivos") = (MontoIncentivos + MontoIncentivoExcento) * Factor
         DtaDetalleNomina.Recordset("OtrosIngresos") = MontoOtrosIngresos * Factor
         DtaDetalleNomina.Recordset("DescripOtrIngre") = DescripOtrIngre
@@ -5928,6 +5930,7 @@ MontoIr = CalcularMontoIr(CodTipoNomina, TotalDevengado + AumentoBasico + MontoS
         DtaDetalleNomina.Recordset("INSSPatronal") = MontoInssPatronal * Factor
         DtaDetalleNomina.Recordset("IRPatronal") = MontoIRPatronal * Factor
         DtaDetalleNomina.Recordset("INATEC") = INATEC * Factor
+        DtaDetalleNomina.Recordset("Viaticos") = MontoViaticos * Factor
         'DtaDetalleNomina.Recordset.AdelantoVacaciones = MontoAdelantoVaca * Factor
         'DtaDetalleNomina.Recordset.Adelanto13voMes = MontoAdelanto13 * Factor
         DtaDetalleNomina.Recordset("DD") = ConDiasDescuento * Factor
@@ -6306,15 +6309,15 @@ End With
 
 
 SQlPrestamo = "SELECT Prestamo.* From Prestamo"
-DtaPrestamo.RecordSource = SQlPrestamo
-DtaPrestamo.Refresh
+Dtaprestamo.RecordSource = SQlPrestamo
+Dtaprestamo.Refresh
 
 
-Me.DtaMovPrestamo.Refresh
-If Not Me.DtaPrestamo.Recordset.EOF Then
-DtaMovPrestamo.Recordset.MoveLast
+Me.DtaMovprestamo.Refresh
+If Not Me.Dtaprestamo.Recordset.EOF Then
+DtaMovprestamo.Recordset.MoveLast
 End If
-cantidad = DtaMovPrestamo.Recordset.RecordCount
+cantidad = DtaMovprestamo.Recordset.RecordCount
 Me.Label1.Caption = "Cerrando Prestamos"
 With PBCalcNomina
 
@@ -6325,10 +6328,10 @@ With PBCalcNomina
 
 j = 0
 TotalEmpleado = 0
-If Not Me.DtaMovPrestamo.Recordset.EOF Then
-DtaMovPrestamo.Recordset.MoveFirst
+If Not Me.DtaMovprestamo.Recordset.EOF Then
+DtaMovprestamo.Recordset.MoveFirst
 End If
-Do While Not DtaMovPrestamo.Recordset.EOF
+Do While Not DtaMovprestamo.Recordset.EOF
 
    
     Me.Caption = "Procesando:  " & j & " de " & cantidad & " Empleados "
@@ -6349,19 +6352,19 @@ Do While Not DtaMovPrestamo.Recordset.EOF
         End If
     
     DoEvents
-    If DtaMovPrestamo.Recordset("NumNomina") = NumNomina Then
-     DtaPrestamo.Refresh
-     Do While Not DtaPrestamo.Recordset.EOF
+    If DtaMovprestamo.Recordset("NumNomina") = NumNomina Then
+     Dtaprestamo.Refresh
+     Do While Not Dtaprestamo.Recordset.EOF
      ' MsgBox ((Str(DtaPrestamo.Recordset("NumPrestamo")) + " Movprestamo ") + Str(DtaMovPrestamo.Recordset.NumPrestamo))
-        If DtaPrestamo.Recordset("NumPrestamo") = DtaMovPrestamo.Recordset("NumPrestamo") Then
+        If Dtaprestamo.Recordset("NumPrestamo") = DtaMovprestamo.Recordset("NumPrestamo") Then
             'DtaPrestamo.Recordset.Edit
-            DtaPrestamo.Recordset("Saldo") = DtaPrestamo.Recordset("Saldo") - DtaMovPrestamo.Recordset("CuotaIgual")
-            DtaPrestamo.Recordset.Update
+            Dtaprestamo.Recordset("Saldo") = Dtaprestamo.Recordset("Saldo") - DtaMovprestamo.Recordset("CuotaIgual")
+            Dtaprestamo.Recordset.Update
         End If
-    DtaPrestamo.Recordset.MoveNext
+    Dtaprestamo.Recordset.MoveNext
     Loop
   End If
-  DtaMovPrestamo.Recordset.MoveNext
+  DtaMovprestamo.Recordset.MoveNext
 .Value = TotalEmpleado
 
 If CantEmpleados <> TotalEmpleado Then
@@ -7617,7 +7620,7 @@ With Me.AdoDetalleIncentivo
 End With
  
  
-With Me.adoIncentivo
+With Me.AdoIncentivo
    .ConnectionString = Conexion
 End With
  
@@ -7762,14 +7765,14 @@ With Me.DtaInss
    .ConnectionString = Conexion
 End With
 
-With Me.DtaIr
+With Me.DtaIR
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
 End With
 
 
 
-With Me.DtaMovPrestamo
+With Me.DtaMovprestamo
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
 End With
@@ -7784,7 +7787,7 @@ With Me.DtaNomSubsidios
    .ConnectionString = Conexion
 End With
 
-With Me.DtaPrestamo
+With Me.Dtaprestamo
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
 End With

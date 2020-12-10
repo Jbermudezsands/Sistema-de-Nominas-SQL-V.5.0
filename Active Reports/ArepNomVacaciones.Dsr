@@ -23,7 +23,7 @@ Titulo = MDIPrimero.DtaEmpresa.Recordset("NombreEmpresa")
 SubTitulo = MDIPrimero.DtaEmpresa.Recordset("Direccion") + " RUC: " + MDIPrimero.DtaEmpresa.Recordset("numeroruc")
 
 
-      Me.lblTitulo.Caption = Titulo
+      Me.lbltitulo.Caption = Titulo
       Me.LblSubtitulo.Caption = SubTitulo
       Me.ImgLogo.Picture = LoadPicture(RutaLogo)
       

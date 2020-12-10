@@ -1,7 +1,6 @@
 Attribute VB_Name = "Funciones"
 
 
-
 Public Declare Function LoadImage Lib "user32" Alias "LoadImageA" (ByVal hInst _
     As Long, ByVal lpsz As String, ByVal un1 As Long, ByVal n1 As Long, ByVal n2 _
     As Long, ByVal un2 As Long) As Long
@@ -728,10 +727,10 @@ Public Function ConsecutivoSolicitud() As Double
 End Function
 
 
-Public Function BuscaUltimaSemana(CantSabados As Double, NumeroNomina As Double, Mes As String, Año As Double) As Boolean
+Public Function BuscaUltimaSemana(CantSabados As Double, NumeroNomina As Double, mes As String, Año As Double) As Boolean
   Dim SqlString As String, i As Double
   
-  SqlString = "SELECT * From Fecha_Planilla WHERE (año = " & Año & ") AND (mes = '" & Mes & "')"
+  SqlString = "SELECT * From Fecha_Planilla WHERE (año = " & Año & ") AND (mes = '" & mes & "')"
   FrmCalcularNomina.DtaConsulta.RecordSource = SqlString
   FrmCalcularNomina.DtaConsulta.Refresh
   i = 1
@@ -815,13 +814,13 @@ Public Function DiasDifrutados(CodigoEmpleado As String, Fecha1 As Date, Fecha2 
 End Function
 
 Public Function CalcularQuincenaletras(CodTipoNomina As String, NumeroNomina As Double) As String
- Dim SqlString As String, Mes As String, Año As String, Periodo As Double
+ Dim SqlString As String, mes As String, Año As String, Periodo As Double
  '////////////////////////////////////BUSQUE EL MES //////////////////////////////////////
  SqlString = "SELECT Periodo, año, mes, CodTipoNomina, Inicio, Final, Actual, Calculada, NumNomina From Fecha_Planilla WHERE (CodTipoNomina = '" & CodTipoNomina & "') AND (NumNomina = " & NumeroNomina & ")"
  MDIPrimero.DtaConsulta.RecordSource = SqlString
  MDIPrimero.DtaConsulta.Refresh
  If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
-   Mes = MDIPrimero.DtaConsulta.Recordset("mes")
+   mes = MDIPrimero.DtaConsulta.Recordset("mes")
    Año = MDIPrimero.DtaConsulta.Recordset("año")
    Periodo = MDIPrimero.DtaConsulta.Recordset("Periodo")
  End If
@@ -847,10 +846,10 @@ End Function
 
 
 
-Public Function PeriodoNominaLetras(CodTipoNomina As String, Mes As String, Año As Double, FechaInicio As Date, FechaFin As Date) As String
+Public Function PeriodoNominaLetras(CodTipoNomina As String, mes As String, Año As Double, FechaInicio As Date, FechaFin As Date) As String
  Dim SqlSring As String, Mes2 As String, i As Double
  
- Mes2 = Format(Mes, "0#")
+ Mes2 = Format(mes, "0#")
  SqlString = "SELECT  * From Fecha_Planilla WHERE (CodTipoNomina = '" & CodTipoNomina & "') AND (mes = '" & Mes2 & "') AND (año = " & Año & ")"
  MDIPrimero.DtaConsulta.RecordSource = SqlString
  MDIPrimero.DtaConsulta.Refresh
@@ -877,7 +876,7 @@ Public Function PeriodoNominaLetras(CodTipoNomina As String, Mes As String, Año 
 End Function
 
 Public Function CalcularDiasVaca(FechaInicio As Date, FechaFin As Date)
-  Dim Dias As Double, Mes As Double, FechaFin2 As Date, FechaInicio2 As Date, Dias2 As Double, Dias1 As Double, FechaInicio1 As Date, FechaFin1 As Date
+  Dim Dias As Double, mes As Double, FechaFin2 As Date, FechaInicio2 As Date, Dias2 As Double, Dias1 As Double, FechaInicio1 As Date, FechaFin1 As Date
   Dim Fecha As String
   '/////////////////////////////////////////////////////////BUSCO LA CONFIGURACION DE CALCULO ///////////////
    MDIPrimero.DtaControles.Refresh
@@ -901,7 +900,7 @@ Public Function CalcularDiasVaca(FechaInicio As Date, FechaFin As Date)
      '///////////////////BUSCO LA FECHA DEL MES ANTERIOR //////////////////
      FechaFin2 = DateSerial(Year(FechaFin), Month(FechaFin), 0)
      If FechaFin2 > (FechaFin1 + 1) Then '//////VALIDO SI LA FECHA FINAL YA CALCULADA ES MENOR QUE LA FECHA FIN //////
-        Mes = DateDiff("m", CDbl(FechaFin1 + 1), CDbl(FechaFin2)) + 1
+        mes = DateDiff("m", CDbl(FechaFin1 + 1), CDbl(FechaFin2)) + 1
 
             FechaInicio2 = DateSerial(Year(FechaFin), Month(FechaFin), 1)
             Dias2 = DateDiff("d", CDbl(FechaInicio2), CDbl(FechaFin)) + 1
@@ -915,11 +914,11 @@ Public Function CalcularDiasVaca(FechaInicio As Date, FechaFin As Date)
               End If
             End If
             
-            Dias = Dias1 + Mes * 30 + Dias2
+            Dias = Dias1 + mes * 30 + Dias2
         
      Else
         If FechaFin > (FechaFin1 + 1) Then '///////////////SI EL RANGO ES PARA DOS MESES ///////////////
-          Mes = DateDiff("m", CDbl(FechaFin1 + 1), CDbl(FechaFin)) + 1
+          mes = DateDiff("m", CDbl(FechaFin1 + 1), CDbl(FechaFin)) + 1
           Dias2 = DateDiff("d", CDbl(FechaFin1 + 1), CDbl(FechaFin)) + 1
             If Month(FechaFin) = 2 Then
               If Dias2 >= 28 Then
@@ -2040,17 +2039,17 @@ Public Function ConsecutivoSubsidio(Tabla As String) As Double
   End If
   
 End Function
-Public Function BuscaIncioPeriodo(Año As String, Mes As String, CodTipoNomina As String) As Date
-    MDIPrimero.DtaConsulta2.RecordSource = "SELECT año, Periodo, mes, CodTipoNomina, Inicio, Final, Actual, Calculada, NumNomina From Fecha_Planilla WHERE  (año = " & Año & ") AND (mes = '" & Mes & "') AND (CodTipoNomina = '" & CodTipoNomina & "') ORDER BY Periodo"
+Public Function BuscaIncioPeriodo(Año As String, mes As String, CodTipoNomina As String) As Date
+    MDIPrimero.DtaConsulta2.RecordSource = "SELECT año, Periodo, mes, CodTipoNomina, Inicio, Final, Actual, Calculada, NumNomina From Fecha_Planilla WHERE  (año = " & Año & ") AND (mes = '" & mes & "') AND (CodTipoNomina = '" & CodTipoNomina & "') ORDER BY Periodo"
     MDIPrimero.DtaConsulta2.Refresh
      If Not MDIPrimero.DtaConsulta2.Recordset.EOF Then
        BuscaIncioPeriodo = MDIPrimero.DtaConsulta2.Recordset("Inicio")
      End If
      
 End Function
-Public Function BuscaFinPeriodo(Año As String, Mes As String, CodTipoNomina As String) As Date
+Public Function BuscaFinPeriodo(Año As String, mes As String, CodTipoNomina As String) As Date
      
-    MDIPrimero.DtaConsulta2.RecordSource = "SELECT año, Periodo, mes, CodTipoNomina, Inicio, Final, Actual, Calculada, NumNomina From Fecha_Planilla WHERE  (año = " & Año & ") AND (mes = '" & Mes & "') AND (CodTipoNomina = '" & CodTipoNomina & "') ORDER BY Periodo"
+    MDIPrimero.DtaConsulta2.RecordSource = "SELECT año, Periodo, mes, CodTipoNomina, Inicio, Final, Actual, Calculada, NumNomina From Fecha_Planilla WHERE  (año = " & Año & ") AND (mes = '" & mes & "') AND (CodTipoNomina = '" & CodTipoNomina & "') ORDER BY Periodo"
     MDIPrimero.DtaConsulta2.Refresh
      If Not MDIPrimero.DtaConsulta2.Recordset.EOF Then
        MDIPrimero.DtaConsulta2.Recordset.MoveLast
@@ -2501,7 +2500,7 @@ TipoErrs:
 
 End Function
 
-Public Function DiaSemana(Dias As Double, Mes As Double, Año As Double) As Double
+Public Function DiaSemana(Dias As Double, mes As Double, Año As Double) As Double
  Dim A As Double, AñoQ As Double, DosD As Double
  Dim b As Double, c As Integer, D As Double, E As Double, F As Double, R As Double
  
@@ -2552,7 +2551,7 @@ Public Function DiaSemana(Dias As Double, Mes As Double, Año As Double) As Doubl
          If val(DosD / 4) - Int(val(DosD / 4)) = 0 Then
           '///////SI SON ENTEROS SON MULTIPLOS DE  4
           '///AHORA CONSULTO EL MES CORRESPONDIENTE ///////
-          If Mes = 1 Or Mes = 2 Then
+          If mes = 1 Or mes = 2 Then
            c = 1 - 2
           End If
         End If
@@ -2560,7 +2559,7 @@ Public Function DiaSemana(Dias As Double, Mes As Double, Año As Double) As Doubl
          If val(Año / 400) - Int(val(Año / 400)) = 0 Then
           '///////SI SON ENTEROS SON MULTIPLOS DE  400
           '///AHORA CONSULTO EL MES CORRESPONDIENTE ///////
-          If Mes = 1 Or Mes = 2 Then
+          If mes = 1 Or mes = 2 Then
            c = 1 - 2
           End If
         End If
@@ -2571,7 +2570,7 @@ Public Function DiaSemana(Dias As Double, Mes As Double, Año As Double) As Doubl
  '/////////////////////////////////////////////////////////////////////////////////
 ' Enero   Feb.    Marzo   Abril   Mayo    Junio   Julio   Agosto  Sept.   Oct.    Nov.    Dic.
 '  6       2        2       5       0       3       5       1       4      6       2       4
- Select Case Mes
+ Select Case mes
    Case 1: D = 6
    Case 2: D = 2
    Case 3: D = 2

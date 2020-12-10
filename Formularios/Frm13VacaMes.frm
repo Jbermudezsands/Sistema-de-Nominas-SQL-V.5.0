@@ -1065,7 +1065,7 @@ Begin VB.Form Frm13VacaMes
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   77529089
+               Format          =   17104897
                CurrentDate     =   38305
             End
             Begin MSComCtl2.DTPicker DtpInicio13vo 
@@ -1077,7 +1077,7 @@ Begin VB.Form Frm13VacaMes
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   77529089
+               Format          =   17104897
                CurrentDate     =   38305
             End
             Begin VB.Label Label12 
@@ -1505,7 +1505,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINI13 
@@ -1517,7 +1517,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFFinVaca 
@@ -1529,7 +1529,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINIVaca 
@@ -1541,7 +1541,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin VB.CommandButton CmdPRVaca 
@@ -1697,7 +1697,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker dtpFPInicio 
@@ -1709,7 +1709,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFechaAplica 
@@ -1721,7 +1721,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77529089
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin XtremeSuiteControls.ProgressBar PBVacaciones 
@@ -2017,6 +2017,241 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+ Public Sub LlenarHistorialAguinaldo(CodEmpleado As Double)
+ Dim Meses As Double, CalculaHE As Boolean, SalTempHE As Double, SalTemp As Double, Ingresos As Double
+ Dim HorasExtra As Double
+ 
+ 
+        Anno = Year(Me.TxtFFIN13)
+        MesActual = Month(Me.TxtFFIN13)
+
+        If MesActual > 6 Then
+            Meses = MesActual - 5
+        Else
+           Meses = 1
+        End If
+        
+
+        
+   CalculaHE = True
+   SalTempHE = 0
+   For Mes = Meses To MesActual
+        'SqlNominas = "SELECT Nomina.NumNomina, Nomina.FechaNomina, Nomina.Mes, Nomina.Ano, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HorasExtras, DetalleNomina.Comisiones, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, [DetalleNomina].[SalarioBasico]+[DetalleNomina].[Destajo] + [DetalleNomina].[SeptimoDia] + [DetalleNomina].[OtrosIngresos] + [DetalleNomina].[Comisiones] + [DetalleNomina].[IncetivoProduccion] + [DetalleNomina].[Antiguedad] AS Total, Month([Nomina].[FechaNomina]) AS Mes, Year([Nomina].[FechaNomina]) AS Anno FROM Nomina INNER JOIN DetalleNomina ON Nomina.NumNomina = DetalleNomina.NumNomina Where (Nomina.Mes =" & Mes & ") And (Nomina.Ano =" & Anno & ") and DetalleNomina.CodEmpleado = '" & CodEmpleado & "'"
+        'SqlNominas = "SELECT Nomina.NumNomina, Nomina.FechaNomina, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HorasExtras, DetalleNomina.Comisiones, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, [DetalleNomina].[SalarioBasico]+[DetalleNomina].[Destajo]+[DetalleNomina].[Comisiones]+[DetalleNomina].[Incentivos] AS Total, Month([Nomina].[FechaNomina]) AS Mes, Year([Nomina].[FechaNomina]) AS Anno FROM Nomina INNER JOIN DetalleNomina ON Nomina.NumNomina = DetalleNomina.NumNomina Where ((Month([Nomina].[FechaNomina])) =  '" & Mes & "' ) And ((Year([Nomina].[FechaNomina])) ='" & Anno & "') and DetalleNomina.CodEmpleado = '" & CodEmpleado & "'"
+        
+       If CodEmpleado = "10709" Or CodEmpleado = "10796" Then
+             SqlNominas = "SELECT Nomina.NumNomina, Nomina.FechaNomina, Nomina.Mes, Nomina.Ano, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HorasExtras, DetalleNomina.OtrosIngresos, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, [DetalleNomina].[SalarioBasico]+[DetalleNomina].[Destajo] + [DetalleNomina].[Antiguedad] + DetalleNomina.Incentivos + DetalleNomina.OtrosIngresos  AS Total, Month([Nomina].[FechaNomina]) AS Mes, Year([Nomina].[FechaNomina]) AS Anno FROM Nomina INNER JOIN DetalleNomina ON Nomina.NumNomina = DetalleNomina.NumNomina Where (Nomina.Mes =" & Mes & ") And (Nomina.Ano =" & Anno & ") and DetalleNomina.CodEmpleado = '" & CodEmpleado & "'"
+       Else
+              SqlNominas = "SELECT Nomina.NumNomina, Nomina.FechaNomina, Nomina.Mes, Nomina.Ano, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HorasExtras, DetalleNomina.OtrosIngresos, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, [DetalleNomina].[SalarioBasico]+[DetalleNomina].[Destajo] + [DetalleNomina].[Antiguedad] + DetalleNomina.Incentivos + DetalleNomina.Comisiones + DetalleNomina.SeptimoDia + DetalleNomina.OtrosIngresos   AS Total, Month([Nomina].[FechaNomina]) AS Mes, Year([Nomina].[FechaNomina]) AS Anno FROM Nomina INNER JOIN DetalleNomina ON Nomina.NumNomina = DetalleNomina.NumNomina Where (Nomina.Mes =" & Mes & ") And (Nomina.Ano =" & Anno & ") and DetalleNomina.CodEmpleado = '" & CodEmpleado & "'"
+       End If
+            DtaNominas.RecordSource = SqlNominas
+            DtaNominas.Refresh
+               SalTemp = 0
+               Ingresos = 0
+               HorasExtra = 0
+               SalTempHE = 0
+         Do While Not DtaNominas.Recordset.EOF
+            
+              
+               HorasExtra = HorasExtra + DtaNominas.Recordset("HorasExtras")
+               SalTemp = SalTemp + DtaNominas.Recordset("Total")
+               SalTempHE = SalTempHE + DtaNominas.Recordset("Total") + DtaNominas.Recordset("HorasExtras")
+               SalTemp = SalTempHE  '''PARA QUE CALCULE CON HORAS EXTRAS
+               Ingresos = Ingresos + (DtaNominas.Recordset("Destajo") + DtaNominas.Recordset("OtrosIngresos") + DtaNominas.Recordset("Incentivos"))
+               
+              
+              '/////////////////////////////////////////////////////////////////////////////////////
+              '//////////////////////////////RECORRO LA TABLA DE PERIODO PARA SELECCIONAR LOS MESES /
+              '///////////////////////////////////////////////////////////////////////////////////////
+              If Me.DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
+                Me.DtaConsulta.RecordSource = "SELECT año, CodTipoNomina, COUNT(mes) AS Cont, mes AS Mes From Fecha_Planilla GROUP BY año, CodTipoNomina, mes HAVING (año = " & Anno & ") AND (CodTipoNomina = '" & CodTipoNomina & "')  AND (mes = '" & Format(Mes, "0#") & "')" 'AND (COUNT(mes) = 3)
+                Me.DtaConsulta.Refresh
+                Do While Not Me.DtaConsulta.Recordset.EOF
+                   If Me.DtaConsulta.Recordset("Cont") = 3 Then
+                     SalTemp = (SalTemp / 42) * 30
+                   Else
+                     SalTemp = (SalTemp / 28) * 30
+                 
+                   End If
+                 
+                  
+                  Me.DtaConsulta.Recordset.MoveNext
+                Loop
+              End If
+
+
+               
+               CantRegistros = CantRegistros + 1
+               DtaNominas.Recordset.MoveNext
+              
+
+            Loop
+              
+              If HorasExtra <= 0 Then
+                CalculaHE = False
+              End If
+              
+              
+              '///////////////////////////////////////////////////////////////////////////////////
+              '//////////////////////////SI EL SALARIO ES BASICO NO SE TOMA EN CUENTA PROMEDIO/////////////
+              '///////////////////////////////////////////////////////////////////////////////////
+              MDIPrimero.DtaConsulta.RecordSource = "SELECT  Historico.*, Empleado.SueldoActualBasico FROM Historico INNER JOIN Empleado ON Historico.Codempleado = Empleado.CodEmpleado  Where (Historico.CodEmpleado = " & CodEmpleado & ")"
+              MDIPrimero.DtaConsulta.Refresh
+              If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
+                If MDIPrimero.DtaConsulta.Recordset("SueldoActualBasico") = True Then
+                 If Not IsNull(MDIPrimero.DtaConsulta.Recordset("SueldoActual")) Then
+                    SalarioBasico = MDIPrimero.DtaConsulta.Recordset("SueldoActual")
+                 Else
+                    SalarioBasico = 0
+                 End If
+                    SalTemp = SalarioBasico + Ingresos
+                End If
+              End If
+              
+                '///////////////////////Busco si el Empleado tiene Subsidio para Sumarlo////////////////////
+  
+                 'Me.DtaConsulta.RecordSource = "SELECT NomSubsidio.NumNomina, NomSubsidio.FechaPago, DetalleNomSubsidio.CodEmpleado, DetalleNomSubsidio.Subsidio FROM NomSubsidio INNER JOIN DetalleNomSubsidio ON NomSubsidio.NumNomina = DetalleNomSubsidio.NumNominaSubsidio WHERE (((NomSubsidio.FechaPago) Between " & NumFecha1 & " And " & NumFecha2 & ") AND ((DetalleNomSubsidio.CodEmpleado)='" & CodEmpleado & "'))"
+                 Me.DtaConsulta.RecordSource = "SELECT NomSubsidio.NumNomina, DetalleNomSubsidio.CodEmpleado, DetalleNomSubsidio.Subsidio, Empleado.SumarSubsidio, Year([NomSubsidio].[FechaPago]) AS Anno, Month([NomSubsidio].[FechaPago]) AS Mes FROM NomSubsidio INNER JOIN (Empleado INNER JOIN DetalleNomSubsidio ON Empleado.CodEmpleado = DetalleNomSubsidio.CodEmpleado) ON NomSubsidio.NumNomina = DetalleNomSubsidio.NumNominaSubsidio Where (((DetalleNomSubsidio.CodEmpleado) = '" & CodEmpleado & "') And ((Empleado.SumarSubsidio) = 1) And ((Year([NomSubsidio].[FechaPago])) = '" & Anno & "') And ((Month([NomSubsidio].[FechaPago])) = '" & Mes & "')) ORDER BY NomSubsidio.NumNomina"
+                 Me.DtaConsulta.Refresh
+                 MontoSubsidio = 0
+                 Do While Not Me.DtaConsulta.Recordset.EOF
+                  MontoSubsidio = MontoSubsidio + Me.DtaConsulta.Recordset("Subsidio")
+                  Me.DtaConsulta.Recordset.MoveNext
+                 Loop
+              
+                 SalTemp = SalTemp + MontoSubsidio
+                 Fecha1 = Year(Me.TxtFINI13.Value) & "-" & Month(Me.TxtFINI13.Value) & "-" & Day(Me.TxtFINI13.Value)
+                 Fecha2 = Year(Me.TxtFFIN13.Value) & "-" & Month(Me.TxtFFIN13.Value) & "-" & Day(Me.TxtFFIN13.Value)
+                 
+               
+                 
+               If SalTemp <> 0 Then
+                 Me.AdoHistorialSalarial.RecordSource = "SELECT NumNomina, Tipo, CodEmpleado, FechaIni, FechaFin, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre From HistorialSalarioMes WHERE     (CodEmpleado = '" & CodEmpleado & "') AND (FechaIni = CONVERT(DATETIME, '" & Fecha1 & "', 102)) AND (FechaFin = CONVERT(DATETIME, '" & Fecha2 & "',102))"
+                 Me.AdoHistorialSalarial.Refresh
+                  If Me.AdoHistorialSalarial.Recordset.EOF Then
+                        Me.AdoHistorialSalarial.Recordset.AddNew
+                        Me.AdoHistorialSalarial.Recordset("CodEmpleado") = DtaEmpleados.Recordset("CodEmpleado")
+                        Me.AdoHistorialSalarial.Recordset("FechaIni") = CDate(Me.TxtFINI13.Value)
+                        Me.AdoHistorialSalarial.Recordset("FechaFin") = CDate(Me.TxtFFIN13.Value)
+                        Me.AdoHistorialSalarial.Recordset("NumNomina") = val(Me.TxtNumNom13.Text)
+                        Me.AdoHistorialSalarial.Recordset("Tipo") = "Aguinaldo"
+                        Select Case Mes
+                          Case 1
+                            Me.AdoHistorialSalarial.Recordset("Enero") = SalTemp
+                          Case 2
+                            Me.AdoHistorialSalarial.Recordset("Febrero") = SalTemp
+                          Case 3
+                            Me.AdoHistorialSalarial.Recordset("Marzo") = SalTemp
+                          Case 4
+                            Me.AdoHistorialSalarial.Recordset("Abril") = SalTemp
+                          Case 5
+                            Me.AdoHistorialSalarial.Recordset("Mayo") = SalTemp
+                          Case 6
+                            Me.AdoHistorialSalarial.Recordset("Junio") = SalTemp
+                          Case 7
+                            Me.AdoHistorialSalarial.Recordset("Julio") = SalTemp
+                          Case 8
+                            Me.AdoHistorialSalarial.Recordset("Agosto") = SalTemp
+                          Case 9
+                            Me.AdoHistorialSalarial.Recordset("Septiembre") = SalTemp
+                          Case 10
+                            Me.AdoHistorialSalarial.Recordset("Octubre") = SalTemp
+                          Case 11
+                            Me.AdoHistorialSalarial.Recordset("Noviembre") = SalTemp
+                          Case 12
+                            Me.AdoHistorialSalarial.Recordset("Diciembre") = SalTemp
+                         End Select
+                        Me.AdoHistorialSalarial.Recordset.Update
+                  Else
+                         Me.AdoHistorialSalarial.Recordset("FechaIni") = CDate(Me.TxtFINI13.Value)
+                         Me.AdoHistorialSalarial.Recordset("FechaFin") = CDate(Me.TxtFFIN13.Value)
+                         Me.AdoHistorialSalarial.Recordset("NumNomina") = val(Me.TxtNumNom13.Text)
+                         Me.AdoHistorialSalarial.Recordset("Tipo") = "Aguinaldo"
+                        Select Case Mes
+                          Case 1
+                            Me.AdoHistorialSalarial.Recordset("Enero") = SalTemp
+                          Case 2
+                            Me.AdoHistorialSalarial.Recordset("Febrero") = SalTemp
+                          Case 3
+                            Me.AdoHistorialSalarial.Recordset("Marzo") = SalTemp
+                          Case 4
+                            Me.AdoHistorialSalarial.Recordset("Abril") = SalTemp
+                          Case 5
+                            Me.AdoHistorialSalarial.Recordset("Mayo") = SalTemp
+                          Case 6
+                            Me.AdoHistorialSalarial.Recordset("Junio") = SalTemp
+                          Case 7
+                            Me.AdoHistorialSalarial.Recordset("Julio") = SalTemp
+                          Case 8
+                            Me.AdoHistorialSalarial.Recordset("Agosto") = SalTemp
+                          Case 9
+                            Me.AdoHistorialSalarial.Recordset("Septiembre") = SalTemp
+                          Case 10
+                            Me.AdoHistorialSalarial.Recordset("Octubre") = SalTemp
+                          Case 11
+                            Me.AdoHistorialSalarial.Recordset("Noviembre") = SalTemp
+                          Case 12
+                            Me.AdoHistorialSalarial.Recordset("Diciembre") = SalTemp
+                        End Select
+                        Me.AdoHistorialSalarial.Recordset.Update
+       
+                  End If
+            
+            Else
+'                 Me.AdoHistorialSalarial.RecordSource = "SELECT NumNomina, CodEmpleado, FechaIni, FechaFin, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre From HistorialSalarioMes WHERE  (CodEmpleado = '" & CodEmpleado & "')"
+'                 Me.AdoHistorialSalarial.Refresh
+'                  If Not Me.AdoHistorialSalarial.Recordset.EOF Then
+'
+'                        Select Case Mes
+'                          Case 1
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Enero")
+'                          Case 2
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Febrero")
+'                          Case 3
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Marzo")
+'                          Case 4
+'                           SalTemp = Me.AdoHistorialSalarial.Recordset("Abril")
+'                          Case 5
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Mayo")
+'                          Case 6
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Junio")
+'                          Case 7
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Julio")
+'                          Case 8
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Agosto")
+'                          Case 9
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Septiembre")
+'                          Case 10
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Octubre")
+'                          Case 11
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Noviembre")
+'                          Case 12
+'                            SalTemp = Me.AdoHistorialSalarial.Recordset("Diciembre")
+'                         End Select
+'
+'                 End If
+            
+            End If
+            
+        If SalMayor < SalTemp Then
+           SalMayor = SalTemp
+        End If
+
+        If SalMayorCHE < SalTempHE Then
+            SalMayorCHE = SalTempHE
+        End If
+        
+        
+        
+  
+   Next
+
+
+
+End Sub
+
+ 
+ 
  
 Private Sub CmdCal13_Click()
 Dim M1 As Integer, M2 As Integer
@@ -2147,8 +2382,8 @@ Dias = 0
   End If
   CodEmpleado1 = DtaEmpleados.Recordset("CodEmpleado1")
   
-  If CodEmpleado1 = "S118060058" Then
-   CodEmpleado1 = "S118060058"
+  If CodEmpleado1 = "S120110101" Then
+   CodEmpleado1 = "S120110101"
   End If
 
   DtaHistorico.RecordSource = "SELECT Historico.Codempleado, Historico.FechaBaja, Historico.FechaContrato From Historico Where (((Historico.CodEmpleado) = '" & CodEmpleado & "'))"
@@ -2195,14 +2430,14 @@ Dias = 0
 '     End If
 '
      
-      If CodEmpleado = "10489" Then
-         CodEmpleado = "10489"
-        End If
+
      
      If FechaContrato < Me.TxtFINI13.Value Then
          Dias = CalcularDiasAguinaldo(CodEmpleado1, Me.TxtFINI13.Value, Me.TxtFFIN13.Value)
+     ElseIf DateDiff("d", FechaContrato, Me.TxtFFIN13.Value) <= 2 Then
+        Dias = DateDiff("d", FechaContrato, Me.TxtFFIN13.Value) + 1 * 0.08333
      Else
-         Dias = CalcularDiasAguinaldo(CodEmpleado1, FechaContrato, Me.TxtFFIN13.Value)
+       Dias = CalcularDiasAguinaldo(CodEmpleado1, FechaContrato, Me.TxtFFIN13.Value)
      End If
      
     End If
@@ -2228,7 +2463,7 @@ Dias = 0
      If Me.DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
     
         If Me.DtaTipoNomina.Recordset("TipoPago") = "Salario Fijo" Then
-           TarifaHoraria = Format(DtaEmpleados.Recordset("SueldoPeriodo") / 112, "###,##0.00")
+           TarifaHoraria = Format(DtaEmpleados.Recordset("SueldoPeriodo") / 112, "###,##0.000000")
         Else
           TarifaHoraria = DtaEmpleados.Recordset("TarifaHoraria")
         End If
@@ -2262,6 +2497,10 @@ Dias = 0
 '////////////////Ultimos 6 meses
 
 '///Verifico si tiene salario fijo///////////
+
+      If CodEmpleado = "41133" Then
+         CodEmpleado = "41133"
+      End If
 
 If Dias >= CDbl(Me.txtAntiguedad.Text) Then
 
@@ -2310,15 +2549,35 @@ If Dias >= CDbl(Me.txtAntiguedad.Text) Then
 '                   SalTemp = SalTemp + Me.DtaConsulta.Recordset("Valor")
 '                   Me.DtaConsulta.Recordset.MoveNext
 '               Loop
-               
-               If Mes = 6 Then
-                 SalTemp = (SalTemp / 42) * 30
-               ElseIf Mes = 11 Then
-                 SalTemp = (SalTemp / 42) * 30
-               Else
-                 SalTemp = (SalTemp / 28) * 30
-              
-               End If
+
+              '/////////////////////////////////////////////////////////////////////////////////////
+              '//////////////////////////////RECORRO LA TABLA DE PERIODO PARA SELECCIONAR LOS MESES /
+              '///////////////////////////////////////////////////////////////////////////////////////
+              If Me.DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
+                Me.DtaConsulta.RecordSource = "SELECT año, CodTipoNomina, COUNT(mes) AS Cont, mes AS Mes From Fecha_Planilla GROUP BY año, CodTipoNomina, mes HAVING (año = " & Anno & ") AND (CodTipoNomina = '" & CodTipoNomina & "')  AND (mes = '" & Format(Mes, "0#") & "')" 'AND (COUNT(mes) = 3)
+                Me.DtaConsulta.Refresh
+                Do While Not Me.DtaConsulta.Recordset.EOF
+                   If Me.DtaConsulta.Recordset("Cont") = 3 Then
+                     SalTemp = (SalTemp / 42) * 30
+                   Else
+                     SalTemp = (SalTemp / 28) * 30
+                 
+                   End If
+                 
+                  
+                  Me.DtaConsulta.Recordset.MoveNext
+                Loop
+              End If
+'
+'                If Mes = 5 Then
+'                   SalTemp = (SalTemp / 42) * 30
+'                 ElseIf Mes = 10 Then
+'                   SalTemp = (SalTemp / 42) * 30
+'                 Else
+'                   SalTemp = (SalTemp / 28) * 30
+'
+'                 End If
+
                
                CantRegistros = CantRegistros + 1
                DtaNominas.Recordset.MoveNext
@@ -2485,6 +2744,11 @@ If Dias >= CDbl(Me.txtAntiguedad.Text) Then
   
        Next
    Else
+   
+      '///////////////////////////////////////////////////////////////////////////////////////////////////////
+      '/////////////////////////////////77SI EL EMPLEADO ES SALARIO FIJO ///////////////////////////////
+      '///////////////////////////////////////////////////////////////////////////////////////////////
+   
       MDIPrimero.DtaConsulta.RecordSource = "SELECT  Historico.*, Empleado.SueldoActualBasico,Empleado.SalPorcentaje FROM Historico INNER JOIN Empleado ON Historico.Codempleado = Empleado.CodEmpleado  Where (Historico.CodEmpleado = " & CodEmpleado & ")"
       MDIPrimero.DtaConsulta.Refresh
       If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
@@ -2514,6 +2778,71 @@ If Dias >= CDbl(Me.txtAntiguedad.Text) Then
            SalMayor = DiasMes * (DtaEmpleados.Recordset("SueldoPeriodo") / 14)
      
      End If
+     
+       
+'       If CodEmpleado = "10709" Or CodEmpleado = "10796" Then
+'             SqlNominas = "SELECT Nomina.NumNomina, Nomina.FechaNomina, Nomina.Mes, Nomina.Ano, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HorasExtras, DetalleNomina.OtrosIngresos, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, [DetalleNomina].[SalarioBasico]+[DetalleNomina].[Destajo] + [DetalleNomina].[Antiguedad] + DetalleNomina.Incentivos + DetalleNomina.OtrosIngresos  AS Total, Month([Nomina].[FechaNomina]) AS Mes, Year([Nomina].[FechaNomina]) AS Anno FROM Nomina INNER JOIN DetalleNomina ON Nomina.NumNomina = DetalleNomina.NumNomina Where (Nomina.Mes =" & Mes & ") And (Nomina.Ano =" & Anno & ") and DetalleNomina.CodEmpleado = '" & CodEmpleado & "'"
+'       Else
+'              SqlNominas = "SELECT Nomina.NumNomina, Nomina.FechaNomina, Nomina.Mes, Nomina.Ano, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HorasExtras, DetalleNomina.OtrosIngresos, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, [DetalleNomina].[SalarioBasico]+[DetalleNomina].[Destajo] + [DetalleNomina].[Antiguedad] + DetalleNomina.Incentivos + DetalleNomina.Comisiones + DetalleNomina.SeptimoDia + DetalleNomina.OtrosIngresos   AS Total, Month([Nomina].[FechaNomina]) AS Mes, Year([Nomina].[FechaNomina]) AS Anno FROM Nomina INNER JOIN DetalleNomina ON Nomina.NumNomina = DetalleNomina.NumNomina Where (Nomina.Mes =" & Mes & ") And (Nomina.Ano =" & Anno & ") and DetalleNomina.CodEmpleado = '" & CodEmpleado & "'"
+'       End If
+'            DtaNominas.RecordSource = SqlNominas
+'            DtaNominas.Refresh
+'               SalTemp = 0
+'               Ingresos = 0
+'               HorasExtra = 0
+'               SalTempHE = 0
+'              Do While Not DtaNominas.Recordset.EOF
+'
+'
+'                   HorasExtra = HorasExtra + DtaNominas.Recordset("HorasExtras")
+'                   SalTemp = SalTemp + DtaNominas.Recordset("Total")
+'                   SalTempHE = SalTempHE + DtaNominas.Recordset("Total") + DtaNominas.Recordset("HorasExtras")
+'                   SalTemp = SalTempHE  '''PARA QUE CALCULE CON HORAS EXTRAS
+'                   Ingresos = Ingresos + (DtaNominas.Recordset("Destajo") + DtaNominas.Recordset("OtrosIngresos") + DtaNominas.Recordset("Incentivos"))
+'
+'
+'                  '/////////////////////////////////////////////////////////////////////////////////////
+'                  '//////////////////////////////RECORRO LA TABLA DE PERIODO PARA SELECCIONAR LOS MESES /
+'                  '///////////////////////////////////////////////////////////////////////////////////////
+'                  If Me.DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
+'                    Me.DtaConsulta.RecordSource = "SELECT año, CodTipoNomina, COUNT(mes) AS Cont, mes AS Mes From Fecha_Planilla GROUP BY año, CodTipoNomina, mes HAVING (año = " & Anno & ") AND (CodTipoNomina = '" & CodTipoNomina & "')  AND (mes = '" & Format(Mes, "0#") & "')" 'AND (COUNT(mes) = 3)
+'                    Me.DtaConsulta.Refresh
+'                    Do While Not Me.DtaConsulta.Recordset.EOF
+'                       If Me.DtaConsulta.Recordset("Cont") = 3 Then
+'                         SalTemp = (SalTemp / 42) * 30
+'                       Else
+'                         SalTemp = (SalTemp / 28) * 30
+'
+'                       End If
+'
+'
+'                      Me.DtaConsulta.Recordset.MoveNext
+'                    Loop
+'                  End If
+'
+'               CantRegistros = CantRegistros + 1
+'               DtaNominas.Recordset.MoveNext
+'
+'
+'              Loop
+
+     
+     
+              '///////////////////////////////////////////////////////////////////////////////////
+              '//////////////////////////SI EL SALARIO ES BASICO NO SE TOMA EN CUENTA PROMEDIO/////////////
+              '///////////////////////////////////////////////////////////////////////////////////
+              MDIPrimero.DtaConsulta.RecordSource = "SELECT  Historico.*, Empleado.SueldoActualBasico FROM Historico INNER JOIN Empleado ON Historico.Codempleado = Empleado.CodEmpleado  Where (Historico.CodEmpleado = " & CodEmpleado & ")"
+              MDIPrimero.DtaConsulta.Refresh
+              If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
+                If MDIPrimero.DtaConsulta.Recordset("SueldoActualBasico") = True Then
+                 If Not IsNull(MDIPrimero.DtaConsulta.Recordset("SueldoActual")) Then
+                    SalarioBasico = MDIPrimero.DtaConsulta.Recordset("SueldoActual")
+                 Else
+                    SalarioBasico = 0
+                 End If
+                    SalMayor = SalarioBasico '+ Ingresos
+                End If
+              End If
     
     
  End If
@@ -2551,6 +2880,8 @@ Loop
        Me.DtaDetalleNom13Mes.Recordset.MoveLast
        Id = Me.DtaDetalleNom13Mes.Recordset("id") + 1
        End If
+       
+    LlenarHistorialAguinaldo (DtaEmpleados.Recordset("CodEmpleado"))
        
     If (SalMayor - MontoPension - PorcentajePension) <> 0 Then
        
@@ -5079,7 +5410,7 @@ If Me.ChkImprimirDptoVaca.Value = 1 Then
                         ArepColillaVaca.LblTipo.Caption = Me.DBCNominas.Text
                         ArepColillaVaca.LblPeriodos.Caption = "Desde   " & Me.TxtFINIVaca.Value & " Hasta    " & Me.TxtFFinVaca.Value
                         ArepColillaVaca.LblPeriodo.Caption = Format(Me.TxtFINIVaca.Value, "dd/mm/yyyy") & "   Hasta   " & Format(Me.TxtFFinVaca.Value, "dd/mm/yyyy")
-                        ArepColillaVaca.LblTitulo.Caption = Titulo
+                        ArepColillaVaca.lbltitulo.Caption = Titulo
                         ArepColillaVaca.AdoColillas.ConnectionString = ConexionReporte
                         ArepColillaVaca.Show 1
             
@@ -5103,7 +5434,7 @@ If Me.ChkImprimirDptoVaca.Value = 1 Then
                     ArepColillaVaca.LblTipo.Caption = Me.DBCNominas.Text
                     ArepColillaVaca.LblPeriodos.Caption = "Desde   " & Me.TxtFINIVaca.Value & " Hasta    " & Me.TxtFFinVaca.Value
                     ArepColillaVaca.LblPeriodo.Caption = Format(Me.TxtFINIVaca.Value, "dd/mm/yyyy") & "   Hasta   " & Format(Me.TxtFFinVaca.Value, "dd/mm/yyyy")
-                    ArepColillaVaca.LblTitulo.Caption = Titulo
+                    ArepColillaVaca.lbltitulo.Caption = Titulo
                     ArepColillaVaca.AdoColillas.ConnectionString = ConexionReporte
                     ArepColillaVaca.Show 1
             
@@ -5147,7 +5478,7 @@ Else
                     ArepColillaVaca.LblTipo.Caption = Me.DBCNominas.Text
                     ArepColillaVaca.LblPeriodos.Caption = "Desde   " & Me.TxtFINIVaca.Value & " Hasta    " & Me.TxtFFinVaca.Value
                     ArepColillaVaca.LblPeriodo.Caption = Format(Me.TxtFINIVaca.Value, "dd/mm/yyyy") & "   Hasta   " & Format(Me.TxtFFinVaca.Value, "dd/mm/yyyy")
-                    ArepColillaVaca.LblTitulo.Caption = Titulo
+                    ArepColillaVaca.lbltitulo.Caption = Titulo
                     ArepColillaVaca.AdoColillas.ConnectionString = ConexionReporte
                     ArepColillaVaca.Show 1
         
@@ -5171,7 +5502,7 @@ Else
                 ArepColillaVaca.LblTipo.Caption = Me.DBCNominas.Text
                 ArepColillaVaca.LblPeriodos.Caption = "Desde   " & Me.TxtFINIVaca.Value & " Hasta    " & Me.TxtFFinVaca.Value
                 ArepColillaVaca.LblPeriodo.Caption = Format(Me.TxtFINIVaca.Value, "dd/mm/yyyy") & "   Hasta   " & Format(Me.TxtFFinVaca.Value, "dd/mm/yyyy")
-                ArepColillaVaca.LblTitulo.Caption = Titulo
+                ArepColillaVaca.lbltitulo.Caption = Titulo
                 ArepColillaVaca.AdoColillas.ConnectionString = ConexionReporte
                 ArepColillaVaca.Show 1
         
@@ -5222,7 +5553,7 @@ Me.CommonDialog1.ShowSave
 Directorio = ""
 Directorio = Me.CommonDialog1.FileName + ".xls"
 
-      Nom13vo.LblTitulo.Caption = Titulo
+      Nom13vo.lbltitulo.Caption = Titulo
       Nom13vo.LblSubtitulo.Caption = SubTitulo
       Nom13vo.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -5474,7 +5805,7 @@ Me.CommonDialog1.ShowSave
 
 Directorio = Me.CommonDialog1.FileName + ".xls"
 
-      Nom13vo.LblTitulo.Caption = Titulo
+      Nom13vo.lbltitulo.Caption = Titulo
       Nom13vo.LblSubtitulo.Caption = SubTitulo
       Nom13vo.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -5600,7 +5931,7 @@ DtaTipoNomina.Recordset.MoveNext
 Loop
 
 
-      ArepNomVacaciones.LblTitulo.Caption = Titulo
+      ArepNomVacaciones.lbltitulo.Caption = Titulo
       ArepNomVacaciones.LblSubtitulo.Caption = SubTitulo
       ArepNomVacaciones.ImgLogo.Picture = LoadPicture(RutaLogo)
       ArepNomVacaciones.LblFecha.Caption = "Desde " + Format(Me.TxtFINIVaca.Value, "mm/dd/yyyy") + " Hasta " + Format(Me.TxtFFinVaca.Value, "mm/dd/yyyy")
@@ -5652,7 +5983,7 @@ End If
              fPreview.Show 1
            
            
-      ArepPersecionesVaca.LblTitulo.Caption = Titulo
+      ArepPersecionesVaca.lbltitulo.Caption = Titulo
       ArepPersecionesVaca.LblSubtitulo.Caption = SubTitulo
       ArepPersecionesVaca.ImgLogo.Picture = LoadPicture(RutaLogo)
       ArepPersecionesVaca.Label5.Caption = "Nomina Vacaciones"
@@ -5745,7 +6076,7 @@ Espacio = " "
         ArepColilla13vo.LblTipo.Caption = Me.DBCNominas.Text
         ArepColilla13vo.LblPeriodos.Caption = "Desde   " & Me.TxtFINI13.Value & " Hasta    " & Me.TxtFFIN13.Value
         ArepColilla13vo.LblPeriodo.Caption = Format(Me.TxtFINI13.Value, "dddddd") & "   Hasta   " & Format(Me.TxtFFIN13.Value, "dddddd")
-        ArepColilla13vo.LblTitulo.Caption = Titulo
+        ArepColilla13vo.lbltitulo.Caption = Titulo
         ArepColilla13vo.AdoColillas.ConnectionString = ConexionReporte
         ArepColilla13vo.Show 1
         
@@ -5773,7 +6104,7 @@ Espacio = " "
         ArepColilla13vo.LblTipo.Caption = Me.DBCNominas.Text
         ArepColilla13vo.LblPeriodos.Caption = "Desde   " & Me.TxtFINI13.Value & " Hasta    " & Me.TxtFFIN13.Value
         ArepColilla13vo.LblPeriodo.Caption = Format(Me.TxtFINI13.Value, "dddddd") & "   Hasta   " & Format(Me.TxtFFIN13.Value, "dddddd")
-        ArepColilla13vo.LblTitulo.Caption = Titulo
+        ArepColilla13vo.lbltitulo.Caption = Titulo
         ArepColilla13vo.AdoColillas.ConnectionString = ConexionReporte
         ArepColilla13vo.Show 1
  End If
@@ -5794,7 +6125,7 @@ NumNomina = Me.TxtNumNom13.Text
 Dim rpt As New Nom13vo
 
 
-      rpt.LblTitulo.Caption = Titulo
+      rpt.lbltitulo.Caption = Titulo
       rpt.LblSubtitulo.Caption = SubTitulo
       rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -5827,7 +6158,7 @@ Espacio = " "
 NumNomVaca = DtaNomVaca.Recordset("NumNomVaca")
 
 
-      ArepNomVacaciones.LblTitulo.Caption = Titulo
+      ArepNomVacaciones.lbltitulo.Caption = Titulo
       ArepNomVacaciones.LblSubtitulo.Caption = SubTitulo
       ArepNomVacaciones.ImgLogo.Picture = LoadPicture(RutaLogo)
       

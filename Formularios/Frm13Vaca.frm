@@ -858,97 +858,90 @@ Begin VB.Form Frm13Vaca
          _ExtentY        =   9551
          _Version        =   393216
          Tabs            =   2
+         Tab             =   1
          TabsPerRow      =   2
          TabHeight       =   520
          BackColor       =   12632319
          TabCaption(0)   =   "Vacaciones"
          TabPicture(0)   =   "Frm13Vaca.frx":C098
-         Tab(0).ControlEnabled=   -1  'True
-         Tab(0).Control(0)=   "Label4"
-         Tab(0).Control(0).Enabled=   0   'False
-         Tab(0).Control(1)=   "Label3"
-         Tab(0).Control(1).Enabled=   0   'False
-         Tab(0).Control(2)=   "Label1"
-         Tab(0).Control(2).Enabled=   0   'False
-         Tab(0).Control(3)=   "Label7"
-         Tab(0).Control(3).Enabled=   0   'False
-         Tab(0).Control(4)=   "Label13"
-         Tab(0).Control(4).Enabled=   0   'False
-         Tab(0).Control(5)=   "PBVacaciones"
-         Tab(0).Control(5).Enabled=   0   'False
-         Tab(0).Control(6)=   "TxtFechaAplica"
-         Tab(0).Control(6).Enabled=   0   'False
-         Tab(0).Control(7)=   "dtpFPInicio"
-         Tab(0).Control(7).Enabled=   0   'False
-         Tab(0).Control(8)=   "dtpFPFinal"
-         Tab(0).Control(8).Enabled=   0   'False
-         Tab(0).Control(9)=   "SmartButton2"
-         Tab(0).Control(9).Enabled=   0   'False
-         Tab(0).Control(10)=   "CmdCalVaca"
-         Tab(0).Control(10).Enabled=   0   'False
-         Tab(0).Control(11)=   "TxtNumNomVaca"
-         Tab(0).Control(11).Enabled=   0   'False
-         Tab(0).Control(12)=   "CmdCerrarVacaciones"
-         Tab(0).Control(12).Enabled=   0   'False
-         Tab(0).Control(13)=   "TxtDiasDescuento"
-         Tab(0).Control(13).Enabled=   0   'False
-         Tab(0).Control(14)=   "CmdPRVaca"
-         Tab(0).Control(14).Enabled=   0   'False
-         Tab(0).Control(15)=   "TxtFINIVaca"
-         Tab(0).Control(15).Enabled=   0   'False
-         Tab(0).Control(16)=   "TxtFFinVaca"
-         Tab(0).Control(16).Enabled=   0   'False
-         Tab(0).Control(17)=   "Command2"
-         Tab(0).Control(17).Enabled=   0   'False
-         Tab(0).Control(18)=   "DbgrVacaciones"
-         Tab(0).Control(18).Enabled=   0   'False
-         Tab(0).Control(19)=   "CmdExportar"
-         Tab(0).Control(19).Enabled=   0   'False
-         Tab(0).Control(20)=   "CmdMonedasvaca"
-         Tab(0).Control(20).Enabled=   0   'False
-         Tab(0).Control(21)=   "CmdColillaVaca"
-         Tab(0).Control(21).Enabled=   0   'False
-         Tab(0).Control(22)=   "CmdNominaVaca"
-         Tab(0).Control(22).Enabled=   0   'False
-         Tab(0).Control(23)=   "CHKTranferir"
-         Tab(0).Control(23).Enabled=   0   'False
-         Tab(0).Control(24)=   "ChkRestar"
-         Tab(0).Control(24).Enabled=   0   'False
-         Tab(0).Control(25)=   "ChkEliminar"
-         Tab(0).Control(25).Enabled=   0   'False
-         Tab(0).Control(26)=   "CmdCalVacaMes"
-         Tab(0).Control(26).Enabled=   0   'False
-         Tab(0).Control(27)=   "ChkExtraVaca"
-         Tab(0).Control(27).Enabled=   0   'False
+         Tab(0).ControlEnabled=   0   'False
+         Tab(0).Control(0)=   "ChkExtraVaca"
+         Tab(0).Control(1)=   "CmdCalVacaMes"
+         Tab(0).Control(2)=   "ChkEliminar"
+         Tab(0).Control(3)=   "ChkRestar"
+         Tab(0).Control(4)=   "CHKTranferir"
+         Tab(0).Control(5)=   "CmdNominaVaca"
+         Tab(0).Control(6)=   "CmdColillaVaca"
+         Tab(0).Control(7)=   "CmdMonedasvaca"
+         Tab(0).Control(8)=   "CmdExportar"
+         Tab(0).Control(9)=   "DbgrVacaciones"
+         Tab(0).Control(10)=   "Command2"
+         Tab(0).Control(11)=   "TxtFFinVaca"
+         Tab(0).Control(12)=   "TxtFINIVaca"
+         Tab(0).Control(13)=   "CmdPRVaca"
+         Tab(0).Control(14)=   "TxtDiasDescuento"
+         Tab(0).Control(15)=   "CmdCerrarVacaciones"
+         Tab(0).Control(16)=   "TxtNumNomVaca"
+         Tab(0).Control(17)=   "CmdCalVaca"
+         Tab(0).Control(18)=   "SmartButton2"
+         Tab(0).Control(19)=   "dtpFPFinal"
+         Tab(0).Control(20)=   "dtpFPInicio"
+         Tab(0).Control(21)=   "TxtFechaAplica"
+         Tab(0).Control(22)=   "PBVacaciones"
+         Tab(0).Control(23)=   "Label13"
+         Tab(0).Control(24)=   "Label7"
+         Tab(0).Control(25)=   "Label1"
+         Tab(0).Control(26)=   "Label3"
+         Tab(0).Control(27)=   "Label4"
          Tab(0).ControlCount=   28
          TabCaption(1)   =   "Trecavo Mes"
          TabPicture(1)   =   "Frm13Vaca.frx":C0B4
-         Tab(1).ControlEnabled=   0   'False
+         Tab(1).ControlEnabled=   -1  'True
          Tab(1).Control(0)=   "Label6"
+         Tab(1).Control(0).Enabled=   0   'False
          Tab(1).Control(1)=   "Label5"
+         Tab(1).Control(1).Enabled=   0   'False
          Tab(1).Control(2)=   "Label2"
+         Tab(1).Control(2).Enabled=   0   'False
          Tab(1).Control(3)=   "PB13Mes"
+         Tab(1).Control(3).Enabled=   0   'False
          Tab(1).Control(4)=   "CmdprNomina"
+         Tab(1).Control(4).Enabled=   0   'False
          Tab(1).Control(5)=   "CmdPrnNomina"
+         Tab(1).Control(5).Enabled=   0   'False
          Tab(1).Control(6)=   "CmdCal13"
+         Tab(1).Control(6).Enabled=   0   'False
          Tab(1).Control(7)=   "TxtNumNom13"
+         Tab(1).Control(7).Enabled=   0   'False
          Tab(1).Control(8)=   "CmdCerrar13"
+         Tab(1).Control(8).Enabled=   0   'False
          Tab(1).Control(9)=   "TxtFINI13"
+         Tab(1).Control(9).Enabled=   0   'False
          Tab(1).Control(10)=   "TxtFFIN13"
+         Tab(1).Control(10).Enabled=   0   'False
          Tab(1).Control(11)=   "Command1"
+         Tab(1).Control(11).Enabled=   0   'False
          Tab(1).Control(12)=   "CmdExporta2"
+         Tab(1).Control(12).Enabled=   0   'False
          Tab(1).Control(13)=   "Dbgr13Mes"
+         Tab(1).Control(13).Enabled=   0   'False
          Tab(1).Control(14)=   "SmartButton1"
+         Tab(1).Control(14).Enabled=   0   'False
          Tab(1).Control(15)=   "CmdDenominacion"
+         Tab(1).Control(15).Enabled=   0   'False
          Tab(1).Control(16)=   "Frame1"
+         Tab(1).Control(16).Enabled=   0   'False
          Tab(1).Control(17)=   "CmdExportaBAC"
+         Tab(1).Control(17).Enabled=   0   'False
          Tab(1).Control(18)=   "ChkExtra"
+         Tab(1).Control(18).Enabled=   0   'False
          Tab(1).Control(19)=   "ChkEliminarAguinaldo"
+         Tab(1).Control(19).Enabled=   0   'False
          Tab(1).ControlCount=   20
          Begin VB.CheckBox ChkExtraVaca 
             Caption         =   "Calcular Horas Extra"
             Height          =   255
-            Left            =   8280
+            Left            =   -66720
             TabIndex        =   60
             Top             =   960
             Value           =   1  'Checked
@@ -957,7 +950,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CheckBox ChkEliminarAguinaldo 
             Caption         =   "Eliminar el Calculo Anterior"
             Height          =   375
-            Left            =   -74880
+            Left            =   120
             TabIndex        =   59
             Top             =   1800
             Width           =   1695
@@ -965,7 +958,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CheckBox ChkExtra 
             Caption         =   "Calcular Horas Extra"
             Height          =   255
-            Left            =   -74880
+            Left            =   120
             TabIndex        =   58
             Top             =   1440
             Width           =   1815
@@ -973,7 +966,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CommandButton CmdCalVacaMes 
             DownPicture     =   "Frm13Vaca.frx":C0D0
             Height          =   375
-            Left            =   7920
+            Left            =   -67080
             Picture         =   "Frm13Vaca.frx":DBB2
             Style           =   1  'Graphical
             TabIndex        =   57
@@ -984,7 +977,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CheckBox ChkEliminar 
             Caption         =   "Eliminar el Calculo Anterior"
             Height          =   255
-            Left            =   8280
+            Left            =   -66720
             TabIndex        =   56
             Top             =   600
             Width           =   2175
@@ -992,7 +985,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CheckBox ChkRestar 
             Caption         =   "Restar Inss Nomina"
             Height          =   255
-            Left            =   240
+            Left            =   -74760
             TabIndex        =   51
             Top             =   3240
             Value           =   1  'Checked
@@ -1002,7 +995,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":F6F4
             Enabled         =   0   'False
             Height          =   375
-            Left            =   -68520
+            Left            =   6480
             Picture         =   "Frm13Vaca.frx":111D6
             Style           =   1  'Graphical
             TabIndex        =   50
@@ -1012,7 +1005,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.Frame Frame1 
             Caption         =   "Fechas Segun Periodos"
             Height          =   855
-            Left            =   -70680
+            Left            =   4320
             TabIndex        =   45
             Top             =   480
             Width           =   7935
@@ -1025,7 +1018,7 @@ Begin VB.Form Frm13Vaca
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   77725697
+               Format          =   84541441
                CurrentDate     =   38305
             End
             Begin MSComCtl2.DTPicker DtpInicio13vo 
@@ -1037,7 +1030,7 @@ Begin VB.Form Frm13Vaca
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   77725697
+               Format          =   84541441
                CurrentDate     =   38305
             End
             Begin VB.Label Label12 
@@ -1080,7 +1073,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CheckBox CHKTranferir 
             Caption         =   "Cerrar sin Tranferir"
             Height          =   255
-            Left            =   240
+            Left            =   -74760
             TabIndex        =   39
             Top             =   2880
             Value           =   1  'Checked
@@ -1090,7 +1083,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":12A80
             Enabled         =   0   'False
             Height          =   375
-            Left            =   9360
+            Left            =   -65640
             Picture         =   "Frm13Vaca.frx":14562
             Style           =   1  'Graphical
             TabIndex        =   38
@@ -1101,7 +1094,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":16044
             Enabled         =   0   'False
             Height          =   375
-            Left            =   7920
+            Left            =   -67080
             Picture         =   "Frm13Vaca.frx":17B26
             Style           =   1  'Graphical
             TabIndex        =   37
@@ -1112,7 +1105,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":19608
             Enabled         =   0   'False
             Height          =   375
-            Left            =   6480
+            Left            =   -68520
             Picture         =   "Frm13Vaca.frx":1B0EA
             Style           =   1  'Graphical
             TabIndex        =   36
@@ -1123,7 +1116,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":1C9EC
             Enabled         =   0   'False
             Height          =   375
-            Left            =   10800
+            Left            =   -64200
             Picture         =   "Frm13Vaca.frx":1E4CE
             Style           =   1  'Graphical
             TabIndex        =   35
@@ -1134,7 +1127,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":1FD78
             Enabled         =   0   'False
             Height          =   375
-            Left            =   -68520
+            Left            =   6480
             Picture         =   "Frm13Vaca.frx":2185A
             Style           =   1  'Graphical
             TabIndex        =   34
@@ -1143,7 +1136,7 @@ Begin VB.Form Frm13Vaca
          End
          Begin SmartButtonProject.SmartButton SmartButton1 
             Height          =   975
-            Left            =   -74520
+            Left            =   480
             TabIndex        =   32
             Top             =   3120
             Width           =   1215
@@ -1164,7 +1157,7 @@ Begin VB.Form Frm13Vaca
          Begin TrueOleDBGrid70.TDBGrid Dbgr13Mes 
             Bindings        =   "Frm13Vaca.frx":23A36
             Height          =   3015
-            Left            =   -72960
+            Left            =   2040
             TabIndex        =   31
             Top             =   1440
             Width           =   10215
@@ -1287,7 +1280,7 @@ Begin VB.Form Frm13Vaca
          Begin TrueOleDBGrid70.TDBGrid DbgrVacaciones 
             Bindings        =   "Frm13Vaca.frx":23A4F
             Height          =   2535
-            Left            =   2160
+            Left            =   -72840
             TabIndex        =   30
             Top             =   1680
             Width           =   9975
@@ -1411,7 +1404,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":23A6B
             Enabled         =   0   'False
             Height          =   375
-            Left            =   -64200
+            Left            =   10800
             Picture         =   "Frm13Vaca.frx":2554D
             Style           =   1  'Graphical
             TabIndex        =   28
@@ -1430,7 +1423,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   360
-            Left            =   -64200
+            Left            =   10800
             Picture         =   "Frm13Vaca.frx":288D9
             Style           =   1  'Graphical
             TabIndex        =   27
@@ -1449,7 +1442,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   360
-            Left            =   10800
+            Left            =   -64200
             Picture         =   "Frm13Vaca.frx":2BE9D
             Style           =   1  'Graphical
             TabIndex        =   26
@@ -1458,57 +1451,57 @@ Begin VB.Form Frm13Vaca
          End
          Begin MSComCtl2.DTPicker TxtFFIN13 
             Height          =   315
-            Left            =   -72720
+            Left            =   2280
             TabIndex        =   25
             Top             =   840
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINI13 
             Height          =   315
-            Left            =   -74760
+            Left            =   240
             TabIndex        =   24
             Top             =   840
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFFinVaca 
             Height          =   315
-            Left            =   2400
+            Left            =   -72600
             TabIndex        =   23
             Top             =   600
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINIVaca 
             Height          =   315
-            Left            =   240
+            Left            =   -74760
             TabIndex        =   22
             Top             =   600
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin VB.CommandButton CmdPRVaca 
             DownPicture     =   "Frm13Vaca.frx":2D97F
             Enabled         =   0   'False
             Height          =   375
-            Left            =   2160
+            Left            =   -72840
             Picture         =   "Frm13Vaca.frx":2F461
             Style           =   1  'Graphical
             TabIndex        =   12
@@ -1519,7 +1512,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.TextBox TxtDiasDescuento 
             Alignment       =   2  'Center
             Height          =   285
-            Left            =   1560
+            Left            =   -73440
             TabIndex        =   11
             Text            =   "0"
             Top             =   2520
@@ -1528,7 +1521,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CommandButton CmdCerrar13 
             DownPicture     =   "Frm13Vaca.frx":30F43
             Height          =   375
-            Left            =   -65640
+            Left            =   9360
             Picture         =   "Frm13Vaca.frx":32A25
             Style           =   1  'Graphical
             TabIndex        =   10
@@ -1538,7 +1531,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CommandButton CmdCerrarVacaciones 
             DownPicture     =   "Frm13Vaca.frx":34327
             Height          =   375
-            Left            =   9360
+            Left            =   -65640
             Picture         =   "Frm13Vaca.frx":35E09
             Style           =   1  'Graphical
             TabIndex        =   9
@@ -1559,7 +1552,7 @@ Begin VB.Form Frm13Vaca
             EndProperty
             ForeColor       =   &H00000080&
             Height          =   420
-            Left            =   -74520
+            Left            =   480
             Locked          =   -1  'True
             TabIndex        =   8
             Top             =   2400
@@ -1579,7 +1572,7 @@ Begin VB.Form Frm13Vaca
             EndProperty
             ForeColor       =   &H00000080&
             Height          =   420
-            Left            =   480
+            Left            =   -74520
             Locked          =   -1  'True
             TabIndex        =   7
             Top             =   1920
@@ -1588,7 +1581,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CommandButton CmdCal13 
             DownPicture     =   "Frm13Vaca.frx":3770B
             Height          =   375
-            Left            =   -67080
+            Left            =   7920
             Picture         =   "Frm13Vaca.frx":391ED
             Style           =   1  'Graphical
             TabIndex        =   6
@@ -1598,7 +1591,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.CommandButton CmdCalVaca 
             DownPicture     =   "Frm13Vaca.frx":3AD2F
             Height          =   375
-            Left            =   7920
+            Left            =   -67080
             Picture         =   "Frm13Vaca.frx":3C811
             Style           =   1  'Graphical
             TabIndex        =   5
@@ -1610,7 +1603,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":3E353
             Enabled         =   0   'False
             Height          =   375
-            Left            =   -67080
+            Left            =   7920
             Picture         =   "Frm13Vaca.frx":3FE35
             Style           =   1  'Graphical
             TabIndex        =   4
@@ -1621,7 +1614,7 @@ Begin VB.Form Frm13Vaca
             DownPicture     =   "Frm13Vaca.frx":41917
             Enabled         =   0   'False
             Height          =   375
-            Left            =   -65640
+            Left            =   9360
             Picture         =   "Frm13Vaca.frx":433F9
             Style           =   1  'Graphical
             TabIndex        =   3
@@ -1630,7 +1623,7 @@ Begin VB.Form Frm13Vaca
          End
          Begin SmartButtonProject.SmartButton SmartButton2 
             Height          =   975
-            Left            =   360
+            Left            =   -74640
             TabIndex        =   33
             Top             =   3600
             Width           =   1215
@@ -1650,43 +1643,43 @@ Begin VB.Form Frm13Vaca
          End
          Begin MSComCtl2.DTPicker dtpFPFinal 
             Height          =   315
-            Left            =   2400
+            Left            =   -72600
             TabIndex        =   40
             Top             =   1200
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker dtpFPInicio 
             Height          =   315
-            Left            =   240
+            Left            =   -74760
             TabIndex        =   41
             Top             =   1200
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFechaAplica 
             Height          =   315
-            Left            =   5880
+            Left            =   -69120
             TabIndex        =   53
             Top             =   600
             Width           =   1695
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   77725697
+            Format          =   84541441
             CurrentDate     =   38305
          End
          Begin XtremeSuiteControls.ProgressBar PBVacaciones 
             Height          =   375
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   61
             Top             =   4920
             Width           =   6135
@@ -1700,7 +1693,7 @@ Begin VB.Form Frm13Vaca
          End
          Begin XtremeSuiteControls.ProgressBar PB13Mes 
             Height          =   375
-            Left            =   -74880
+            Left            =   120
             TabIndex        =   62
             Top             =   4680
             Width           =   6255
@@ -1715,7 +1708,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.Label Label13 
             Caption         =   "Fecha Aplica"
             Height          =   255
-            Left            =   4800
+            Left            =   -70200
             TabIndex        =   52
             Top             =   600
             Width           =   1095
@@ -1723,7 +1716,7 @@ Begin VB.Form Frm13Vaca
          Begin VB.Label Label7 
             Caption         =   "Días de Descuento"
             Height          =   255
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   19
             Top             =   2520
             Width           =   1455
@@ -1740,7 +1733,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   375
-            Left            =   -74760
+            Left            =   240
             TabIndex        =   18
             Top             =   2400
             Width           =   255
@@ -1757,7 +1750,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   375
-            Left            =   240
+            Left            =   -74760
             TabIndex        =   17
             Top             =   1920
             Width           =   255
@@ -1775,7 +1768,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   -74880
+            Left            =   120
             TabIndex        =   16
             Top             =   480
             Width           =   1815
@@ -1793,7 +1786,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   -72840
+            Left            =   2160
             TabIndex        =   15
             Top             =   480
             Width           =   1815
@@ -1811,7 +1804,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   14
             Top             =   360
             Width           =   1815
@@ -1829,7 +1822,7 @@ Begin VB.Form Frm13Vaca
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   2280
+            Left            =   -72720
             TabIndex        =   13
             Top             =   360
             Width           =   1815
@@ -4602,7 +4595,7 @@ Loop
         ArepColillaVaca.LblTipo.Caption = Me.DBCNominas.Text
         ArepColillaVaca.LblPeriodos.Caption = "Desde   " & Me.TxtFINIVaca.Value & " Hasta    " & Me.TxtFFinVaca.Value
         ArepColillaVaca.LblPeriodo.Caption = Format(Me.TxtFINIVaca.Value, "dd/mm/yyyy") & "   Hasta   " & Format(Me.TxtFFinVaca.Value, "dd/mm/yyyy")
-        ArepColillaVaca.LblTitulo.Caption = Titulo
+        ArepColillaVaca.lbltitulo.Caption = Titulo
         ArepColillaVaca.AdoColillas.ConnectionString = ConexionReporte
         ArepColillaVaca.Show 1
     '           fPreview.arv.ReportSource = ArepColillaVaca
@@ -4629,7 +4622,7 @@ Loop
         ArepColillaVaca.LblTipo.Caption = Me.DBCNominas.Text
         ArepColillaVaca.LblPeriodos.Caption = "Desde   " & Me.TxtFINIVaca.Value & " Hasta    " & Me.TxtFFinVaca.Value
         ArepColillaVaca.LblPeriodo.Caption = Format(Me.TxtFINIVaca.Value, "dd/mm/yyyy") & "   Hasta   " & Format(Me.TxtFFinVaca.Value, "dd/mm/yyyy")
-        ArepColillaVaca.LblTitulo.Caption = Titulo
+        ArepColillaVaca.lbltitulo.Caption = Titulo
         ArepColillaVaca.AdoColillas.ConnectionString = ConexionReporte
         ArepColillaVaca.Show 1
         '           fPreview.arv.ReportSource = ArepColillaVaca
@@ -4680,7 +4673,7 @@ Me.CommonDialog1.ShowSave
 Directorio = ""
 Directorio = Me.CommonDialog1.FileName + ".xls"
 
-      Nom13vo.LblTitulo.Caption = Titulo
+      Nom13vo.lbltitulo.Caption = Titulo
       Nom13vo.LblSubtitulo.Caption = SubTitulo
       Nom13vo.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -4750,7 +4743,7 @@ Me.CommonDialog1.ShowSave
 
 Directorio = Me.CommonDialog1.FileName + ".xls"
 
-      Nom13vo.LblTitulo.Caption = Titulo
+      Nom13vo.lbltitulo.Caption = Titulo
       Nom13vo.LblSubtitulo.Caption = SubTitulo
       Nom13vo.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -4818,7 +4811,7 @@ DtaTipoNomina.Recordset.MoveNext
 Loop
 
 
-      ArepNomVacaciones.LblTitulo.Caption = Titulo
+      ArepNomVacaciones.lbltitulo.Caption = Titulo
       ArepNomVacaciones.LblSubtitulo.Caption = SubTitulo
       ArepNomVacaciones.ImgLogo.Picture = LoadPicture(RutaLogo)
       ArepNomVacaciones.LblFecha.Caption = "Desde " + Format(Me.TxtFINIVaca.Value, "mm/dd/yyyy") + " Hasta " + Format(Me.TxtFFinVaca.Value, "mm/dd/yyyy")
@@ -4869,7 +4862,7 @@ End If
              fPreview.Show 1
            
            
-      ArepPersecionesVaca.LblTitulo.Caption = Titulo
+      ArepPersecionesVaca.lbltitulo.Caption = Titulo
       ArepPersecionesVaca.LblSubtitulo.Caption = SubTitulo
       ArepPersecionesVaca.ImgLogo.Picture = LoadPicture(RutaLogo)
       ArepPersecionesVaca.Label5.Caption = "Nomina Vacaciones"
@@ -4924,7 +4917,7 @@ ArepColilla13vo.AdoColillas.Source = SQlReportes
 ArepColilla13vo.LblTipo.Caption = Me.DBCNominas.Text
 ArepColilla13vo.LblPeriodos.Caption = "Desde   " & Me.TxtFINI13.Value & " Hasta    " & Me.TxtFFIN13.Value
 ArepColilla13vo.LblPeriodo.Caption = Format(Me.TxtFINI13.Value, "dddddd") & "   Hasta   " & Format(Me.TxtFFIN13.Value, "dddddd")
-ArepColilla13vo.LblTitulo.Caption = Titulo
+ArepColilla13vo.lbltitulo.Caption = Titulo
 ArepColilla13vo.AdoColillas.ConnectionString = ConexionReporte
 ArepColilla13vo.Show 1
 Exit Sub
@@ -4939,7 +4932,7 @@ Espacio = " "
 NumNomina = Me.TxtNumNom13.Text
 
 
-      Nom13vo.LblTitulo.Caption = Titulo
+      Nom13vo.lbltitulo.Caption = Titulo
       Nom13vo.LblSubtitulo.Caption = SubTitulo
       Nom13vo.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -4964,7 +4957,7 @@ Espacio = " "
 NumNomVaca = DtaNomVaca.Recordset("NumNomVaca")
 
 
-      ArepNomVacaciones.LblTitulo.Caption = Titulo
+      ArepNomVacaciones.lbltitulo.Caption = Titulo
       ArepNomVacaciones.LblSubtitulo.Caption = SubTitulo
       ArepNomVacaciones.ImgLogo.Picture = LoadPicture(RutaLogo)
       
@@ -5287,11 +5280,11 @@ Dim NumNom13Mes As Long
  If MetodoVacaciones = "Vacaciones Semestrales" Then
    Me.CmdCalVaca.Visible = True
    Me.CmdCalVacaMes.Visible = False
-   Me.LblTitulo.Caption = "Vacaciones Semestrales y 13vo Mes"
+   Me.lbltitulo.Caption = "Vacaciones Semestrales y 13vo Mes"
  ElseIf MetodoVacaciones = "Vacaciones Mensuales" Then
    Me.CmdCalVaca.Visible = False
    Me.CmdCalVacaMes.Visible = True
-   Me.LblTitulo.Caption = "Vacaciones Mensuales y 13vo Mes"
+   Me.lbltitulo.Caption = "Vacaciones Mensuales y 13vo Mes"
  End If
  
  With Me.AdoHistorialSalarial

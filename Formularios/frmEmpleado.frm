@@ -132,53 +132,45 @@ Begin VB.Form frmEmpleado
          TabCaption(1)   =   "Histórico"
          TabPicture(1)   =   "frmEmpleado.frx":0326
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Label72"
-         Tab(1).Control(0).Enabled=   0   'False
+         Tab(1).Control(0)=   "Picture3"
          Tab(1).Control(1)=   "Label74"
-         Tab(1).Control(1).Enabled=   0   'False
-         Tab(1).Control(2)=   "Picture3"
-         Tab(1).Control(2).Enabled=   0   'False
+         Tab(1).Control(2)=   "Label72"
          Tab(1).ControlCount=   3
          TabCaption(2)   =   "Información"
          TabPicture(2)   =   "frmEmpleado.frx":0342
          Tab(2).ControlEnabled=   0   'False
          Tab(2).Control(0)=   "Picture4"
-         Tab(2).Control(0).Enabled=   0   'False
          Tab(2).ControlCount=   1
          TabCaption(3)   =   "Préstamo"
          TabPicture(3)   =   "frmEmpleado.frx":035E
          Tab(3).ControlEnabled=   0   'False
-         Tab(3).Control(0)=   "Label67"
-         Tab(3).Control(0).Enabled=   0   'False
-         Tab(3).Control(1)=   "SSTab2"
-         Tab(3).Control(1).Enabled=   0   'False
-         Tab(3).Control(2)=   "DbgrLibreta"
-         Tab(3).Control(2).Enabled=   0   'False
-         Tab(3).Control(3)=   "Picture5"
-         Tab(3).Control(3).Enabled=   0   'False
+         Tab(3).Control(0)=   "Picture5"
+         Tab(3).Control(1)=   "DbgrLibreta"
+         Tab(3).Control(2)=   "SSTab2"
+         Tab(3).Control(3)=   "Label67"
          Tab(3).ControlCount=   4
          TabCaption(4)   =   "Incentivos"
          TabPicture(4)   =   "frmEmpleado.frx":037A
          Tab(4).ControlEnabled=   0   'False
-         Tab(4).Control(0)=   "DbGIncentivos"
-         Tab(4).Control(1)=   "CmdHistoIncentivos"
+         Tab(4).Control(0)=   "CmdAnular"
+         Tab(4).Control(1)=   "Picture6"
          Tab(4).Control(2)=   "CmdEliminarIncentivo"
-         Tab(4).Control(3)=   "Picture6"
-         Tab(4).Control(4)=   "CmdAnular"
+         Tab(4).Control(3)=   "CmdHistoIncentivos"
+         Tab(4).Control(4)=   "DbGIncentivos"
          Tab(4).ControlCount=   5
          TabCaption(5)   =   "Deducciones"
          TabPicture(5)   =   "frmEmpleado.frx":0396
          Tab(5).ControlEnabled=   0   'False
-         Tab(5).Control(0)=   "Picture7"
+         Tab(5).Control(0)=   "DbgDeducciones"
          Tab(5).Control(1)=   "CmdEliminarDeduccion"
-         Tab(5).Control(2)=   "DbgDeducciones"
+         Tab(5).Control(2)=   "Picture7"
          Tab(5).ControlCount=   3
          TabCaption(6)   =   "Subsidios"
          TabPicture(6)   =   "frmEmpleado.frx":03B2
          Tab(6).ControlEnabled=   0   'False
-         Tab(6).Control(0)=   "DbgrSubsidios"
+         Tab(6).Control(0)=   "Picture8"
          Tab(6).Control(1)=   "CmdEliminarSubsidio"
-         Tab(6).Control(2)=   "Picture8"
+         Tab(6).Control(2)=   "DbgrSubsidios"
          Tab(6).ControlCount=   3
          Begin VB.CommandButton CmdAnular 
             Caption         =   "Anular"
@@ -1151,7 +1143,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   81395713
+               Format          =   79757313
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker MaskEdNacimiento 
@@ -1163,7 +1155,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   81395713
+               Format          =   79757313
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker DTPFechaContratoVaca 
@@ -1175,7 +1167,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   81395713
+               Format          =   79757313
                CurrentDate     =   40213
             End
             Begin VB.CommandButton CmdIncapacidad 
@@ -2735,14 +2727,14 @@ Begin VB.Form frmEmpleado
             TabCaption(1)   =   "Exportar"
             TabPicture(1)   =   "frmEmpleado.frx":29756
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "TxtCreditoPrestamo"
-            Tab(1).Control(1)=   "TxtDebitoPrestamo"
-            Tab(1).Control(2)=   "CmdExportar"
-            Tab(1).Control(3)=   "TxtRuta"
-            Tab(1).Control(4)=   "CmdRuta"
-            Tab(1).Control(5)=   "Label61"
-            Tab(1).Control(6)=   "Label65"
-            Tab(1).Control(7)=   "Label60"
+            Tab(1).Control(0)=   "Label60"
+            Tab(1).Control(1)=   "Label65"
+            Tab(1).Control(2)=   "Label61"
+            Tab(1).Control(3)=   "CmdRuta"
+            Tab(1).Control(4)=   "TxtRuta"
+            Tab(1).Control(5)=   "CmdExportar"
+            Tab(1).Control(6)=   "TxtDebitoPrestamo"
+            Tab(1).Control(7)=   "TxtCreditoPrestamo"
             Tab(1).ControlCount=   8
             Begin VB.TextBox TxtCreditoPrestamo 
                Height          =   375
@@ -4407,7 +4399,7 @@ If Bandera Then
              Loop
            LblSuspendido.Visible = True
            FrmSuspencion.TxtCodEmpleado.Text = DBCodigoEmpleado.Text
-           FrmSuspencion.TxtNombre = TxtNombre1.Text + " " + TxtNombre2.Text + " " + TxtApellido1 + " " + TxtApellido2
+           FrmSuspencion.txtNombre = TxtNombre1.Text + " " + TxtNombre2.Text + " " + TxtApellido1 + " " + TxtApellido2
            FrmSuspencion.Show 1
            
         Else
@@ -5969,17 +5961,34 @@ res = Bitacora(Now, NombreUsuario, "Empleados", "Editando al empleado: " & Me.Tx
 '//////////////////////////////////AGREGA EMPLEADOS EN LA TABLA USUARIOS ////////////
 '////////////////////////////////////////////////////////////////////////////////////
             Dim NumeroUser As Double
-            Me.AdoUser.RecordSource = "SELECT  * From Userinfo WHERE (IDCard = '" & DBCodigoEmpleado.Text & "')"
-            Me.AdoUser.Refresh
-            If Me.AdoUser.Recordset.EOF Then
-               NumeroUser = ConsecutivoUser(DBCodigoEmpleado.Text)
-               Me.AdoUser.Recordset.AddNew
-                 Me.AdoUser.Recordset("Userid") = NumeroUser
-                 Me.AdoUser.Recordset("Name") = Nombre1 + " " + Nombre2 + " " + Apellido1 + " " + Apellido2
-                 Me.AdoUser.Recordset("IDCard") = DBCodigoEmpleado.Text
-               Me.AdoUser.Recordset.Update
-            
+            If IsNumeric(DBCodigoEmpleado.Text) Then
+                NumeroUser = DBCodigoEmpleado.Text
+            Else
+                Me.AdoUser.RecordSource = "SELECT  * From Userinfo ORDER BY Userid"
+                Me.AdoUser.Refresh
+                If Not Me.AdoUser.Recordset.EOF Then
+                   Me.AdoUser.Recordset.MoveLast
+                   NumeroUser = Me.AdoUser.Recordset("UserId") + 1
+                Else
+                    NumeroUser = 1
+                End If
+               
             End If
+                
+                Me.AdoUser.RecordSource = "SELECT  * From Userinfo WHERE (Userid = " & NumeroUser & ")"
+                Me.AdoUser.Refresh
+                If Me.AdoUser.Recordset.EOF Then
+                   NumeroUser = ConsecutivoUser(DBCodigoEmpleado.Text)
+                   Me.AdoUser.Recordset.AddNew
+                     Me.AdoUser.Recordset("Userid") = NumeroUser
+                     Me.AdoUser.Recordset("UserCode") = DBCodigoEmpleado.Text
+                     Me.AdoUser.Recordset("Name") = Nombre1 + " " + Nombre2 + " " + Apellido1 + " " + Apellido2
+                    Me.AdoUser.Recordset.Update
+                Else
+                    Me.AdoUser.Recordset("Name") = Nombre1 + " " + Nombre2 + " " + Apellido1 + " " + Apellido2
+                    Me.AdoUser.Recordset.Update
+                End If
+
             
             
             
