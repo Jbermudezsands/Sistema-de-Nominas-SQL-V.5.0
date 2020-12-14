@@ -5787,7 +5787,7 @@ MontoIr = CalcularMontoIr(CodTipoNomina, TotalDevengado + AumentoBasico + MontoS
 '//////////////Busco si la Nomina Existe para Editarla/////////////////
       AjusteINSS = 0
   DtaDetalleNomina.RecordSource = "SELECT DetalleNomina.id, DetalleNomina.BonoProduccion ,DetalleNomina.IncetivoProduccion,DetalleNomina.NumNomina, DetalleNomina.CodEmpleado, DetalleNomina.SalarioBasico, DetalleNomina.Destajo, DetalleNomina.HE, DetalleNomina.DD, DetalleNomina.HorasExtras, DetalleNomina.Comisiones, DetalleNomina.OtrosIngresos, DetalleNomina.DescripOtrIngre, DetalleNomina.Incentivos, DetalleNomina.Deducciones, DetalleNomina.Prestamo, DetalleNomina.MontoINSS, DetalleNomina.MontoIR, DetalleNomina.Vacaciones, DetalleNomina.INSSPatronal, DetalleNomina.IRPatronal, DetalleNomina.INATEC, DetalleNomina.Mes13, DetalleNomina.DiasDescuento, DetalleNomina.Adelantos, DetalleNomina.TotalSubsidio, DetalleNomina.VacacionesPagadas, DetalleNomina.DiasVacaciones,DetalleNomina.HTrabajada, DetalleNomina.SeptimoDia, DetalleNomina.TarifaHoraria,DetalleNomina.produjo,DetalleNomina.AjusteINSS,HTurno, HorasTurno,Antiguedad, AñoAntiguedad,  DetalleNomina.DiasAdicionales, DetalleNomina.ValorDiasAdicionales" & _
-                                  " ,DetalleNomina.Reembolso From DetalleNomina Where (((DetalleNomina.NumNomina) = " & NumNomina & ") And ((DetalleNomina.CodEmpleado) = '" & CodEmpleado & "'))"
+                                  " ,DetalleNomina.Viaticos ,DetalleNomina.Reembolso From DetalleNomina Where (((DetalleNomina.NumNomina) = " & NumNomina & ") And ((DetalleNomina.CodEmpleado) = '" & CodEmpleado & "'))"
   DtaDetalleNomina.Refresh
       MontoInssBasico = ((TarifaHorariaBasico * 8 * DiasMes) * (TasaInss / 100) / CantSabados)
       If MontoInss > MontoInssBasico Then
