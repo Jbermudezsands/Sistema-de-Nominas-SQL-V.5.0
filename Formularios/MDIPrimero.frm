@@ -702,6 +702,8 @@ Begin VB.MDIForm MDIPrimero
             Object.Width           =   1773
             MinWidth        =   1764
             Picture         =   "MDIPrimero.frx":88909
+            TextSave        =   ""
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel2 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -709,17 +711,21 @@ Begin VB.MDIForm MDIPrimero
             MinWidth        =   7937
             Text            =   "Licencia: Juan"
             TextSave        =   "Licencia: Juan"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel3 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Object.Width           =   3528
             MinWidth        =   3528
+            TextSave        =   ""
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel4 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   1
             Enabled         =   0   'False
             TextSave        =   "MAYÚS"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel5 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -727,11 +733,13 @@ Begin VB.MDIForm MDIPrimero
             Object.Width           =   1393
             MinWidth        =   1393
             TextSave        =   "NÚM"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel6 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   5
-            TextSave        =   "04:53 p.m."
+            TextSave        =   "09:51 a.m."
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
       EndProperty
@@ -2559,7 +2567,7 @@ Private Sub CreateRibbonBar()
      item.Style = xtpButtonIconAndCaptionBelow
      Set item = GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, 1749, "Nomina Acumulada", False, False)
      item.Style = xtpButtonIconAndCaptionBelow
-     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.19", False, False
+     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.20", False, False
 
 
     '/////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3517,7 +3525,7 @@ Dim RutaBD As String
 
 PreguntaSalir = True
 
-If Format(Now, "dd/mm/yyyy") > CDate("24/12/2020") Then
+If Format(Now, "dd/mm/yyyy") > CDate("24/12/2021") Then
   PreguntaSalir = False
   Unload Me
 End If
