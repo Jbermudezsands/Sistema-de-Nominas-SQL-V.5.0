@@ -738,7 +738,7 @@ Begin VB.MDIForm MDIPrimero
          EndProperty
          BeginProperty Panel6 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   5
-            TextSave        =   "11:54 a.m."
+            TextSave        =   "01:44 p.m."
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -2567,7 +2567,7 @@ Private Sub CreateRibbonBar()
      item.Style = xtpButtonIconAndCaptionBelow
      Set item = GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, 1749, "Nomina Acumulada", False, False)
      item.Style = xtpButtonIconAndCaptionBelow
-     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.23", False, False
+     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.24", False, False
 
 
     '/////////////////////////////////////////////////////////////////////////////////////////////////////
