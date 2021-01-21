@@ -20,7 +20,7 @@ Public sngHorasTrabajadas As Single
 
 
 Private Sub ActiveReport_ReportStart()
-  Me.lblTitulo.Caption = Titulo
+  Me.lbltitulo.Caption = Titulo
 End Sub
 
 Private Sub Detail_BeforePrint()
@@ -29,7 +29,7 @@ Dim lDiaAnterior As Double
 Dim lDiaSiguiente As Double
 
 
-Me.txtNombre.Text = Me.txtNombre1.Text & " " & Me.txtNombre2.Text & " " & Me.txtApellido1.Text & " " & Me.txtApellido2.Text
+Me.txtNombre.Text = Me.TxtNombre1.Text & " " & Me.TxtNombre2.Text & " " & Me.TxtApellido1.Text & " " & Me.TxtApellido2.Text
 
 If Me.txtHLaboradas.Text <> "0" Then
    Me.txtHLaboradas.Text = Format(Me.txtHLaboradas.Text, "##.####")
@@ -88,7 +88,7 @@ Private Sub GroupFooter1_BeforePrint()
 
 Dim alto As String
 
-If Me.txtCodEmpleado.Text = "000095" Then
+If Me.TxtCodEmpleado.Text = "000095" Then
    alto = "0"
 End If
 
@@ -111,6 +111,3 @@ End If
 End Sub
 
 
-Private Sub GroupHeader1_Format()
-
-End Sub

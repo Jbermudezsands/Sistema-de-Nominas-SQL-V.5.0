@@ -1065,7 +1065,7 @@ Begin VB.Form Frm13VacaMes
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   17104897
+               Format          =   75497473
                CurrentDate     =   38305
             End
             Begin MSComCtl2.DTPicker DtpInicio13vo 
@@ -1077,7 +1077,7 @@ Begin VB.Form Frm13VacaMes
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   17104897
+               Format          =   75497473
                CurrentDate     =   38305
             End
             Begin VB.Label Label12 
@@ -1505,7 +1505,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINI13 
@@ -1517,7 +1517,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFFinVaca 
@@ -1529,7 +1529,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINIVaca 
@@ -1541,7 +1541,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin VB.CommandButton CmdPRVaca 
@@ -1697,7 +1697,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker dtpFPInicio 
@@ -1709,7 +1709,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFechaAplica 
@@ -1721,7 +1721,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   17104897
+            Format          =   75497473
             CurrentDate     =   38305
          End
          Begin XtremeSuiteControls.ProgressBar PBVacaciones 
@@ -4500,6 +4500,27 @@ SueldoActual = False
                      SalTemp = SalTemp + CDbl(DtaNominas.Recordset("Totalingresos"))
                             
                  End If
+                 
+                 
+                    Mes = rsDB.Fields("mes")
+                    '/////////////////////////////////////////////////////////////////////////////////////
+                    '//////////////////////////////RECORRO LA TABLA DE PERIODO PARA SELECCIONAR LOS MESES /
+                    '///////////////////////////////////////////////////////////////////////////////////////
+                    If Me.DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
+                      Me.DtaConsulta.RecordSource = "SELECT año, CodTipoNomina, COUNT(mes) AS Cont, mes AS Mes From Fecha_Planilla GROUP BY año, CodTipoNomina, mes HAVING (año = " & Anno & ") AND (CodTipoNomina = '" & CodTipoNomina & "')  AND (mes = '" & Format(Mes, "0#") & "')" 'AND (COUNT(mes) = 3)
+                      Me.DtaConsulta.Refresh
+                      Do While Not Me.DtaConsulta.Recordset.EOF
+                         If Me.DtaConsulta.Recordset("Cont") = 3 Then
+                           SalTemp = (SalTemp / 42) * 30
+                         Else
+                           SalTemp = (SalTemp / 28) * 30
+                       
+                         End If
+                       
+                        
+                        Me.DtaConsulta.Recordset.MoveNext
+                      Loop
+                    End If
                
                  CantRegistros = CantRegistros + 1
                  DtaNominas.Recordset.MoveNext
@@ -4987,17 +5008,18 @@ Loop
    '///////Busco si el Empleado ya Existe en la Nomina de Vacaciones/////
      If Not Me.DtaDetalleNomVaca.Recordset.EOF Then
      
+     DiasDescuentos = 0
      DiasMenos = 0
      '/////////////////////////////////////////////////////////////////////////////////////////////////
      '///////////////////////BUSCO LOS DIAS DE VACACIONES /////////////////////////////////////////////
      '/////////////////////////////////////////////////////////////////////////////////////////////////
-'      MDIPrimero.DtaConsulta.RecordSource = "SELECT CodigoEmpleado, SUM(DiasDisfrutar) AS Dias From SolicitudVacaciones WHERE (TipoSolicitud = 'Vacaciones') AND (Anulado = 0) AND (FechaInicio >= CONVERT(DATETIME, '" & Format(Me.TxtFINIVaca.Value, "yyyy-mm-dd") & "', 102)) AND (FechaFin <= CONVERT(DATETIME,'" & Format(Me.TxtFFinVaca.Value, "yyyy-MM-dd") & "', 102)) GROUP BY CodigoEmpleado, TipoSolicitud HAVING  (SolicitudVacaciones.CodigoEmpleado = '" & DtaEmpleados.Recordset("CodEmpleado1") & "')"
-'      MDIPrimero.DtaConsulta.Refresh
-'      If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
-'          DiasMenos = MDIPrimero.DtaConsulta.Recordset("Dias")
-'      Else
-'          DiasMenos = 0
-'      End If
+      MDIPrimero.DtaConsulta.RecordSource = "SELECT CodigoEmpleado, SUM(DiasDisfrutar) AS Dias From SolicitudVacaciones WHERE (TipoSolicitud = 'Vacaciones') AND (Anulado = 0) AND (FechaInicio >= CONVERT(DATETIME, '" & Format(Me.TxtFINIVaca.Value, "yyyy-mm-dd") & "', 102)) AND (FechaFin <= CONVERT(DATETIME,'" & Format(Me.TxtFFinVaca.Value, "yyyy-MM-dd") & "', 102)) GROUP BY CodigoEmpleado, TipoSolicitud HAVING  (SolicitudVacaciones.CodigoEmpleado = '" & DtaEmpleados.Recordset("CodEmpleado1") & "')"
+      MDIPrimero.DtaConsulta.Refresh
+      If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
+          DiasMenos = MDIPrimero.DtaConsulta.Recordset("Dias")
+      Else
+          DiasMenos = 0
+      End If
       
       
       
@@ -5109,7 +5131,7 @@ Loop
         If IsNull(DtaDetalleNomVaca.Recordset("DiasDescuento")) Then
             DtaDetalleNomVaca.Recordset("DiasDescuento") = 0
         Else
-          DtaDetalleNomVaca.Recordset("DiasDescuento") = val(TxtDiasDescuento) + DiasMenos
+          DtaDetalleNomVaca.Recordset("DiasDescuento") = val(TxtDiasDescuento) + DiasDescuento
         
         End If
         DtaDetalleNomVaca.Recordset.Update
