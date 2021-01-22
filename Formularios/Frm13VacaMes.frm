@@ -1065,7 +1065,7 @@ Begin VB.Form Frm13VacaMes
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   80543745
+               Format          =   17104897
                CurrentDate     =   38305
             End
             Begin MSComCtl2.DTPicker DtpInicio13vo 
@@ -1077,7 +1077,7 @@ Begin VB.Form Frm13VacaMes
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   80543745
+               Format          =   17104897
                CurrentDate     =   38305
             End
             Begin VB.Label Label12 
@@ -1505,7 +1505,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINI13 
@@ -1517,7 +1517,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFFinVaca 
@@ -1529,7 +1529,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINIVaca 
@@ -1541,7 +1541,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin VB.CommandButton CmdPRVaca 
@@ -1697,7 +1697,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker dtpFPInicio 
@@ -1709,7 +1709,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFechaAplica 
@@ -1721,7 +1721,7 @@ Begin VB.Form Frm13VacaMes
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   80543745
+            Format          =   17104897
             CurrentDate     =   38305
          End
          Begin XtremeSuiteControls.ProgressBar PBVacaciones 
@@ -4386,8 +4386,8 @@ Do While Not DtaEmpleados.Recordset.EOF
 '         CalculoDiasVacaciones(CodigoEmpleado, Me.dtpFin.Value)
          DiasNomVaca = CalculoDiasVacaSFicha(CodEmpleado1, Me.TxtFFinVaca.Value)
          
-  If CodEmpleado1 = "S120090018" Then
- CodEmpleado1 = "S120090018"
+  If CodEmpleado1 = "S1200120019" Then
+     CodEmpleado1 = "S1200120019"
   End If
          
      If Dias < 0 Then
@@ -4402,6 +4402,7 @@ Do While Not DtaEmpleados.Recordset.EOF
 '   DiasNomVaca = Format(DiasNomVaca * 0.0833, "####0.00")
    If DiasNomVaca > 15 Then
      DiasNomVaca = 15
+     Dias = 15
    End If
    
    
@@ -4997,8 +4998,8 @@ Loop
                                 DiasDescuento = 0
         
 
-                             If CodEmpleado1 = "S117060043" Then
-                              CodEmpleado1 = "S117060043"
+                             If CodEmpleado1 = "V120060001" Then
+                              CodEmpleado1 = "V120060001"
                              End If
                              
 
