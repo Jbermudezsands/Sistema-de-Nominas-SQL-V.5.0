@@ -214,7 +214,7 @@ Begin VB.Form FrmImportar
       _StockProps     =   68
       Color           =   64
       ItemCount       =   7
-      SelectedItem    =   5
+      SelectedItem    =   1
       Item(0).Caption =   "Inicial"
       Item(0).ControlCount=   16
       Item(0).Control(0)=   "TDBTipo"
@@ -290,43 +290,46 @@ Begin VB.Form FrmImportar
       Begin VB.CheckBox ChkSegunNomina 
          Caption         =   "Segun Nomina Activa"
          Height          =   255
-         Left            =   -61480
+         Left            =   8520
          TabIndex        =   62
          Top             =   600
          Value           =   1  'Checked
-         Visible         =   0   'False
          Width           =   2895
       End
       Begin VB.CommandButton Command8 
          Height          =   375
-         Left            =   6960
+         Left            =   -63040
          Picture         =   "FrmImportarEmpleados.frx":0000
          Style           =   1  'Graphical
          TabIndex        =   56
          Top             =   480
+         Visible         =   0   'False
          Width           =   375
       End
       Begin VB.TextBox TxtRutaIngresos 
          Height          =   375
-         Left            =   1560
+         Left            =   -68440
          TabIndex        =   55
          Top             =   480
+         Visible         =   0   'False
          Width           =   5295
       End
       Begin VB.CommandButton CmdIniciarIngresos 
          Caption         =   "Iniciar"
          Height          =   495
-         Left            =   11640
+         Left            =   -58360
          TabIndex        =   54
          Top             =   1560
+         Visible         =   0   'False
          Width           =   1215
       End
       Begin VB.CommandButton Command6 
          Caption         =   "Salir"
          Height          =   495
-         Left            =   11640
+         Left            =   -58360
          TabIndex        =   53
          Top             =   3840
+         Visible         =   0   'False
          Width           =   1215
       End
       Begin VB.CommandButton btnExcelHE 
@@ -682,26 +685,23 @@ Begin VB.Form FrmImportar
       Begin VB.CommandButton Command3 
          Caption         =   "Iniciar"
          Height          =   375
-         Left            =   -61720
+         Left            =   8280
          TabIndex        =   38
          Top             =   4200
-         Visible         =   0   'False
          Width           =   3375
       End
       Begin VB.ListBox listSaldos 
          Height          =   2595
-         Left            =   -61720
+         Left            =   8280
          TabIndex        =   35
          Top             =   1560
-         Visible         =   0   'False
          Width           =   3375
       End
       Begin MSComctlLib.ProgressBar pbSaldos 
          Height          =   495
-         Left            =   -68560
+         Left            =   1440
          TabIndex        =   34
          Top             =   4200
-         Visible         =   0   'False
          Width           =   6735
          _ExtentX        =   11880
          _ExtentY        =   873
@@ -711,31 +711,28 @@ Begin VB.Form FrmImportar
       Begin VB.CommandButton btnIniciar 
          Caption         =   "Buscar Excel"
          Height          =   375
-         Left            =   -63040
+         Left            =   6960
          TabIndex        =   33
          Top             =   600
-         Visible         =   0   'False
          Width           =   1215
       End
       Begin MSComCtl2.DTPicker dtpFin 
          Height          =   375
-         Left            =   -64600
+         Left            =   5400
          TabIndex        =   32
          Top             =   600
-         Visible         =   0   'False
          Width           =   1455
          _ExtentX        =   2566
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   77266945
+         Format          =   17104897
          CurrentDate     =   43105
       End
       Begin TrueOleDBGrid70.TDBGrid gridSaldos 
          Height          =   3135
-         Left            =   -68560
+         Left            =   1440
          TabIndex        =   30
          Top             =   1080
-         Visible         =   0   'False
          Width           =   6735
          _ExtentX        =   11880
          _ExtentY        =   5530
@@ -1141,7 +1138,7 @@ Begin VB.Form FrmImportar
          _ExtentX        =   2355
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   77266945
+         Format          =   17104897
          CurrentDate     =   41829
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel25 
@@ -1850,7 +1847,7 @@ Begin VB.Form FrmImportar
          _ExtentX        =   2355
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   77266945
+         Format          =   17104897
          CurrentDate     =   41829
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel2 
@@ -2211,9 +2208,10 @@ Begin VB.Form FrmImportar
       Begin TrueOleDBList80.TDBCombo TDBComboIngresos 
          Bindings        =   "FrmImportarEmpleados.frx":1190
          Height          =   315
-         Left            =   1560
+         Left            =   -68440
          TabIndex        =   57
          Top             =   960
+         Visible         =   0   'False
          Width           =   5295
          _ExtentX        =   9340
          _ExtentY        =   556
@@ -2357,17 +2355,19 @@ Begin VB.Form FrmImportar
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel4 
          Height          =   255
-         Left            =   240
+         Left            =   -69760
          OleObjectBlob   =   "FrmImportarEmpleados.frx":1256
          TabIndex        =   58
          Top             =   525
+         Visible         =   0   'False
          Width           =   1335
       End
       Begin TrueOleDBGrid80.TDBGrid TDBGridIngresos 
          Height          =   2895
-         Left            =   240
+         Left            =   -69760
          TabIndex        =   59
          Top             =   1560
+         Visible         =   0   'False
          Width           =   11175
          _ExtentX        =   19711
          _ExtentY        =   5106
@@ -2523,9 +2523,10 @@ Begin VB.Form FrmImportar
       End
       Begin XtremeSuiteControls.ProgressBar ProgressBar2 
          Height          =   375
-         Left            =   240
+         Left            =   -69760
          TabIndex        =   60
          Top             =   4560
+         Visible         =   0   'False
          Width           =   11295
          _Version        =   786432
          _ExtentX        =   19923
@@ -2538,9 +2539,10 @@ Begin VB.Form FrmImportar
       Begin VB.Label Label5 
          Caption         =   "Tipo Nóminas:"
          Height          =   255
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   61
          Top             =   960
+         Visible         =   0   'False
          Width           =   1095
       End
       Begin VB.Label Label7 
@@ -2609,19 +2611,17 @@ Begin VB.Form FrmImportar
       Begin VB.Label txtNombre 
          Caption         =   "Nombre:"
          Height          =   255
-         Left            =   -61720
+         Left            =   8280
          TabIndex        =   37
          Top             =   1200
-         Visible         =   0   'False
          Width           =   3375
       End
       Begin VB.Label txtCodigo 
          Caption         =   "Codigo:"
          Height          =   255
-         Left            =   -61720
+         Left            =   8280
          TabIndex        =   36
          Top             =   960
-         Visible         =   0   'False
          Width           =   1575
       End
       Begin VB.Label Label2 
@@ -2636,10 +2636,9 @@ Begin VB.Form FrmImportar
             Strikethrough   =   0   'False
          EndProperty
          Height          =   375
-         Left            =   -68560
+         Left            =   1440
          TabIndex        =   31
          Top             =   600
-         Visible         =   0   'False
          Width           =   3855
       End
       Begin VB.Label Label1 
@@ -4406,8 +4405,8 @@ End With
           TotalFicha = 0
           CodigoEmpleado = gridSaldos.Columns(0).Text
           
-          If CodigoEmpleado = "S117060019" Then
-           CodigoEmpleado = "S117060019"
+          If CodigoEmpleado = "S120080138" Then
+           CodigoEmpleado = "S120080138"
           End If
           
           txtCodigo.Caption = CodigoEmpleado
@@ -4444,8 +4443,8 @@ End With
                            FechaFin = MDIPrimero.DtaConsulta.Recordset("FechaFin")
                          End If
 
-                         TotalSistema = DateDiff("d", FechaContrato, FechaFin) * 0.0833
-
+                          TotalSistema = DateDiff("d", FechaContrato, FechaFin) * 0.0833
+                          TotalSistema = CalculoDiasVacaciones(CodigoEmpleado, Me.dtpFin.Value)
 
                           If TotalSistema > 15 Then
                                 '/////////////////////////////////////////////////////////////////////////////////////////////////
