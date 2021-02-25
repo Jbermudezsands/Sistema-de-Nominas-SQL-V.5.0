@@ -1102,16 +1102,16 @@ Begin VB.Form FrmBajas
          TabCaption(1)   =   "Historial Salarial"
          TabPicture(1)   =   "FrmBajas.frx":001C
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "TDBGridBonos"
-         Tab(1).Control(1)=   "TDBGridSalarios"
-         Tab(1).Control(2)=   "CmdDetalle"
-         Tab(1).Control(3)=   "Frame3"
+         Tab(1).Control(0)=   "Frame3"
+         Tab(1).Control(1)=   "CmdDetalle"
+         Tab(1).Control(2)=   "TDBGridSalarios"
+         Tab(1).Control(3)=   "TDBGridBonos"
          Tab(1).ControlCount=   4
          TabCaption(2)   =   "Ingresos / Egresos"
          TabPicture(2)   =   "FrmBajas.frx":0038
          Tab(2).ControlEnabled=   0   'False
-         Tab(2).Control(0)=   "Frame2"
-         Tab(2).Control(1)=   "Frame4"
+         Tab(2).Control(0)=   "Frame4"
+         Tab(2).Control(1)=   "Frame2"
          Tab(2).ControlCount=   2
          Begin TrueOleDBGrid70.TDBGrid TDBGridBonos 
             Bindings        =   "FrmBajas.frx":0054
@@ -1795,7 +1795,7 @@ Begin VB.Form FrmBajas
             _ExtentX        =   3201
             _ExtentY        =   529
             _Version        =   393216
-            Format          =   80740353
+            Format          =   82182145
             CurrentDate     =   38802
          End
          Begin VB.Frame Frame1 
@@ -2059,7 +2059,7 @@ Begin VB.Form FrmBajas
                _ExtentX        =   2566
                _ExtentY        =   503
                _Version        =   393216
-               Format          =   80740353
+               Format          =   82182145
                CurrentDate     =   38821
             End
             Begin ACTIVESKINLibCtl.SkinLabel SkinLabel5 
@@ -2079,7 +2079,7 @@ Begin VB.Form FrmBajas
                _ExtentX        =   2566
                _ExtentY        =   503
                _Version        =   393216
-               Format          =   80740353
+               Format          =   82182145
                CurrentDate     =   38821
             End
             Begin ACTIVESKINLibCtl.SkinLabel SkinLabel4 
@@ -2178,7 +2178,7 @@ Begin VB.Form FrmBajas
             _ExtentX        =   3201
             _ExtentY        =   529
             _Version        =   393216
-            Format          =   80740353
+            Format          =   82182145
             CurrentDate     =   38802
          End
          Begin XtremeSuiteControls.CheckBox ChkSueldoActual 
@@ -4460,7 +4460,7 @@ If k% = 6 Then
     Me.DtaConsulta.Refresh
     
     ArepBajas.DataControl1.ConnectionString = ConexionReporte
-    ArepBajas.LblTitulo.Caption = Titulo
+    ArepBajas.lbltitulo.Caption = Titulo
     ArepBajas.LblSubtitulo.Caption = SubTitulo
     ArepBajas.ImgLogo.Picture = LoadPicture(RutaLogo)
     Cadena = "SELECT Empleado.CodEmpleado, [Empleado].[Nombre1]+'" & Espacio & "'+[Empleado].[Nombre2]+'" & Espacio & "'+[Empleado].[Apellido1]+'" & Espacio & "'+[Empleado].[Apellido2] AS Nombres, Bajas.FechaBaja, Bajas.AnnosTrabajados, Bajas.MesesTrabajados, Bajas.DiasTrabajados, Bajas.MontoNomPropor, Bajas.MontoVaca, Bajas.Monto13Mes, Bajas.MontoAnosTrab, Bajas.MontoCargoConfianza, Bajas.MontoAntiguedad, Bajas.MotivoBaja, Bajas.TipoBaja, Bajas.Otro, Bajas.MontoOtro, Bajas.Prestamo, Bajas.Deducciones, Bajas.MontoINSS, Bajas.MontoIR, Cargo.Cargo, Departamento.Departamento, Historico.FechaContrato, Bajas.SalarioMensual,Bajas.HorasExtra, Bajas.Viaticos " & vbLf
@@ -4788,6 +4788,8 @@ End If
                 '////////////////////////////VERIFICO EL MES ////////////////////////////////////////
                 If Month(CDate(Me.TxtFechaContrato.Text)) = 2 Then
                    Fecha1 = DateSerial(Year(CDate(Me.TxtFechaContrato.Text)), Month(CDate(Me.TxtFechaContrato.Text)) + 1, 1 - 1) - 1
+                ElseIf Month(CDate(FechaEgreso)) = 2 Then
+                   Fecha1 = DateSerial(Year(CDate(FechaEgreso)), Month(CDate(FechaEgreso)) + 1, 1 - 1) - 1
                 Else
                    Fecha1 = "30/ " & Month(FechaEgreso) & " / " & Year(FechaEgreso)
                 End If
@@ -5445,7 +5447,7 @@ If k% = 6 Then
     Me.DtaConsulta.Refresh
     
     ARBaja.DataControl1.ConnectionString = ConexionReporte
-    ARBaja.LblTitulo.Caption = Titulo
+    ARBaja.lbltitulo.Caption = Titulo
     ARBaja.LblSubtitulo.Caption = SubTitulo
    
     If Dir(RutaLogo) <> "" Then
@@ -5597,11 +5599,11 @@ Loop
                                    "ORDER BY Nomina.Ano, Nomina.Mes, Nomina.FechaNomina "
                     
                     ArepDetalleLiquidaBono.DataControl1.ConnectionString = ConexionReporte
-                    ArepDetalleLiquidaBono.LblTitulo.Caption = Titulo
+                    ArepDetalleLiquidaBono.lbltitulo.Caption = Titulo
                     ArepDetalleLiquidaBono.LblSubtitulo.Caption = SubTitulo
                     ArepDetalleLiquidaBono.ImgLogo.Picture = LoadPicture(RutaLogo)
                     
-                    ArepDetalleLiquidaBono.LblTitulo.Caption = Titulo
+                    ArepDetalleLiquidaBono.lbltitulo.Caption = Titulo
                     ArepDetalleLiquidaBono.LblSubtitulo.Caption = SubTitulo
                     ArepDetalleLiquidaBono.ImgLogo.Picture = LoadPicture(RutaLogo)
                     ArepDetalleLiquidaBono.DataControl1.ConnectionString = ConexionReporte
@@ -5625,11 +5627,11 @@ Loop
                                    "ORDER BY Nomina.Ano, Nomina.Mes, Nomina.FechaNomina "
                     
                     ArepDetalleLiquidaBono2.DataControl1.ConnectionString = ConexionReporte
-                    ArepDetalleLiquidaBono2.LblTitulo.Caption = Titulo
+                    ArepDetalleLiquidaBono2.lbltitulo.Caption = Titulo
                     ArepDetalleLiquidaBono2.LblSubtitulo.Caption = SubTitulo
                     ArepDetalleLiquidaBono2.ImgLogo.Picture = LoadPicture(RutaLogo)
                     
-                    ArepDetalleLiquidaBono2.LblTitulo.Caption = Titulo
+                    ArepDetalleLiquidaBono2.lbltitulo.Caption = Titulo
                     ArepDetalleLiquidaBono2.LblSubtitulo.Caption = SubTitulo
                     ArepDetalleLiquidaBono2.ImgLogo.Picture = LoadPicture(RutaLogo)
                     ArepDetalleLiquidaBono2.DataControl1.ConnectionString = ConexionReporte
@@ -5656,11 +5658,11 @@ Loop
                            "ORDER BY Nomina.Ano, Nomina.Mes, Nomina.FechaNomina "
             
             ArepDetalleLiquida.DataControl1.ConnectionString = ConexionReporte
-            ArepDetalleLiquida.LblTitulo.Caption = Titulo
+            ArepDetalleLiquida.lbltitulo.Caption = Titulo
             ArepDetalleLiquida.LblSubtitulo.Caption = SubTitulo
             ArepDetalleLiquida.ImgLogo.Picture = LoadPicture(RutaLogo)
             
-            ArepDetalleLiquida.LblTitulo.Caption = Titulo
+            ArepDetalleLiquida.lbltitulo.Caption = Titulo
             ArepDetalleLiquida.LblSubtitulo.Caption = SubTitulo
             ArepDetalleLiquida.ImgLogo.Picture = LoadPicture(RutaLogo)
             ArepDetalleLiquida.DataControl1.ConnectionString = ConexionReporte
@@ -5971,7 +5973,7 @@ Loop
                    
         
                     
-                    ArepHistorialLiquidaBono.LblTitulo.Caption = Titulo
+                    ArepHistorialLiquidaBono.lbltitulo.Caption = Titulo
                     ArepHistorialLiquidaBono.LblSubtitulo.Caption = SubTitulo
                     ArepHistorialLiquidaBono.ImgLogo.Picture = LoadPicture(RutaLogo)
                 
@@ -5999,7 +6001,7 @@ Loop
                    
         
                     
-                    ArepHistorialLiquidaBono2.LblTitulo.Caption = Titulo
+                    ArepHistorialLiquidaBono2.lbltitulo.Caption = Titulo
                     ArepHistorialLiquidaBono2.LblSubtitulo.Caption = SubTitulo
                     ArepHistorialLiquidaBono2.ImgLogo.Picture = LoadPicture(RutaLogo)
                 
@@ -6039,7 +6041,7 @@ Loop
                           "ORDER BY Nomina.Ano, Nomina.Mes "
             
             ArepHistorialLiquida.DataControl1.ConnectionString = ConexionReporte
-            ArepHistorialLiquida.LblTitulo.Caption = Titulo
+            ArepHistorialLiquida.lbltitulo.Caption = Titulo
             ArepHistorialLiquida.LblSubtitulo.Caption = SubTitulo
             ArepHistorialLiquida.ImgLogo.Picture = LoadPicture(RutaLogo)
 

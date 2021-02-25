@@ -974,26 +974,26 @@ Begin VB.Form Frm13VacaMes
          TabCaption(1)   =   "Trecavo Mes"
          TabPicture(1)   =   "Frm13VacaMes.frx":40FA
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Label6"
-         Tab(1).Control(1)=   "Label5"
-         Tab(1).Control(2)=   "Label2"
-         Tab(1).Control(3)=   "CmdExportaBanpro"
-         Tab(1).Control(4)=   "CmdExportaBac"
-         Tab(1).Control(5)=   "PB13Mes"
-         Tab(1).Control(6)=   "CmdprNomina"
-         Tab(1).Control(7)=   "CmdPrnNomina"
-         Tab(1).Control(8)=   "CmdCal13"
-         Tab(1).Control(9)=   "TxtNumNom13"
-         Tab(1).Control(10)=   "CmdCerrar13"
-         Tab(1).Control(11)=   "TxtFINI13"
-         Tab(1).Control(12)=   "TxtFFIN13"
-         Tab(1).Control(13)=   "Command1"
-         Tab(1).Control(14)=   "CmdExporta2"
-         Tab(1).Control(15)=   "Dbgr13Mes"
-         Tab(1).Control(16)=   "SmartButton1"
-         Tab(1).Control(17)=   "CmdDenominacion"
-         Tab(1).Control(18)=   "Frame1"
-         Tab(1).Control(19)=   "ChkColillaDpto"
+         Tab(1).Control(0)=   "ChkColillaDpto"
+         Tab(1).Control(1)=   "Frame1"
+         Tab(1).Control(2)=   "CmdDenominacion"
+         Tab(1).Control(3)=   "SmartButton1"
+         Tab(1).Control(4)=   "Dbgr13Mes"
+         Tab(1).Control(5)=   "CmdExporta2"
+         Tab(1).Control(6)=   "Command1"
+         Tab(1).Control(7)=   "TxtFFIN13"
+         Tab(1).Control(8)=   "TxtFINI13"
+         Tab(1).Control(9)=   "CmdCerrar13"
+         Tab(1).Control(10)=   "TxtNumNom13"
+         Tab(1).Control(11)=   "CmdCal13"
+         Tab(1).Control(12)=   "CmdPrnNomina"
+         Tab(1).Control(13)=   "CmdprNomina"
+         Tab(1).Control(14)=   "PB13Mes"
+         Tab(1).Control(15)=   "CmdExportaBac"
+         Tab(1).Control(16)=   "CmdExportaBanpro"
+         Tab(1).Control(17)=   "Label2"
+         Tab(1).Control(18)=   "Label5"
+         Tab(1).Control(19)=   "Label6"
          Tab(1).ControlCount=   20
          Begin VB.CheckBox ChkImprimirDptoVaca 
             Caption         =   "Imprimir por Dpto"
@@ -4386,6 +4386,10 @@ Do While Not DtaEmpleados.Recordset.EOF
 '         CalculoDiasVacaciones(CodigoEmpleado, Me.dtpFin.Value)
          DiasNomVaca = CalculoDiasVacaSFicha(CodEmpleado1, Me.TxtFFinVaca.Value)
          
+  If CodEmpleado1 = "S1200120019" Then
+     CodEmpleado1 = "S1200120019"
+  End If
+         
      If Dias < 0 Then
       
        Dias = 0
@@ -4398,12 +4402,11 @@ Do While Not DtaEmpleados.Recordset.EOF
 '   DiasNomVaca = Format(DiasNomVaca * 0.0833, "####0.00")
    If DiasNomVaca > 15 Then
      DiasNomVaca = 15
+     Dias = 15
    End If
    
    
-If CodEmpleado1 = "S117090014" Then
- CodEmpleado1 = "S117090014"
-End If
+
 
 SueldoActual = False
  
@@ -4500,6 +4503,27 @@ SueldoActual = False
                      SalTemp = SalTemp + CDbl(DtaNominas.Recordset("Totalingresos"))
                             
                  End If
+                 
+                 
+                    Mes = rsDB.Fields("mes")
+                    '/////////////////////////////////////////////////////////////////////////////////////
+                    '//////////////////////////////RECORRO LA TABLA DE PERIODO PARA SELECCIONAR LOS MESES /
+                    '///////////////////////////////////////////////////////////////////////////////////////
+                    If Me.DtaTipoNomina.Recordset("Periodo") = "Catorcenal los Sabados" Then
+                      Me.DtaConsulta.RecordSource = "SELECT año, CodTipoNomina, COUNT(mes) AS Cont, mes AS Mes From Fecha_Planilla GROUP BY año, CodTipoNomina, mes HAVING (año = " & Anno & ") AND (CodTipoNomina = '" & CodTipoNomina & "')  AND (mes = '" & Format(Mes, "0#") & "')" 'AND (COUNT(mes) = 3)
+                      Me.DtaConsulta.Refresh
+                      Do While Not Me.DtaConsulta.Recordset.EOF
+                         If Me.DtaConsulta.Recordset("Cont") = 3 Then
+                           SalTemp = (SalTemp / 42) * 30
+                         Else
+                           SalTemp = (SalTemp / 28) * 30
+                       
+                         End If
+                       
+                        
+                        Me.DtaConsulta.Recordset.MoveNext
+                      Loop
+                    End If
                
                  CantRegistros = CantRegistros + 1
                  DtaNominas.Recordset.MoveNext
@@ -4919,8 +4943,8 @@ Loop
 
 
 
-                             If CodEmpleado1 = "S117080012" Then
-                              CodEmpleado1 = "S117080012"
+                             If CodEmpleado1 = "S120120019" Then
+                              CodEmpleado1 = "S120120019"
                              End If
                              
 
@@ -4973,8 +4997,9 @@ Loop
                                
                                 DiasDescuento = 0
         
-                             If CodEmpleado = "39177" Then
-                              CodEmpleado = "39177"
+
+                             If CodEmpleado1 = "V120060001" Then
+                              CodEmpleado1 = "V120060001"
                              End If
                              
 
@@ -4987,21 +5012,28 @@ Loop
    '///////Busco si el Empleado ya Existe en la Nomina de Vacaciones/////
      If Not Me.DtaDetalleNomVaca.Recordset.EOF Then
      
+     DiasDescuentos = 0
      DiasMenos = 0
      '/////////////////////////////////////////////////////////////////////////////////////////////////
      '///////////////////////BUSCO LOS DIAS DE VACACIONES /////////////////////////////////////////////
      '/////////////////////////////////////////////////////////////////////////////////////////////////
-'      MDIPrimero.DtaConsulta.RecordSource = "SELECT CodigoEmpleado, SUM(DiasDisfrutar) AS Dias From SolicitudVacaciones WHERE (TipoSolicitud = 'Vacaciones') AND (Anulado = 0) AND (FechaInicio >= CONVERT(DATETIME, '" & Format(Me.TxtFINIVaca.Value, "yyyy-mm-dd") & "', 102)) AND (FechaFin <= CONVERT(DATETIME,'" & Format(Me.TxtFFinVaca.Value, "yyyy-MM-dd") & "', 102)) GROUP BY CodigoEmpleado, TipoSolicitud HAVING  (SolicitudVacaciones.CodigoEmpleado = '" & DtaEmpleados.Recordset("CodEmpleado1") & "')"
-'      MDIPrimero.DtaConsulta.Refresh
-'      If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
-'          DiasMenos = MDIPrimero.DtaConsulta.Recordset("Dias")
-'      Else
-'          DiasMenos = 0
-'      End If
+      MDIPrimero.DtaConsulta.RecordSource = "SELECT CodigoEmpleado, SUM(DiasDisfrutar) AS Dias From SolicitudVacaciones WHERE (TipoSolicitud = 'Vacaciones') AND (Anulado = 0) AND (FechaInicio >= CONVERT(DATETIME, '" & Format(Me.TxtFINIVaca.Value, "yyyy-mm-dd") & "', 102)) AND (FechaFin <= CONVERT(DATETIME,'" & Format(Me.TxtFFinVaca.Value, "yyyy-MM-dd") & "', 102)) GROUP BY CodigoEmpleado, TipoSolicitud HAVING  (SolicitudVacaciones.CodigoEmpleado = '" & DtaEmpleados.Recordset("CodEmpleado1") & "')"
+      MDIPrimero.DtaConsulta.Refresh
+      If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
+          DiasMenos = MDIPrimero.DtaConsulta.Recordset("Dias")
+      Else
+          DiasMenos = 0
+      End If
       
       
       
        DiasDescuento = val(TxtDiasDescuento) + DiasMenos
+       If Dias = 15 Then
+         If DiasDescuento > 0 Then
+            Dias = Dias - DiasDescuento
+         End If
+       End If
+
 
         DtaDetalleNomVaca.Recordset("NumNomVaca") = val(TxtNumNomVaca.Text)
         DtaDetalleNomVaca.Recordset("CodEmpleado") = DtaEmpleados.Recordset("CodEmpleado")
@@ -5021,7 +5053,7 @@ Loop
                DtaDetalleNomVaca.Recordset("Inss") = 0
                DtaDetalleNomVaca.Recordset("TotalDevengado") = 0
               Else
-               DtaDetalleNomVaca.Recordset("Inss") = ((SalMayor / DiasMes) * (Dias - DiasDescuento - AdelantoVaca)) * (TasaInss / 100)
+               DtaDetalleNomVaca.Recordset("Inss") = ((SalMayor / DiasMes) * (Dias)) * (TasaInss / 100)   '- DiasDescuento - AdelantoVaca
                DtaDetalleNomVaca.Recordset("TotalDevengado") = Dias * (SalMayor / DiasMes)
               End If
             End If
@@ -5038,8 +5070,8 @@ Loop
                 DtaDetalleNomVaca.Recordset("TotalDevengado") = 0
             Else
                 DtaDetalleNomVaca.Recordset("SalarioMensual") = SalMayor
-                DtaDetalleNomVaca.Recordset("Inss") = ((SalMayor / DiasMes) * (Dias - DiasDescuento - AdelantoVaca)) * (TasaInss / 100)
-                DtaDetalleNomVaca.Recordset("TotalDevengado") = (SalMayor / DiasMes) * (Dias - DiasDescuento)
+                DtaDetalleNomVaca.Recordset("Inss") = ((SalMayor / DiasMes) * (Dias)) * (TasaInss / 100)   '- DiasDescuento - AdelantoVaca
+                DtaDetalleNomVaca.Recordset("TotalDevengado") = (SalMayor / DiasMes) * (Dias)   '- DiasDescuento - AdelantoVaca
             End If
             
         End If
@@ -5051,7 +5083,8 @@ Loop
      '////////////////CALCULO CUANTOS DIAS SE CONSIDERAN PARA EL PAGO///////////////////////////////////////
      '//////SI ES MAYOR DE 15 REDONDEO A 15//////////////////////////////////////////////////////////////
      
-       DiasPagar = Dias
+'       DiasPagar = Dias
+'       DiasMenos = DiasDescuento + AdelantoVaca
        If DiasPagar > 15 Then
          DiasPagar = 15
        End If
@@ -5060,7 +5093,7 @@ Loop
     '////////////////////////////////SETEO LOS CALCULOS PARA QUE PODER MOSTRAR EL DETALLE DE DESCUENTO EN DIAS /
     '/////////////////////////POR QUE EN DIAS YA INCLUYE LA DEDUCCIO DE DIAS ///////////////////////////////////////
     DiasPagar = DiasNomVaca
-    DiasMenos = DiasNomVaca - Dias
+    DiasMenos = DiasDescuento + AdelantoVaca
     
     
     If CodEmpleado1 = "S117090014" Then
@@ -5109,7 +5142,7 @@ Loop
         If IsNull(DtaDetalleNomVaca.Recordset("DiasDescuento")) Then
             DtaDetalleNomVaca.Recordset("DiasDescuento") = 0
         Else
-          DtaDetalleNomVaca.Recordset("DiasDescuento") = val(TxtDiasDescuento) + DiasMenos
+          DtaDetalleNomVaca.Recordset("DiasDescuento") = val(TxtDiasDescuento) + DiasDescuento
         
         End If
         DtaDetalleNomVaca.Recordset.Update

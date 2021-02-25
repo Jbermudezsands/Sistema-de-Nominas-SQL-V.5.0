@@ -1018,7 +1018,7 @@ Begin VB.Form Frm13Vaca
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   84541441
+               Format          =   81592321
                CurrentDate     =   38305
             End
             Begin MSComCtl2.DTPicker DtpInicio13vo 
@@ -1030,7 +1030,7 @@ Begin VB.Form Frm13Vaca
                _ExtentX        =   2990
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   84541441
+               Format          =   81592321
                CurrentDate     =   38305
             End
             Begin VB.Label Label12 
@@ -1458,7 +1458,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINI13 
@@ -1470,7 +1470,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFFinVaca 
@@ -1482,7 +1482,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFINIVaca 
@@ -1494,7 +1494,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin VB.CommandButton CmdPRVaca 
@@ -1650,7 +1650,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker dtpFPInicio 
@@ -1662,7 +1662,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin MSComCtl2.DTPicker TxtFechaAplica 
@@ -1674,7 +1674,7 @@ Begin VB.Form Frm13Vaca
             _ExtentX        =   2990
             _ExtentY        =   556
             _Version        =   393216
-            Format          =   84541441
+            Format          =   81592321
             CurrentDate     =   38305
          End
          Begin XtremeSuiteControls.ProgressBar PBVacaciones 
