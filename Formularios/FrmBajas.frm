@@ -1110,8 +1110,8 @@ Begin VB.Form FrmBajas
          TabCaption(2)   =   "Ingresos / Egresos"
          TabPicture(2)   =   "FrmBajas.frx":0038
          Tab(2).ControlEnabled=   0   'False
-         Tab(2).Control(0)=   "Frame2"
-         Tab(2).Control(1)=   "Frame4"
+         Tab(2).Control(0)=   "Frame4"
+         Tab(2).Control(1)=   "Frame2"
          Tab(2).ControlCount=   2
          Begin TrueOleDBGrid70.TDBGrid TDBGridBonos 
             Bindings        =   "FrmBajas.frx":0054
@@ -1795,7 +1795,7 @@ Begin VB.Form FrmBajas
             _ExtentX        =   3201
             _ExtentY        =   529
             _Version        =   393216
-            Format          =   17104897
+            Format          =   82182145
             CurrentDate     =   38802
          End
          Begin VB.Frame Frame1 
@@ -2059,7 +2059,7 @@ Begin VB.Form FrmBajas
                _ExtentX        =   2566
                _ExtentY        =   503
                _Version        =   393216
-               Format          =   17104897
+               Format          =   82182145
                CurrentDate     =   38821
             End
             Begin ACTIVESKINLibCtl.SkinLabel SkinLabel5 
@@ -2079,7 +2079,7 @@ Begin VB.Form FrmBajas
                _ExtentX        =   2566
                _ExtentY        =   503
                _Version        =   393216
-               Format          =   17104897
+               Format          =   82182145
                CurrentDate     =   38821
             End
             Begin ACTIVESKINLibCtl.SkinLabel SkinLabel4 
@@ -2178,7 +2178,7 @@ Begin VB.Form FrmBajas
             _ExtentX        =   3201
             _ExtentY        =   529
             _Version        =   393216
-            Format          =   17104897
+            Format          =   82182145
             CurrentDate     =   38802
          End
          Begin XtremeSuiteControls.CheckBox ChkSueldoActual 
@@ -4788,6 +4788,8 @@ End If
                 '////////////////////////////VERIFICO EL MES ////////////////////////////////////////
                 If Month(CDate(Me.TxtFechaContrato.Text)) = 2 Then
                    Fecha1 = DateSerial(Year(CDate(Me.TxtFechaContrato.Text)), Month(CDate(Me.TxtFechaContrato.Text)) + 1, 1 - 1) - 1
+                ElseIf Month(CDate(FechaEgreso)) = 2 Then
+                   Fecha1 = DateSerial(Year(CDate(FechaEgreso)), Month(CDate(FechaEgreso)) + 1, 1 - 1) - 1
                 Else
                    Fecha1 = "30/ " & Month(FechaEgreso) & " / " & Year(FechaEgreso)
                 End If
