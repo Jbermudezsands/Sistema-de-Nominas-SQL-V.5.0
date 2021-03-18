@@ -1050,7 +1050,7 @@ Begin VB.Form FrmControles
                _ExtentX        =   3201
                _ExtentY        =   503
                _Version        =   393216
-               Format          =   77266945
+               Format          =   17039361
                CurrentDate     =   39737
             End
             Begin VB.CommandButton Command2 

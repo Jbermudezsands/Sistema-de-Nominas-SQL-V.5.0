@@ -450,6 +450,14 @@ Begin VB.Form FrmAsistencias
       TabIndex        =   0
       Top             =   120
       Width           =   13335
+      Begin VB.TextBox TxtCodigoEmpleado 
+         Height          =   375
+         Left            =   4440
+         TabIndex        =   20
+         Top             =   1320
+         Visible         =   0   'False
+         Width           =   3255
+      End
       Begin VB.CommandButton Command1 
          Caption         =   "Exportar Excel"
          Height          =   855

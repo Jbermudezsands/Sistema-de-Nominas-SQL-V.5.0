@@ -240,7 +240,7 @@ Begin VB.Form frmPermisos
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   82182145
+         Format          =   17104897
          CurrentDate     =   38570
       End
       Begin MSMask.MaskEdBox mskPermisoHoraInicio 
@@ -345,7 +345,7 @@ Begin VB.Form frmPermisos
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   82182145
+         Format          =   17104897
          CurrentDate     =   38570
       End
       Begin MSMask.MaskEdBox mskAsistHoraSalida 
@@ -371,7 +371,7 @@ Begin VB.Form frmPermisos
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   82182145
+         Format          =   17104897
          CurrentDate     =   38570
       End
       Begin VB.Label Label5 
@@ -441,7 +441,7 @@ Begin VB.Form frmPermisos
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   82182145
+         Format          =   17104897
          CurrentDate     =   38570
       End
       Begin VB.Label lblNombre 
@@ -493,19 +493,19 @@ End If
 
 End Sub
 
-Private Sub cmdAgregar_Click()
+Private Sub CmdAgregar_Click()
 
 Dim dFecha As Date
 Dim sFechaEntrada As String
 
-   If Me.cmdAgregar.Caption = "&Agregar" Then
+   If Me.CmdAgregar.Caption = "&Agregar" Then
         
       Me.cmdModificar.Enabled = False
       Me.dtpFInicio.SetFocus
-      Me.cmdAgregar.Caption = "&Guardar"
+      Me.CmdAgregar.Caption = "&Guardar"
    
      
-   ElseIf Trim(Me.txtMotivo.Text) <> "" And Chequear_Hora(Me.mskPermisoHoraInicio.Text) Then
+   ElseIf Trim(Me.TxtMotivo.Text) <> "" And Chequear_Hora(Me.mskPermisoHoraInicio.Text) Then
     
       
     
@@ -514,7 +514,7 @@ Dim sFechaEntrada As String
       Me.adoPermiso.Recordset.Fields("CodTipoNomina") = sCodTipoNomina
       Me.adoPermiso.Recordset.Fields("Fecha") = Me.dtpFInicio.Value
       Me.adoPermiso.Recordset.Fields("HoraInicio") = Me.mskPermisoHoraInicio.Text
-      Me.adoPermiso.Recordset.Fields("Motivo") = Me.txtMotivo.Text
+      Me.adoPermiso.Recordset.Fields("Motivo") = Me.TxtMotivo.Text
       Me.adoPermiso.Recordset.Fields("RegresoPendiente") = Me.chkRegreso.Value
       Me.adoPermiso.Recordset.Fields("Justificado") = Me.chkJustificado.Value
       
@@ -555,7 +555,7 @@ Dim sFechaEntrada As String
            
       
      Me.cmdModificar.Enabled = True
-     Me.cmdAgregar.Caption = "&Agregar"
+     Me.CmdAgregar.Caption = "&Agregar"
 
    End If
 
@@ -617,7 +617,7 @@ If Trim(Me.cboCodigo.Text) <> "" Then
          If Not Me.adoPermiso.Recordset.EOF Then
             Me.dtpFInicio.Value = Me.adoPermiso.Recordset.Fields("Fecha")
             Me.mskPermisoHoraInicio.Text = Me.adoPermiso.Recordset.Fields("HoraInicio")
-            Me.txtMotivo.Text = Me.adoPermiso.Recordset.Fields("Motivo")
+            Me.TxtMotivo.Text = Me.adoPermiso.Recordset.Fields("Motivo")
             
             If Me.adoPermiso.Recordset.Fields("Justificado") Then
                Me.chkJustificado.Value = 1
@@ -626,7 +626,7 @@ If Trim(Me.cboCodigo.Text) <> "" Then
             End If
             
             Me.cmdModificar.Enabled = False
-            Me.cmdAgregar.Enabled = False
+            Me.CmdAgregar.Enabled = False
             
             If Me.adoPermiso.Recordset.Fields("RegresoPendiente") Then
                Me.chkRegreso.Value = 1
@@ -638,7 +638,7 @@ If Trim(Me.cboCodigo.Text) <> "" Then
                
             End If
             
-            Me.cmdAgregar.Enabled = True
+            Me.CmdAgregar.Enabled = True
             Me.cmdModificar.Enabled = True
             
             If Not IsNull(Me.adoPermiso.Recordset.Fields("HoraFin")) Then
@@ -654,10 +654,10 @@ If Trim(Me.cboCodigo.Text) <> "" Then
          'Sino tiene un permiso para este dia, limpiar valores
          Else
             
-           Me.cmdAgregar.Enabled = True
+           Me.CmdAgregar.Enabled = True
            Me.dtpFInicio.Value = Me.dtpFecha.Value
            Me.mskPermisoHoraInicio.Text = "__:__:__"
-           Me.txtMotivo.Text = " "
+           Me.TxtMotivo.Text = " "
            Me.chkJustificado.Value = False
            Me.chkRegreso.Value = 1
             
@@ -670,7 +670,7 @@ If Trim(Me.cboCodigo.Text) <> "" Then
         
         Me.mskPermisoHoraInicio.Text = "__:__:__"
         Me.mskPermisoHoraRegreso.Text = "__:__:__"
-        Me.txtMotivo.Text = " "
+        Me.TxtMotivo.Text = " "
         Me.chkJustificado.Value = 0
         Me.lblNombre.Caption = Me.lblNombre.Caption & ", No asistio a trabajar el " & Me.dtpFecha.Value
         Me.mskAsistHoraEntrada.Text = "__:__:__"
@@ -705,9 +705,9 @@ Private Sub cmdModificar_Click()
 
 
 
-If Trim(Me.txtMotivo.Text) <> "" And Chequear_Hora(Me.mskPermisoHoraInicio.Text) And Me.cmdModificar.Caption = "&Modificar" And sCodEmpl <> "" Then
+If Trim(Me.TxtMotivo.Text) <> "" And Chequear_Hora(Me.mskPermisoHoraInicio.Text) And Me.cmdModificar.Caption = "&Modificar" And sCodEmpl <> "" Then
   
-  Me.cmdAgregar.Enabled = False
+  Me.CmdAgregar.Enabled = False
   Me.mskPermisoHoraInicio.SetFocus
   Me.cmdModificar.Caption = "&Guardar Cambios"
   
@@ -767,7 +767,7 @@ ElseIf Chequear_Hora(Me.mskPermisoHoraInicio.Text) And sCodEmpl <> "" Then
   
   
   Me.adoPermiso.Recordset.Update
-  Me.cmdAgregar.Enabled = True
+  Me.CmdAgregar.Enabled = True
   Me.cmdModificar.Caption = "&Modificar"
   
 
@@ -776,7 +776,7 @@ End If
 
 End Sub
 
-Private Sub cmdSalir_Click()
+Private Sub CmdSalir_Click()
 
 Unload Me
 
@@ -837,9 +837,9 @@ Me.adoEmpleado.Refresh
 
 
 Me.adoAsistencia.ConnectionString = Conexion
-Me.adoAsistencia.CommandType = adCmdTable
-Me.adoAsistencia.RecordSource = "AsistenciaEmpleado"
-Me.adoAsistencia.Refresh
+'Me.adoAsistencia.CommandType = adCmdTable
+'Me.adoAsistencia.RecordSource = "AsistenciaEmpleado"
+'Me.adoAsistencia.Refresh
 
 Me.adoPermiso.ConnectionString = Conexion
 Me.adoPermiso.CommandType = adCmdTable

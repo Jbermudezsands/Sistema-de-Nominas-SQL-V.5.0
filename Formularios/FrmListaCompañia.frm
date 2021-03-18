@@ -165,6 +165,7 @@ Dim RutaServer As String
 Me.Picture1.BackColor = RGB(239, 243, 255)
 Me.Skin1.ApplySkin hWnd
 
+RegistrarBitacora = True
 RutaServer = App.Path + "\CntNominas.dll"
 If Dir(RutaServer) <> "" Then
 

@@ -168,7 +168,7 @@ Begin VB.Form frmAsistManual
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   83230721
+         Format          =   76873729
          CurrentDate     =   38570
       End
       Begin MSMask.MaskEdBox mskPermisoHoraInicio 
@@ -265,7 +265,7 @@ Begin VB.Form frmAsistManual
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   83230721
+         Format          =   76873729
          CurrentDate     =   38570
       End
       Begin MSMask.MaskEdBox mskAsistHoraSalida 
@@ -291,7 +291,7 @@ Begin VB.Form frmAsistManual
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   83230721
+         Format          =   76873729
          CurrentDate     =   38570
       End
       Begin VB.Label Label5 
@@ -353,7 +353,7 @@ Begin VB.Form frmAsistManual
          _ExtentX        =   2355
          _ExtentY        =   450
          _Version        =   393216
-         Format          =   83230721
+         Format          =   76873729
          CurrentDate     =   38570
       End
       Begin TrueOleDBList80.TDBCombo cboCodigo 
@@ -985,8 +985,8 @@ End With
 With Me.adoAsistencia
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
-   .RecordSource = "AsistenciaEmpleado"
-   .Refresh
+'   .RecordSource = "AsistenciaEmpleado"
+'   .Refresh
 End With
 
 

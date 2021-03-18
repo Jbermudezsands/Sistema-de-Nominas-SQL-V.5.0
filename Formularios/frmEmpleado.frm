@@ -132,9 +132,9 @@ Begin VB.Form frmEmpleado
          TabCaption(1)   =   "Histórico"
          TabPicture(1)   =   "frmEmpleado.frx":0326
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Picture3"
+         Tab(1).Control(0)=   "Label72"
          Tab(1).Control(1)=   "Label74"
-         Tab(1).Control(2)=   "Label72"
+         Tab(1).Control(2)=   "Picture3"
          Tab(1).ControlCount=   3
          TabCaption(2)   =   "Información"
          TabPicture(2)   =   "frmEmpleado.frx":0342
@@ -144,33 +144,33 @@ Begin VB.Form frmEmpleado
          TabCaption(3)   =   "Préstamo"
          TabPicture(3)   =   "frmEmpleado.frx":035E
          Tab(3).ControlEnabled=   0   'False
-         Tab(3).Control(0)=   "Picture5"
-         Tab(3).Control(1)=   "DbgrLibreta"
-         Tab(3).Control(2)=   "SSTab2"
-         Tab(3).Control(3)=   "Label67"
+         Tab(3).Control(0)=   "Label67"
+         Tab(3).Control(1)=   "SSTab2"
+         Tab(3).Control(2)=   "DbgrLibreta"
+         Tab(3).Control(3)=   "Picture5"
          Tab(3).ControlCount=   4
          TabCaption(4)   =   "Incentivos"
          TabPicture(4)   =   "frmEmpleado.frx":037A
          Tab(4).ControlEnabled=   0   'False
-         Tab(4).Control(0)=   "CmdAnular"
-         Tab(4).Control(1)=   "Picture6"
+         Tab(4).Control(0)=   "DbGIncentivos"
+         Tab(4).Control(1)=   "CmdHistoIncentivos"
          Tab(4).Control(2)=   "CmdEliminarIncentivo"
-         Tab(4).Control(3)=   "CmdHistoIncentivos"
-         Tab(4).Control(4)=   "DbGIncentivos"
+         Tab(4).Control(3)=   "Picture6"
+         Tab(4).Control(4)=   "CmdAnular"
          Tab(4).ControlCount=   5
          TabCaption(5)   =   "Deducciones"
          TabPicture(5)   =   "frmEmpleado.frx":0396
          Tab(5).ControlEnabled=   0   'False
-         Tab(5).Control(0)=   "DbgDeducciones"
+         Tab(5).Control(0)=   "Picture7"
          Tab(5).Control(1)=   "CmdEliminarDeduccion"
-         Tab(5).Control(2)=   "Picture7"
+         Tab(5).Control(2)=   "DbgDeducciones"
          Tab(5).ControlCount=   3
          TabCaption(6)   =   "Subsidios"
          TabPicture(6)   =   "frmEmpleado.frx":03B2
          Tab(6).ControlEnabled=   0   'False
-         Tab(6).Control(0)=   "Picture8"
+         Tab(6).Control(0)=   "DbgrSubsidios"
          Tab(6).Control(1)=   "CmdEliminarSubsidio"
-         Tab(6).Control(2)=   "DbgrSubsidios"
+         Tab(6).Control(2)=   "Picture8"
          Tab(6).ControlCount=   3
          Begin VB.CommandButton CmdAnular 
             Caption         =   "Anular"
@@ -1143,7 +1143,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   79757313
+               Format          =   17104897
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker MaskEdNacimiento 
@@ -1155,7 +1155,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   79757313
+               Format          =   17104897
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker DTPFechaContratoVaca 
@@ -1167,7 +1167,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   79757313
+               Format          =   17104897
                CurrentDate     =   40213
             End
             Begin VB.CommandButton CmdIncapacidad 
@@ -2727,14 +2727,14 @@ Begin VB.Form frmEmpleado
             TabCaption(1)   =   "Exportar"
             TabPicture(1)   =   "frmEmpleado.frx":29756
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "Label60"
-            Tab(1).Control(1)=   "Label65"
-            Tab(1).Control(2)=   "Label61"
-            Tab(1).Control(3)=   "CmdRuta"
-            Tab(1).Control(4)=   "TxtRuta"
-            Tab(1).Control(5)=   "CmdExportar"
-            Tab(1).Control(6)=   "TxtDebitoPrestamo"
-            Tab(1).Control(7)=   "TxtCreditoPrestamo"
+            Tab(1).Control(0)=   "TxtCreditoPrestamo"
+            Tab(1).Control(1)=   "TxtDebitoPrestamo"
+            Tab(1).Control(2)=   "CmdExportar"
+            Tab(1).Control(3)=   "TxtRuta"
+            Tab(1).Control(4)=   "CmdRuta"
+            Tab(1).Control(5)=   "Label61"
+            Tab(1).Control(6)=   "Label65"
+            Tab(1).Control(7)=   "Label60"
             Tab(1).ControlCount=   8
             Begin VB.TextBox TxtCreditoPrestamo 
                Height          =   375
@@ -4655,19 +4655,19 @@ If TxtDebitoPrestamo.Text = "" Then
 End If
 
 
-DtaPrestamo.Refresh
-Do While Not DtaPrestamo.Recordset.EOF
-If DtaPrestamo.Recordset("CodEmpleado") = val(Me.TxtCodEmpleado.Text) And DtaPrestamo.Recordset("cancelado") = False Then
- If Not val(DtaPrestamo.Recordset("Saldo")) = 0 Then
-   MsgBox ("Este Empleado ya tiene un préstamo y su saldo es de: " & DtaPrestamo.Recordset("Saldo"))
+Dtaprestamo.Refresh
+Do While Not Dtaprestamo.Recordset.EOF
+If Dtaprestamo.Recordset("CodEmpleado") = val(Me.TxtCodEmpleado.Text) And Dtaprestamo.Recordset("cancelado") = False Then
+ If Not val(Dtaprestamo.Recordset("Saldo")) = 0 Then
+   MsgBox ("Este Empleado ya tiene un préstamo y su saldo es de: " & Dtaprestamo.Recordset("Saldo"))
    Exit Sub
  End If
 End If
-DtaPrestamo.Recordset.MoveNext
+Dtaprestamo.Recordset.MoveNext
 Loop
 
 CantCuotas = val(TxtCuotas.Text)
-Saldo = val(TxtSaldo.Text)
+Saldo = val(txtSaldo.Text)
 Interes = val(TxtInteresprestamo.Text) / 100
 If Not CantCuotas = 0 Then
 CuotaPrincipal = Saldo / CantCuotas
@@ -4685,49 +4685,49 @@ Next i
 
 CodEmpleado = Me.TxtCodEmpleado.Text
 
-Saldo = val(Me.TxtSaldo.Text)
+Saldo = val(Me.txtSaldo.Text)
 CuotaIgual = (Saldo + MontoTotalInteres) / CantCuotas
 
 
 'agrego los datos a Prestamo
-DtaPrestamo.Recordset.AddNew
-DtaPrestamo.Recordset("NumPrestamo") = NumPrestamo
-DtaPrestamo.Recordset("Monto") = val(TxtMontoPrestamoUS.Text)
-DtaPrestamo.Recordset("CantCuotas") = val(TxtCuotas.Text)
-DtaPrestamo.Recordset("Interes") = val(TxtInteresprestamo.Text)
-DtaPrestamo.Recordset("Saldo") = val(TxtSaldo.Text)
-DtaPrestamo.Recordset("fechainicial") = CDate(Now)
-DtaPrestamo.Recordset("CuentaDebito") = TxtDebitoPrestamo.Text
-DtaPrestamo.Recordset("cuentacredito") = TxtCreditoPrestamo.Text
-DtaPrestamo.Recordset("CodEmpleado") = CodEmpleado
+Dtaprestamo.Recordset.AddNew
+Dtaprestamo.Recordset("NumPrestamo") = NumPrestamo
+Dtaprestamo.Recordset("Monto") = val(TxtMontoPrestamoUS.Text)
+Dtaprestamo.Recordset("CantCuotas") = val(TxtCuotas.Text)
+Dtaprestamo.Recordset("Interes") = val(TxtInteresprestamo.Text)
+Dtaprestamo.Recordset("Saldo") = val(txtSaldo.Text)
+Dtaprestamo.Recordset("fechainicial") = CDate(Now)
+Dtaprestamo.Recordset("CuentaDebito") = TxtDebitoPrestamo.Text
+Dtaprestamo.Recordset("cuentacredito") = TxtCreditoPrestamo.Text
+Dtaprestamo.Recordset("CodEmpleado") = CodEmpleado
 If ChkTipoPago = 1 Then
-DtaPrestamo.Recordset("CuotasIguales") = True
+Dtaprestamo.Recordset("CuotasIguales") = True
 Else
-DtaPrestamo.Recordset("CuotasIguales") = False
+Dtaprestamo.Recordset("CuotasIguales") = False
 End If
 
 If OptC Then
-   DtaPrestamo.Recordset("Moneda") = "CS"
+   Dtaprestamo.Recordset("Moneda") = "CS"
 Else
-   DtaPrestamo.Recordset("Moneda") = "US"
+   Dtaprestamo.Recordset("Moneda") = "US"
 End If
 
-DtaPrestamo.Recordset.Update
+Dtaprestamo.Recordset.Update
 
 
 'agrego los datos a Nprestamo
-Saldo = val(TxtSaldo.Text)
+Saldo = val(txtSaldo.Text)
 For i = 1 To CantCuotas
-    DtaMovPrestamo.Recordset.AddNew
-    DtaMovPrestamo.Recordset("ID") = i
-    DtaMovPrestamo.Recordset("NumPrestamo") = NumPrestamo
+    DtaMovprestamo.Recordset.AddNew
+    DtaMovprestamo.Recordset("ID") = i
+    DtaMovprestamo.Recordset("NumPrestamo") = NumPrestamo
     'DtaMovPrestamo.Recordset("CodEmpleado") = DBCodigoEmpleado.Text
-    DtaMovPrestamo.Recordset("numcuota") = i
-    DtaMovPrestamo.Recordset("Monto") = CuotaPrincipal
-    DtaMovPrestamo.Recordset("Interes") = PagoInteres(i)
-    DtaMovPrestamo.Recordset("saldocuota") = Saldo
-    DtaMovPrestamo.Recordset("CuotaIgual") = CuotaIgual
-    DtaMovPrestamo.Recordset.Update
+    DtaMovprestamo.Recordset("numcuota") = i
+    DtaMovprestamo.Recordset("Monto") = CuotaPrincipal
+    DtaMovprestamo.Recordset("Interes") = PagoInteres(i)
+    DtaMovprestamo.Recordset("saldocuota") = Saldo
+    DtaMovprestamo.Recordset("CuotaIgual") = CuotaIgual
+    DtaMovprestamo.Recordset.Update
     Saldo = Saldo - CuotaPrincipal
 Next i
 
@@ -5206,32 +5206,32 @@ If k% <> 6 Then
 End If
 
 SqlDetallePrestamo = "SELECT MovPrestamo.NumPrestamo, Prestamo.CodEmpleado, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual, MovPrestamo.SaldoCuota,Movprestamo.cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo WHERE Prestamo.CodEmpleado='" & Me.TxtCodEmpleado.Text & "' AND MovPrestamo.Cancelado = 0"
-DtaMovPrestamo.RecordSource = SqlDetallePrestamo
-DtaMovPrestamo.Refresh
+DtaMovprestamo.RecordSource = SqlDetallePrestamo
+DtaMovprestamo.Refresh
 
 SQlPrestamo = "SELECT Prestamo.* From Prestamo WHERE Prestamo.CodEmpleado='" & Me.TxtCodEmpleado.Text & "' AND Prestamo.Cancelado=0"
-DtaPrestamo.RecordSource = SQlPrestamo
-DtaPrestamo.Refresh
+Dtaprestamo.RecordSource = SQlPrestamo
+Dtaprestamo.Refresh
 
 
-Do While Not DtaPrestamo.Recordset.EOF
+Do While Not Dtaprestamo.Recordset.EOF
  'DtaPrestamo.Recordset.Edit
-  DtaPrestamo.Recordset("cancelado") = 1
- DtaPrestamo.Recordset.Update
+  Dtaprestamo.Recordset("cancelado") = 1
+ Dtaprestamo.Recordset.Update
 
-  DtaPrestamo.Recordset.MoveNext
+  Dtaprestamo.Recordset.MoveNext
 Loop
 
-Do While Not DtaMovPrestamo.Recordset.EOF
+Do While Not DtaMovprestamo.Recordset.EOF
  'DtaMovPrestamo.Recordset.Edit
-  DtaMovPrestamo.Recordset("cancelado") = 1
- DtaMovPrestamo.Recordset.Update
+  DtaMovprestamo.Recordset("cancelado") = 1
+ DtaMovprestamo.Recordset.Update
 
- DtaMovPrestamo.Recordset.MoveNext
+ DtaMovprestamo.Recordset.MoveNext
 Loop
 
-DtaPrestamo.Refresh
-DtaMovPrestamo.Refresh
+Dtaprestamo.Refresh
+DtaMovprestamo.Refresh
 MsgBox "El Prestamo ha sido borrado"
 DbgrLibreta.Columns(0).Visible = False
 DbgrLibreta.Columns(1).Visible = False
@@ -5394,9 +5394,9 @@ End Sub
 
 Private Sub CmdEditarPresLinea_Click()
 On Error GoTo TipoErr
-FrmEditarPrestamo.TxtNumPrestamo.Text = DtaMovPrestamo.Recordset("NumPrestamo")
-FrmEditarPrestamo.txtNumCuota.Text = DtaMovPrestamo.Recordset("numcuota")
-FrmEditarPrestamo.TxtMontoOld.Text = Format(DtaMovPrestamo.Recordset("CuotaIgual"), "###,##0.00")
+FrmEditarPrestamo.TxtNumPrestamo.Text = DtaMovprestamo.Recordset("NumPrestamo")
+FrmEditarPrestamo.txtNumCuota.Text = DtaMovprestamo.Recordset("numcuota")
+FrmEditarPrestamo.TxtMontoOld.Text = Format(DtaMovprestamo.Recordset("CuotaIgual"), "###,##0.00")
 FrmEditarPrestamo.lblNombre = TxtNombre1.Text & " " & TxtNombre2.Text & " " & TxtApellido1.Text & " " & TxtApellido2.Text
 FrmEditarPrestamo.Show 1
 
@@ -5497,25 +5497,25 @@ End Sub
 Private Sub CmdExportar_Click()
 On Error GoTo TipoErr
 
-DtaPrestamo.Refresh
-Do While Not DtaPrestamo.Recordset.EOF
-    If DtaPrestamo.Recordset("CodEmpleado") = DBCodigoEmpleado.Text Then
+Dtaprestamo.Refresh
+Do While Not Dtaprestamo.Recordset.EOF
+    If Dtaprestamo.Recordset("CodEmpleado") = DBCodigoEmpleado.Text Then
         Exit Do
     End If
-DtaPrestamo.Recordset.MoveNext
+Dtaprestamo.Recordset.MoveNext
 Loop
     
 Ruta2 = TxtRuta.Text
 
 Open Ruta2 For Output As #1
-    TextoMonto = Format(DtaPrestamo.Recordset("Monto"), "####0.00")
+    TextoMonto = Format(Dtaprestamo.Recordset("Monto"), "####0.00")
     For i = 1 To 15 - Len(TextoMonto)
        TextoMonto = " " + TextoMonto
     Next i
     
-    Cadena = Trim(Str(Month(DtaPrestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Day(DtaPrestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Year(DtaPrestamo.Recordset("fechainicial"))))
+    Cadena = Trim(Str(Month(Dtaprestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Day(Dtaprestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Year(Dtaprestamo.Recordset("fechainicial"))))
     Cadena = Cadena + "        "
     Cadena = Cadena + "ZEUS"
     Cadena = Cadena + Trim(Str(TxtDebitoPrestamo.Text))
@@ -5528,7 +5528,7 @@ Open Ruta2 For Output As #1
     Cadena = Cadena + "          "
     Cadena = Cadena + "03"
     Cadena = Cadena + "      "
-    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(DtaPrestamo.Recordset("NumPrestamo"))) + "               "
+    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(Dtaprestamo.Recordset("NumPrestamo"))) + "               "
     Cadena = Cadena + "                 "
     Cadena = Cadena + "   " + TextoMonto
     For i = 1 To 34
@@ -5542,9 +5542,9 @@ Open Ruta2 For Output As #1
        TextoMonto = " " + TextoMonto
     Next i
     
-    Cadena = Trim(Str(Month(DtaPrestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Day(DtaPrestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Year(DtaPrestamo.Recordset("fechainicial"))))
+    Cadena = Trim(Str(Month(Dtaprestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Day(Dtaprestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Year(Dtaprestamo.Recordset("fechainicial"))))
     Cadena = Cadena + "        "
     Cadena = Cadena + "ZEUS"
     Cadena = Cadena + Trim(Str(TxtCreditoPrestamo.Text))
@@ -5557,7 +5557,7 @@ Open Ruta2 For Output As #1
     Cadena = Cadena + "          "
     Cadena = Cadena + "07"
     Cadena = Cadena + "      "
-    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(DtaPrestamo.Recordset("NumPrestamo"))) + "               "
+    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(Dtaprestamo.Recordset("NumPrestamo"))) + "               "
     Cadena = Cadena + "                 "
     Cadena = Cadena + "   " + TextoMonto
     For i = 1 To 34
@@ -5585,7 +5585,7 @@ CmdAnterior.Enabled = False
 CmdSiguiente.Enabled = False
 CmdPrimero.Enabled = False
 CmdUltimo.Enabled = False
-CmdBorrar.Enabled = False
+cmdborrar.Enabled = False
 
 Historico = False
 
@@ -5797,7 +5797,7 @@ Me.DtaEmpleado.RecordSource = "SELECT CodEmpleado,CodEmpleado1,Nombre1, Nombre2,
 Me.DtaEmpleado.Refresh
 If Not Me.DtaEmpleado.Recordset.EOF Then
 
-res = Bitacora(Now, NombreUsuario, "Empleados", "Editando al empleado: " & Me.TxtNombre1.Text)
+
 
 '      Do While Not DtaEmpleado.Recordset.EOF
 '        If DtaEmpleado.Recordset("") = DBCodigoEmpleado.Text Then
@@ -5996,6 +5996,8 @@ res = Bitacora(Now, NombreUsuario, "Empleados", "Editando al empleado: " & Me.Tx
             Valida = 1
 '            Exit Sub
             End If
+            
+            res = Bitacora(Now, NombreUsuario, "Empleados", "Editando al empleado: " & Me.TxtNombre1.Text)
 '       DtaEmpleado.Recordset.MoveNext
 '      Loop
 ' End If
@@ -6378,7 +6380,7 @@ CmdAnterior.Enabled = True
 CmdSiguiente.Enabled = True
 CmdPrimero.Enabled = True
 CmdUltimo.Enabled = True
-CmdBorrar.Enabled = True
+cmdborrar.Enabled = True
 SSTab1.Tab = 0
 LimpiaEmpleado
 With Me.DtaEmpleados
@@ -7759,25 +7761,25 @@ DbgDeducciones.Columns(0).Visible = False
 DbgDeducciones.Columns(2).Visible = False
 DbgDeducciones.Columns(5).Visible = False
 SQlPrestamo = "SELECT NumPrestamo, CuentaDebito, CuentaCredito, Monto, CantCuotas, Interes, Saldo, FechaInicial, Cancelado, Moneda, CuotasIguales, CodEmpleado From Prestamo WHERE Prestamo.CodEmpleado=" & CodEmpleado & " AND Prestamo.Cancelado=0"
-DtaPrestamo.RecordSource = SQlPrestamo
-DtaPrestamo.Refresh
-If Not DtaPrestamo.Recordset.EOF Then
-numeroPrestamo = Me.DtaPrestamo.Recordset("NumPrestamo")
+Dtaprestamo.RecordSource = SQlPrestamo
+Dtaprestamo.Refresh
+If Not Dtaprestamo.Recordset.EOF Then
+numeroPrestamo = Me.Dtaprestamo.Recordset("NumPrestamo")
 Else
  numeroPrestamo = -100
 End If
 SqlDetallePrestamo = "SELECT MovPrestamo.ID,MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual,MovPrestamo.SaldoCuota , MovPrestamo.Cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo Where (MovPrestamo.Cancelado = 0) And (MovPrestamo.NumPrestamo = " & numeroPrestamo & ")"
-DtaMovPrestamo.RecordSource = SqlDetallePrestamo
-DtaMovPrestamo.Refresh
+DtaMovprestamo.RecordSource = SqlDetallePrestamo
+DtaMovprestamo.Refresh
 
 
 
 
 
 
-If Not DtaPrestamo.Recordset.EOF Then
-   TxtCreditoPrestamo.Text = DtaPrestamo.Recordset("cuentacredito")
-   TxtDebitoPrestamo.Text = DtaPrestamo.Recordset("CuentaDebito")
+If Not Dtaprestamo.Recordset.EOF Then
+   TxtCreditoPrestamo.Text = Dtaprestamo.Recordset("cuentacredito")
+   TxtDebitoPrestamo.Text = Dtaprestamo.Recordset("CuentaDebito")
    Me.DbgrLibreta.Columns(0).Visible = False
 DbgrLibreta.Columns(1).Visible = False
 DbgrLibreta.Columns(7).Visible = False
@@ -8017,12 +8019,12 @@ With Me.DtaInfNomina
    .Refresh
 End With
 
-With Me.DtaMovPrestamo
+With Me.DtaMovprestamo
    '.DatabaseName = Ruta
     .ConnectionString = Conexion
 End With
 
-With Me.DtaPrestamo
+With Me.Dtaprestamo
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
 End With
@@ -8230,7 +8232,7 @@ Else
 End Sub
 
 Private Sub MaskEdBox4_LostFocus()
-TxtSaldo.Text = MaskEdBox4.Text
+txtSaldo.Text = MaskEdBox4.Text
 End Sub
 
 Private Sub MaskEdContrato_Change()
@@ -8288,7 +8290,7 @@ Select Case PreviousTab
 
 Case 3
     DbgrLibreta.BorderStyle = 1
-    DtaMovPrestamo.Refresh
+    DtaMovprestamo.Refresh
     DbgrLibreta.Columns(0).Caption = "# Prestamo"
     DbgrLibreta.Columns(1).Caption = "Código Empleado"
     DbgrLibreta.Columns(2).Caption = "# de Cuota"
@@ -8802,25 +8804,25 @@ DbgDeducciones.Columns(0).Visible = False
 DbgDeducciones.Columns(2).Visible = False
 'DbgDeducciones.Columns(5).Visible = False
 SQlPrestamo = "SELECT NumPrestamo, CuentaDebito, CuentaCredito, Monto, CantCuotas, Interes, Saldo, FechaInicial, Cancelado, Moneda, CuotasIguales, CodEmpleado From Prestamo WHERE Prestamo.CodEmpleado=" & CodEmpleado & " AND Prestamo.Cancelado=0"
-DtaPrestamo.RecordSource = SQlPrestamo
-DtaPrestamo.Refresh
-If Not DtaPrestamo.Recordset.EOF Then
-numeroPrestamo = Me.DtaPrestamo.Recordset("NumPrestamo")
+Dtaprestamo.RecordSource = SQlPrestamo
+Dtaprestamo.Refresh
+If Not Dtaprestamo.Recordset.EOF Then
+numeroPrestamo = Me.Dtaprestamo.Recordset("NumPrestamo")
 Else
  numeroPrestamo = -100
 End If
 SqlDetallePrestamo = "SELECT MovPrestamo.ID,MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual,MovPrestamo.SaldoCuota , MovPrestamo.Cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo Where (MovPrestamo.Cancelado = 0) And (MovPrestamo.NumPrestamo = " & numeroPrestamo & ")"
-DtaMovPrestamo.RecordSource = SqlDetallePrestamo
-DtaMovPrestamo.Refresh
+DtaMovprestamo.RecordSource = SqlDetallePrestamo
+DtaMovprestamo.Refresh
 
 
 
 
 
 
-If Not DtaPrestamo.Recordset.EOF Then
-   TxtCreditoPrestamo.Text = DtaPrestamo.Recordset("cuentacredito")
-   TxtDebitoPrestamo.Text = DtaPrestamo.Recordset("CuentaDebito")
+If Not Dtaprestamo.Recordset.EOF Then
+   TxtCreditoPrestamo.Text = Dtaprestamo.Recordset("cuentacredito")
+   TxtDebitoPrestamo.Text = Dtaprestamo.Recordset("CuentaDebito")
    Me.DbgrLibreta.Columns(0).Visible = False
 DbgrLibreta.Columns(1).Visible = False
 DbgrLibreta.Columns(7).Visible = False
@@ -8949,7 +8951,7 @@ Dim Salario As Boolean
 Dim CodEmpleado1 As String, CodEmpleado As Double
 Dim numeroPrestamo As Double
 
-
+RegistrarBitacora = False
 
 
 
@@ -8959,9 +8961,7 @@ Dim numeroPrestamo As Double
      'Al ejecutar algun cambio en el combo actualizo el nombre del Empleado
      frmEmpleado.MousePointer = 11
     
-     LimpiaEmpleado
-     LimpiaHistorico
-     LimpiaInfNomina
+
      'LimpiaInfNomina
     ' DtaEmpleados.Refresh
      ChkSuspendido.Visible = False
@@ -8973,6 +8973,10 @@ Dim numeroPrestamo As Double
     Me.DtaEmpleado.Refresh
 
   If Not Me.DtaEmpleado.Recordset.EOF Then
+'
+'                  LimpiaEmpleado
+'                  LimpiaHistorico
+'                  LimpiaInfNomina
         
              CodEmpleado = Me.DtaEmpleado.Recordset("CodEmpleado")
              TxtCodEmpleado.Text = Me.DtaEmpleado.Recordset("CodEmpleado")
@@ -9073,7 +9077,10 @@ Dim numeroPrestamo As Double
                 TxtNumCedula.Text = DtaEmpleado.Recordset("numcedula")
                 End If
                 ChkSuspendido.Visible = True
-                TxtNombre1.Text = DtaEmpleado.Recordset("Nombre1")
+                
+                If Not IsNull(DtaEmpleado.Recordset("Nombre1")) Then
+                  TxtNombre1.Text = DtaEmpleado.Recordset("Nombre1")
+                End If
                 
                 If Not IsNull(DtaEmpleado.Recordset("Nombre2")) Then
                 TxtNombre2.Text = DtaEmpleado.Recordset("Nombre2")
@@ -9304,7 +9311,9 @@ Dim numeroPrestamo As Double
                             CmbPagoInssPatronal.Text = DtaInfNomina.Recordset("PagoInssPatronal")
                         End If
                        
+                        If Not IsNull(DtaInfNomina.Recordset("CodTipoNomina")) Then
                         TxtCodTipoNomina.Text = DtaInfNomina.Recordset("CodTipoNomina")
+                        End If
                           
                         Evaluar = True
                         Exit Do
@@ -9373,20 +9382,20 @@ Dim numeroPrestamo As Double
                 DbgDeducciones.Columns(2).Visible = False
                 'DbgDeducciones.Columns(5).Visible = False
                 SQlPrestamo = "SELECT NumPrestamo, CuentaDebito, CuentaCredito, Monto, CantCuotas, Interes, Saldo, FechaInicial, Cancelado, Moneda, CuotasIguales, CodEmpleado From Prestamo WHERE Prestamo.CodEmpleado=" & CodEmpleado & " AND Prestamo.Cancelado=0"
-                DtaPrestamo.RecordSource = SQlPrestamo
-                DtaPrestamo.Refresh
-                If Not DtaPrestamo.Recordset.EOF Then
-                numeroPrestamo = Me.DtaPrestamo.Recordset("NumPrestamo")
+                Dtaprestamo.RecordSource = SQlPrestamo
+                Dtaprestamo.Refresh
+                If Not Dtaprestamo.Recordset.EOF Then
+                numeroPrestamo = Me.Dtaprestamo.Recordset("NumPrestamo")
                 Else
                  numeroPrestamo = -100
                 End If
                 SqlDetallePrestamo = "SELECT MovPrestamo.ID,MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual,MovPrestamo.SaldoCuota , MovPrestamo.Cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo Where (MovPrestamo.Cancelado = 0) And (MovPrestamo.NumPrestamo = " & numeroPrestamo & ")"
-                DtaMovPrestamo.RecordSource = SqlDetallePrestamo
-                DtaMovPrestamo.Refresh
+                DtaMovprestamo.RecordSource = SqlDetallePrestamo
+                DtaMovprestamo.Refresh
                 
-                                If Not DtaPrestamo.Recordset.EOF Then
-                   TxtCreditoPrestamo.Text = DtaPrestamo.Recordset("cuentacredito")
-                   TxtDebitoPrestamo.Text = DtaPrestamo.Recordset("CuentaDebito")
+                                If Not Dtaprestamo.Recordset.EOF Then
+                   TxtCreditoPrestamo.Text = Dtaprestamo.Recordset("cuentacredito")
+                   TxtDebitoPrestamo.Text = Dtaprestamo.Recordset("CuentaDebito")
                    Me.DbgrLibreta.Columns(0).Visible = False
                 DbgrLibreta.Columns(1).Visible = False
                 DbgrLibreta.Columns(7).Visible = False
@@ -9430,12 +9439,12 @@ Dim numeroPrestamo As Double
                         End If
                 
                 
-                Me.DtaEmpleado.RecordSource = "SELECT CodEmpleado,CodEmpleado1,Nombre1, Nombre2, Apellido1, Apellido2, NumHijos, Direccion, Nacionalidad, CodigoPostal, Sexo, CodInss, CodIr, NumCedula,Sindicalista, CodDepartamento, CodGrupo, CodCargo, NumeroInss, NumeroRuc, CodTipoNomina, DiasDescuento, SueldoPeriodo, TarifaHoraria,OtrosIngresos, PorcentajeComision, DescripOtrIngre, ExentoInss, ExentoIr, PagoInssPatronal, SalarioMinimo, Observaciones, Activo, Ausente, SalarioFijo , SumarSubsidio, PorcientoIncentivo From Empleado WHERE     (CodEmpleado1 = '" & DBCodigoEmpleado.Text & "') "
-                Me.DtaEmpleado.Refresh
-                
-                If Not Me.DtaEmpleado.Recordset.EOF Then
-                 DBCodigoEmpleado.Text = Me.DtaEmpleado.Recordset("CodEmpleado1")
-                End If
+'                Me.DtaEmpleado.RecordSource = "SELECT CodEmpleado,CodEmpleado1,Nombre1, Nombre2, Apellido1, Apellido2, NumHijos, Direccion, Nacionalidad, CodigoPostal, Sexo, CodInss, CodIr, NumCedula,Sindicalista, CodDepartamento, CodGrupo, CodCargo, NumeroInss, NumeroRuc, CodTipoNomina, DiasDescuento, SueldoPeriodo, TarifaHoraria,OtrosIngresos, PorcentajeComision, DescripOtrIngre, ExentoInss, ExentoIr, PagoInssPatronal, SalarioMinimo, Observaciones, Activo, Ausente, SalarioFijo , SumarSubsidio, PorcientoIncentivo From Empleado WHERE     (CodEmpleado1 = '" & DBCodigoEmpleado.Text & "') "
+'                Me.DtaEmpleado.Refresh
+'
+'                If Not Me.DtaEmpleado.Recordset.EOF Then
+'                 DBCodigoEmpleado.Text = Me.DtaEmpleado.Recordset("CodEmpleado1")
+'                End If
                 
                 'Me.DBCodigoEmpleado.Columns(0).Visible = False
                 'Me.DBCodigoEmpleado.Columns(1).Caption = "Codigo"
@@ -9448,6 +9457,11 @@ Dim numeroPrestamo As Double
 
       
             Else 'si no lo encuentra
+            
+            
+                LimpiaEmpleado
+                LimpiaHistorico
+                LimpiaInfNomina
           
                       SSTab1.TabEnabled(0) = True
                       SSTab1.TabEnabled(1) = True
@@ -9456,8 +9470,13 @@ Dim numeroPrestamo As Double
                       SSTab1.TabEnabled(4) = False
                       SSTab1.TabEnabled(5) = False
                       SSTab1.TabEnabled(6) = False
+                      
+                      frmEmpleado.MousePointer = 0
                 'frmEmpleado.Caption = "Registro del Empleado: " & TxtNombre1.Text & " " & TxtNombre2.Text & " " & TxtApellido1.Text & " " & TxtApellido2.Text
       End If
+      
+      
+      RegistrarBitacora = True
 
 Exit Sub
 TipoErrs:
@@ -9677,14 +9696,14 @@ End Sub
 Private Sub TxtMontoPrestamoUS_KeyPress(KeyAscii As Integer)
 
 If KeyAscii = "13" Then
-  TxtSaldo.Text = TxtMontoPrestamoUS.Text
+  txtSaldo.Text = TxtMontoPrestamoUS.Text
   Me.CmdAfectuar.Value = True
 
 End If
 End Sub
 
 Private Sub TxtMontoPrestamoUS_LostFocus()
-TxtSaldo.Text = TxtMontoPrestamoUS.Text
+txtSaldo.Text = TxtMontoPrestamoUS.Text
 End Sub
 
 Private Sub TxtMotivoAumento_Change()

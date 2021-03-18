@@ -628,7 +628,7 @@ errcta:
     MsgBox Err.Description
 End Sub
 
-Private Sub cmdCerrar_Click()
+Private Sub CmdCerrar_Click()
 Unload Me
 
 End Sub
@@ -652,7 +652,7 @@ errdel:
     MsgBox Err.Description
 End Sub
 
-Private Sub cmdEditar_Click()
+Private Sub CmdEditar_Click()
 If rs.EOF Then MsgBox "Operación Cancelada, no existen registros", vbInformation: Exit Sub
 modal = True
 If tvActividades.SelectedItem.FullPath = tvActividades.SelectedItem.Text Then

@@ -51,4 +51,4 @@ Public RutaArchivo As String
 Public i As Double
 Public CodigoH As String
 Public MontoInssRegistros(3) As Double
-Public PeriodoReporte As String, tempDias As Double
+Public PeriodoReporte As String, tempDias As Double, RegistrarBitacora As Boolean

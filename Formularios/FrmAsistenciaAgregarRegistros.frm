@@ -393,7 +393,7 @@ Begin VB.Form FrmAsistenciaAgregarRegistros
       _ExtentX        =   2355
       _ExtentY        =   661
       _Version        =   393216
-      Format          =   83034113
+      Format          =   83361793
       CurrentDate     =   38570
    End
    Begin XtremeSuiteControls.PushButton PushButton2 
@@ -649,13 +649,6 @@ With Me.adoEmpleado
    .Refresh
 End With
 
-With Me.adoAsistencia
-   '.DatabaseName = Ruta
-   .ConnectionString = Conexion
-   .RecordSource = "AsistenciaEmpleado"
-   .Refresh
-End With
-
 With Me.AdoDepartamentos
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
@@ -668,6 +661,15 @@ With Me.AdoTipoNomina
    .ConnectionString = Conexion
    .RecordSource = "SELECT CodTipoNomina, Nomina From TipoNomina"
    .Refresh
+End With
+
+DoEvents
+
+With Me.adoAsistencia
+   '.DatabaseName = Ruta
+   .ConnectionString = Conexion
+'   .RecordSource = "AsistenciaEmpleado"
+'   .Refresh
 End With
 
 
