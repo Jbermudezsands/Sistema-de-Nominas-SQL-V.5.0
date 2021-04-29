@@ -6,7 +6,6 @@ Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "msmask32.ocx"
 Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{DEF7CADD-83C0-11D0-A0F1-00A024703500}#7.0#0"; "todg7.ocx"
-Object = "{60CCE6A8-5C61-4F30-8513-F57EED62E86A}#8.0#0"; "todl8.ocx"
 Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#12.0#0"; "Codejock.Controls.v12.0.0.Demo.ocx"
 Begin VB.Form frmEmpleado 
    AutoRedraw      =   -1  'True
@@ -29,7 +28,7 @@ Begin VB.Form frmEmpleado
    Begin VB.TextBox TxtCodigoEmpleados 
       Height          =   375
       Left            =   6480
-      TabIndex        =   211
+      TabIndex        =   208
       Text            =   "Text3"
       Top             =   6000
       Visible         =   0   'False
@@ -38,7 +37,7 @@ Begin VB.Form frmEmpleado
    Begin XtremeSuiteControls.CheckBox ChkDolarizado 
       Height          =   255
       Left            =   5160
-      TabIndex        =   184
+      TabIndex        =   183
       Top             =   6120
       Width           =   2655
       _Version        =   786432
@@ -99,13 +98,13 @@ Begin VB.Form frmEmpleado
       Left            =   120
       ScaleHeight     =   5235
       ScaleWidth      =   9435
-      TabIndex        =   24
+      TabIndex        =   23
       Top             =   480
       Width           =   9495
       Begin VB.TextBox Text2 
          Height          =   285
          Left            =   5640
-         TabIndex        =   210
+         TabIndex        =   207
          Text            =   "Text2"
          Top             =   5280
          Width           =   1695
@@ -113,7 +112,7 @@ Begin VB.Form frmEmpleado
       Begin TabDlg.SSTab SSTab1 
          Height          =   5175
          Left            =   0
-         TabIndex        =   16
+         TabIndex        =   15
          Top             =   0
          Width           =   9450
          _ExtentX        =   16669
@@ -132,9 +131,9 @@ Begin VB.Form frmEmpleado
          TabCaption(1)   =   "Histórico"
          TabPicture(1)   =   "frmEmpleado.frx":0326
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Label72"
+         Tab(1).Control(0)=   "Picture3"
          Tab(1).Control(1)=   "Label74"
-         Tab(1).Control(2)=   "Picture3"
+         Tab(1).Control(2)=   "Label72"
          Tab(1).ControlCount=   3
          TabCaption(2)   =   "Información"
          TabPicture(2)   =   "frmEmpleado.frx":0342
@@ -144,33 +143,33 @@ Begin VB.Form frmEmpleado
          TabCaption(3)   =   "Préstamo"
          TabPicture(3)   =   "frmEmpleado.frx":035E
          Tab(3).ControlEnabled=   0   'False
-         Tab(3).Control(0)=   "Label67"
-         Tab(3).Control(1)=   "SSTab2"
-         Tab(3).Control(2)=   "DbgrLibreta"
-         Tab(3).Control(3)=   "Picture5"
+         Tab(3).Control(0)=   "Picture5"
+         Tab(3).Control(1)=   "DbgrLibreta"
+         Tab(3).Control(2)=   "SSTab2"
+         Tab(3).Control(3)=   "Label67"
          Tab(3).ControlCount=   4
          TabCaption(4)   =   "Incentivos"
          TabPicture(4)   =   "frmEmpleado.frx":037A
          Tab(4).ControlEnabled=   0   'False
-         Tab(4).Control(0)=   "DbGIncentivos"
-         Tab(4).Control(1)=   "CmdHistoIncentivos"
+         Tab(4).Control(0)=   "CmdAnular"
+         Tab(4).Control(1)=   "Picture6"
          Tab(4).Control(2)=   "CmdEliminarIncentivo"
-         Tab(4).Control(3)=   "Picture6"
-         Tab(4).Control(4)=   "CmdAnular"
+         Tab(4).Control(3)=   "CmdHistoIncentivos"
+         Tab(4).Control(4)=   "DbGIncentivos"
          Tab(4).ControlCount=   5
          TabCaption(5)   =   "Deducciones"
          TabPicture(5)   =   "frmEmpleado.frx":0396
          Tab(5).ControlEnabled=   0   'False
-         Tab(5).Control(0)=   "Picture7"
+         Tab(5).Control(0)=   "DbgDeducciones"
          Tab(5).Control(1)=   "CmdEliminarDeduccion"
-         Tab(5).Control(2)=   "DbgDeducciones"
+         Tab(5).Control(2)=   "Picture7"
          Tab(5).ControlCount=   3
          TabCaption(6)   =   "Subsidios"
          TabPicture(6)   =   "frmEmpleado.frx":03B2
          Tab(6).ControlEnabled=   0   'False
-         Tab(6).Control(0)=   "DbgrSubsidios"
+         Tab(6).Control(0)=   "Picture8"
          Tab(6).Control(1)=   "CmdEliminarSubsidio"
-         Tab(6).Control(2)=   "Picture8"
+         Tab(6).Control(2)=   "DbgrSubsidios"
          Tab(6).ControlCount=   3
          Begin VB.CommandButton CmdAnular 
             Caption         =   "Anular"
@@ -179,7 +178,7 @@ Begin VB.Form frmEmpleado
             Height          =   375
             Left            =   -69600
             Picture         =   "frmEmpleado.frx":1EB0
-            TabIndex        =   186
+            TabIndex        =   185
             Top             =   3660
             Width           =   1455
          End
@@ -188,7 +187,7 @@ Begin VB.Form frmEmpleado
             Left            =   -74880
             ScaleHeight     =   2595
             ScaleWidth      =   3435
-            TabIndex        =   174
+            TabIndex        =   173
             Top             =   900
             Width           =   3495
             Begin VB.CommandButton CmdAgregarSubsidio 
@@ -197,21 +196,21 @@ Begin VB.Form frmEmpleado
                Height          =   375
                Left            =   1800
                Picture         =   "frmEmpleado.frx":5474
-               TabIndex        =   178
+               TabIndex        =   177
                Top             =   2040
                Width           =   1455
             End
             Begin VB.TextBox TxtNumVecesSubsidio 
                Height          =   375
                Left            =   2160
-               TabIndex        =   177
+               TabIndex        =   176
                Top             =   1560
                Width           =   1095
             End
             Begin VB.TextBox TxtMontoSubsidio 
                Height          =   285
                Left            =   1080
-               TabIndex        =   176
+               TabIndex        =   175
                Top             =   840
                Width           =   2175
             End
@@ -219,7 +218,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   1080
                MaxLength       =   25
-               TabIndex        =   175
+               TabIndex        =   174
                Top             =   1080
                Width           =   2175
             End
@@ -227,7 +226,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":6F56
                Height          =   315
                Left            =   120
-               TabIndex        =   179
+               TabIndex        =   178
                Top             =   360
                Width           =   3135
                _ExtentX        =   5530
@@ -240,7 +239,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Subsidio"
                Height          =   255
                Left            =   120
-               TabIndex        =   183
+               TabIndex        =   182
                Top             =   120
                Width           =   1815
             End
@@ -248,7 +247,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Número de Veces"
                Height          =   255
                Left            =   360
-               TabIndex        =   182
+               TabIndex        =   181
                Top             =   1680
                Width           =   1575
             End
@@ -256,7 +255,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Monto"
                Height          =   255
                Left            =   240
-               TabIndex        =   181
+               TabIndex        =   180
                Top             =   840
                Width           =   615
             End
@@ -265,7 +264,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Descripción"
                Height          =   255
                Left            =   120
-               TabIndex        =   180
+               TabIndex        =   179
                Top             =   1080
                Width           =   855
             End
@@ -275,20 +274,20 @@ Begin VB.Form frmEmpleado
             Left            =   -74880
             ScaleHeight     =   2475
             ScaleWidth      =   3315
-            TabIndex        =   166
+            TabIndex        =   165
             Top             =   900
             Width           =   3375
             Begin VB.TextBox TxtVecesDeduccion 
                Height          =   375
                Left            =   1920
-               TabIndex        =   169
+               TabIndex        =   168
                Top             =   1320
                Width           =   1215
             End
             Begin VB.TextBox TxtMontoDeduccion 
                Height          =   405
                Left            =   960
-               TabIndex        =   168
+               TabIndex        =   167
                Top             =   960
                Width           =   2175
             End
@@ -298,7 +297,7 @@ Begin VB.Form frmEmpleado
                Height          =   495
                Left            =   1680
                Picture         =   "frmEmpleado.frx":8A56
-               TabIndex        =   167
+               TabIndex        =   166
                Top             =   1800
                Width           =   1455
             End
@@ -306,7 +305,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":A538
                Height          =   315
                Left            =   240
-               TabIndex        =   170
+               TabIndex        =   169
                Top             =   360
                Width           =   2895
                _ExtentX        =   5106
@@ -319,7 +318,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Deduccion"
                Height          =   255
                Left            =   120
-               TabIndex        =   173
+               TabIndex        =   172
                Top             =   120
                Width           =   1455
             End
@@ -327,7 +326,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Monto"
                Height          =   255
                Left            =   240
-               TabIndex        =   172
+               TabIndex        =   171
                Top             =   960
                Width           =   615
             End
@@ -335,7 +334,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Número de Veces"
                Height          =   255
                Left            =   120
-               TabIndex        =   171
+               TabIndex        =   170
                Top             =   1440
                Width           =   1935
             End
@@ -345,13 +344,13 @@ Begin VB.Form frmEmpleado
             Left            =   -74880
             ScaleHeight     =   2595
             ScaleWidth      =   3435
-            TabIndex        =   158
+            TabIndex        =   157
             Top             =   900
             Width           =   3495
             Begin VB.TextBox TxtNumVeces 
                Height          =   375
                Left            =   2040
-               TabIndex        =   160
+               TabIndex        =   159
                ToolTipText     =   "Digite ""n"" para indicar que este incentivo es de caracter infinito"
                Top             =   1440
                Width           =   1215
@@ -362,7 +361,7 @@ Begin VB.Form frmEmpleado
                Height          =   495
                Left            =   1800
                Picture         =   "frmEmpleado.frx":C039
-               TabIndex        =   159
+               TabIndex        =   158
                Top             =   1920
                Width           =   1455
             End
@@ -370,7 +369,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":DB1B
                Height          =   315
                Left            =   360
-               TabIndex        =   161
+               TabIndex        =   160
                Top             =   480
                Width           =   2775
                _ExtentX        =   4895
@@ -382,7 +381,7 @@ Begin VB.Form frmEmpleado
             Begin MSMask.MaskEdBox TxtMonto 
                Height          =   375
                Left            =   1080
-               TabIndex        =   162
+               TabIndex        =   161
                Top             =   960
                Width           =   2175
                _ExtentX        =   3836
@@ -394,7 +393,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Incentivo"
                Height          =   375
                Left            =   240
-               TabIndex        =   165
+               TabIndex        =   164
                Top             =   240
                Width           =   1455
             End
@@ -402,7 +401,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Monto"
                Height          =   255
                Left            =   360
-               TabIndex        =   164
+               TabIndex        =   163
                Top             =   960
                Width           =   855
             End
@@ -410,7 +409,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Número de Veces"
                Height          =   255
                Left            =   240
-               TabIndex        =   163
+               TabIndex        =   162
                Top             =   1440
                Width           =   1815
             End
@@ -420,13 +419,13 @@ Begin VB.Form frmEmpleado
             Left            =   -74760
             ScaleHeight     =   1875
             ScaleWidth      =   4875
-            TabIndex        =   144
+            TabIndex        =   143
             Top             =   1140
             Width           =   4935
             Begin VB.TextBox TxtInteresprestamo 
                Height          =   285
                Left            =   720
-               TabIndex        =   151
+               TabIndex        =   150
                Top             =   840
                Width           =   615
             End
@@ -434,14 +433,14 @@ Begin VB.Form frmEmpleado
                Caption         =   "Moneda"
                Height          =   975
                Left            =   2520
-               TabIndex        =   145
+               TabIndex        =   144
                Top             =   120
                Width           =   1215
                Begin VB.OptionButton OptUS 
                   Caption         =   "US$"
                   Height          =   255
                   Left            =   120
-                  TabIndex        =   155
+                  TabIndex        =   154
                   Top             =   600
                   Width           =   735
                End
@@ -449,7 +448,7 @@ Begin VB.Form frmEmpleado
                   Caption         =   "C$"
                   Height          =   255
                   Left            =   120
-                  TabIndex        =   153
+                  TabIndex        =   152
                   Top             =   240
                   Value           =   -1  'True
                   Width           =   735
@@ -459,7 +458,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cuotas Iguales"
                Height          =   255
                Left            =   2400
-               TabIndex        =   157
+               TabIndex        =   156
                Top             =   1200
                Value           =   1  'Checked
                Width           =   1455
@@ -467,14 +466,14 @@ Begin VB.Form frmEmpleado
             Begin VB.TextBox TxtCuotas 
                Height          =   285
                Left            =   1560
-               TabIndex        =   149
+               TabIndex        =   148
                Top             =   480
                Width           =   495
             End
             Begin MSMask.MaskEdBox TxtSaldo 
                Height          =   285
                Left            =   600
-               TabIndex        =   146
+               TabIndex        =   145
                Top             =   1200
                Width           =   1455
                _ExtentX        =   2566
@@ -487,7 +486,7 @@ Begin VB.Form frmEmpleado
             Begin MSMask.MaskEdBox TxtMontoPrestamoUS 
                Height          =   285
                Left            =   600
-               TabIndex        =   147
+               TabIndex        =   146
                Top             =   120
                Width           =   1455
                _ExtentX        =   2566
@@ -500,7 +499,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "%"
                Height          =   255
                Left            =   1440
-               TabIndex        =   156
+               TabIndex        =   155
                Top             =   840
                Width           =   255
             End
@@ -508,7 +507,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Interes"
                Height          =   255
                Left            =   120
-               TabIndex        =   154
+               TabIndex        =   153
                Top             =   840
                Width           =   615
             End
@@ -516,7 +515,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Monto"
                Height          =   375
                Left            =   120
-               TabIndex        =   152
+               TabIndex        =   151
                Top             =   120
                Width           =   615
             End
@@ -524,7 +523,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Número de Cuotas"
                Height          =   255
                Left            =   120
-               TabIndex        =   150
+               TabIndex        =   149
                Top             =   480
                Width           =   1335
             End
@@ -532,7 +531,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Saldo"
                Height          =   255
                Left            =   120
-               TabIndex        =   148
+               TabIndex        =   147
                Top             =   1200
                Width           =   495
             End
@@ -542,13 +541,13 @@ Begin VB.Form frmEmpleado
             Left            =   -74880
             ScaleHeight     =   4395
             ScaleWidth      =   9075
-            TabIndex        =   107
+            TabIndex        =   106
             Top             =   480
             Width           =   9135
             Begin VB.TextBox TxtReembolso 
                Height          =   285
                Left            =   8160
-               TabIndex        =   215
+               TabIndex        =   212
                Top             =   3600
                Width           =   735
             End
@@ -556,7 +555,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Deducir por Porcentaje"
                Height          =   255
                Left            =   6480
-               TabIndex        =   214
+               TabIndex        =   211
                Top             =   2160
                Width           =   2535
             End
@@ -564,7 +563,7 @@ Begin VB.Form frmEmpleado
                Alignment       =   1  'Right Justify
                Height          =   285
                Left            =   5760
-               TabIndex        =   212
+               TabIndex        =   209
                Text            =   "0.00"
                Top             =   3960
                Width           =   735
@@ -572,7 +571,7 @@ Begin VB.Form frmEmpleado
             Begin VB.TextBox txtAumentoBasico 
                Height          =   285
                Left            =   8160
-               TabIndex        =   206
+               TabIndex        =   204
                Top             =   3240
                Width           =   735
             End
@@ -589,7 +588,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   375
                Left            =   5760
-               TabIndex        =   203
+               TabIndex        =   202
                Text            =   "0"
                Top             =   3600
                Width           =   735
@@ -607,7 +606,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   375
                Left            =   2640
-               TabIndex        =   201
+               TabIndex        =   200
                Text            =   "0"
                Top             =   3240
                Width           =   735
@@ -616,7 +615,7 @@ Begin VB.Form frmEmpleado
                Alignment       =   1  'Right Justify
                Height          =   285
                Left            =   5760
-               TabIndex        =   199
+               TabIndex        =   198
                Text            =   "0.00"
                ToolTipText     =   "Comisión"
                Top             =   3240
@@ -626,7 +625,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Calcular Horas x Turnos"
                Height          =   255
                Left            =   3840
-               TabIndex        =   198
+               TabIndex        =   197
                Top             =   2160
                Width           =   2775
             End
@@ -635,7 +634,7 @@ Begin VB.Form frmEmpleado
                Enabled         =   0   'False
                Height          =   285
                Left            =   5520
-               TabIndex        =   140
+               TabIndex        =   139
                Text            =   "0.00"
                ToolTipText     =   "Sueldo Fijo del Periodo"
                Top             =   480
@@ -645,7 +644,7 @@ Begin VB.Form frmEmpleado
                Alignment       =   1  'Right Justify
                Height          =   285
                Left            =   6840
-               TabIndex        =   123
+               TabIndex        =   122
                Top             =   1920
                Visible         =   0   'False
                Width           =   495
@@ -654,7 +653,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Calcular % Incentivo Horas Extras"
                Height          =   375
                Left            =   3840
-               TabIndex        =   122
+               TabIndex        =   121
                Top             =   1800
                Width           =   2895
             End
@@ -662,7 +661,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Calcular Solo Salario Fijo"
                Height          =   255
                Left            =   120
-               TabIndex        =   121
+               TabIndex        =   120
                Top             =   960
                Value           =   1  'Checked
                Width           =   3255
@@ -680,14 +679,14 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   1455
                Left            =   6720
-               TabIndex        =   118
+               TabIndex        =   117
                Top             =   360
                Width           =   2055
                Begin ACTIVESKINLibCtl.SkinLabel SkinLabel2 
                   Height          =   255
                   Left            =   480
                   OleObjectBlob   =   "frmEmpleado.frx":DB3A
-                  TabIndex        =   142
+                  TabIndex        =   141
                   Top             =   840
                   Width           =   975
                End
@@ -695,7 +694,7 @@ Begin VB.Form frmEmpleado
                   Height          =   255
                   Left            =   720
                   OleObjectBlob   =   "frmEmpleado.frx":DBAE
-                  TabIndex        =   141
+                  TabIndex        =   140
                   Top             =   240
                   Width           =   615
                End
@@ -703,7 +702,7 @@ Begin VB.Form frmEmpleado
                   Height          =   285
                   Left            =   120
                   MaxLength       =   20
-                  TabIndex        =   120
+                  TabIndex        =   119
                   Top             =   1080
                   Width           =   1815
                End
@@ -711,7 +710,7 @@ Begin VB.Form frmEmpleado
                   Alignment       =   1  'Right Justify
                   Height          =   285
                   Left            =   480
-                  TabIndex        =   119
+                  TabIndex        =   118
                   Text            =   "0.00"
                   Top             =   480
                   Width           =   975
@@ -721,7 +720,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   120
                Locked          =   -1  'True
-               TabIndex        =   117
+               TabIndex        =   116
                Top             =   3960
                Width           =   735
             End
@@ -738,7 +737,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   375
                Left            =   2640
-               TabIndex        =   116
+               TabIndex        =   115
                Text            =   "0"
                Top             =   2760
                Width           =   735
@@ -747,7 +746,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   7080
                Locked          =   -1  'True
-               TabIndex        =   115
+               TabIndex        =   114
                Top             =   120
                Visible         =   0   'False
                Width           =   1455
@@ -758,7 +757,7 @@ Begin VB.Form frmEmpleado
                ItemData        =   "frmEmpleado.frx":DC16
                Left            =   1200
                List            =   "frmEmpleado.frx":DC26
-               TabIndex        =   114
+               TabIndex        =   113
                Top             =   600
                Width           =   2295
             End
@@ -766,7 +765,7 @@ Begin VB.Form frmEmpleado
                Alignment       =   1  'Right Justify
                Height          =   285
                Left            =   5520
-               TabIndex        =   113
+               TabIndex        =   112
                Text            =   "0.00"
                ToolTipText     =   "Comisión"
                Top             =   1440
@@ -777,7 +776,7 @@ Begin VB.Form frmEmpleado
                Enabled         =   0   'False
                Height          =   285
                Left            =   5520
-               TabIndex        =   112
+               TabIndex        =   111
                Text            =   "0.00"
                Top             =   960
                Width           =   975
@@ -787,7 +786,7 @@ Begin VB.Form frmEmpleado
                ItemData        =   "frmEmpleado.frx":DC66
                Left            =   1800
                List            =   "frmEmpleado.frx":DC70
-               TabIndex        =   111
+               TabIndex        =   110
                Top             =   1320
                Width           =   1455
             End
@@ -796,7 +795,7 @@ Begin VB.Form frmEmpleado
                ItemData        =   "frmEmpleado.frx":DC86
                Left            =   1800
                List            =   "frmEmpleado.frx":DC90
-               TabIndex        =   110
+               TabIndex        =   109
                Top             =   1680
                Width           =   1455
             End
@@ -805,7 +804,7 @@ Begin VB.Form frmEmpleado
                ItemData        =   "frmEmpleado.frx":DCA6
                Left            =   1800
                List            =   "frmEmpleado.frx":DCB0
-               TabIndex        =   109
+               TabIndex        =   108
                Top             =   2400
                Width           =   1455
             End
@@ -814,7 +813,7 @@ Begin VB.Form frmEmpleado
                ItemData        =   "frmEmpleado.frx":DCC6
                Left            =   1800
                List            =   "frmEmpleado.frx":DCD0
-               TabIndex        =   108
+               TabIndex        =   107
                Top             =   2040
                Width           =   1455
             End
@@ -822,7 +821,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":DCE6
                Height          =   315
                Left            =   960
-               TabIndex        =   124
+               TabIndex        =   123
                Top             =   3960
                Width           =   2535
                _ExtentX        =   4471
@@ -835,7 +834,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":DCFD
                Height          =   315
                Left            =   1200
-               TabIndex        =   125
+               TabIndex        =   124
                Top             =   240
                Width           =   2295
                _ExtentX        =   4048
@@ -848,7 +847,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Reembolso"
                Height          =   255
                Left            =   7320
-               TabIndex        =   216
+               TabIndex        =   213
                Top             =   3600
                Width           =   855
             End
@@ -856,7 +855,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Viatico x Dia Asistecia"
                Height          =   255
                Left            =   3840
-               TabIndex        =   213
+               TabIndex        =   210
                Top             =   3960
                Width           =   1695
             End
@@ -864,7 +863,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Aumento Basico"
                Height          =   255
                Left            =   6960
-               TabIndex        =   207
+               TabIndex        =   205
                Top             =   3240
                Width           =   1215
             End
@@ -882,7 +881,7 @@ Begin VB.Form frmEmpleado
                ForeColor       =   &H000000C0&
                Height          =   255
                Left            =   3840
-               TabIndex        =   204
+               TabIndex        =   203
                Top             =   3600
                Width           =   2535
             End
@@ -900,7 +899,7 @@ Begin VB.Form frmEmpleado
                ForeColor       =   &H00800000&
                Height          =   255
                Left            =   120
-               TabIndex        =   202
+               TabIndex        =   201
                Top             =   3240
                Width           =   2415
             End
@@ -917,7 +916,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   255
                Left            =   3840
-               TabIndex        =   200
+               TabIndex        =   199
                Top             =   3240
                Width           =   975
             End
@@ -934,7 +933,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   255
                Left            =   4080
-               TabIndex        =   139
+               TabIndex        =   138
                Top             =   1440
                Visible         =   0   'False
                Width           =   375
@@ -953,7 +952,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   375
                Left            =   120
-               TabIndex        =   138
+               TabIndex        =   137
                Top             =   3600
                Width           =   3375
             End
@@ -971,7 +970,7 @@ Begin VB.Form frmEmpleado
                ForeColor       =   &H000000C0&
                Height          =   255
                Left            =   120
-               TabIndex        =   137
+               TabIndex        =   136
                Top             =   2760
                Width           =   2535
             End
@@ -988,7 +987,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   375
                Left            =   3720
-               TabIndex        =   136
+               TabIndex        =   135
                Top             =   2760
                Width           =   3375
             End
@@ -1004,7 +1003,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Codigo  Tipo Nomina"
                Height          =   255
                Left            =   5160
-               TabIndex        =   135
+               TabIndex        =   134
                Top             =   120
                Visible         =   0   'False
                Width           =   1695
@@ -1022,7 +1021,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   255
                Left            =   4440
-               TabIndex        =   134
+               TabIndex        =   133
                Top             =   1440
                Width           =   975
             End
@@ -1030,7 +1029,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Tipo Nóminas:"
                Height          =   255
                Left            =   120
-               TabIndex        =   133
+               TabIndex        =   132
                Top             =   240
                Width           =   1095
             End
@@ -1038,7 +1037,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Tipo de Pago:"
                Height          =   255
                Left            =   120
-               TabIndex        =   132
+               TabIndex        =   131
                Top             =   600
                Width           =   1095
             End
@@ -1055,7 +1054,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   255
                Left            =   3720
-               TabIndex        =   131
+               TabIndex        =   130
                Top             =   480
                Width           =   1815
             End
@@ -1073,7 +1072,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   255
                Left            =   3720
-               TabIndex        =   130
+               TabIndex        =   129
                Top             =   960
                Width           =   1815
             End
@@ -1089,7 +1088,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Salario Minimo"
                Height          =   375
                Left            =   120
-               TabIndex        =   129
+               TabIndex        =   128
                Top             =   1320
                Width           =   1335
             End
@@ -1097,7 +1096,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Excento INSS"
                Height          =   255
                Left            =   120
-               TabIndex        =   128
+               TabIndex        =   127
                Top             =   1680
                Width           =   1095
             End
@@ -1105,7 +1104,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Pago INSS Patronal"
                Height          =   375
                Left            =   120
-               TabIndex        =   127
+               TabIndex        =   126
                Top             =   2400
                Width           =   1575
             End
@@ -1113,7 +1112,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Excento IR"
                Height          =   255
                Left            =   120
-               TabIndex        =   126
+               TabIndex        =   125
                Top             =   2040
                Width           =   975
             End
@@ -1123,51 +1122,51 @@ Begin VB.Form frmEmpleado
             Left            =   -74880
             ScaleHeight     =   4275
             ScaleWidth      =   8955
-            TabIndex        =   73
+            TabIndex        =   72
             Top             =   480
             Width           =   9015
             Begin VB.CommandButton CmdCuentas 
                Caption         =   "Cuentas Contables"
                Height          =   375
                Left            =   4080
-               TabIndex        =   194
+               TabIndex        =   193
                Top             =   3000
                Width           =   1695
             End
             Begin MSComCtl2.DTPicker MaskEdContrato 
                Height          =   315
                Left            =   1320
-               TabIndex        =   191
+               TabIndex        =   190
                Top             =   720
                Width           =   1455
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   17104897
+               Format          =   16711681
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker MaskEdNacimiento 
                Height          =   315
                Left            =   1320
-               TabIndex        =   190
+               TabIndex        =   189
                Top             =   360
                Width           =   1455
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   17104897
+               Format          =   16711681
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker DTPFechaContratoVaca 
                Height          =   315
                Left            =   1320
-               TabIndex        =   189
+               TabIndex        =   188
                Top             =   1080
                Width           =   1455
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   17104897
+               Format          =   16711681
                CurrentDate     =   40213
             End
             Begin VB.CommandButton CmdIncapacidad 
@@ -1186,7 +1185,7 @@ Begin VB.Form frmEmpleado
                MouseIcon       =   "frmEmpleado.frx":DD19
                Picture         =   "frmEmpleado.frx":E15B
                Style           =   1  'Graphical
-               TabIndex        =   106
+               TabIndex        =   105
                ToolTipText     =   "Consulta Tabla Incapacidades"
                Top             =   1680
                Width           =   255
@@ -1195,7 +1194,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   4080
                MaxLength       =   2
-               TabIndex        =   81
+               TabIndex        =   80
                Top             =   1080
                Width           =   1335
             End
@@ -1203,7 +1202,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   4080
                MaxLength       =   150
-               TabIndex        =   80
+               TabIndex        =   79
                Top             =   720
                Width           =   1335
             End
@@ -1213,7 +1212,7 @@ Begin VB.Form frmEmpleado
                MaxLength       =   150
                MultiLine       =   -1  'True
                ScrollBars      =   2  'Vertical
-               TabIndex        =   79
+               TabIndex        =   78
                Top             =   1440
                Width           =   1335
             End
@@ -1223,14 +1222,14 @@ Begin VB.Form frmEmpleado
                MaxLength       =   150
                MultiLine       =   -1  'True
                ScrollBars      =   2  'Vertical
-               TabIndex        =   78
+               TabIndex        =   77
                Top             =   1080
                Width           =   1455
             End
             Begin VB.TextBox TxtSueldoInicial 
                Height          =   285
                Left            =   1320
-               TabIndex        =   77
+               TabIndex        =   76
                Text            =   "0.00"
                Top             =   2520
                Width           =   1455
@@ -1238,7 +1237,7 @@ Begin VB.Form frmEmpleado
             Begin VB.TextBox TxtSueldoActual 
                Height          =   285
                Left            =   1320
-               TabIndex        =   76
+               TabIndex        =   75
                Text            =   "0.00"
                Top             =   3240
                Width           =   1455
@@ -1246,7 +1245,7 @@ Begin VB.Form frmEmpleado
             Begin VB.TextBox TxtSueldoAnterior 
                Height          =   285
                Left            =   1320
-               TabIndex        =   75
+               TabIndex        =   74
                Text            =   "0.00"
                Top             =   2880
                Width           =   1455
@@ -1256,7 +1255,7 @@ Begin VB.Form frmEmpleado
                ItemData        =   "frmEmpleado.frx":E59D
                Left            =   7080
                List            =   "frmEmpleado.frx":E5A7
-               TabIndex        =   74
+               TabIndex        =   73
                Top             =   1680
                Width           =   1335
             End
@@ -1264,7 +1263,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":E5B3
                Height          =   315
                Left            =   1320
-               TabIndex        =   82
+               TabIndex        =   81
                Top             =   1440
                Width           =   1455
                _ExtentX        =   2566
@@ -1277,7 +1276,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":E5CA
                Height          =   315
                Left            =   1320
-               TabIndex        =   83
+               TabIndex        =   82
                Top             =   1800
                Width           =   1455
                _ExtentX        =   2566
@@ -1289,7 +1288,7 @@ Begin VB.Form frmEmpleado
             Begin MSMask.MaskEdBox MaskEdAumento 
                Height          =   285
                Left            =   4080
-               TabIndex        =   84
+               TabIndex        =   83
                Top             =   2040
                Width           =   1335
                _ExtentX        =   2355
@@ -1302,7 +1301,7 @@ Begin VB.Form frmEmpleado
             Begin MSMask.MaskEdBox MaskEdBaja 
                Height          =   285
                Left            =   4080
-               TabIndex        =   85
+               TabIndex        =   84
                Top             =   360
                Width           =   1335
                _ExtentX        =   2355
@@ -1315,7 +1314,7 @@ Begin VB.Form frmEmpleado
             Begin MSMask.MaskEdBox MaskEdFinalSusp 
                Height          =   285
                Left            =   6960
-               TabIndex        =   86
+               TabIndex        =   85
                Top             =   720
                Width           =   1335
                _ExtentX        =   2355
@@ -1328,7 +1327,7 @@ Begin VB.Form frmEmpleado
             Begin MSMask.MaskEdBox MaskEdSuspencion 
                Height          =   285
                Left            =   6960
-               TabIndex        =   87
+               TabIndex        =   86
                Top             =   360
                Width           =   1335
                _ExtentX        =   2355
@@ -1342,7 +1341,7 @@ Begin VB.Form frmEmpleado
                Bindings        =   "frmEmpleado.frx":E5E1
                Height          =   315
                Left            =   1320
-               TabIndex        =   88
+               TabIndex        =   87
                Top             =   2160
                Width           =   1455
                _ExtentX        =   2566
@@ -1354,7 +1353,7 @@ Begin VB.Form frmEmpleado
             Begin XtremeSuiteControls.CheckBox ChkSueldoActual 
                Height          =   255
                Left            =   1320
-               TabIndex        =   197
+               TabIndex        =   196
                Top             =   3600
                Width           =   4335
                _Version        =   786432
@@ -1368,7 +1367,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Contrato Vac:"
                Height          =   255
                Left            =   120
-               TabIndex        =   187
+               TabIndex        =   186
                Top             =   1080
                Width           =   975
             End
@@ -1376,7 +1375,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Nacimiento:"
                Height          =   255
                Left            =   240
-               TabIndex        =   105
+               TabIndex        =   104
                Top             =   360
                Width           =   975
             End
@@ -1384,7 +1383,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Contrato:"
                Height          =   255
                Left            =   480
-               TabIndex        =   104
+               TabIndex        =   103
                Top             =   720
                Width           =   735
             End
@@ -1392,7 +1391,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Fecha  Aumento"
                Height          =   255
                Left            =   2880
-               TabIndex        =   103
+               TabIndex        =   102
                Top             =   2040
                Width           =   1215
             End
@@ -1400,7 +1399,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Inicio  Suspención"
                Height          =   255
                Left            =   5520
-               TabIndex        =   102
+               TabIndex        =   101
                Top             =   360
                Width           =   1455
             End
@@ -1408,7 +1407,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Fecha Baja"
                Height          =   255
                Left            =   3120
-               TabIndex        =   101
+               TabIndex        =   100
                Top             =   360
                Width           =   855
             End
@@ -1416,7 +1415,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cargo anterior"
                Height          =   255
                Left            =   120
-               TabIndex        =   100
+               TabIndex        =   99
                Top             =   1800
                Width           =   1215
             End
@@ -1424,7 +1423,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cargo Actual"
                Height          =   255
                Left            =   240
-               TabIndex        =   99
+               TabIndex        =   98
                Top             =   2160
                Width           =   1095
             End
@@ -1432,7 +1431,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Motivo Aumento:"
                Height          =   495
                Left            =   3240
-               TabIndex        =   98
+               TabIndex        =   97
                Top             =   1440
                Width           =   735
             End
@@ -1440,7 +1439,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Motivo Suspención"
                Height          =   375
                Left            =   5760
-               TabIndex        =   97
+               TabIndex        =   96
                Top             =   1080
                Width           =   1095
             End
@@ -1448,7 +1447,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Motivo Baja"
                Height          =   255
                Left            =   3120
-               TabIndex        =   96
+               TabIndex        =   95
                Top             =   720
                Width           =   1095
             End
@@ -1456,7 +1455,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Sueldo Inicial"
                Height          =   255
                Left            =   120
-               TabIndex        =   95
+               TabIndex        =   94
                Top             =   2520
                Width           =   1215
             End
@@ -1464,7 +1463,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Sueldo Anterior"
                Height          =   255
                Left            =   120
-               TabIndex        =   94
+               TabIndex        =   93
                Top             =   2880
                Width           =   1215
             End
@@ -1472,7 +1471,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Sueldo Actual"
                Height          =   255
                Left            =   120
-               TabIndex        =   93
+               TabIndex        =   92
                Top             =   3240
                Width           =   1095
             End
@@ -1480,7 +1479,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Fin Suspención"
                Height          =   255
                Left            =   5760
-               TabIndex        =   92
+               TabIndex        =   91
                Top             =   720
                Width           =   1095
             End
@@ -1488,7 +1487,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cargo Inicial"
                Height          =   255
                Left            =   240
-               TabIndex        =   91
+               TabIndex        =   90
                Top             =   1440
                Width           =   1095
             End
@@ -1496,7 +1495,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Aumento"
                Height          =   255
                Left            =   3240
-               TabIndex        =   90
+               TabIndex        =   89
                Top             =   1080
                Width           =   735
             End
@@ -1504,7 +1503,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Incapcidades"
                Height          =   255
                Left            =   6000
-               TabIndex        =   89
+               TabIndex        =   88
                Top             =   1680
                Width           =   1095
             End
@@ -1514,14 +1513,22 @@ Begin VB.Form frmEmpleado
             Left            =   120
             ScaleHeight     =   4515
             ScaleWidth      =   9075
-            TabIndex        =   46
+            TabIndex        =   45
             Top             =   360
             Width           =   9135
+            Begin VB.TextBox Text1 
+               Height          =   315
+               Left            =   3600
+               TabIndex        =   218
+               Top             =   0
+               Visible         =   0   'False
+               Width           =   3375
+            End
             Begin VB.TextBox TxtNumHijos 
                BackColor       =   &H00FFFFFF&
                Height          =   375
                Left            =   6480
-               TabIndex        =   219
+               TabIndex        =   216
                Top             =   3600
                Width           =   1935
             End
@@ -1529,186 +1536,18 @@ Begin VB.Form frmEmpleado
                BackColor       =   &H00FFFFFF&
                Height          =   375
                Left            =   1440
-               TabIndex        =   217
+               TabIndex        =   214
                Top             =   4080
                Width           =   1935
-            End
-            Begin VB.ComboBox DBCodigoEmpleado7 
-               DataSource      =   "DtaEmpleado"
-               Height          =   315
-               ItemData        =   "frmEmpleado.frx":E5F8
-               Left            =   2640
-               List            =   "frmEmpleado.frx":E5FA
-               TabIndex        =   208
-               Text            =   "Combo1"
-               Top             =   120
-               Visible         =   0   'False
-               Width           =   3615
-            End
-            Begin VB.TextBox Text1 
-               Height          =   315
-               Left            =   3600
-               TabIndex        =   205
-               Top             =   0
-               Visible         =   0   'False
-               Width           =   3375
             End
             Begin VB.TextBox TxtCuentaBanco 
                BackColor       =   &H00FFFFFF&
                Height          =   285
                Left            =   6480
                MaxLength       =   30
-               TabIndex        =   195
+               TabIndex        =   194
                Top             =   4080
                Width           =   2415
-            End
-            Begin TrueOleDBList80.TDBCombo DBCodigoEmpleado5 
-               Bindings        =   "frmEmpleado.frx":E5FC
-               Height          =   315
-               Left            =   2160
-               TabIndex        =   0
-               Top             =   0
-               Visible         =   0   'False
-               Width           =   3615
-               _ExtentX        =   6376
-               _ExtentY        =   556
-               _LayoutType     =   0
-               _RowHeight      =   -2147483647
-               _WasPersistedAsPixels=   0
-               _DropdownWidth  =   10583
-               _EDITHEIGHT     =   556
-               _GAPHEIGHT      =   53
-               Columns(0)._VlistStyle=   0
-               Columns(0)._MaxComboItems=   5
-               Columns(0).DataField=   ""
-               Columns(0)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
-               Columns(1)._VlistStyle=   0
-               Columns(1)._MaxComboItems=   5
-               Columns(1).DataField=   ""
-               Columns(1)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
-               Columns.Count   =   2
-               Splits(0)._UserFlags=   0
-               Splits(0).ExtendRightColumn=   -1  'True
-               Splits(0).AllowRowSizing=   0   'False
-               Splits(0)._PropDict=   "_ColumnProps,515,0;_UserFlags,518,3"
-               Splits(0)._ColumnProps(0)=   "Columns.Count=2"
-               Splits(0)._ColumnProps(1)=   "Column(0).Width=2725"
-               Splits(0)._ColumnProps(2)=   "Column(0).DividerColor=0"
-               Splits(0)._ColumnProps(3)=   "Column(0)._WidthInPix=2646"
-               Splits(0)._ColumnProps(4)=   "Column(0)._EditAlways=0"
-               Splits(0)._ColumnProps(5)=   "Column(0).Order=1"
-               Splits(0)._ColumnProps(6)=   "Column(1).Width=2725"
-               Splits(0)._ColumnProps(7)=   "Column(1).DividerColor=0"
-               Splits(0)._ColumnProps(8)=   "Column(1)._WidthInPix=2646"
-               Splits(0)._ColumnProps(9)=   "Column(1)._EditAlways=0"
-               Splits(0)._ColumnProps(10)=   "Column(1).Order=2"
-               Splits.Count    =   1
-               Appearance      =   1
-               BorderStyle     =   1
-               ComboStyle      =   0
-               AutoCompletion  =   0   'False
-               LimitToList     =   0   'False
-               ColumnHeaders   =   -1  'True
-               ColumnFooters   =   0   'False
-               DataMode        =   0
-               DefColWidth     =   0
-               Enabled         =   -1  'True
-               HeadLines       =   1
-               FootLines       =   1
-               RowDividerStyle =   0
-               Caption         =   ""
-               EditFont        =   "Size=8.25,Charset=0,Weight=400,Underline=0,Italic=0,Strikethrough=0,Name=MS Sans Serif"
-               LayoutName      =   ""
-               LayoutFileName  =   ""
-               MultipleLines   =   0
-               EmptyRows       =   -1  'True
-               CellTips        =   0
-               AutoSize        =   -1  'True
-               ListField       =   "CodEmpleado1"
-               BoundColumn     =   ""
-               IntegralHeight  =   0   'False
-               CellTipsWidth   =   0
-               CellTipsDelay   =   1000
-               AutoDropdown    =   0   'False
-               RowTracking     =   -1  'True
-               RightToLeft     =   0   'False
-               RowMember       =   ""
-               MouseIcon       =   0
-               MouseIcon.vt    =   3
-               MousePointer    =   0
-               MatchEntryTimeout=   2000
-               OLEDragMode     =   0
-               OLEDropMode     =   0
-               AnimateWindow   =   0
-               AnimateWindowDirection=   0
-               AnimateWindowTime=   200
-               AnimateWindowClose=   0
-               DropdownPosition=   1
-               Locked          =   0   'False
-               ScrollTrack     =   0   'False
-               RowDividerColor =   14215660
-               RowSubDividerColor=   14215660
-               AddItemSeparator=   ";"
-               _PropDict       =   $"frmEmpleado.frx":E617
-               _StyleDefs(0)   =   "_StyleRoot:id=0,.parent=-1,.alignment=3,.valignment=0,.bgcolor=&H80000005&"
-               _StyleDefs(1)   =   ":id=0,.fgcolor=&H80000008&,.wraptext=0,.locked=0,.transparentBmp=0"
-               _StyleDefs(2)   =   ":id=0,.fgpicPosition=0,.bgpicMode=0,.appearance=0,.borderSize=0,.ellipsis=0"
-               _StyleDefs(3)   =   ":id=0,.borderColor=&H80000005&,.borderType=0,.bold=0,.fontsize=825,.italic=0"
-               _StyleDefs(4)   =   ":id=0,.underline=0,.strikethrough=0,.charset=0"
-               _StyleDefs(5)   =   ":id=0,.fontname=MS Sans Serif"
-               _StyleDefs(6)   =   "Style:id=1,.parent=0,.namedParent=33"
-               _StyleDefs(7)   =   "CaptionStyle:id=4,.parent=2,.namedParent=37"
-               _StyleDefs(8)   =   "HeadingStyle:id=2,.parent=1,.namedParent=34"
-               _StyleDefs(9)   =   "FooterStyle:id=3,.parent=1,.namedParent=35"
-               _StyleDefs(10)  =   "InactiveStyle:id=5,.parent=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
-               _StyleDefs(11)  =   "SelectedStyle:id=6,.parent=1,.namedParent=36"
-               _StyleDefs(12)  =   "EditorStyle:id=7,.parent=1"
-               _StyleDefs(13)  =   "HighlightRowStyle:id=8,.parent=1,.namedParent=38"
-               _StyleDefs(14)  =   "EvenRowStyle:id=9,.parent=1,.namedParent=39"
-               _StyleDefs(15)  =   "OddRowStyle:id=10,.parent=1,.namedParent=40"
-               _StyleDefs(16)  =   "RecordSelectorStyle:id=11,.parent=2,.namedParent=41"
-               _StyleDefs(17)  =   "FilterBarStyle:id=12,.parent=1,.namedParent=42"
-               _StyleDefs(18)  =   "Splits(0).Style:id=13,.parent=1"
-               _StyleDefs(19)  =   "Splits(0).CaptionStyle:id=22,.parent=4"
-               _StyleDefs(20)  =   "Splits(0).HeadingStyle:id=14,.parent=2"
-               _StyleDefs(21)  =   "Splits(0).FooterStyle:id=15,.parent=3"
-               _StyleDefs(22)  =   "Splits(0).InactiveStyle:id=16,.parent=5"
-               _StyleDefs(23)  =   "Splits(0).SelectedStyle:id=18,.parent=6"
-               _StyleDefs(24)  =   "Splits(0).EditorStyle:id=17,.parent=7"
-               _StyleDefs(25)  =   "Splits(0).HighlightRowStyle:id=19,.parent=8"
-               _StyleDefs(26)  =   "Splits(0).EvenRowStyle:id=20,.parent=9"
-               _StyleDefs(27)  =   "Splits(0).OddRowStyle:id=21,.parent=10"
-               _StyleDefs(28)  =   "Splits(0).RecordSelectorStyle:id=23,.parent=11"
-               _StyleDefs(29)  =   "Splits(0).FilterBarStyle:id=24,.parent=12"
-               _StyleDefs(30)  =   "Splits(0).Columns(0).Style:id=28,.parent=13"
-               _StyleDefs(31)  =   "Splits(0).Columns(0).HeadingStyle:id=25,.parent=14"
-               _StyleDefs(32)  =   "Splits(0).Columns(0).FooterStyle:id=26,.parent=15"
-               _StyleDefs(33)  =   "Splits(0).Columns(0).EditorStyle:id=27,.parent=17"
-               _StyleDefs(34)  =   "Splits(0).Columns(1).Style:id=32,.parent=13"
-               _StyleDefs(35)  =   "Splits(0).Columns(1).HeadingStyle:id=29,.parent=14"
-               _StyleDefs(36)  =   "Splits(0).Columns(1).FooterStyle:id=30,.parent=15"
-               _StyleDefs(37)  =   "Splits(0).Columns(1).EditorStyle:id=31,.parent=17"
-               _StyleDefs(38)  =   "Named:id=33:Normal"
-               _StyleDefs(39)  =   ":id=33,.parent=0"
-               _StyleDefs(40)  =   "Named:id=34:Heading"
-               _StyleDefs(41)  =   ":id=34,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
-               _StyleDefs(42)  =   ":id=34,.wraptext=-1"
-               _StyleDefs(43)  =   "Named:id=35:Footing"
-               _StyleDefs(44)  =   ":id=35,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
-               _StyleDefs(45)  =   "Named:id=36:Selected"
-               _StyleDefs(46)  =   ":id=36,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
-               _StyleDefs(47)  =   "Named:id=37:Caption"
-               _StyleDefs(48)  =   ":id=37,.parent=34,.alignment=2"
-               _StyleDefs(49)  =   "Named:id=38:HighlightRow"
-               _StyleDefs(50)  =   ":id=38,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
-               _StyleDefs(51)  =   "Named:id=39:EvenRow"
-               _StyleDefs(52)  =   ":id=39,.parent=33,.bgcolor=&HFFFF00&"
-               _StyleDefs(53)  =   "Named:id=40:OddRow"
-               _StyleDefs(54)  =   ":id=40,.parent=33"
-               _StyleDefs(55)  =   "Named:id=41:RecordSelector"
-               _StyleDefs(56)  =   ":id=41,.parent=34"
-               _StyleDefs(57)  =   "Named:id=42:FilterBar"
-               _StyleDefs(58)  =   ":id=42,.parent=33"
             End
             Begin VB.CommandButton CmdDisponibles 
                Caption         =   "No Disponible"
@@ -1723,7 +1562,7 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   330
                Left            =   2040
-               TabIndex        =   185
+               TabIndex        =   184
                Top             =   1440
                Width           =   1300
             End
@@ -1731,7 +1570,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Subsidio"
                Height          =   255
                Left            =   3360
-               TabIndex        =   56
+               TabIndex        =   55
                Top             =   1560
                Width           =   1215
             End
@@ -1740,14 +1579,14 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   6480
                MaxLength       =   20
-               TabIndex        =   10
+               TabIndex        =   9
                Top             =   1320
                Width           =   2055
             End
             Begin VB.TextBox TxtCodCargo 
                Height          =   285
                Left            =   600
-               TabIndex        =   55
+               TabIndex        =   54
                Text            =   "TxtCodCargo"
                Top             =   480
                Visible         =   0   'False
@@ -1758,7 +1597,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   1440
                MaxLength       =   20
-               TabIndex        =   2
+               TabIndex        =   1
                Top             =   2640
                Width           =   2535
             End
@@ -1767,7 +1606,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   1440
                MaxLength       =   20
-               TabIndex        =   3
+               TabIndex        =   2
                Top             =   3000
                Width           =   2535
             End
@@ -1776,17 +1615,17 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   1440
                MaxLength       =   20
-               TabIndex        =   4
+               TabIndex        =   3
                Top             =   3360
                Width           =   2535
             End
             Begin VB.ComboBox CmbSindicalista 
                BackColor       =   &H00FFFFFF&
                Height          =   315
-               ItemData        =   "frmEmpleado.frx":E6C1
+               ItemData        =   "frmEmpleado.frx":E5F8
                Left            =   6480
-               List            =   "frmEmpleado.frx":E6CB
-               TabIndex        =   15
+               List            =   "frmEmpleado.frx":E602
+               TabIndex        =   14
                Top             =   3240
                Width           =   1575
             End
@@ -1795,14 +1634,14 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   1440
                MaxLength       =   200
-               TabIndex        =   5
+               TabIndex        =   4
                Top             =   3720
                Width           =   3135
             End
             Begin VB.TextBox TxtCodDepartamento 
                Height          =   285
                Left            =   360
-               TabIndex        =   54
+               TabIndex        =   53
                Text            =   "TxtCodDepartamento"
                Top             =   840
                Visible         =   0   'False
@@ -1813,17 +1652,17 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   6480
                MaxLength       =   20
-               TabIndex        =   11
+               TabIndex        =   10
                Top             =   1680
                Width           =   2055
             End
             Begin VB.ComboBox CmbSexo 
                BackColor       =   &H00FFFFFF&
                Height          =   315
-               ItemData        =   "frmEmpleado.frx":E6D7
+               ItemData        =   "frmEmpleado.frx":E60E
                Left            =   7320
-               List            =   "frmEmpleado.frx":E6E1
-               TabIndex        =   9
+               List            =   "frmEmpleado.frx":E618
+               TabIndex        =   8
                Top             =   960
                Width           =   1455
             End
@@ -1832,7 +1671,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   7440
                MaxLength       =   10
-               TabIndex        =   8
+               TabIndex        =   7
                Top             =   600
                Width           =   1335
             End
@@ -1841,7 +1680,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   7440
                MaxLength       =   12
-               TabIndex        =   7
+               TabIndex        =   6
                Top             =   240
                Width           =   1335
             End
@@ -1850,7 +1689,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   1440
                MaxLength       =   20
-               TabIndex        =   1
+               TabIndex        =   0
                Top             =   2280
                Width           =   2535
             End
@@ -1859,7 +1698,7 @@ Begin VB.Form frmEmpleado
                Height          =   285
                Left            =   6480
                MaxLength       =   30
-               TabIndex        =   12
+               TabIndex        =   11
                Top             =   2040
                Width           =   2415
             End
@@ -1875,9 +1714,9 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   300
                Left            =   5160
-               Picture         =   "frmEmpleado.frx":E6FA
+               Picture         =   "frmEmpleado.frx":E631
                Style           =   1  'Graphical
-               TabIndex        =   53
+               TabIndex        =   52
                Top             =   1920
                Width           =   375
             End
@@ -1894,26 +1733,26 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   1095
                Left            =   2160
-               TabIndex        =   50
+               TabIndex        =   49
                Top             =   120
                Width           =   1695
                Begin VB.CommandButton AgregaFoto 
                   Caption         =   "Agregar"
-                  DownPicture     =   "frmEmpleado.frx":E848
+                  DownPicture     =   "frmEmpleado.frx":E77F
                   Height          =   375
                   Left            =   120
-                  Picture         =   "frmEmpleado.frx":1032A
-                  TabIndex        =   52
+                  Picture         =   "frmEmpleado.frx":10261
+                  TabIndex        =   51
                   Top             =   240
                   Width           =   1455
                End
                Begin VB.CommandButton EliminaFoto 
                   Caption         =   "Borrar"
-                  DownPicture     =   "frmEmpleado.frx":11E0C
+                  DownPicture     =   "frmEmpleado.frx":11D43
                   Height          =   375
                   Left            =   120
-                  Picture         =   "frmEmpleado.frx":138EE
-                  TabIndex        =   51
+                  Picture         =   "frmEmpleado.frx":13825
+                  TabIndex        =   50
                   Top             =   600
                   Width           =   1455
                End
@@ -1921,7 +1760,7 @@ Begin VB.Form frmEmpleado
             Begin VB.TextBox TxtCodEmpleado 
                Height          =   285
                Left            =   360
-               TabIndex        =   6
+               TabIndex        =   5
                Top             =   480
                Visible         =   0   'False
                Width           =   3135
@@ -1929,35 +1768,35 @@ Begin VB.Form frmEmpleado
             Begin VB.Frame Frame11 
                Height          =   1095
                Left            =   3840
-               TabIndex        =   47
+               TabIndex        =   46
                Top             =   120
                Width           =   1695
                Begin VB.CommandButton CmdAnotaciones 
                   Caption         =   "Anotar"
-                  DownPicture     =   "frmEmpleado.frx":153D0
+                  DownPicture     =   "frmEmpleado.frx":15307
                   Height          =   375
                   Left            =   120
-                  Picture         =   "frmEmpleado.frx":16EB2
-                  TabIndex        =   49
+                  Picture         =   "frmEmpleado.frx":16DE9
+                  TabIndex        =   48
                   Top             =   240
                   Width           =   1455
                End
                Begin VB.CommandButton CmdCarnet 
                   Caption         =   "Carnet"
-                  DownPicture     =   "frmEmpleado.frx":18994
+                  DownPicture     =   "frmEmpleado.frx":188CB
                   Height          =   375
                   Left            =   120
-                  Picture         =   "frmEmpleado.frx":1A476
-                  TabIndex        =   48
+                  Picture         =   "frmEmpleado.frx":1A3AD
+                  TabIndex        =   47
                   Top             =   600
                   Width           =   1455
                End
             End
             Begin MSDataListLib.DataCombo DBCCargo 
-               Bindings        =   "frmEmpleado.frx":1BF58
+               Bindings        =   "frmEmpleado.frx":1BE8F
                Height          =   315
                Left            =   6480
-               TabIndex        =   14
+               TabIndex        =   13
                Top             =   2880
                Width           =   1575
                _ExtentX        =   2778
@@ -1967,10 +1806,10 @@ Begin VB.Form frmEmpleado
                Text            =   ""
             End
             Begin MSDataListLib.DataCombo DBCDepartamento 
-               Bindings        =   "frmEmpleado.frx":1BF6F
+               Bindings        =   "frmEmpleado.frx":1BEA6
                Height          =   315
                Left            =   6480
-               TabIndex        =   13
+               TabIndex        =   12
                Top             =   2520
                Width           =   1575
                _ExtentX        =   2778
@@ -1980,10 +1819,10 @@ Begin VB.Form frmEmpleado
                Text            =   ""
             End
             Begin MSDataListLib.DataCombo DBCodigoEmpleado 
-               Bindings        =   "frmEmpleado.frx":1BF8D
+               Bindings        =   "frmEmpleado.frx":1BEC4
                Height          =   315
                Left            =   1440
-               TabIndex        =   209
+               TabIndex        =   206
                Top             =   1920
                Width           =   3735
                _ExtentX        =   6588
@@ -1996,7 +1835,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "No Hijos"
                Height          =   255
                Left            =   5520
-               TabIndex        =   220
+               TabIndex        =   217
                Top             =   3600
                Width           =   855
             End
@@ -2004,7 +1843,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Telefono:"
                Height          =   255
                Left            =   600
-               TabIndex        =   218
+               TabIndex        =   215
                Top             =   4080
                Width           =   855
             End
@@ -2012,7 +1851,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cuenta Banco"
                Height          =   255
                Left            =   5160
-               TabIndex        =   196
+               TabIndex        =   195
                Top             =   4080
                Width           =   1215
             End
@@ -2020,7 +1859,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Segundo Apellido:"
                Height          =   255
                Left            =   120
-               TabIndex        =   72
+               TabIndex        =   71
                Top             =   3360
                Width           =   1335
             End
@@ -2028,7 +1867,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Primer Apellido:"
                Height          =   375
                Left            =   240
-               TabIndex        =   71
+               TabIndex        =   70
                Top             =   3000
                Width           =   1095
             End
@@ -2036,7 +1875,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Segundo Nombre:"
                Height          =   255
                Left            =   120
-               TabIndex        =   70
+               TabIndex        =   69
                Top             =   2640
                Width           =   1455
             End
@@ -2044,7 +1883,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Direccion:"
                Height          =   255
                Left            =   600
-               TabIndex        =   69
+               TabIndex        =   68
                Top             =   3720
                Width           =   975
             End
@@ -2052,7 +1891,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Primer Nombre:"
                Height          =   255
                Left            =   240
-               TabIndex        =   68
+               TabIndex        =   67
                Top             =   2280
                Width           =   1095
             End
@@ -2060,7 +1899,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Numero :"
                Height          =   255
                Left            =   600
-               TabIndex        =   67
+               TabIndex        =   66
                Top             =   1920
                Width           =   1215
             End
@@ -2076,7 +1915,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Sindicalista:"
                Height          =   255
                Left            =   5400
-               TabIndex        =   66
+               TabIndex        =   65
                Top             =   3240
                Width           =   1095
             End
@@ -2084,7 +1923,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cargo:"
                Height          =   255
                Left            =   5640
-               TabIndex        =   65
+               TabIndex        =   64
                Top             =   2880
                Width           =   735
             End
@@ -2092,7 +1931,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Depto:"
                Height          =   255
                Left            =   5640
-               TabIndex        =   64
+               TabIndex        =   63
                Top             =   2520
                Width           =   735
             End
@@ -2100,7 +1939,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "INSS #"
                Height          =   255
                Left            =   5760
-               TabIndex        =   63
+               TabIndex        =   62
                Top             =   1680
                Width           =   735
             End
@@ -2108,7 +1947,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "R.U.C. #"
                Height          =   255
                Left            =   5640
-               TabIndex        =   62
+               TabIndex        =   61
                Top             =   1320
                Width           =   855
             End
@@ -2116,7 +1955,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Sexo:"
                Height          =   255
                Left            =   6720
-               TabIndex        =   61
+               TabIndex        =   60
                Top             =   960
                Width           =   495
             End
@@ -2124,7 +1963,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cód.Postal:"
                Height          =   255
                Left            =   6480
-               TabIndex        =   60
+               TabIndex        =   59
                Top             =   600
                Width           =   855
             End
@@ -2132,7 +1971,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Nacionalidad:"
                Height          =   255
                Left            =   6000
-               TabIndex        =   59
+               TabIndex        =   58
                Top             =   240
                Width           =   975
             End
@@ -2140,7 +1979,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cédula #"
                Height          =   375
                Left            =   5640
-               TabIndex        =   58
+               TabIndex        =   57
                Top             =   2040
                Width           =   735
             End
@@ -2158,7 +1997,7 @@ Begin VB.Form frmEmpleado
                ForeColor       =   &H000000FF&
                Height          =   375
                Left            =   3360
-               TabIndex        =   57
+               TabIndex        =   56
                Top             =   1200
                Visible         =   0   'False
                Width           =   1455
@@ -2166,53 +2005,53 @@ Begin VB.Form frmEmpleado
          End
          Begin VB.CommandButton CmdEliminarDeduccion 
             Caption         =   "Borrar"
-            DownPicture     =   "frmEmpleado.frx":1BFA8
+            DownPicture     =   "frmEmpleado.frx":1BEDF
             Enabled         =   0   'False
             Height          =   375
             Left            =   -71400
-            Picture         =   "frmEmpleado.frx":1DA8A
-            TabIndex        =   32
+            Picture         =   "frmEmpleado.frx":1D9C1
+            TabIndex        =   31
             Top             =   3540
             Width           =   1455
          End
          Begin VB.CommandButton CmdEliminarIncentivo 
             Caption         =   "Borrar"
-            DownPicture     =   "frmEmpleado.frx":1F56C
+            DownPicture     =   "frmEmpleado.frx":1F4A3
             Enabled         =   0   'False
             Height          =   375
             Left            =   -71160
-            Picture         =   "frmEmpleado.frx":2104E
-            TabIndex        =   31
+            Picture         =   "frmEmpleado.frx":20F85
+            TabIndex        =   30
             Top             =   3660
             Width           =   1455
          End
          Begin VB.CommandButton CmdEliminarSubsidio 
             Caption         =   "Borrar"
-            DownPicture     =   "frmEmpleado.frx":22B30
+            DownPicture     =   "frmEmpleado.frx":22A67
             Enabled         =   0   'False
             Height          =   375
             Left            =   -71160
-            Picture         =   "frmEmpleado.frx":24612
-            TabIndex        =   30
+            Picture         =   "frmEmpleado.frx":24549
+            TabIndex        =   29
             Top             =   3660
             Width           =   1455
          End
          Begin VB.CommandButton CmdHistoIncentivos 
             Caption         =   "HISTORICO"
-            DownPicture     =   "frmEmpleado.frx":260F4
+            DownPicture     =   "frmEmpleado.frx":2602B
             Height          =   375
             Left            =   -74880
-            Picture         =   "frmEmpleado.frx":27BD6
-            TabIndex        =   29
+            Picture         =   "frmEmpleado.frx":27B0D
+            TabIndex        =   28
             Top             =   3660
             Visible         =   0   'False
             Width           =   1455
          End
          Begin TrueOleDBGrid70.TDBGrid DbgrSubsidios 
-            Bindings        =   "frmEmpleado.frx":296B8
+            Bindings        =   "frmEmpleado.frx":295EF
             Height          =   2655
             Left            =   -71280
-            TabIndex        =   25
+            TabIndex        =   24
             Top             =   900
             Width           =   5415
             _ExtentX        =   9551
@@ -2332,10 +2171,10 @@ Begin VB.Form frmEmpleado
             _StyleDefs(64)  =   ":id=42,.parent=33"
          End
          Begin TrueOleDBGrid70.TDBGrid DbgDeducciones 
-            Bindings        =   "frmEmpleado.frx":296D9
+            Bindings        =   "frmEmpleado.frx":29610
             Height          =   2535
             Left            =   -71400
-            TabIndex        =   26
+            TabIndex        =   25
             Top             =   900
             Width           =   5535
             _ExtentX        =   9763
@@ -2455,10 +2294,10 @@ Begin VB.Form frmEmpleado
             _StyleDefs(64)  =   ":id=42,.parent=33"
          End
          Begin TrueOleDBGrid70.TDBGrid DbGIncentivos 
-            Bindings        =   "frmEmpleado.frx":296FB
+            Bindings        =   "frmEmpleado.frx":29632
             Height          =   2655
             Left            =   -71280
-            TabIndex        =   27
+            TabIndex        =   26
             Top             =   900
             Width           =   5415
             _ExtentX        =   9551
@@ -2578,10 +2417,10 @@ Begin VB.Form frmEmpleado
             _StyleDefs(64)  =   ":id=42,.parent=33"
          End
          Begin TrueOleDBGrid70.TDBGrid DbgrLibreta 
-            Bindings        =   "frmEmpleado.frx":2971D
+            Bindings        =   "frmEmpleado.frx":29654
             Height          =   1575
             Left            =   -74640
-            TabIndex        =   28
+            TabIndex        =   27
             Top             =   3300
             Width           =   8775
             _ExtentX        =   15478
@@ -2703,7 +2542,7 @@ Begin VB.Form frmEmpleado
          Begin TabDlg.SSTab SSTab2 
             Height          =   2295
             Left            =   -69600
-            TabIndex        =   33
+            TabIndex        =   32
             Top             =   780
             Width           =   3615
             _ExtentX        =   6376
@@ -2713,7 +2552,7 @@ Begin VB.Form frmEmpleado
             TabsPerRow      =   2
             TabHeight       =   520
             TabCaption(0)   =   "Préstamo"
-            TabPicture(0)   =   "frmEmpleado.frx":2973A
+            TabPicture(0)   =   "frmEmpleado.frx":29671
             Tab(0).ControlEnabled=   -1  'True
             Tab(0).Control(0)=   "CmdAfectuar"
             Tab(0).Control(0).Enabled=   0   'False
@@ -2725,22 +2564,22 @@ Begin VB.Form frmEmpleado
             Tab(0).Control(3).Enabled=   0   'False
             Tab(0).ControlCount=   4
             TabCaption(1)   =   "Exportar"
-            TabPicture(1)   =   "frmEmpleado.frx":29756
+            TabPicture(1)   =   "frmEmpleado.frx":2968D
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "TxtCreditoPrestamo"
-            Tab(1).Control(1)=   "TxtDebitoPrestamo"
-            Tab(1).Control(2)=   "CmdExportar"
-            Tab(1).Control(3)=   "TxtRuta"
-            Tab(1).Control(4)=   "CmdRuta"
-            Tab(1).Control(5)=   "Label61"
-            Tab(1).Control(6)=   "Label65"
-            Tab(1).Control(7)=   "Label60"
+            Tab(1).Control(0)=   "Label60"
+            Tab(1).Control(1)=   "Label65"
+            Tab(1).Control(2)=   "Label61"
+            Tab(1).Control(3)=   "CmdRuta"
+            Tab(1).Control(4)=   "TxtRuta"
+            Tab(1).Control(5)=   "CmdExportar"
+            Tab(1).Control(6)=   "TxtDebitoPrestamo"
+            Tab(1).Control(7)=   "TxtCreditoPrestamo"
             Tab(1).ControlCount=   8
             Begin VB.TextBox TxtCreditoPrestamo 
                Height          =   375
                Left            =   -73560
                MaxLength       =   25
-               TabIndex        =   42
+               TabIndex        =   41
                Top             =   960
                Width           =   1935
             End
@@ -2748,64 +2587,64 @@ Begin VB.Form frmEmpleado
                Height          =   375
                Left            =   -73560
                MaxLength       =   25
-               TabIndex        =   41
+               TabIndex        =   40
                Top             =   480
                Width           =   1935
             End
             Begin VB.CommandButton CmdEstadoPrestamo 
-               DownPicture     =   "frmEmpleado.frx":29772
+               DownPicture     =   "frmEmpleado.frx":296A9
                Height          =   375
                Left            =   600
-               Picture         =   "frmEmpleado.frx":2C574
+               Picture         =   "frmEmpleado.frx":2C4AB
                Style           =   1  'Graphical
-               TabIndex        =   40
+               TabIndex        =   39
                Top             =   1560
                Width           =   2415
             End
             Begin VB.CommandButton CmdCancelarPrestamo 
-               DownPicture     =   "frmEmpleado.frx":2F376
+               DownPicture     =   "frmEmpleado.frx":2F2AD
                Height          =   375
                Left            =   600
-               Picture         =   "frmEmpleado.frx":32178
+               Picture         =   "frmEmpleado.frx":320AF
                Style           =   1  'Graphical
-               TabIndex        =   39
+               TabIndex        =   38
                Top             =   1200
                Width           =   2415
             End
             Begin VB.CommandButton CmdEditarPresLinea 
-               DownPicture     =   "frmEmpleado.frx":34F7A
+               DownPicture     =   "frmEmpleado.frx":34EB1
                Height          =   375
                Left            =   600
-               Picture         =   "frmEmpleado.frx":37D7C
+               Picture         =   "frmEmpleado.frx":37CB3
                Style           =   1  'Graphical
-               TabIndex        =   38
+               TabIndex        =   37
                Top             =   840
                Width           =   2415
             End
             Begin VB.CommandButton CmdAfectuar 
-               DownPicture     =   "frmEmpleado.frx":3AB7E
+               DownPicture     =   "frmEmpleado.frx":3AAB5
                Height          =   375
                Left            =   600
-               Picture         =   "frmEmpleado.frx":3D980
+               Picture         =   "frmEmpleado.frx":3D8B7
                Style           =   1  'Graphical
-               TabIndex        =   37
+               TabIndex        =   36
                Top             =   480
                Width           =   2415
             End
             Begin VB.CommandButton CmdExportar 
-               DownPicture     =   "frmEmpleado.frx":4035A
+               DownPicture     =   "frmEmpleado.frx":40291
                Height          =   375
                Left            =   -74280
-               Picture         =   "frmEmpleado.frx":4315C
+               Picture         =   "frmEmpleado.frx":43093
                Style           =   1  'Graphical
-               TabIndex        =   36
+               TabIndex        =   35
                Top             =   1440
                Width           =   2415
             End
             Begin VB.TextBox TxtRuta 
                Height          =   285
                Left            =   -74400
-               TabIndex        =   35
+               TabIndex        =   34
                Top             =   1920
                Width           =   2415
             End
@@ -2821,9 +2660,9 @@ Begin VB.Form frmEmpleado
                EndProperty
                Height          =   300
                Left            =   -72000
-               Picture         =   "frmEmpleado.frx":45E9E
+               Picture         =   "frmEmpleado.frx":45DD5
                Style           =   1  'Graphical
-               TabIndex        =   34
+               TabIndex        =   33
                Top             =   1920
                Width           =   375
             End
@@ -2831,7 +2670,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cuenta Debito:"
                Height          =   255
                Left            =   -74880
-               TabIndex        =   45
+               TabIndex        =   44
                Top             =   600
                Width           =   1095
             End
@@ -2839,7 +2678,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Cuenta Credito:"
                Height          =   255
                Left            =   -74880
-               TabIndex        =   44
+               TabIndex        =   43
                Top             =   1080
                Width           =   1215
             End
@@ -2847,7 +2686,7 @@ Begin VB.Form frmEmpleado
                Caption         =   "Ruta"
                Height          =   255
                Left            =   -74880
-               TabIndex        =   43
+               TabIndex        =   42
                Top             =   1920
                Width           =   495
             End
@@ -2856,7 +2695,7 @@ Begin VB.Form frmEmpleado
             Caption         =   "Cuenta Sueldos:"
             Height          =   255
             Left            =   -72000
-            TabIndex        =   192
+            TabIndex        =   191
             Top             =   3660
             Width           =   1335
          End
@@ -2864,7 +2703,7 @@ Begin VB.Form frmEmpleado
             Caption         =   "Cuenta INSS"
             Height          =   255
             Left            =   -68760
-            TabIndex        =   188
+            TabIndex        =   187
             Top             =   3660
             Width           =   975
          End
@@ -2883,7 +2722,7 @@ Begin VB.Form frmEmpleado
             ForeColor       =   &H00404000&
             Height          =   255
             Left            =   -74040
-            TabIndex        =   143
+            TabIndex        =   142
             Top             =   900
             Width           =   3975
          End
@@ -4179,86 +4018,86 @@ Begin VB.Form frmEmpleado
    End
    Begin VB.CommandButton CmdUltimo 
       Caption         =   "Ultimo"
-      DownPicture     =   "frmEmpleado.frx":45FEC
+      DownPicture     =   "frmEmpleado.frx":45F23
       Height          =   375
       Left            =   1680
-      MouseIcon       =   "frmEmpleado.frx":47ACE
+      MouseIcon       =   "frmEmpleado.frx":47A05
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":47F10
-      TabIndex        =   21
+      Picture         =   "frmEmpleado.frx":47E47
+      TabIndex        =   20
       Top             =   6360
       Width           =   1455
    End
    Begin VB.CommandButton CmdPrimero 
       Caption         =   "Primero"
-      DownPicture     =   "frmEmpleado.frx":499F2
+      DownPicture     =   "frmEmpleado.frx":49929
       Height          =   375
       Left            =   240
-      MouseIcon       =   "frmEmpleado.frx":4B4D4
+      MouseIcon       =   "frmEmpleado.frx":4B40B
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":4B916
-      TabIndex        =   20
+      Picture         =   "frmEmpleado.frx":4B84D
+      TabIndex        =   19
       Top             =   6360
       Width           =   1455
    End
    Begin VB.CommandButton CmdSiguiente 
       Caption         =   "Siguiente"
-      DownPicture     =   "frmEmpleado.frx":4D3F8
+      DownPicture     =   "frmEmpleado.frx":4D32F
       Height          =   375
       Left            =   1680
-      MouseIcon       =   "frmEmpleado.frx":4EEDA
+      MouseIcon       =   "frmEmpleado.frx":4EE11
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":4F31C
-      TabIndex        =   19
+      Picture         =   "frmEmpleado.frx":4F253
+      TabIndex        =   18
       Top             =   6000
       Width           =   1455
    End
    Begin VB.CommandButton CmdAnterior 
       Caption         =   "Anterior"
-      DownPicture     =   "frmEmpleado.frx":50DFE
+      DownPicture     =   "frmEmpleado.frx":50D35
       Height          =   375
       Left            =   240
-      MouseIcon       =   "frmEmpleado.frx":528E0
+      MouseIcon       =   "frmEmpleado.frx":52817
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":52D22
-      TabIndex        =   18
+      Picture         =   "frmEmpleado.frx":52C59
+      TabIndex        =   17
       Top             =   6000
       Width           =   1455
    End
    Begin VB.CommandButton CmdBorrar 
       Caption         =   "Borrar"
-      DownPicture     =   "frmEmpleado.frx":54804
+      DownPicture     =   "frmEmpleado.frx":5473B
       Enabled         =   0   'False
       Height          =   375
       Left            =   3480
-      MouseIcon       =   "frmEmpleado.frx":562E6
+      MouseIcon       =   "frmEmpleado.frx":5621D
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":56728
-      TabIndex        =   22
+      Picture         =   "frmEmpleado.frx":5665F
+      TabIndex        =   21
       Top             =   6360
       Width           =   1455
    End
    Begin VB.CommandButton CmdCerrar 
       Caption         =   "Salir"
-      DownPicture     =   "frmEmpleado.frx":5820A
+      DownPicture     =   "frmEmpleado.frx":58141
       Height          =   375
       Left            =   8160
-      MouseIcon       =   "frmEmpleado.frx":59CEC
+      MouseIcon       =   "frmEmpleado.frx":59C23
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":5A12E
-      TabIndex        =   23
+      Picture         =   "frmEmpleado.frx":5A065
+      TabIndex        =   22
       Top             =   6360
       Width           =   1455
    End
    Begin VB.CommandButton CmdGrabar 
       Caption         =   "Grabar"
-      DownPicture     =   "frmEmpleado.frx":5BC10
+      DownPicture     =   "frmEmpleado.frx":5BB47
       Height          =   375
       Left            =   3480
-      MouseIcon       =   "frmEmpleado.frx":5D6F2
+      MouseIcon       =   "frmEmpleado.frx":5D629
       MousePointer    =   99  'Custom
-      Picture         =   "frmEmpleado.frx":5DB34
-      TabIndex        =   17
+      Picture         =   "frmEmpleado.frx":5DA6B
+      TabIndex        =   16
       Top             =   6000
       Width           =   1455
    End
@@ -4312,7 +4151,7 @@ Begin VB.Form frmEmpleado
       Caption         =   "Prov Aguinaldo:"
       Height          =   255
       Left            =   3120
-      TabIndex        =   193
+      TabIndex        =   192
       Top             =   4200
       Width           =   1335
    End
@@ -4655,19 +4494,19 @@ If TxtDebitoPrestamo.Text = "" Then
 End If
 
 
-Dtaprestamo.Refresh
-Do While Not Dtaprestamo.Recordset.EOF
-If Dtaprestamo.Recordset("CodEmpleado") = val(Me.TxtCodEmpleado.Text) And Dtaprestamo.Recordset("cancelado") = False Then
- If Not val(Dtaprestamo.Recordset("Saldo")) = 0 Then
-   MsgBox ("Este Empleado ya tiene un préstamo y su saldo es de: " & Dtaprestamo.Recordset("Saldo"))
+DtaPrestamo.Refresh
+Do While Not DtaPrestamo.Recordset.EOF
+If DtaPrestamo.Recordset("CodEmpleado") = val(Me.TxtCodEmpleado.Text) And DtaPrestamo.Recordset("cancelado") = False Then
+ If Not val(DtaPrestamo.Recordset("Saldo")) = 0 Then
+   MsgBox ("Este Empleado ya tiene un préstamo y su saldo es de: " & DtaPrestamo.Recordset("Saldo"))
    Exit Sub
  End If
 End If
-Dtaprestamo.Recordset.MoveNext
+DtaPrestamo.Recordset.MoveNext
 Loop
 
 CantCuotas = val(TxtCuotas.Text)
-Saldo = val(txtSaldo.Text)
+Saldo = val(TxtSaldo.Text)
 Interes = val(TxtInteresprestamo.Text) / 100
 If Not CantCuotas = 0 Then
 CuotaPrincipal = Saldo / CantCuotas
@@ -4685,49 +4524,49 @@ Next i
 
 CodEmpleado = Me.TxtCodEmpleado.Text
 
-Saldo = val(Me.txtSaldo.Text)
+Saldo = val(Me.TxtSaldo.Text)
 CuotaIgual = (Saldo + MontoTotalInteres) / CantCuotas
 
 
 'agrego los datos a Prestamo
-Dtaprestamo.Recordset.AddNew
-Dtaprestamo.Recordset("NumPrestamo") = NumPrestamo
-Dtaprestamo.Recordset("Monto") = val(TxtMontoPrestamoUS.Text)
-Dtaprestamo.Recordset("CantCuotas") = val(TxtCuotas.Text)
-Dtaprestamo.Recordset("Interes") = val(TxtInteresprestamo.Text)
-Dtaprestamo.Recordset("Saldo") = val(txtSaldo.Text)
-Dtaprestamo.Recordset("fechainicial") = CDate(Now)
-Dtaprestamo.Recordset("CuentaDebito") = TxtDebitoPrestamo.Text
-Dtaprestamo.Recordset("cuentacredito") = TxtCreditoPrestamo.Text
-Dtaprestamo.Recordset("CodEmpleado") = CodEmpleado
+DtaPrestamo.Recordset.AddNew
+DtaPrestamo.Recordset("NumPrestamo") = NumPrestamo
+DtaPrestamo.Recordset("Monto") = val(TxtMontoPrestamoUS.Text)
+DtaPrestamo.Recordset("CantCuotas") = val(TxtCuotas.Text)
+DtaPrestamo.Recordset("Interes") = val(TxtInteresprestamo.Text)
+DtaPrestamo.Recordset("Saldo") = val(TxtSaldo.Text)
+DtaPrestamo.Recordset("fechainicial") = CDate(Now)
+DtaPrestamo.Recordset("CuentaDebito") = TxtDebitoPrestamo.Text
+DtaPrestamo.Recordset("cuentacredito") = TxtCreditoPrestamo.Text
+DtaPrestamo.Recordset("CodEmpleado") = CodEmpleado
 If ChkTipoPago = 1 Then
-Dtaprestamo.Recordset("CuotasIguales") = True
+DtaPrestamo.Recordset("CuotasIguales") = True
 Else
-Dtaprestamo.Recordset("CuotasIguales") = False
+DtaPrestamo.Recordset("CuotasIguales") = False
 End If
 
 If OptC Then
-   Dtaprestamo.Recordset("Moneda") = "CS"
+   DtaPrestamo.Recordset("Moneda") = "CS"
 Else
-   Dtaprestamo.Recordset("Moneda") = "US"
+   DtaPrestamo.Recordset("Moneda") = "US"
 End If
 
-Dtaprestamo.Recordset.Update
+DtaPrestamo.Recordset.Update
 
 
 'agrego los datos a Nprestamo
-Saldo = val(txtSaldo.Text)
+Saldo = val(TxtSaldo.Text)
 For i = 1 To CantCuotas
-    DtaMovprestamo.Recordset.AddNew
-    DtaMovprestamo.Recordset("ID") = i
-    DtaMovprestamo.Recordset("NumPrestamo") = NumPrestamo
+    DtaMovPrestamo.Recordset.AddNew
+    DtaMovPrestamo.Recordset("ID") = i
+    DtaMovPrestamo.Recordset("NumPrestamo") = NumPrestamo
     'DtaMovPrestamo.Recordset("CodEmpleado") = DBCodigoEmpleado.Text
-    DtaMovprestamo.Recordset("numcuota") = i
-    DtaMovprestamo.Recordset("Monto") = CuotaPrincipal
-    DtaMovprestamo.Recordset("Interes") = PagoInteres(i)
-    DtaMovprestamo.Recordset("saldocuota") = Saldo
-    DtaMovprestamo.Recordset("CuotaIgual") = CuotaIgual
-    DtaMovprestamo.Recordset.Update
+    DtaMovPrestamo.Recordset("numcuota") = i
+    DtaMovPrestamo.Recordset("Monto") = CuotaPrincipal
+    DtaMovPrestamo.Recordset("Interes") = PagoInteres(i)
+    DtaMovPrestamo.Recordset("saldocuota") = Saldo
+    DtaMovPrestamo.Recordset("CuotaIgual") = CuotaIgual
+    DtaMovPrestamo.Recordset.Update
     Saldo = Saldo - CuotaPrincipal
 Next i
 
@@ -5206,32 +5045,32 @@ If k% <> 6 Then
 End If
 
 SqlDetallePrestamo = "SELECT MovPrestamo.NumPrestamo, Prestamo.CodEmpleado, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual, MovPrestamo.SaldoCuota,Movprestamo.cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo WHERE Prestamo.CodEmpleado='" & Me.TxtCodEmpleado.Text & "' AND MovPrestamo.Cancelado = 0"
-DtaMovprestamo.RecordSource = SqlDetallePrestamo
-DtaMovprestamo.Refresh
+DtaMovPrestamo.RecordSource = SqlDetallePrestamo
+DtaMovPrestamo.Refresh
 
 SQlPrestamo = "SELECT Prestamo.* From Prestamo WHERE Prestamo.CodEmpleado='" & Me.TxtCodEmpleado.Text & "' AND Prestamo.Cancelado=0"
-Dtaprestamo.RecordSource = SQlPrestamo
-Dtaprestamo.Refresh
+DtaPrestamo.RecordSource = SQlPrestamo
+DtaPrestamo.Refresh
 
 
-Do While Not Dtaprestamo.Recordset.EOF
+Do While Not DtaPrestamo.Recordset.EOF
  'DtaPrestamo.Recordset.Edit
-  Dtaprestamo.Recordset("cancelado") = 1
- Dtaprestamo.Recordset.Update
+  DtaPrestamo.Recordset("cancelado") = 1
+ DtaPrestamo.Recordset.Update
 
-  Dtaprestamo.Recordset.MoveNext
+  DtaPrestamo.Recordset.MoveNext
 Loop
 
-Do While Not DtaMovprestamo.Recordset.EOF
+Do While Not DtaMovPrestamo.Recordset.EOF
  'DtaMovPrestamo.Recordset.Edit
-  DtaMovprestamo.Recordset("cancelado") = 1
- DtaMovprestamo.Recordset.Update
+  DtaMovPrestamo.Recordset("cancelado") = 1
+ DtaMovPrestamo.Recordset.Update
 
- DtaMovprestamo.Recordset.MoveNext
+ DtaMovPrestamo.Recordset.MoveNext
 Loop
 
-Dtaprestamo.Refresh
-DtaMovprestamo.Refresh
+DtaPrestamo.Refresh
+DtaMovPrestamo.Refresh
 MsgBox "El Prestamo ha sido borrado"
 DbgrLibreta.Columns(0).Visible = False
 DbgrLibreta.Columns(1).Visible = False
@@ -5394,9 +5233,9 @@ End Sub
 
 Private Sub CmdEditarPresLinea_Click()
 On Error GoTo TipoErr
-FrmEditarPrestamo.TxtNumPrestamo.Text = DtaMovprestamo.Recordset("NumPrestamo")
-FrmEditarPrestamo.txtNumCuota.Text = DtaMovprestamo.Recordset("numcuota")
-FrmEditarPrestamo.TxtMontoOld.Text = Format(DtaMovprestamo.Recordset("CuotaIgual"), "###,##0.00")
+FrmEditarPrestamo.TxtNumPrestamo.Text = DtaMovPrestamo.Recordset("NumPrestamo")
+FrmEditarPrestamo.txtNumCuota.Text = DtaMovPrestamo.Recordset("numcuota")
+FrmEditarPrestamo.TxtMontoOld.Text = Format(DtaMovPrestamo.Recordset("CuotaIgual"), "###,##0.00")
 FrmEditarPrestamo.lblNombre = TxtNombre1.Text & " " & TxtNombre2.Text & " " & TxtApellido1.Text & " " & TxtApellido2.Text
 FrmEditarPrestamo.Show 1
 
@@ -5497,25 +5336,25 @@ End Sub
 Private Sub CmdExportar_Click()
 On Error GoTo TipoErr
 
-Dtaprestamo.Refresh
-Do While Not Dtaprestamo.Recordset.EOF
-    If Dtaprestamo.Recordset("CodEmpleado") = DBCodigoEmpleado.Text Then
+DtaPrestamo.Refresh
+Do While Not DtaPrestamo.Recordset.EOF
+    If DtaPrestamo.Recordset("CodEmpleado") = DBCodigoEmpleado.Text Then
         Exit Do
     End If
-Dtaprestamo.Recordset.MoveNext
+DtaPrestamo.Recordset.MoveNext
 Loop
     
 Ruta2 = TxtRuta.Text
 
 Open Ruta2 For Output As #1
-    TextoMonto = Format(Dtaprestamo.Recordset("Monto"), "####0.00")
+    TextoMonto = Format(DtaPrestamo.Recordset("Monto"), "####0.00")
     For i = 1 To 15 - Len(TextoMonto)
        TextoMonto = " " + TextoMonto
     Next i
     
-    Cadena = Trim(Str(Month(Dtaprestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Day(Dtaprestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Year(Dtaprestamo.Recordset("fechainicial"))))
+    Cadena = Trim(Str(Month(DtaPrestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Day(DtaPrestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Year(DtaPrestamo.Recordset("fechainicial"))))
     Cadena = Cadena + "        "
     Cadena = Cadena + "ZEUS"
     Cadena = Cadena + Trim(Str(TxtDebitoPrestamo.Text))
@@ -5528,7 +5367,7 @@ Open Ruta2 For Output As #1
     Cadena = Cadena + "          "
     Cadena = Cadena + "03"
     Cadena = Cadena + "      "
-    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(Dtaprestamo.Recordset("NumPrestamo"))) + "               "
+    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(DtaPrestamo.Recordset("NumPrestamo"))) + "               "
     Cadena = Cadena + "                 "
     Cadena = Cadena + "   " + TextoMonto
     For i = 1 To 34
@@ -5542,9 +5381,9 @@ Open Ruta2 For Output As #1
        TextoMonto = " " + TextoMonto
     Next i
     
-    Cadena = Trim(Str(Month(Dtaprestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Day(Dtaprestamo.Recordset("fechainicial"))))
-    Cadena = Cadena + Trim(Str(Year(Dtaprestamo.Recordset("fechainicial"))))
+    Cadena = Trim(Str(Month(DtaPrestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Day(DtaPrestamo.Recordset("fechainicial"))))
+    Cadena = Cadena + Trim(Str(Year(DtaPrestamo.Recordset("fechainicial"))))
     Cadena = Cadena + "        "
     Cadena = Cadena + "ZEUS"
     Cadena = Cadena + Trim(Str(TxtCreditoPrestamo.Text))
@@ -5557,7 +5396,7 @@ Open Ruta2 For Output As #1
     Cadena = Cadena + "          "
     Cadena = Cadena + "07"
     Cadena = Cadena + "      "
-    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(Dtaprestamo.Recordset("NumPrestamo"))) + "               "
+    Cadena = Cadena + "Pago de Prestamo " + Trim(Str(DtaPrestamo.Recordset("NumPrestamo"))) + "               "
     Cadena = Cadena + "                 "
     Cadena = Cadena + "   " + TextoMonto
     For i = 1 To 34
@@ -5585,7 +5424,7 @@ CmdAnterior.Enabled = False
 CmdSiguiente.Enabled = False
 CmdPrimero.Enabled = False
 CmdUltimo.Enabled = False
-cmdborrar.Enabled = False
+CmdBorrar.Enabled = False
 
 Historico = False
 
@@ -6380,7 +6219,7 @@ CmdAnterior.Enabled = True
 CmdSiguiente.Enabled = True
 CmdPrimero.Enabled = True
 CmdUltimo.Enabled = True
-cmdborrar.Enabled = True
+CmdBorrar.Enabled = True
 SSTab1.Tab = 0
 LimpiaEmpleado
 With Me.DtaEmpleados
@@ -7761,25 +7600,25 @@ DbgDeducciones.Columns(0).Visible = False
 DbgDeducciones.Columns(2).Visible = False
 DbgDeducciones.Columns(5).Visible = False
 SQlPrestamo = "SELECT NumPrestamo, CuentaDebito, CuentaCredito, Monto, CantCuotas, Interes, Saldo, FechaInicial, Cancelado, Moneda, CuotasIguales, CodEmpleado From Prestamo WHERE Prestamo.CodEmpleado=" & CodEmpleado & " AND Prestamo.Cancelado=0"
-Dtaprestamo.RecordSource = SQlPrestamo
-Dtaprestamo.Refresh
-If Not Dtaprestamo.Recordset.EOF Then
-numeroPrestamo = Me.Dtaprestamo.Recordset("NumPrestamo")
+DtaPrestamo.RecordSource = SQlPrestamo
+DtaPrestamo.Refresh
+If Not DtaPrestamo.Recordset.EOF Then
+numeroPrestamo = Me.DtaPrestamo.Recordset("NumPrestamo")
 Else
  numeroPrestamo = -100
 End If
 SqlDetallePrestamo = "SELECT MovPrestamo.ID,MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual,MovPrestamo.SaldoCuota , MovPrestamo.Cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo Where (MovPrestamo.Cancelado = 0) And (MovPrestamo.NumPrestamo = " & numeroPrestamo & ")"
-DtaMovprestamo.RecordSource = SqlDetallePrestamo
-DtaMovprestamo.Refresh
+DtaMovPrestamo.RecordSource = SqlDetallePrestamo
+DtaMovPrestamo.Refresh
 
 
 
 
 
 
-If Not Dtaprestamo.Recordset.EOF Then
-   TxtCreditoPrestamo.Text = Dtaprestamo.Recordset("cuentacredito")
-   TxtDebitoPrestamo.Text = Dtaprestamo.Recordset("CuentaDebito")
+If Not DtaPrestamo.Recordset.EOF Then
+   TxtCreditoPrestamo.Text = DtaPrestamo.Recordset("cuentacredito")
+   TxtDebitoPrestamo.Text = DtaPrestamo.Recordset("CuentaDebito")
    Me.DbgrLibreta.Columns(0).Visible = False
 DbgrLibreta.Columns(1).Visible = False
 DbgrLibreta.Columns(7).Visible = False
@@ -8019,12 +7858,12 @@ With Me.DtaInfNomina
    .Refresh
 End With
 
-With Me.DtaMovprestamo
+With Me.DtaMovPrestamo
    '.DatabaseName = Ruta
     .ConnectionString = Conexion
 End With
 
-With Me.Dtaprestamo
+With Me.DtaPrestamo
    '.DatabaseName = Ruta
    .ConnectionString = Conexion
 End With
@@ -8232,7 +8071,7 @@ Else
 End Sub
 
 Private Sub MaskEdBox4_LostFocus()
-txtSaldo.Text = MaskEdBox4.Text
+TxtSaldo.Text = MaskEdBox4.Text
 End Sub
 
 Private Sub MaskEdContrato_Change()
@@ -8290,7 +8129,7 @@ Select Case PreviousTab
 
 Case 3
     DbgrLibreta.BorderStyle = 1
-    DtaMovprestamo.Refresh
+    DtaMovPrestamo.Refresh
     DbgrLibreta.Columns(0).Caption = "# Prestamo"
     DbgrLibreta.Columns(1).Caption = "Código Empleado"
     DbgrLibreta.Columns(2).Caption = "# de Cuota"
@@ -8804,25 +8643,25 @@ DbgDeducciones.Columns(0).Visible = False
 DbgDeducciones.Columns(2).Visible = False
 'DbgDeducciones.Columns(5).Visible = False
 SQlPrestamo = "SELECT NumPrestamo, CuentaDebito, CuentaCredito, Monto, CantCuotas, Interes, Saldo, FechaInicial, Cancelado, Moneda, CuotasIguales, CodEmpleado From Prestamo WHERE Prestamo.CodEmpleado=" & CodEmpleado & " AND Prestamo.Cancelado=0"
-Dtaprestamo.RecordSource = SQlPrestamo
-Dtaprestamo.Refresh
-If Not Dtaprestamo.Recordset.EOF Then
-numeroPrestamo = Me.Dtaprestamo.Recordset("NumPrestamo")
+DtaPrestamo.RecordSource = SQlPrestamo
+DtaPrestamo.Refresh
+If Not DtaPrestamo.Recordset.EOF Then
+numeroPrestamo = Me.DtaPrestamo.Recordset("NumPrestamo")
 Else
  numeroPrestamo = -100
 End If
 SqlDetallePrestamo = "SELECT MovPrestamo.ID,MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual,MovPrestamo.SaldoCuota , MovPrestamo.Cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo Where (MovPrestamo.Cancelado = 0) And (MovPrestamo.NumPrestamo = " & numeroPrestamo & ")"
-DtaMovprestamo.RecordSource = SqlDetallePrestamo
-DtaMovprestamo.Refresh
+DtaMovPrestamo.RecordSource = SqlDetallePrestamo
+DtaMovPrestamo.Refresh
 
 
 
 
 
 
-If Not Dtaprestamo.Recordset.EOF Then
-   TxtCreditoPrestamo.Text = Dtaprestamo.Recordset("cuentacredito")
-   TxtDebitoPrestamo.Text = Dtaprestamo.Recordset("CuentaDebito")
+If Not DtaPrestamo.Recordset.EOF Then
+   TxtCreditoPrestamo.Text = DtaPrestamo.Recordset("cuentacredito")
+   TxtDebitoPrestamo.Text = DtaPrestamo.Recordset("CuentaDebito")
    Me.DbgrLibreta.Columns(0).Visible = False
 DbgrLibreta.Columns(1).Visible = False
 DbgrLibreta.Columns(7).Visible = False
@@ -9382,20 +9221,20 @@ RegistrarBitacora = False
                 DbgDeducciones.Columns(2).Visible = False
                 'DbgDeducciones.Columns(5).Visible = False
                 SQlPrestamo = "SELECT NumPrestamo, CuentaDebito, CuentaCredito, Monto, CantCuotas, Interes, Saldo, FechaInicial, Cancelado, Moneda, CuotasIguales, CodEmpleado From Prestamo WHERE Prestamo.CodEmpleado=" & CodEmpleado & " AND Prestamo.Cancelado=0"
-                Dtaprestamo.RecordSource = SQlPrestamo
-                Dtaprestamo.Refresh
-                If Not Dtaprestamo.Recordset.EOF Then
-                numeroPrestamo = Me.Dtaprestamo.Recordset("NumPrestamo")
+                DtaPrestamo.RecordSource = SQlPrestamo
+                DtaPrestamo.Refresh
+                If Not DtaPrestamo.Recordset.EOF Then
+                numeroPrestamo = Me.DtaPrestamo.Recordset("NumPrestamo")
                 Else
                  numeroPrestamo = -100
                 End If
                 SqlDetallePrestamo = "SELECT MovPrestamo.ID,MovPrestamo.NumPrestamo, MovPrestamo.NumCuota, MovPrestamo.Monto, MovPrestamo.Interes, MovPrestamo.CuotaIgual,MovPrestamo.SaldoCuota , MovPrestamo.Cancelado FROM Prestamo INNER JOIN MovPrestamo ON Prestamo.NumPrestamo = MovPrestamo.NumPrestamo Where (MovPrestamo.Cancelado = 0) And (MovPrestamo.NumPrestamo = " & numeroPrestamo & ")"
-                DtaMovprestamo.RecordSource = SqlDetallePrestamo
-                DtaMovprestamo.Refresh
+                DtaMovPrestamo.RecordSource = SqlDetallePrestamo
+                DtaMovPrestamo.Refresh
                 
-                                If Not Dtaprestamo.Recordset.EOF Then
-                   TxtCreditoPrestamo.Text = Dtaprestamo.Recordset("cuentacredito")
-                   TxtDebitoPrestamo.Text = Dtaprestamo.Recordset("CuentaDebito")
+                                If Not DtaPrestamo.Recordset.EOF Then
+                   TxtCreditoPrestamo.Text = DtaPrestamo.Recordset("cuentacredito")
+                   TxtDebitoPrestamo.Text = DtaPrestamo.Recordset("CuentaDebito")
                    Me.DbgrLibreta.Columns(0).Visible = False
                 DbgrLibreta.Columns(1).Visible = False
                 DbgrLibreta.Columns(7).Visible = False
@@ -9696,14 +9535,14 @@ End Sub
 Private Sub TxtMontoPrestamoUS_KeyPress(KeyAscii As Integer)
 
 If KeyAscii = "13" Then
-  txtSaldo.Text = TxtMontoPrestamoUS.Text
+  TxtSaldo.Text = TxtMontoPrestamoUS.Text
   Me.CmdAfectuar.Value = True
 
 End If
 End Sub
 
 Private Sub TxtMontoPrestamoUS_LostFocus()
-txtSaldo.Text = TxtMontoPrestamoUS.Text
+TxtSaldo.Text = TxtMontoPrestamoUS.Text
 End Sub
 
 Private Sub TxtMotivoAumento_Change()
