@@ -1543,7 +1543,7 @@ Begin VB.Form FrmReportes
          _ExtentY        =   661
          _Version        =   393216
          CalendarBackColor=   16777215
-         Format          =   17039361
+         Format          =   16711681
          CurrentDate     =   37257
       End
       Begin MSComCtl2.DTPicker TxtFecha2 
@@ -1556,7 +1556,7 @@ Begin VB.Form FrmReportes
          _ExtentY        =   661
          _Version        =   393216
          CalendarBackColor=   16777215
-         Format          =   17039361
+         Format          =   16711681
          CurrentDate     =   37257
       End
       Begin TrueOleDBList80.TDBCombo DataCombo2 
@@ -1968,7 +1968,7 @@ Begin VB.Form FrmReportes
          _ExtentY        =   661
          _Version        =   393216
          CalendarBackColor=   16777215
-         Format          =   17039361
+         Format          =   16711681
          CurrentDate     =   37257
       End
       Begin MSComCtl2.DTPicker MtxtFecha 
@@ -1981,7 +1981,7 @@ Begin VB.Form FrmReportes
          _ExtentY        =   661
          _Version        =   393216
          CalendarBackColor=   16777215
-         Format          =   17039361
+         Format          =   16711681
          CurrentDate     =   37257
       End
       Begin MSDataListLib.DataCombo DBComboPeriodo 
@@ -2714,7 +2714,7 @@ Begin VB.Form FrmReportes
       ForeColor       =   -2147483630
       BackColor       =   14737632
       Appearance      =   1
-      StartOfWeek     =   17039361
+      StartOfWeek     =   16711681
       TitleBackColor  =   12632256
       TrailingForeColor=   12632256
       CurrentDate     =   37838
@@ -2735,7 +2735,7 @@ Begin VB.Form FrmReportes
          _ExtentX        =   2143
          _ExtentY        =   503
          _Version        =   393216
-         Format          =   17039361
+         Format          =   16711681
          CurrentDate     =   37837
       End
       Begin MSComCtl2.DTPicker DTFecha1 
@@ -2747,7 +2747,7 @@ Begin VB.Form FrmReportes
          _ExtentX        =   2355
          _ExtentY        =   503
          _Version        =   393216
-         Format          =   17039361
+         Format          =   16711681
          CurrentDate     =   37837
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel14 
@@ -3186,7 +3186,7 @@ Select Case CmbReportes.Text
     Me.CmdExportar.Visible = True
     Me.Frame1.Visible = False
     Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
     Me.Frame2.Visible = True
     Me.CmdExportarExcel.Visible = True
     Me.txtCantidad.Visible = False
@@ -3194,7 +3194,7 @@ Select Case CmbReportes.Text
     Me.CmdExportar.Visible = True
     Me.Frame1.Visible = False
     Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
     Me.Frame2.Visible = True
     Me.CmdExportarExcel.Visible = True
     Me.LblInicio.Visible = True
@@ -3221,7 +3221,7 @@ Select Case CmbReportes.Text
 '    Me.CmdExportar.Visible = True
     Me.Frame1.Visible = False
     Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
     Me.Frame2.Visible = True
     Me.CmdExportarExcel.Visible = True
     Me.txtCantidad.Visible = False
@@ -3313,7 +3313,7 @@ Select Case CmbReportes.Text
     Me.CmdExportar.Visible = True
     Me.Frame1.Visible = False
     Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
     Me.Frame2.Visible = True
     Me.CmdExportarExcel.Visible = True
     Me.FrmSeleccion.Visible = False
@@ -3321,7 +3321,7 @@ Select Case CmbReportes.Text
     Me.CmdExportar.Visible = True
     Me.Frame1.Visible = False
     Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
     Me.Frame2.Visible = True
     Me.CmdExportarExcel.Visible = True
     Me.FrmSeleccion.Visible = True
@@ -3330,22 +3330,22 @@ Select Case CmbReportes.Text
     Me.CmdExportar.Visible = True
     Me.Frame1.Visible = False
     Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
     Me.Frame2.Visible = True
     Me.CmdExportarExcel.Visible = True
     
   Case "Reporte INSS"
     Me.Frame1.Visible = False
     Me.Mes.Visible = True
-    Me.lblTitulo.Visible = True
+    Me.lbltitulo.Visible = True
   Case "Reporte IR"
     Me.Frame1.Visible = False
     Me.Mes.Visible = True
-    Me.lblTitulo.Visible = True
+    Me.lbltitulo.Visible = True
   Case Else
 '   Me.Frame1.Visible = True
 '    Me.Mes.Visible = False
-    Me.lblTitulo.Visible = False
+    Me.lbltitulo.Visible = False
 End Select
 End Sub
 
@@ -3856,7 +3856,7 @@ Select Case CmbReportes.Text
 
     Exportar = True
     ArepInssIr.DataControl1.ConnectionString = ConexionReporte
-    ArepInssIr.lblTitulo.Caption = Titulo
+    ArepInssIr.lbltitulo.Caption = Titulo
     ArepInssIr.LblSubtitulo.Caption = "REPORTE DETALLADO DEDUCCIONES SEGUN NOMINA"
     ArepInssIr.LblFecha.Caption = "Impreso desde: " & Me.TxtFecha1.Value & " Hasta: " & Me.TxtFecha2.Value
     ArepInssIr.LblFechaHoy.Caption = Format(Now, "Long Date")
@@ -3876,7 +3876,7 @@ Select Case CmbReportes.Text
  Case "Lista de Empleados Activos"
       Exportar = True
      ArepActivos.DataControl1.ConnectionString = ConexionReporte
-     ArepActivos.lblTitulo.Caption = Titulo
+     ArepActivos.lbltitulo.Caption = Titulo
      ArepActivos.LblSubtitulo.Caption = SubTitulo
      ArepActivos.ImgLogo.Picture = LoadPicture(RutaLogo)
 '     ArepActivos.DataControl1.Source = "SELECT Empleado.CodEmpleado1,Empleado.CodEmpleado, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres,departamento.departamento , TipoNomina.Nomina, Empleado.Activo FROM Empleado INNER JOIN Departamento ON Empleado.CodDepartamento = Departamento.CodDepartamento INNER JOIN TipoNomina ON Empleado.CodTipoNomina = TipoNomina.CodTipoNomina ORDER BY Empleado.CodEmpleado1"
@@ -3888,7 +3888,7 @@ Select Case CmbReportes.Text
      Numero = val(Me.TxtNNomina.Text)
      
      ArepProduccionBasico.DataControl1.ConnectionString = ConexionReporte
-     ArepProduccionBasico.lblTitulo.Caption = Titulo
+     ArepProduccionBasico.lbltitulo.Caption = Titulo
      ArepProduccionBasico.LblSubtitulo.Caption = SubTitulo
      ArepProduccionBasico.ImgLogo.Picture = LoadPicture(RutaLogo)
 
@@ -3901,7 +3901,7 @@ Select Case CmbReportes.Text
      Numero = val(Me.TxtNNomina.Text)
      ArepProduccion.LblTitulo3.Caption = "Reporte de Produccion de la Nomina No " & Numero
      ArepProduccion.DataControl1.ConnectionString = ConexionReporte
-     ArepProduccion.lblTitulo.Caption = Titulo
+     ArepProduccion.lbltitulo.Caption = Titulo
      ArepProduccion.LblSubtitulo.Caption = SubTitulo
      ArepProduccion.ImgLogo.Picture = LoadPicture(RutaLogo)
 
@@ -3925,7 +3925,7 @@ Select Case CmbReportes.Text
      Numero = val(Me.TxtNNomina.Text)
      ArepProduccionLinea.LblTitulo3.Caption = "Reporte de Produccion de la Nomina No " & Numero
      ArepProduccionLinea.DataControl1.ConnectionString = ConexionReporte
-     ArepProduccionLinea.lblTitulo.Caption = Titulo
+     ArepProduccionLinea.lbltitulo.Caption = Titulo
      ArepProduccionLinea.LblSubtitulo.Caption = SubTitulo
      ArepProduccionLinea.ImgLogo.Picture = LoadPicture(RutaLogo)
 
@@ -4781,7 +4781,7 @@ i = 1
 
  Case "Listado Maestro de Empleados"
   ArepListaMaestro.DataControl1.ConnectionString = ConexionReporte
-  ArepListaMaestro.lblTitulo.Caption = Titulo
+  ArepListaMaestro.lbltitulo.Caption = Titulo
   ArepListaMaestro.LblSubtitulo.Caption = "LISTADO MAESTRO DE EMPLEADOS"
   ArepListaMaestro.ImgLogo.Picture = LoadPicture(RutaLogo)
   ArepListaMaestro.LblFecha.Caption = Format(Now, "Long Date")
@@ -4841,7 +4841,7 @@ i = 1
     ArepInss2.LblMes2.Caption = "Informe de " & Convertir
     
     ArepInss2.AdoNomina.ConnectionString = ConexionReporte
-    ArepInss2.lblTitulo.Caption = Titulo
+    ArepInss2.lbltitulo.Caption = Titulo
     ArepInss2.LblSubtitulo.Caption = "REPORTE INSS EMPLEADOS"
     ArepInss2.ImgLogo.Picture = LoadPicture(RutaLogo)
  
@@ -4874,7 +4874,7 @@ i = 1
     Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value) & "-" & Day(Me.TxtFecha2.Value)
 
      ArepBasicoProduccion.DataControl1.ConnectionString = ConexionReporte
-     ArepBasicoProduccion.lblTitulo.Caption = Titulo
+     ArepBasicoProduccion.lbltitulo.Caption = Titulo
      ArepBasicoProduccion.LblSubtitulo.Caption = SubTitulo
      ArepBasicoProduccion.ImgLogo.Picture = LoadPicture(RutaLogo)
     If Me.DataCombo1.Text = "" Or Me.DataCombo2.Text = "" Then
@@ -4930,9 +4930,9 @@ Case "Reporte Carnet Empleados"
     Set rpt = New ArepCarnet
     
     If Me.TDBDepartamentoIni.Text = "" And Me.TDBDepartamentoFin.Text = "" Then
-       SqlString = "SELECT  Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres, Cargo.Cargo, departamento.departamento , Empleado.Activo FROM  Empleado INNER JOIN Cargo ON Empleado.CodCargo = Cargo.CodCargo INNER JOIN Departamento ON Empleado.CodDepartamento = Departamento.CodDepartamento  Where (Empleado.Activo = 1)"
+       SqlString = "SELECT  Empleado.CodEmpleado, Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres, Cargo.Cargo, departamento.departamento , Empleado.Activo FROM  Empleado INNER JOIN Cargo ON Empleado.CodCargo = Cargo.CodCargo INNER JOIN Departamento ON Empleado.CodDepartamento = Departamento.CodDepartamento  Where (Empleado.Activo = 1)"
     Else
-       SqlString = "SELECT  Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres, Cargo.Cargo, departamento.departamento , Empleado.Activo, Departamento.CodDepartamento FROM  Empleado INNER JOIN Cargo ON Empleado.CodCargo = Cargo.CodCargo INNER JOIN Departamento ON Empleado.CodDepartamento = Departamento.CodDepartamento  Where (Empleado.Activo = 1) AND (Departamento.CodDepartamento BETWEEN '" & Me.TDBDepartamentoIni.Text & "' AND '" & Me.TDBDepartamentoFin.Text & "')"
+       SqlString = "SELECT  Empleado.CodEmpleado, Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres, Cargo.Cargo, departamento.departamento , Empleado.Activo, Departamento.CodDepartamento FROM  Empleado INNER JOIN Cargo ON Empleado.CodCargo = Cargo.CodCargo INNER JOIN Departamento ON Empleado.CodDepartamento = Departamento.CodDepartamento  Where (Empleado.Activo = 1) AND (Departamento.CodDepartamento BETWEEN '" & Me.TDBDepartamentoIni.Text & "' AND '" & Me.TDBDepartamentoFin.Text & "')"
     End If
     
     rpt.DataControl1.ConnectionString = Conexion
@@ -4989,7 +4989,7 @@ Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value) & "-" & Day(
        rpt.DataControl1.ConnectionString = ConexionReporte
        sql = "SELECT  Empleado.CodEmpleado, Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres,SUM(DetalleNomina.HE) AS HE, SUM(DetalleNomina.HorasExtras) AS HorasExtras FROM Empleado INNER JOIN DetalleNomina ON Empleado.CodEmpleado = DetalleNomina.CodEmpleado INNER JOIN Nomina ON DetalleNomina.NumNomina = Nomina.NumNomina WHERE (Nomina.FechaNominaINI BETWEEN CONVERT(DATETIME, '" & Fecha1 & "', 102) AND CONVERT(DATETIME, '" & Fecha2 & "', 102)) GROUP BY Empleado.Nombre1, Empleado.CodEmpleado, Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 Having (SUM(DetalleNomina.HE) <> 0) ORDER BY Empleado.Nombre1"
 '       ArepHorasExtras2.DataControl1.Source = "SELECT  Empleado.CodEmpleado, Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres,SUM(DetalleNomina.HE) AS HE, SUM(DetalleNomina.HorasExtras) AS HorasExtras FROM Empleado INNER JOIN DetalleNomina ON Empleado.CodEmpleado = DetalleNomina.CodEmpleado INNER JOIN Nomina ON DetalleNomina.NumNomina = Nomina.NumNomina WHERE (Nomina.FechaNominaINI BETWEEN CONVERT(DATETIME, '" & Fecha1 & "', 102) AND CONVERT(DATETIME, '" & Fecha2 & "', 102)) GROUP BY Empleado.CodEmpleado, Empleado.CodEmpleado1, Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 Having (SUM(DetalleNomina.HE) <> 0) ORDER BY Empleado.CodEmpleado1"
-       rpt.lblTitulo.Caption = Titulo
+       rpt.lbltitulo.Caption = Titulo
        rpt.LblSubtitulo.Caption = SubTitulo
        rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
        rpt.LblDesde.Caption = "Desde " & Me.TxtFecha1.Value & " Hasta " & Me.TxtFecha2.Value
@@ -5304,7 +5304,7 @@ tempFin = MDIPrimero.DtaConsulta.Recordset("udMes")
     Loop
     
      Set rpt = New ArepRegistroVacaciones
-     rpt.TxtNombre.Text = NombreCompleto
+     rpt.txtNombre.Text = NombreCompleto
      rpt.txtCodigo.Text = DataCombo1.Text
      rpt.txtTotalAcumuladas.Text = Format(TotalAcumuladas, "##,##0.00")
      rpt.txtTotalSolicitadas.Text = Format(TotalSolicitadas, "##,##0.00")
@@ -5975,7 +5975,7 @@ DoEvents
     Set rpt = New ArepProvicion
 
      rpt.DataControl1.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = SubTitulo
      rpt.LblTitulo3.Caption = "Reporte de Provisiones, Nomina " & Me.DBTipoNominas.Text & ", desde " & Format(Me.TxtFecha1.Value, "dd/MM/yyyy") & " hasta " & Format(Me.TxtFecha2.Value, "dd/MM/yyyy") & ""
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
@@ -6143,7 +6143,7 @@ Case "Reporte Dias Acumulados"
 
 
     ArepDevengado.DataControl1.ConnectionString = ConexionReporte
-    ArepDevengado.lblTitulo.Caption = Titulo
+    ArepDevengado.lbltitulo.Caption = Titulo
     ArepDevengado.LblSubtitulo.Caption = "REPORTE DETALLADO DEDUCCIONES SEGUN NOMINA"
     ArepDevengado.LblFecha.Caption = "Impreso desde: " & Me.TxtFecha1.Value & " Hasta: " & Me.TxtFecha2.Value
     ArepDevengado.LblFechaHoy.Caption = Format(Now, "Long Date")
@@ -6171,7 +6171,7 @@ Case "Reporte INSS E IR MENSUAL"
 
 
     ArepInssIr.DataControl1.ConnectionString = ConexionReporte
-    ArepInssIr.lblTitulo.Caption = Titulo
+    ArepInssIr.lbltitulo.Caption = Titulo
     ArepInssIr.LblSubtitulo.Caption = "REPORTE DETALLADO DEDUCCIONES SEGUN NOMINA"
     ArepInssIr.LblFecha.Caption = "Impreso desde: " & Me.TxtFecha1.Value & " Hasta: " & Me.TxtFecha2.Value
     ArepInssIr.LblFechaHoy.Caption = Format(Now, "Long Date")
@@ -6262,7 +6262,7 @@ End If
        
        
  rpt.DataControl1.ConnectionString = ConexionReporte
- rpt.lblTitulo.Caption = Titulo
+ rpt.lbltitulo.Caption = Titulo
  rpt.LblSubtitulo.Caption = "REPORTE DETALLADO DEDUCCIONES SEGUN NOMINA"
  rpt.LblDesde.Caption = "Impreso desde: " & Me.TxtFecha1.Value & " Hasta: " & Me.TxtFecha2.Value
  rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
@@ -6348,7 +6348,7 @@ ArepInss2.LblPeriodo.Caption = Convertir & " / " & Year(Me.DTFecha1.Value)
 ArepInss2.LblMes2.Caption = "Informe de " & MesAnterior
 
     ArepInss2.AdoNomina.ConnectionString = ConexionReporte
-    ArepInss2.lblTitulo.Caption = Titulo
+    ArepInss2.lbltitulo.Caption = Titulo
     ArepInss2.LblSubtitulo.Caption = "REPORTE INSS EMPLEADOS"
     ArepInss2.ImgLogo.Picture = LoadPicture(RutaLogo)
  
@@ -6375,7 +6375,7 @@ sql = sql & "ORDER BY dbo.Empleado.CodEmpleado1, dbo.Nomina.FechaNomina"
 
 Case "Numeros Disponibles"
   ArepNumerosDisponibles.DataControl1.ConnectionString = ConexionReporte
-  ArepNumerosDisponibles.lblTitulo.Caption = Titulo
+  ArepNumerosDisponibles.lbltitulo.Caption = Titulo
   ArepNumerosDisponibles.LblSubtitulo.Caption = "LISTADO DE NUMEROS DISPONIBLES"
   ArepNumerosDisponibles.ImgLogo.Picture = LoadPicture(RutaLogo)
   ArepNumerosDisponibles.LblTitulo3.Caption = Format(Now, "Long Date")
@@ -6389,7 +6389,7 @@ Case "Listado Maestro de Empleados"
 
   Set rpt = New ArepListaMaestro
   rpt.DataControl1.ConnectionString = ConexionReporte
-  rpt.lblTitulo.Caption = Titulo
+  rpt.lbltitulo.Caption = Titulo
   rpt.LblSubtitulo.Caption = "LISTADO MAESTRO DE EMPLEADOS"
   'ArepListaMaestro.ImgLogo.Picture = LoadPicture(RutaLogo)
   rpt.LblFecha.Caption = Format(Now, "Long Date")
@@ -6438,7 +6438,7 @@ Fecha1 = Year(Me.TxtFecha1.Value) & "-" & Month(Me.TxtFecha1.Value) & "-" & Day(
 Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value) & "-" & Day(Me.TxtFecha2.Value)
 
     rpt.AdoNomina.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = "REPORTE INSS EMPLEADOS"
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
      rpt.LblFecha.Caption = Format(Now, "Long Date")
@@ -6472,7 +6472,7 @@ Fecha1 = Year(Me.TxtFecha1.Value) & "-" & Day(Me.TxtFecha1.Value) & "-" & Month(
 Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Day(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value)
 
       rpt.AdoNomina.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = "REPORTE DETALLE Ir EMPLEADOS"
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
      rpt.LblFecha.Caption = Format(Now, "Long Date")
@@ -6506,7 +6506,7 @@ Fecha1 = Year(Me.TxtFecha1.Value) & "-" & Month(Me.TxtFecha1.Value) & "-" & Day(
 Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value) & "-" & Day(Me.TxtFecha2.Value)
 
       rpt.AdoNomina.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = "REPORTE IR EMPLEADOS"
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
      rpt.LblFecha.Caption = Format(Now, "Long Date")
@@ -6541,7 +6541,7 @@ Fecha1 = Year(Me.TxtFecha1.Value) & "-" & Month(Me.TxtFecha1.Value) & "-" & Day(
 Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value) & "-" & Day(Me.TxtFecha2.Value)
 Dim rpta As New ArepMensualIR
       rpta.DataControl1.ConnectionString = ConexionReporte
-     rpta.lblTitulo.Caption = Titulo
+     rpta.lbltitulo.Caption = Titulo
      rpta.LblSubtitulo.Caption = "REPORTE IR EMPLEADOS"
 '     If Dir(RutaLogo, vbDirectory) Then
        rpta.ImgLogo.Picture = LoadPicture(RutaLogo)
@@ -6604,7 +6604,7 @@ Fecha1 = Year(Me.TxtFecha1.Value) & "-" & Month(Me.TxtFecha1.Value) & "-" & Day(
 Fecha2 = Year(Me.TxtFecha2.Value) & "-" & Month(Me.TxtFecha2.Value) & "-" & Day(Me.TxtFecha2.Value)
 
     rpt.AdoNomina.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = "REPORTE DETALLE INSS EMPLEADOS"
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
      rpt.LblFecha.Caption = Format(Now, "Long Date")
@@ -6635,7 +6635,7 @@ sql = sql & "ORDER BY dbo.Empleado.CodEmpleado1, dbo.Nomina.FechaNomina"
 Case "Detalle Deducciones"
 Set rpt = New ArepDetalleDeduccion
      rpt.DataControl1.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = SubTitulo
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
 
@@ -6685,7 +6685,7 @@ Case "Resumen-Pago Mensual"
      Set rpt = New ArepResumen
      
      rpt.DataControl1.ConnectionString = ConexionReporte
-     rpt.lblTitulo.Caption = Titulo
+     rpt.lbltitulo.Caption = Titulo
      rpt.LblSubtitulo.Caption = SubTitulo
      rpt.ImgLogo.Picture = LoadPicture(RutaLogo)
      
@@ -6772,7 +6772,7 @@ Case "Total-Pago Mensual":
    Directorio = Me.CommonDialog1.FileName + ".xls"
     
    ArepTotalSemanaPago.DataControl1.ConnectionString = ConexionReporte
-   ArepTotalSemanaPago.lblTitulo.Caption = Titulo
+   ArepTotalSemanaPago.lbltitulo.Caption = Titulo
    ArepTotalSemanaPago.LblSubtitulo.Caption = SubTitulo
    ArepTotalSemanaPago.ImgLogo.Picture = LoadPicture(RutaLogo)
      
@@ -6865,7 +6865,7 @@ Case "Total-Pago Mensual":
 
 Case "Lista de Empleados Activos"
      ArepActivos.DataControl1.ConnectionString = ConexionReporte
-     ArepActivos.lblTitulo.Caption = Titulo
+     ArepActivos.lbltitulo.Caption = Titulo
      ArepActivos.LblSubtitulo.Caption = SubTitulo
      ArepActivos.ImgLogo.Picture = LoadPicture(RutaLogo)
 '     ArepActivos.DataControl1.Source = "SELECT     Empleado.CodEmpleado1, Empleado.CodEmpleado,Empleado.Nombre1 + ' ' + Empleado.Nombre2 + ' ' + Empleado.Apellido1 + ' ' + Empleado.Apellido2 AS Nombres, Departamento.Departamento, TipoNomina.Nomina , Empleado.Activo, Empleado.CodTipoNomina FROM  Empleado INNER JOIN Departamento ON Empleado.CodDepartamento = Departamento.CodDepartamento INNER JOIN TipoNomina ON Empleado.CodTipoNomina = TipoNomina.CodTipoNomina WHERE     (Empleado.Activo = 1) AND (Empleado.CodTipoNomina =  '" & Me.TDBCombo1.Columns(0).Text & "') ORDER BY Empleado.CodEmpleado1"
@@ -6883,7 +6883,7 @@ Case "Lista de Empleados Activos"
 
 Case "Reporte INSS"
       ArepInssEmpleado.DataControl1.ConnectionString = ConexionReporte
-      ArepInssEmpleado.lblTitulo.Caption = Titulo
+      ArepInssEmpleado.lbltitulo.Caption = Titulo
       ArepInssEmpleado.LblSubtitulo.Caption = SubTitulo
       ArepInssEmpleado.ImgLogo.Picture = LoadPicture(RutaLogo)
       ArepInssEmpleado.DataControl1.Source = "SELECT Empleado.CodEmpleado1,[Nombre1]+ '" & Espacio & "'+[Nombre2]+'" & Espacio & "'+[Apellido1]+'" & Espacio & "'+ [Apellido2] AS Nombres, Empleado.Nombre2, Empleado.Apellido1, Empleado.Apellido2, PagosMensuales.Mes, PagosMensuales.Vacaciones, PagosMensuales.Anno, PagosMensuales.TotalIngresos, PagosMensuales.INSS, PagosMensuales.INSSPatronal, Cargo.Cargo, [PagosMensuales].[TotalIngresos]+[PagosMensuales].[Vacaciones] AS TIngresos FROM (Cargo INNER JOIN Empleado ON Cargo.CodCargo = Empleado.CodCargo) INNER JOIN PagosMensuales ON Empleado.CodEmpleado = PagosMensuales.CodEmpleado  Where (((PagosMensuales.Mes) = " & Mes & ") And ((PagosMensuales.Anno) = " & Anno & ")) ORDER BY Empleado.CodEmpleado1"
@@ -6896,7 +6896,7 @@ Case "Reporte INSS"
            fPreview.Show 1
  Case "Reporte IR"
       ArepMensualIR.DataControl1.ConnectionString = ConexionReporte
-      ArepMensualIR.lblTitulo.Caption = Titulo
+      ArepMensualIR.lbltitulo.Caption = Titulo
       ArepMensualIR.LblSubtitulo.Caption = SubTitulo
       ArepMensualIR.ImgLogo.Picture = LoadPicture(RutaLogo)
       ArepMensualIR.DataControl1.Source = "SELECT Empleado.CodEmpleado1,[Nombre1]+ '" & Espacio & "'+[Nombre2]+'" & Espacio & "'+[Apellido1]+'" & Espacio & "'+ [Apellido2] AS Nombres, Empleado.Nombre2, Empleado.Apellido1, Empleado.Apellido2, PagosMensuales.Mes, PagosMensuales.Vacaciones, PagosMensuales.Anno, PagosMensuales.TotalIngresos, PagosMensuales.INSS, PagosMensuales.INSSPatronal, Cargo.Cargo, [PagosMensuales].[TotalIngresos]+[PagosMensuales].[Vacaciones] AS TIngresos, PagosMensuales.IR FROM (Cargo INNER JOIN Empleado ON Cargo.CodCargo = Empleado.CodCargo) INNER JOIN PagosMensuales ON Empleado.CodEmpleado = PagosMensuales.CodEmpleado  Where (((PagosMensuales.Mes) = " & Mes & ") And ((PagosMensuales.Anno) = " & Anno & ")) ORDER BY Empleado.CodEmpleado1"

@@ -10,13 +10,14 @@ Object = "{60CCE6A8-5C61-4F30-8513-F57EED62E86A}#8.0#0"; "todl8.ocx"
 Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#12.0#0"; "Codejock.Controls.v12.0.0.Demo.ocx"
 Begin VB.Form FrmImportar 
    Caption         =   "AdoRegistros"
-   ClientHeight    =   6435
-   ClientLeft      =   60
-   ClientTop       =   450
-   ClientWidth     =   13335
+   ClientHeight    =   6315
+   ClientLeft      =   165
+   ClientTop       =   555
+   ClientWidth     =   14595
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6435
-   ScaleWidth      =   13335
+   ScaleHeight     =   6917.841
+   ScaleMode       =   0  'User
+   ScaleWidth      =   38407.89
    StartUpPosition =   3  'Windows Default
    Begin MSAdodcLib.Adodc DtaHorasExtra 
       Height          =   495
@@ -203,18 +204,17 @@ Begin VB.Form FrmImportar
       _Version        =   393216
    End
    Begin XtremeSuiteControls.TabControl TabControl1 
-      Height          =   5055
+      Height          =   5895
       Left            =   120
       TabIndex        =   2
-      Top             =   1200
+      Top             =   1080
       Width           =   13095
       _Version        =   786432
       _ExtentX        =   23098
-      _ExtentY        =   8916
+      _ExtentY        =   10398
       _StockProps     =   68
       Color           =   64
       ItemCount       =   7
-      SelectedItem    =   1
       Item(0).Caption =   "Inicial"
       Item(0).ControlCount=   16
       Item(0).Control(0)=   "TDBTipo"
@@ -290,10 +290,11 @@ Begin VB.Form FrmImportar
       Begin VB.CheckBox ChkSegunNomina 
          Caption         =   "Segun Nomina Activa"
          Height          =   255
-         Left            =   8520
+         Left            =   -61480
          TabIndex        =   62
          Top             =   600
          Value           =   1  'Checked
+         Visible         =   0   'False
          Width           =   2895
       End
       Begin VB.CommandButton Command8 
@@ -685,23 +686,26 @@ Begin VB.Form FrmImportar
       Begin VB.CommandButton Command3 
          Caption         =   "Iniciar"
          Height          =   375
-         Left            =   8280
+         Left            =   -61720
          TabIndex        =   38
          Top             =   4200
+         Visible         =   0   'False
          Width           =   3375
       End
       Begin VB.ListBox listSaldos 
          Height          =   2595
-         Left            =   8280
+         Left            =   -61720
          TabIndex        =   35
          Top             =   1560
+         Visible         =   0   'False
          Width           =   3375
       End
       Begin MSComctlLib.ProgressBar pbSaldos 
          Height          =   495
-         Left            =   1440
+         Left            =   -68560
          TabIndex        =   34
          Top             =   4200
+         Visible         =   0   'False
          Width           =   6735
          _ExtentX        =   11880
          _ExtentY        =   873
@@ -711,28 +715,31 @@ Begin VB.Form FrmImportar
       Begin VB.CommandButton btnIniciar 
          Caption         =   "Buscar Excel"
          Height          =   375
-         Left            =   6960
+         Left            =   -63040
          TabIndex        =   33
          Top             =   600
+         Visible         =   0   'False
          Width           =   1215
       End
       Begin MSComCtl2.DTPicker dtpFin 
          Height          =   375
-         Left            =   5400
+         Left            =   -64600
          TabIndex        =   32
          Top             =   600
+         Visible         =   0   'False
          Width           =   1455
          _ExtentX        =   2566
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   17104897
+         Format          =   16646145
          CurrentDate     =   43105
       End
       Begin TrueOleDBGrid70.TDBGrid gridSaldos 
          Height          =   3135
-         Left            =   1440
+         Left            =   -68560
          TabIndex        =   30
          Top             =   1080
+         Visible         =   0   'False
          Width           =   6735
          _ExtentX        =   11880
          _ExtentY        =   5530
@@ -903,46 +910,41 @@ Begin VB.Form FrmImportar
       End
       Begin VB.TextBox TxtRutaLogo 
          Height          =   375
-         Left            =   -68560
+         Left            =   1440
          TabIndex        =   13
          Top             =   480
-         Visible         =   0   'False
          Width           =   5295
       End
       Begin VB.CommandButton CmdBuscarLogo 
          Height          =   375
-         Left            =   -63160
+         Left            =   6840
          Picture         =   "FrmImportarEmpleados.frx":096C
          Style           =   1  'Graphical
          TabIndex        =   12
          Top             =   480
-         Visible         =   0   'False
          Width           =   375
       End
       Begin VB.CommandButton CmdSalir 
          Caption         =   "Salir"
          Height          =   495
-         Left            =   -58600
+         Left            =   11400
          TabIndex        =   11
          Top             =   3600
-         Visible         =   0   'False
          Width           =   1215
       End
       Begin VB.CommandButton CmdIniciar 
          Caption         =   "Iniciar"
          Height          =   495
-         Left            =   -58600
+         Left            =   11400
          TabIndex        =   10
-         Top             =   1080
-         Visible         =   0   'False
+         Top             =   480
          Width           =   1215
       End
       Begin VB.Frame Frame1 
          Height          =   615
-         Left            =   -62560
+         Left            =   7440
          TabIndex        =   7
          Top             =   360
-         Visible         =   0   'False
          Width           =   3855
          Begin VB.OptionButton Option1 
             Caption         =   "Empleados"
@@ -965,19 +967,17 @@ Begin VB.Form FrmImportar
       Begin VB.CommandButton CmdIniciar2 
          Caption         =   "Iniciar"
          Height          =   495
-         Left            =   -58600
+         Left            =   11400
          TabIndex        =   4
-         Top             =   480
-         Visible         =   0   'False
+         Top             =   1080
          Width           =   1215
       End
       Begin TrueOleDBList80.TDBCombo TDBTipo 
          Bindings        =   "FrmImportarEmpleados.frx":0E22
          Height          =   315
-         Left            =   -68560
+         Left            =   1440
          TabIndex        =   3
          Top             =   960
-         Visible         =   0   'False
          Width           =   5295
          _ExtentX        =   9340
          _ExtentY        =   556
@@ -1121,41 +1121,37 @@ Begin VB.Form FrmImportar
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel1 
          Height          =   255
-         Left            =   -58600
+         Left            =   11400
          OleObjectBlob   =   "FrmImportarEmpleados.frx":0EE8
          TabIndex        =   5
          Top             =   2640
-         Visible         =   0   'False
          Width           =   1335
       End
       Begin MSComCtl2.DTPicker DTPFechaIni 
          Height          =   375
-         Left            =   -58600
+         Left            =   11400
          TabIndex        =   6
          Top             =   1920
-         Visible         =   0   'False
          Width           =   1335
          _ExtentX        =   2355
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   17104897
+         Format          =   16646145
          CurrentDate     =   41829
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel25 
          Height          =   255
-         Left            =   -69880
+         Left            =   120
          OleObjectBlob   =   "FrmImportarEmpleados.frx":0F58
          TabIndex        =   14
          Top             =   525
-         Visible         =   0   'False
          Width           =   1335
       End
       Begin TrueOleDBGrid80.TDBGrid TDBGridNominas 
          Height          =   3015
-         Left            =   -69880
+         Left            =   13560
          TabIndex        =   15
          Top             =   1320
-         Visible         =   0   'False
          Width           =   11175
          _ExtentX        =   19711
          _ExtentY        =   5318
@@ -1469,10 +1465,9 @@ Begin VB.Form FrmImportar
       End
       Begin TrueOleDBGrid80.TDBGrid TDBGrid1 
          Height          =   3015
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   16
          Top             =   1320
-         Visible         =   0   'False
          Width           =   11175
          _ExtentX        =   19711
          _ExtentY        =   5318
@@ -1587,14 +1582,54 @@ Begin VB.Form FrmImportar
          Columns(20).Caption=   "CuentaBanco"
          Columns(20).DataField=   "CuentaBanco"
          Columns(20)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
-         Columns.Count   =   21
+         Columns(21)._VlistStyle=   0
+         Columns(21)._MaxComboItems=   5
+         Columns(21).Caption=   "Turnos"
+         Columns(21).DataField=   "Turnos"
+         Columns(21)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(22)._VlistStyle=   0
+         Columns(22)._MaxComboItems=   5
+         Columns(22).Caption=   "FechaNacimiento"
+         Columns(22).DataField=   "FechaNacimiento"
+         Columns(22)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(23)._VlistStyle=   0
+         Columns(23)._MaxComboItems=   5
+         Columns(23).Caption=   "Numerocelular"
+         Columns(23).DataField=   "Numerocelular"
+         Columns(23)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(24)._VlistStyle=   0
+         Columns(24)._MaxComboItems=   5
+         Columns(24).Caption=   "CelularEmergencia"
+         Columns(24).DataField=   "CelularEmergencia"
+         Columns(24)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(25)._VlistStyle=   0
+         Columns(25)._MaxComboItems=   5
+         Columns(25).Caption=   "Profesion"
+         Columns(25).DataField=   "Profesion"
+         Columns(25)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(26)._VlistStyle=   0
+         Columns(26)._MaxComboItems=   5
+         Columns(26).Caption=   "EstadoCivil"
+         Columns(26).DataField=   "EstadoCivil"
+         Columns(26)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(27)._VlistStyle=   0
+         Columns(27)._MaxComboItems=   5
+         Columns(27).Caption=   "JefeInmediato"
+         Columns(27).DataField=   "JefeInmediato"
+         Columns(27)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns(28)._VlistStyle=   0
+         Columns(28)._MaxComboItems=   5
+         Columns(28).Caption=   "Incentivo"
+         Columns(28).DataField=   "Incentivo"
+         Columns(28)._PropDict=   "_MaxComboItems,516,2;_VlistStyle,514,3"
+         Columns.Count   =   29
          Splits(0)._UserFlags=   0
          Splits(0).RecordSelectorWidth=   688
          Splits(0)._SavedRecordSelectors=   -1  'True
          Splits(0).DividerColor=   14215660
          Splits(0).SpringMode=   0   'False
          Splits(0)._PropDict=   "_ColumnProps,515,0;_UserFlags,518,3"
-         Splits(0)._ColumnProps(0)=   "Columns.Count=21"
+         Splits(0)._ColumnProps(0)=   "Columns.Count=29"
          Splits(0)._ColumnProps(1)=   "Column(0).Width=873"
          Splits(0)._ColumnProps(2)=   "Column(0).DividerColor=0"
          Splits(0)._ColumnProps(3)=   "Column(0)._WidthInPix=794"
@@ -1679,6 +1714,38 @@ Begin VB.Form FrmImportar
          Splits(0)._ColumnProps(82)=   "Column(20).DividerColor=0"
          Splits(0)._ColumnProps(83)=   "Column(20)._WidthInPix=2646"
          Splits(0)._ColumnProps(84)=   "Column(20).Order=21"
+         Splits(0)._ColumnProps(85)=   "Column(21).Width=2725"
+         Splits(0)._ColumnProps(86)=   "Column(21).DividerColor=0"
+         Splits(0)._ColumnProps(87)=   "Column(21)._WidthInPix=2646"
+         Splits(0)._ColumnProps(88)=   "Column(21).Order=22"
+         Splits(0)._ColumnProps(89)=   "Column(22).Width=2725"
+         Splits(0)._ColumnProps(90)=   "Column(22).DividerColor=0"
+         Splits(0)._ColumnProps(91)=   "Column(22)._WidthInPix=2646"
+         Splits(0)._ColumnProps(92)=   "Column(22).Order=23"
+         Splits(0)._ColumnProps(93)=   "Column(23).Width=2725"
+         Splits(0)._ColumnProps(94)=   "Column(23).DividerColor=0"
+         Splits(0)._ColumnProps(95)=   "Column(23)._WidthInPix=2646"
+         Splits(0)._ColumnProps(96)=   "Column(23).Order=24"
+         Splits(0)._ColumnProps(97)=   "Column(24).Width=2725"
+         Splits(0)._ColumnProps(98)=   "Column(24).DividerColor=0"
+         Splits(0)._ColumnProps(99)=   "Column(24)._WidthInPix=2646"
+         Splits(0)._ColumnProps(100)=   "Column(24).Order=25"
+         Splits(0)._ColumnProps(101)=   "Column(25).Width=2725"
+         Splits(0)._ColumnProps(102)=   "Column(25).DividerColor=0"
+         Splits(0)._ColumnProps(103)=   "Column(25)._WidthInPix=2646"
+         Splits(0)._ColumnProps(104)=   "Column(25).Order=26"
+         Splits(0)._ColumnProps(105)=   "Column(26).Width=2725"
+         Splits(0)._ColumnProps(106)=   "Column(26).DividerColor=0"
+         Splits(0)._ColumnProps(107)=   "Column(26)._WidthInPix=2646"
+         Splits(0)._ColumnProps(108)=   "Column(26).Order=27"
+         Splits(0)._ColumnProps(109)=   "Column(27).Width=2725"
+         Splits(0)._ColumnProps(110)=   "Column(27).DividerColor=0"
+         Splits(0)._ColumnProps(111)=   "Column(27)._WidthInPix=2646"
+         Splits(0)._ColumnProps(112)=   "Column(27).Order=28"
+         Splits(0)._ColumnProps(113)=   "Column(28).Width=2725"
+         Splits(0)._ColumnProps(114)=   "Column(28).DividerColor=0"
+         Splits(0)._ColumnProps(115)=   "Column(28)._WidthInPix=2646"
+         Splits(0)._ColumnProps(116)=   "Column(28).Order=29"
          Splits.Count    =   1
          PrintInfos(0)._StateFlags=   0
          PrintInfos(0).Name=   "piInternal 0"
@@ -1815,48 +1882,78 @@ Begin VB.Form FrmImportar
          _StyleDefs(111) =   "Splits(0).Columns(20).HeadingStyle:id=115,.parent=14"
          _StyleDefs(112) =   "Splits(0).Columns(20).FooterStyle:id=116,.parent=15"
          _StyleDefs(113) =   "Splits(0).Columns(20).EditorStyle:id=117,.parent=17"
-         _StyleDefs(114) =   "Named:id=33:Normal"
-         _StyleDefs(115) =   ":id=33,.parent=0"
-         _StyleDefs(116) =   "Named:id=34:Heading"
-         _StyleDefs(117) =   ":id=34,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
-         _StyleDefs(118) =   ":id=34,.wraptext=-1"
-         _StyleDefs(119) =   "Named:id=35:Footing"
-         _StyleDefs(120) =   ":id=35,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
-         _StyleDefs(121) =   "Named:id=36:Selected"
-         _StyleDefs(122) =   ":id=36,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
-         _StyleDefs(123) =   "Named:id=37:Caption"
-         _StyleDefs(124) =   ":id=37,.parent=34,.alignment=2"
-         _StyleDefs(125) =   "Named:id=38:HighlightRow"
-         _StyleDefs(126) =   ":id=38,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
-         _StyleDefs(127) =   "Named:id=39:EvenRow"
-         _StyleDefs(128) =   ":id=39,.parent=33,.bgcolor=&HFFFF00&"
-         _StyleDefs(129) =   "Named:id=40:OddRow"
-         _StyleDefs(130) =   ":id=40,.parent=33"
-         _StyleDefs(131) =   "Named:id=41:RecordSelector"
-         _StyleDefs(132) =   ":id=41,.parent=34"
-         _StyleDefs(133) =   "Named:id=42:FilterBar"
-         _StyleDefs(134) =   ":id=42,.parent=33"
+         _StyleDefs(114) =   "Splits(0).Columns(21).Style:id=122,.parent=13"
+         _StyleDefs(115) =   "Splits(0).Columns(21).HeadingStyle:id=119,.parent=14"
+         _StyleDefs(116) =   "Splits(0).Columns(21).FooterStyle:id=120,.parent=15"
+         _StyleDefs(117) =   "Splits(0).Columns(21).EditorStyle:id=121,.parent=17"
+         _StyleDefs(118) =   "Splits(0).Columns(22).Style:id=126,.parent=13"
+         _StyleDefs(119) =   "Splits(0).Columns(22).HeadingStyle:id=123,.parent=14"
+         _StyleDefs(120) =   "Splits(0).Columns(22).FooterStyle:id=124,.parent=15"
+         _StyleDefs(121) =   "Splits(0).Columns(22).EditorStyle:id=125,.parent=17"
+         _StyleDefs(122) =   "Splits(0).Columns(23).Style:id=130,.parent=13"
+         _StyleDefs(123) =   "Splits(0).Columns(23).HeadingStyle:id=127,.parent=14"
+         _StyleDefs(124) =   "Splits(0).Columns(23).FooterStyle:id=128,.parent=15"
+         _StyleDefs(125) =   "Splits(0).Columns(23).EditorStyle:id=129,.parent=17"
+         _StyleDefs(126) =   "Splits(0).Columns(24).Style:id=134,.parent=13"
+         _StyleDefs(127) =   "Splits(0).Columns(24).HeadingStyle:id=131,.parent=14"
+         _StyleDefs(128) =   "Splits(0).Columns(24).FooterStyle:id=132,.parent=15"
+         _StyleDefs(129) =   "Splits(0).Columns(24).EditorStyle:id=133,.parent=17"
+         _StyleDefs(130) =   "Splits(0).Columns(25).Style:id=138,.parent=13"
+         _StyleDefs(131) =   "Splits(0).Columns(25).HeadingStyle:id=135,.parent=14"
+         _StyleDefs(132) =   "Splits(0).Columns(25).FooterStyle:id=136,.parent=15"
+         _StyleDefs(133) =   "Splits(0).Columns(25).EditorStyle:id=137,.parent=17"
+         _StyleDefs(134) =   "Splits(0).Columns(26).Style:id=142,.parent=13"
+         _StyleDefs(135) =   "Splits(0).Columns(26).HeadingStyle:id=139,.parent=14"
+         _StyleDefs(136) =   "Splits(0).Columns(26).FooterStyle:id=140,.parent=15"
+         _StyleDefs(137) =   "Splits(0).Columns(26).EditorStyle:id=141,.parent=17"
+         _StyleDefs(138) =   "Splits(0).Columns(27).Style:id=146,.parent=13"
+         _StyleDefs(139) =   "Splits(0).Columns(27).HeadingStyle:id=143,.parent=14"
+         _StyleDefs(140) =   "Splits(0).Columns(27).FooterStyle:id=144,.parent=15"
+         _StyleDefs(141) =   "Splits(0).Columns(27).EditorStyle:id=145,.parent=17"
+         _StyleDefs(142) =   "Splits(0).Columns(28).Style:id=150,.parent=13"
+         _StyleDefs(143) =   "Splits(0).Columns(28).HeadingStyle:id=147,.parent=14"
+         _StyleDefs(144) =   "Splits(0).Columns(28).FooterStyle:id=148,.parent=15"
+         _StyleDefs(145) =   "Splits(0).Columns(28).EditorStyle:id=149,.parent=17"
+         _StyleDefs(146) =   "Named:id=33:Normal"
+         _StyleDefs(147) =   ":id=33,.parent=0"
+         _StyleDefs(148) =   "Named:id=34:Heading"
+         _StyleDefs(149) =   ":id=34,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
+         _StyleDefs(150) =   ":id=34,.wraptext=-1"
+         _StyleDefs(151) =   "Named:id=35:Footing"
+         _StyleDefs(152) =   ":id=35,.parent=33,.valignment=2,.bgcolor=&H8000000F&,.fgcolor=&H80000012&"
+         _StyleDefs(153) =   "Named:id=36:Selected"
+         _StyleDefs(154) =   ":id=36,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
+         _StyleDefs(155) =   "Named:id=37:Caption"
+         _StyleDefs(156) =   ":id=37,.parent=34,.alignment=2"
+         _StyleDefs(157) =   "Named:id=38:HighlightRow"
+         _StyleDefs(158) =   ":id=38,.parent=33,.bgcolor=&H8000000D&,.fgcolor=&H8000000E&"
+         _StyleDefs(159) =   "Named:id=39:EvenRow"
+         _StyleDefs(160) =   ":id=39,.parent=33,.bgcolor=&HFFFF00&"
+         _StyleDefs(161) =   "Named:id=40:OddRow"
+         _StyleDefs(162) =   ":id=40,.parent=33"
+         _StyleDefs(163) =   "Named:id=41:RecordSelector"
+         _StyleDefs(164) =   ":id=41,.parent=34"
+         _StyleDefs(165) =   "Named:id=42:FilterBar"
+         _StyleDefs(166) =   ":id=42,.parent=33"
       End
       Begin MSComCtl2.DTPicker DTPFechaFin 
          Height          =   375
-         Left            =   -58600
+         Left            =   11400
          TabIndex        =   17
          Top             =   2880
-         Visible         =   0   'False
          Width           =   1335
          _ExtentX        =   2355
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   17104897
+         Format          =   16646145
          CurrentDate     =   41829
       End
       Begin ACTIVESKINLibCtl.SkinLabel SkinLabel2 
          Height          =   255
-         Left            =   -58600
+         Left            =   11400
          OleObjectBlob   =   "FrmImportarEmpleados.frx":0FD6
          TabIndex        =   18
          Top             =   1680
-         Visible         =   0   'False
          Width           =   1335
       End
       Begin TrueOleDBList80.TDBCombo TDBCombo1 
@@ -2177,10 +2274,9 @@ Begin VB.Form FrmImportar
       End
       Begin XtremeSuiteControls.ProgressBar osProgress1 
          Height          =   375
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   27
          Top             =   4440
-         Visible         =   0   'False
          Width           =   11295
          _Version        =   786432
          _ExtentX        =   19923
@@ -2611,17 +2707,19 @@ Begin VB.Form FrmImportar
       Begin VB.Label txtNombre 
          Caption         =   "Nombre:"
          Height          =   255
-         Left            =   8280
+         Left            =   -61720
          TabIndex        =   37
          Top             =   1200
+         Visible         =   0   'False
          Width           =   3375
       End
       Begin VB.Label txtCodigo 
          Caption         =   "Codigo:"
          Height          =   255
-         Left            =   8280
+         Left            =   -61720
          TabIndex        =   36
          Top             =   960
+         Visible         =   0   'False
          Width           =   1575
       End
       Begin VB.Label Label2 
@@ -2636,9 +2734,10 @@ Begin VB.Form FrmImportar
             Strikethrough   =   0   'False
          EndProperty
          Height          =   375
-         Left            =   1440
+         Left            =   -68560
          TabIndex        =   31
          Top             =   600
+         Visible         =   0   'False
          Width           =   3855
       End
       Begin VB.Label Label1 
@@ -2653,10 +2752,9 @@ Begin VB.Form FrmImportar
       Begin VB.Label Label34 
          Caption         =   "Tipo Nóminas:"
          Height          =   255
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   19
          Top             =   960
-         Visible         =   0   'False
          Width           =   1095
       End
    End
@@ -3700,7 +3798,9 @@ Private Sub CmdIniciar_Click()
   Dim NHijos As Double, CodDepartamento As String, departamento As String, CodCargo As String, Cargo As String
   Dim CodGrupo As String, DescripcionGrupo As String, CodTipoNomina As String, DescripcionTipo As String
   Dim CodTurno As String, CodigoEmpleado1 As String, SueldoPeriodo As Double, TarifaHorario As Double
-  Dim Id As Double, IdCard As String
+  Dim Id As Double, IdCard As String, NumeroCelular As String, NumeroCelularEmergencia As String, Turno As String
+  Dim rs As New ADODB.Recordset, Profesion As String, EstadoCivil As String, JefeInmediato As String
+  Dim Incentivo As Double
   
           Me.TDBGrid1.MoveFirst
           
@@ -3708,48 +3808,66 @@ Private Sub CmdIniciar_Click()
           Do While Not Me.TDBGrid1.EOF
           
             '--------------------CARGO LAS VARIABLES ------------------------------------------
-            CodigoEmpleado1 = Format(Me.TDBGrid1.Columns(0).Text, "000#")
-            Nombre1 = Me.TDBGrid1.Columns(1).Text
-            Nombre2 = Me.TDBGrid1.Columns(2).Text
-            Apellido = Me.TDBGrid1.Columns(3).Text
-            Apellido2 = Me.TDBGrid1.Columns(4).Text
-            Direccion = Me.TDBGrid1.Columns(5).Text
-            Nacionalidad = Me.TDBGrid1.Columns(6).Text
-            Sexo = Me.TDBGrid1.Columns(7).Text
-            If Me.TDBGrid1.Columns(8).Text = "" Then
+            
+
+            
+            CodigoEmpleado1 = Format(Me.TDBGrid1.Columns("Codigo").Text, "000#")
+            Nombre1 = Me.TDBGrid1.Columns("Nombre1").Text
+            Nombre2 = Me.TDBGrid1.Columns("Nombre2").Text
+            Apellido = Me.TDBGrid1.Columns("Apellido1").Text
+            Apellido2 = Me.TDBGrid1.Columns("Apellido2").Text
+            Direccion = Me.TDBGrid1.Columns("Direccion").Text
+            Nacionalidad = Me.TDBGrid1.Columns("Nacionalidad").Text
+            Sexo = Me.TDBGrid1.Columns("Sexo").Text
+            If Me.TDBGrid1.Columns("FechaIngreso").Text = "" Then
               Fecha = Format(Now, "dd-MM-yyyy")
             Else
-             Fecha = Me.TDBGrid1.Columns(8).Text
+             Fecha = Me.TDBGrid1.Columns("FechaIngreso").Text
             End If
-            Cargo = Me.TDBGrid1.Columns(9).Text
-            departamento = Me.TDBGrid1.Columns(10).Text
-            NumeroRuc = Me.TDBGrid1.Columns(11).Text
-            NumeroInss = Me.TDBGrid1.Columns(12).Text
-            NumeroCedula = Me.TDBGrid1.Columns(13).Text
-            NHijos = Me.TDBGrid1.Columns(14).Text
-            DescripcionTipo = Me.TDBGrid1.Columns(15).Text
-            DescripcionGrupo = Me.TDBGrid1.Columns(16).Text
-            DescripcionGrupo = Me.TDBGrid1.Columns(16).Text
+            Cargo = Me.TDBGrid1.Columns("Cargo").Text
+            departamento = Me.TDBGrid1.Columns("Departamento").Text
+            NumeroRuc = Me.TDBGrid1.Columns("RUC").Text
+            NumeroInss = Me.TDBGrid1.Columns("INSS").Text
+            NumeroCedula = Me.TDBGrid1.Columns("Cedula").Text
+            If Me.TDBGrid1.Columns("Hijos").Text <> "" Then
+              NHijos = Me.TDBGrid1.Columns("Hijos").Text
+            End If
+            DescripcionTipo = Me.TDBGrid1.Columns("TipoNomina").Text
+            DescripcionGrupo = Me.TDBGrid1.Columns("GrupoNomina").Text
             
-            If Me.TDBGrid1.Columns(17).Text = "" Then
+           
+            
+            
+            EstadoCivil = Me.TDBGrid1.Columns("EstadoCivil").Text
+            Incentivo = Me.TDBGrid1.Columns("Incentivo").Text
+            Turno = Me.TDBGrid1.Columns("Turnos").Text
+            Profesion = Me.TDBGrid1.Columns("Profesion").Text
+            EstadoCivil = Me.TDBGrid1.Columns("EstadoCivil").Text
+            JefeInmediato = Me.TDBGrid1.Columns("JefeInmediato").Text
+            NumeroCelular = Me.TDBGrid1.Columns("Numerocelular").Text
+            NumeroCelularEmergencia = Me.TDBGrid1.Columns("CelularEmergencia").Text
+            
+            If Me.TDBGrid1.Columns("SueldoPeriodo").Text = "" Then
                 SueldoPeriodo = 0
             Else
-                SueldoPeriodo = Me.TDBGrid1.Columns(17).Text
+                SueldoPeriodo = Me.TDBGrid1.Columns("SueldoPeriodo").Text
             End If
             
-            If Me.TDBGrid1.Columns(18).Text = "" Then
+            If Me.TDBGrid1.Columns("TarifaHoraria").Text = "" Then
                 TarifaHorario = 0
             Else
-                TarifaHorario = Me.TDBGrid1.Columns(18).Text
+                TarifaHorario = Me.TDBGrid1.Columns("TarifaHoraria").Text
             End If
             
-            If Not IsDate(Me.TDBGrid1.Columns(19).Text) Then
+            If Not IsDate(Me.TDBGrid1.Columns("FechaNacimiento").Text) Then
                 FechaNacimiento = Format(Now, "dd-MM-yyyy")
             Else
-                FechaNacimiento = Me.TDBGrid1.Columns(19).Text
+                FechaNacimiento = Me.TDBGrid1.Columns("FechaNacimiento").Text
             End If
             
-            CuentaBanco = Me.TDBGrid1.Columns(20).Text
+            CuentaBanco = Me.TDBGrid1.Columns("CuentaBanco").Text
+            
+
             
             
             
@@ -3757,11 +3875,28 @@ Private Sub CmdIniciar_Click()
             Nombres = Nombre1 & " " & Nombre2 & " " & Apellido & " " & Apellido2
             
             
-            CodDepartamento = BuscaCodigo(departamento, "Departamento", "CodDepartamento", "Departamento")
-            CodCargo = BuscaCodigo(Cargo, "Cargo", "CodCargo", "Cargo")
-            CodGrupo = BuscaCodigo(DescripcionGrupo, "Grupo", "CodGrupo", "Grupo")
+            
+            
+            
             CodTipoNomina = BuscaCodigo(DescripcionTipo, "TipoNomina", "CodTipoNomina", "Nomina")
             
+            CodDepartamento = BuscaCodigo(departamento, "Departamento", "CodDepartamento", "Departamento")
+            If CodDepartamento = "00" Then
+              rs.Open "INSERT INTO Departamento ([CodDepartamento] ,[Departamento]) Values ('" & UltimoCodigo & "'  ,'" & departamento & "')", Conexion
+             CodDepartamento = UltimoCodigo
+            End If
+            
+            CodCargo = BuscaCodigo(Cargo, "Cargo", "CodCargo", "Cargo")
+            If CodCargo = "00" Then
+              rs.Open "INSERT INTO Cargo ([CodCargo] ,[Cargo]) Values ('" & UltimoCodigo & "'  ,'" & Cargo & "')", Conexion
+              CodCargo = UltimoCodigo
+            End If
+            
+            CodGrupo = BuscaCodigo(DescripcionGrupo, "Grupo", "CodGrupo", "Grupo")
+            If CodGrupo = "00" Then
+              rs.Open "INSERT INTO Grupo ([CodGrupo] ,[Grupo]) Values ('" & UltimoCodigo & "'  ,'" & DescripcionGrupo & "')", Conexion
+              CodGrupo = UltimoCodigo
+            End If
             
             '----------------------------------------------------------------------------------------------
             '-----------------------------------GRABO DATOS GENERALES DEL EMPLEADO ------------------------
@@ -3795,6 +3930,14 @@ Private Sub CmdIniciar_Click()
                         DtaEmpleado.Recordset("CodTipoNomina") = CodTipoNomina
                         DtaEmpleado.Recordset("numhijos") = NHijos
                         DtaEmpleado.Recordset("CuentaBanco") = CuentaBanco
+                        
+                        DtaEmpleado.Recordset("Turno") = Turno
+                        DtaEmpleado.Recordset("Numerocelular") = NumeroCelular
+                        DtaEmpleado.Recordset("CelularEmergencia") = NumeroCelularEmergencia
+                        DtaEmpleado.Recordset("Profesion") = Profesion
+                        DtaEmpleado.Recordset("EstadoCivil") = EstadoCivil
+                        DtaEmpleado.Recordset("JefeInmediato") = JefeInmediato
+                        DtaEmpleado.Recordset("Incentivo") = Incentivo
             
                         'grabar los nuevos datos de la nómina
                           DtaEmpleado.Recordset("SueldoPeriodo") = Format(SueldoPeriodo, "##,##0.00")

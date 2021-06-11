@@ -625,6 +625,7 @@ Public Function BuscaCodigoInterno(CodigoEmpleado As String) As Double
   If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
     BuscaCodigoInterno = MDIPrimero.DtaConsulta.Recordset("CodEmpleado")
   Else
+   
    BuscaCodigoInterno = -1
   End If
   
@@ -844,7 +845,21 @@ Public Function BuscaCodigo(Descripcion As String, Tabla As String, Campo As Str
  MDIPrimero.DtaConsulta.Refresh
  If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
   BuscaCodigo = MDIPrimero.DtaConsulta.Recordset(Campo)
+ Else
+  BuscaCodigo = "00"
+  UltimoCodigo = ""
+
+   '/////////////////BUSCO EL ULTIMO CODIGO DEPARTAMENTO ////////////
+   MDIPrimero.DtaConsulta.RecordSource = "SELECT * From " & Tabla & " ORDER BY " & Campo & " DESC"
+   MDIPrimero.DtaConsulta.Refresh
+   If Not MDIPrimero.DtaConsulta.Recordset.EOF Then
+     UltimoCodigo = MDIPrimero.DtaConsulta.Recordset(Campo)
+     UltimoCodigo = Format(CDbl(UltimoCodigo) + 1, "00#")
+   Else
+     UltimoCodigo = "001"
+   End If
  End If
+
 
 
 End Function

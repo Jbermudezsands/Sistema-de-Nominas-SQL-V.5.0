@@ -13,10 +13,10 @@ Object = "{945E8FCC-830E-45CC-AF00-A012D5AE7451}#12.0#0"; "Codejock.DockingPane.
 Begin VB.MDIForm MDIPrimero 
    BackColor       =   &H80000009&
    Caption         =   " Zeus Nóminas"
-   ClientHeight    =   9315
+   ClientHeight    =   8730
    ClientLeft      =   -75
-   ClientTop       =   150
-   ClientWidth     =   13590
+   ClientTop       =   -735
+   ClientWidth     =   11400
    HelpContextID   =   1
    Icon            =   "MDIPrimero.frx":0000
    LinkTopic       =   "MDIForm1"
@@ -27,15 +27,15 @@ Begin VB.MDIForm MDIPrimero
    WindowState     =   2  'Maximized
    Begin XtremeTaskPanel.TaskPanel wndTaskPanel 
       Align           =   4  'Align Right
-      Height          =   1035
-      Left            =   11250
+      Height          =   450
+      Left            =   9060
       TabIndex        =   16
       Top             =   855
       Visible         =   0   'False
       Width           =   2340
       _Version        =   786432
       _ExtentX        =   4128
-      _ExtentY        =   1826
+      _ExtentY        =   794
       _StockProps     =   64
       Animation       =   1
       ItemLayout      =   3
@@ -45,10 +45,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   4920
+      Top             =   4335
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -98,11 +98,11 @@ Begin VB.MDIForm MDIPrimero
       Left            =   0
       ScaleHeight     =   425.455
       ScaleMode       =   0  'User
-      ScaleWidth      =   13560
+      ScaleWidth      =   11370
       TabIndex        =   1
-      Top             =   3720
+      Top             =   3135
       Visible         =   0   'False
-      Width           =   13590
+      Width           =   11400
       Begin SmartButtonProject.SmartButton CmdMovimiento 
          Height          =   930
          Left            =   5520
@@ -439,10 +439,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   6720
+      Top             =   6135
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -487,10 +487,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   615
       Left            =   0
-      Top             =   6105
+      Top             =   5520
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   1085
       ConnectMode     =   0
       CursorLocation  =   3
@@ -535,10 +535,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   330
       Left            =   0
-      Top             =   5295
+      Top             =   4710
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
@@ -583,10 +583,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   7095
+      Top             =   6510
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -631,10 +631,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   480
       Left            =   0
-      Top             =   5625
+      Top             =   5040
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   847
       ConnectMode     =   0
       CursorLocation  =   3
@@ -687,10 +687,10 @@ Begin VB.MDIForm MDIPrimero
       Height          =   405
       Left            =   0
       TabIndex        =   0
-      Top             =   7950
+      Top             =   7365
       WhatsThisHelpID =   1
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   714
       SimpleText      =   "Programa Bajo Licencia de Juan"
       _Version        =   327682
@@ -730,6 +730,7 @@ Begin VB.MDIForm MDIPrimero
          EndProperty
          BeginProperty Panel5 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   2
+            Enabled         =   0   'False
             Object.Width           =   1393
             MinWidth        =   1393
             TextSave        =   "NÚM"
@@ -738,7 +739,7 @@ Begin VB.MDIForm MDIPrimero
          EndProperty
          BeginProperty Panel6 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   5
-            TextSave        =   "08:09 p.m."
+            TextSave        =   "05:58 p.m."
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -782,10 +783,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   1890
+      Top             =   1305
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1010,10 +1011,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   3345
+      Top             =   2760
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1058,10 +1059,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   2970
+      Top             =   2385
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1106,10 +1107,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      Top             =   2595
+      Top             =   2010
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1156,8 +1157,8 @@ Begin VB.MDIForm MDIPrimero
       Left            =   0
       Top             =   375
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   847
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1202,10 +1203,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   480
       Left            =   0
-      Top             =   8835
+      Top             =   8250
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   847
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1250,10 +1251,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   480
       Left            =   0
-      Top             =   8355
+      Top             =   7770
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   847
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1298,10 +1299,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   480
       Left            =   0
-      Top             =   7470
+      Top             =   6885
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   847
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1348,8 +1349,8 @@ Begin VB.MDIForm MDIPrimero
       Left            =   0
       Top             =   0
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   661
       ConnectMode     =   0
       CursorLocation  =   3
@@ -1394,10 +1395,10 @@ Begin VB.MDIForm MDIPrimero
       Align           =   2  'Align Bottom
       Height          =   330
       Left            =   0
-      Top             =   2265
+      Top             =   1680
       Visible         =   0   'False
-      Width           =   13590
-      _ExtentX        =   23971
+      Width           =   11400
+      _ExtentX        =   20108
       _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
@@ -2567,7 +2568,7 @@ Private Sub CreateRibbonBar()
      item.Style = xtpButtonIconAndCaptionBelow
      Set item = GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, 1749, "Nomina Acumulada", False, False)
      item.Style = xtpButtonIconAndCaptionBelow
-     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.28", False, False
+     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.32", False, False
 
 
     '/////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3236,7 +3237,7 @@ With Me.DtaEmpleados
    .Refresh
 End With
 
-With Me.DtaNacceso
+With Me.DtaNAcceso
    .ConnectionString = Conexion
 End With
 
@@ -3260,7 +3261,7 @@ With Me.AdoReportes
    .ConnectionString = Conexion
 End With
 
-With Me.DtaIR
+With Me.DtaIr
    .ConnectionString = Conexion
 End With
 
@@ -3525,7 +3526,8 @@ Dim RutaBD As String
 
 PreguntaSalir = True
 
-If Format(Now, "dd/mm/yyyy") > CDate("24/12/2021") Then
+If Format(Now, "dd/mm/yyyy") > CDate("16/06/2021") Then
+  MsgBox "Error VSComponent 3.0", vbCritical
   PreguntaSalir = False
   Unload Me
 End If

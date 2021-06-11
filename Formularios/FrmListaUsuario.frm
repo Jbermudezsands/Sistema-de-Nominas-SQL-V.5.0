@@ -342,8 +342,14 @@ End If
 
 
 DtaFecha.Refresh
-TextFecha = DtaFecha.Recordset("Fentrada")
-TextFecha = Decrypt(TextFecha)
+If DtaFecha.Recordset.EOF Then
+ TextFecha = Now
+Else
+ TextFecha = DtaFecha.Recordset("Fentrada")
+ TextFecha = Decrypt(TextFecha)
+End If
+
+
 If Not IsDate(TextFecha) Then End
 
 FechaSystem = CDate(TextFecha)

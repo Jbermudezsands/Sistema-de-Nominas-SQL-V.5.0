@@ -1,13 +1,13 @@
 VERSION 5.00
 Begin {9EB8768B-CDFA-44DF-8F3E-857A8405E1DB} ArepCarnet 
    Caption         =   "Carnet del Empleado"
-   ClientHeight    =   10980
-   ClientLeft      =   60
-   ClientTop       =   450
-   ClientWidth     =   20280
+   ClientHeight    =   8730
+   ClientLeft      =   165
+   ClientTop       =   555
+   ClientWidth     =   11400
    StartUpPosition =   3  'Windows Default
-   _ExtentX        =   35772
-   _ExtentY        =   19368
+   _ExtentX        =   20108
+   _ExtentY        =   15399
    SectionData     =   "ArepCarnet.dsx":0000
 End
 Attribute VB_Name = "ArepCarnet"
@@ -16,16 +16,21 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Detail_Format()
-Me.lblCodigo.Caption = Me.FldCodigoEmpleado.Text
+Dim CodigoEmpleado As Double
+
+If Me.FldCodEmpleado.Text <> "" Then
+  CodigoEmpleado = Me.FldCodEmpleado.Text
+End If
+Me.LblCodigo.Caption = Me.FldCodigoEmpleado.Text
 
  Dim Destino As String, RutaFirma As String
  
-    If Dir(RutaFoto & Me.lblCodigo.Caption & ".jpg") <> "" Then
-        Destino = RutaFoto & Me.lblCodigo.Caption & ".jpg"
-    ElseIf Dir(RutaFoto & Me.lblCodigo.Caption & ".gif") <> "" Then
-        Destino = RutaFoto & Me.lblCodigo.Caption & ".gif"
-    ElseIf Dir(RutaFoto & Me.lblCodigo.Caption & ".bmp") <> "" Then
-        Destino = RutaFoto & Me.lblCodigo.Caption & ".bmp"
+    If Dir(RutaFoto & Me.LblCodigo.Caption & ".jpg") <> "" Then
+        Destino = RutaFoto & Me.LblCodigo.Caption & ".jpg"
+    ElseIf Dir(RutaFoto & Me.LblCodigo.Caption & ".gif") <> "" Then
+        Destino = RutaFoto & Me.LblCodigo.Caption & ".gif"
+    ElseIf Dir(RutaFoto & Me.LblCodigo.Caption & ".bmp") <> "" Then
+        Destino = RutaFoto & Me.LblCodigo.Caption & ".bmp"
     End If
     
     
@@ -65,7 +70,16 @@ Me.lblCodigo.Caption = Me.FldCodigoEmpleado.Text
        End If
     End If
     
-    Me.lblTitulo.Caption = Titulo
+    Me.LblTitulo.Caption = Titulo
+    
+    '////////////////CONSULTO LA FECHA DE INGRESO /////////////////////////////
+    MDIPrimero.AdoConsulta.ConnectionString = Conexion
+    MDIPrimero.AdoConsulta.RecordSource = "SELECT Empleado.CodEmpleado, Historico.FechaContrato, Empleado.CodEmpleado1 FROM  Empleado INNER JOIN Historico ON Empleado.CodEmpleado = Historico.Codempleado WHERE (Empleado.CodEmpleado = " & CodigoEmpleado & ")"
+    MDIPrimero.AdoConsulta.Refresh
+    If Not MDIPrimero.AdoConsulta.Recordset.EOF Then
+      Me.LblFechaContrato.Caption = "Fecha Contrato: " & Format(MDIPrimero.AdoConsulta.Recordset("FechaContrato"), "dd/mm/yyyy")
+    End If
+    
     
     
 

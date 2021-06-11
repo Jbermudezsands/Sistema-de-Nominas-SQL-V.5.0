@@ -50,5 +50,5 @@ Public ConexionEasy As String, RutaServerEasy As String
 Public RutaArchivo As String
 Public i As Double
 Public CodigoH As String
-Public MontoInssRegistros(3) As Double
+Public MontoInssRegistros(3) As Double, UltimoCodigo As String
 Public PeriodoReporte As String, tempDias As Double, RegistrarBitacora As Boolean
