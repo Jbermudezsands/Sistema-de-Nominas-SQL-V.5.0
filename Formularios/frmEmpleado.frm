@@ -1142,7 +1142,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   16711681
+               Format          =   59441153
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker MaskEdNacimiento 
@@ -1154,7 +1154,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   16711681
+               Format          =   59441153
                CurrentDate     =   40886
             End
             Begin MSComCtl2.DTPicker DTPFechaContratoVaca 
@@ -1166,7 +1166,7 @@ Begin VB.Form frmEmpleado
                _ExtentX        =   2566
                _ExtentY        =   556
                _Version        =   393216
-               Format          =   16711681
+               Format          =   59441153
                CurrentDate     =   40213
             End
             Begin VB.CommandButton CmdIncapacidad 
@@ -1627,7 +1627,7 @@ Begin VB.Form frmEmpleado
                List            =   "frmEmpleado.frx":E602
                TabIndex        =   14
                Top             =   3240
-               Width           =   1575
+               Width           =   2415
             End
             Begin VB.TextBox TxtDireccion 
                BackColor       =   &H00FFFFFF&
@@ -1798,8 +1798,8 @@ Begin VB.Form frmEmpleado
                Left            =   6480
                TabIndex        =   13
                Top             =   2880
-               Width           =   1575
-               _ExtentX        =   2778
+               Width           =   2415
+               _ExtentX        =   4260
                _ExtentY        =   556
                _Version        =   393216
                ListField       =   "Cargo"
@@ -1811,8 +1811,8 @@ Begin VB.Form frmEmpleado
                Left            =   6480
                TabIndex        =   12
                Top             =   2520
-               Width           =   1575
-               _ExtentX        =   2778
+               Width           =   2415
+               _ExtentX        =   4260
                _ExtentY        =   556
                _Version        =   393216
                ListField       =   "Departamento"
@@ -9172,16 +9172,15 @@ RegistrarBitacora = False
                          DtaDepartamento.Recordset.MoveNext
                      Loop
                      
-                DtaCargo.Refresh
-                Do While Not DtaCargo.Recordset.EOF
-                  If DtaCargo.Recordset("CodCargo") = TxtCodCargo.Text Then
-                     DBCCargo.Text = DtaCargo.Recordset("Cargo")
-                     Exit Do
-                  Else
+                Me.DtaConsulta.RecordSource = "SELECT  * From Cargo WHERE (CodCargo = '" & Me.TxtCodCargo.Text & "')"
+                Me.DtaConsulta.Refresh
+                If Not Me.DtaConsulta.Recordset.EOF Then
+                     DBCCargo.Text = DtaConsulta.Recordset("Cargo")
+
+                Else
                      DBCCargo.Text = ""
-                  End If
-                    DtaCargo.Recordset.MoveNext
-                Loop
+   
+                End If
    
                 Evaluar = True
                 CmbIncapacidad.Text = "No"

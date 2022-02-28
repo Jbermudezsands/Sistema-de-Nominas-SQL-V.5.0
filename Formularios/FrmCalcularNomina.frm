@@ -5320,8 +5320,8 @@ MontoInssPatronal = 0
 MontoIr = 0
 MontoIRPatronal = 0
 
-        If CodEmpleado = "59840" Then
-          CodEmpleado = 59840
+        If CodEmpleado = "18" Then
+          CodEmpleado = 18
         End If
         
         

@@ -15,7 +15,7 @@ Begin VB.MDIForm MDIPrimero
    Caption         =   " Zeus Nóminas"
    ClientHeight    =   8730
    ClientLeft      =   -75
-   ClientTop       =   -735
+   ClientTop       =   -1035
    ClientWidth     =   11400
    HelpContextID   =   1
    Icon            =   "MDIPrimero.frx":0000
@@ -739,7 +739,7 @@ Begin VB.MDIForm MDIPrimero
          EndProperty
          BeginProperty Panel6 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   5
-            TextSave        =   "05:58 p.m."
+            TextSave        =   "02:29 p.m."
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -2568,7 +2568,7 @@ Private Sub CreateRibbonBar()
      item.Style = xtpButtonIconAndCaptionBelow
      Set item = GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, 1749, "Nomina Acumulada", False, False)
      item.Style = xtpButtonIconAndCaptionBelow
-     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.32", False, False
+     RibbonBar.QuickAccessControls.Add XtremeCommandBars.XTPControlType.xtpControlButton, ID_FILE_SAVE, "Zeus Nominas V.6.34", False, False
 
 
     '/////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3237,7 +3237,7 @@ With Me.DtaEmpleados
    .Refresh
 End With
 
-With Me.DtaNAcceso
+With Me.DtaNacceso
    .ConnectionString = Conexion
 End With
 
@@ -3261,7 +3261,7 @@ With Me.AdoReportes
    .ConnectionString = Conexion
 End With
 
-With Me.DtaIr
+With Me.DtaIR
    .ConnectionString = Conexion
 End With
 
@@ -3526,8 +3526,8 @@ Dim RutaBD As String
 
 PreguntaSalir = True
 
-If Format(Now, "dd/mm/yyyy") > CDate("16/06/2021") Then
-  MsgBox "Error VSComponent 3.0", vbCritical
+If Format(Now, "dd/mm/yyyy") > CDate("16/08/2021") Then
+  'MsgBox "Error VSComponent 3.0", vbCritical
   PreguntaSalir = False
   Unload Me
 End If

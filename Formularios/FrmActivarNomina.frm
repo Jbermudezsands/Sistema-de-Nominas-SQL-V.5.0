@@ -130,7 +130,7 @@ Begin VB.Form FrmActivarNomina
          _Version        =   393216
          Enabled         =   0   'False
          CalendarBackColor=   16777215
-         Format          =   17104897
+         Format          =   59375617
          CurrentDate     =   37257
       End
       Begin MSComCtl2.DTPicker MtxtFecha 
@@ -144,7 +144,7 @@ Begin VB.Form FrmActivarNomina
          _Version        =   393216
          Enabled         =   0   'False
          CalendarBackColor=   16777215
-         Format          =   17104897
+         Format          =   59375617
          CurrentDate     =   37257
       End
       Begin VB.Label LblFechaLarga 
